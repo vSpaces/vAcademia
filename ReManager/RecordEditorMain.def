@@ -1,0 +1,9 @@
+; RecordEditor.def : Declares the module parameters.
+
+LIBRARY      "RecordEditor"
+DESCRIPTION  'RecordEditor Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateRecordEditor     @1
+	DestroyRecordEditor    @2

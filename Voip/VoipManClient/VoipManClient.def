@@ -1,0 +1,9 @@
+; VoipManD.def : Declares the module parameters for the DLL.
+
+LIBRARY      "VoipManClient"
+DESCRIPTION  'Voip Manager Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateVoipManagerClient     @1
+	DestroyVoipManagerClient    @2

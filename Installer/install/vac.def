@@ -1,0 +1,8 @@
+; VAC.def : Declares the module parameters for the DLL.
+
+LIBRARY      "VAC"
+DESCRIPTION  'VAC Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	IsVACInstalled @1 PRIVATE

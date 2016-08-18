@@ -1,0 +1,13 @@
+<material>
+	<shader>shaders/phong_refl2</shader>
+	<param name="decalMap" value="0" type="texture" />
+	<param name="envMap" value="1" type="texture" />
+	<cubemap src="SHALAPIN_CUBEMAP.JPG" level="1" />
+	<param name="lightness" value="%lightness" type="predefined" />
+	<param name="eyePos" value="%camera_position" type="predefined" />
+	<param name="lightPos" value="%light_position" type="predefined" />
+	<param name="lightColor" value="%light_color" type="predefined" />
+	<param name="lightPower" value="0.688" type="float" vmin="0" vmax="3" />
+	<param name="alphaValue" value="0.5" type="float" vmin="0" vmax="1" />
+	<state name="two_sided_transparency" value="true" />
+</material>

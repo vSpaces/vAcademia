@@ -1,0 +1,3 @@
+#define _BUILD_STRING "2010-03-30 07:12:21"
+#define _BUILD_TIME 1269933142252039i64
+#define _PRODUCTION "libplds4.dll"

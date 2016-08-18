@@ -1,0 +1,11 @@
+<material>
+	<shader>shaders/metall</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%inv_light_position" />
+	<param name="lightColor" type="predefined" value="%light_color" />
+	<param name="specularIntensivity" type="float" value="0.9" vmin="0" vmax="1" />
+	<param name="specularPower" type="float" value="10" vmin="5" vmax="100" />
+	<param name="lightPower" type="float" value="1" vmin="0" vmax="3" />
+</material>

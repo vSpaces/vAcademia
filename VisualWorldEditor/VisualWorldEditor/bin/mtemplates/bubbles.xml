@@ -1,0 +1,26 @@
+<material>
+	<shader>shaders/snow</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="time" type="predefined" value="%time" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined"  value="%light_position" />
+	<param name="lightColor" type="predefined"  value="%light_color" />
+	<param name="lightPower" type="float"  value="1" vmin="0"  vmax="10" />
+	<param name="sizeXY" type="float"  value="3.0" vmin="1.0"  vmax="2000.0" />
+	<param name="sizeZ" type="float"  value="3.0"  vmin="1.0"  vmax="2000.0" />
+	<state name="billboard_orient" value="true" />
+	<state name="two_sided_transparency" value="true" />
+	<state name="alphatest" value="true" />
+	<state name="alphafunc" value="greater" />
+	<state name="alphavalue" value="32"  vmin="0" vmax="255"/>
+	<state name="blend" value="true" />
+	<param name="snowHeightKoef" type="float"  value="-0.5"  vmin="-5"  vmax="5" />
+	<param name="snowHeight" type="float"  value="215.0"  vmin="0"  vmax="300" />
+	<param name="snowStartZ" type="float"  value="-45.0"  vmin="-300"  vmax="300" />
+	<param name="snowSpeed" type="float"  value="50.1"  vmin="10"  vmax="100" />
+	<param name="zKoef1" type="float"  value="3.5"  vmin="-5"  vmax="5" />
+	<param name="zKoef2" type="float" value="3.7"  vmin="-5"  vmax="5" />
+	<param name="xKoef" type="float"  value="4.2"  vmin="-5"  vmax="5" />
+	<param name="yKoef" type="float"  value="4.5"  vmin="-5"  vmax="5"  />
+</material>

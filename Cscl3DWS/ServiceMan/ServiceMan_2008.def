@@ -1,0 +1,11 @@
+; ComMan.def : Declares the module parameters.
+
+LIBRARY      "ServiceMan"
+DESCRIPTION  'ServiceMan Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    CreateServiceManager     @1
+	DestroyServiceManager    @2
+	CreateServiceWorldManager     @3
+	DestroyServiceWorldManager    @4

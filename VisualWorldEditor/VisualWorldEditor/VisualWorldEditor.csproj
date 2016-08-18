@@ -1,0 +1,306 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85B27CD7-2280-4981-8E8F-49B7C6637333}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisualWorldEditor</RootNamespace>
+    <AssemblyName>Vacademy Editor</AssemblyName>
+    <ApplicationIcon>vaedit.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/VisualWorldEditor/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomControls, Version=0.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\CustomControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Jayrock.Json, Version=0.9.8316.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Jayrock.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=1.0.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nini, Version=1.1.0.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutEditorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutEditorBox.Designer.cs">
+      <DependentUpon>AboutEditorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLoaderEvents.cs" />
+    <Compile Include="ClientMySQL.cs" />
+    <Compile Include="ClientMySqlLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientMySqlLogin.Designer.cs">
+      <DependentUpon>ClientMySqlLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commander.cs" />
+    <Compile Include="CommanderWorkState.cs" />
+    <Compile Include="DataReader.cs" />
+    <Compile Include="DataWriter.cs" />
+    <Compile Include="EditorCheckCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorNumVScroll.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorSettings.cs" />
+    <Compile Include="EditorTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditorTreeNode.cs" />
+    <Compile Include="FileSystem.cs" />
+    <Compile Include="GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryStorage.cs" />
+    <Compile Include="HistoryElement.cs" />
+    <Compile Include="HistoryProcessor.cs" />
+    <Compile Include="HistoryStorageEvents.cs" />
+    <Compile Include="LibraryAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryAddingForm.Designer.cs">
+      <DependentUpon>LibraryAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LodInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LodInfo.Designer.cs">
+      <DependentUpon>LodInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialFile.cs" />
+    <Compile Include="MaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialForm.Designer.cs">
+      <DependentUpon>MaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyInputBox.cs" />
+    <Compile Include="Object3D.cs" />
+    <Compile Include="Object3DEvents.cs" />
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwriteMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwriteMessage.Designer.cs">
+      <DependentUpon>OverwriteMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PipeServer.cs" />
+    <Compile Include="PipeServerEvents.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutEditorBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutEditorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientMySqlLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClientMySqlLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorTextBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditorTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryAddingForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LibraryAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LodInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LodInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwriteMessage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OverwriteMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PropGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EditorSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>EditorSettings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="EditorSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>EditorSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLoader.cs" />
+    <Compile Include="PropGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropGrid.Designer.cs">
+      <DependentUpon>PropGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropGridObject.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="ServerPath.cs" />
+    <Compile Include="Translate.cs" />
+    <Compile Include="Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\AddSegment_16x16.png" />
+    <Content Include="icons\Copy_16x16.png" />
+    <None Include="icons\Edit_16x16.png" />
+    <None Include="icons\DeleteSegment_16x16.png" />
+    <None Include="icons\RemovePoint_16x16.png" />
+    <None Include="Resources\Add_quadr_path_16x16.png" />
+    <None Include="Resources\Add_circle_path_16x16.png" />
+    <None Include="Resources\Delete_path_16x16.png" />
+    <None Include="Resources\Move_avatar_16x16.png" />
+    <None Include="Resources\Select_Segment_16x16.png" />
+    <Content Include="vaedit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

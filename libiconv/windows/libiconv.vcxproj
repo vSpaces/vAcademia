@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>libiconv</ProjectName>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\lib;..\libcharset;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_USRDLL;_WINDOWS;libiconv_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/libiconv.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/libiconv.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\include;..\lib;..\libcharset;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_USRDLL;_WINDOWS;libiconv_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/libiconv.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)iconv.dll</OutputFile>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/libiconv.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\iconv.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;libiconv_EXPORTS</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;libiconv_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="..\libcharset\lib\localcharset.c">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;libiconv_EXPORTS</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;libiconv_EXPORTS</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iconv.rc">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile Include="..\lib\libiconv-2.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile Include="..\lib\libiconv-3.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\USER\Tandy\ActiveSWF\activeswf\libiconv\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\aliases.h" />
+    <ClInclude Include="..\lib\aliases_aix.h" />
+    <ClInclude Include="..\lib\aliases_dos.h" />
+    <ClInclude Include="..\lib\aliases_extra.h" />
+    <ClInclude Include="..\lib\aliases_osf1.h" />
+    <ClInclude Include="..\lib\armscii_8.h" />
+    <ClInclude Include="..\lib\ascii.h" />
+    <ClInclude Include="..\lib\big5.h" />
+    <ClInclude Include="..\lib\big5hkscs.h" />
+    <ClInclude Include="..\lib\c99.h" />
+    <ClInclude Include="..\lib\ces_big5.h" />
+    <ClInclude Include="..\lib\ces_gbk.h" />
+    <ClInclude Include="..\lib\cjk_variants.h" />
+    <ClInclude Include="..\lib\cns11643.h" />
+    <ClInclude Include="..\lib\cns11643_1.h" />
+    <ClInclude Include="..\lib\cns11643_15.h" />
+    <ClInclude Include="..\lib\cns11643_2.h" />
+    <ClInclude Include="..\lib\cns11643_3.h" />
+    <ClInclude Include="..\lib\cns11643_4.h" />
+    <ClInclude Include="..\lib\cns11643_4a.h" />
+    <ClInclude Include="..\lib\cns11643_4b.h" />
+    <ClInclude Include="..\lib\cns11643_5.h" />
+    <ClInclude Include="..\lib\cns11643_6.h" />
+    <ClInclude Include="..\lib\cns11643_7.h" />
+    <ClInclude Include="..\lib\cns11643_inv.h" />
+    <ClInclude Include="..\lib\config.h" />
+    <ClInclude Include="..\lib\converters.h" />
+    <ClInclude Include="..\lib\cp1046.h" />
+    <ClInclude Include="..\lib\cp1124.h" />
+    <ClInclude Include="..\lib\cp1125.h" />
+    <ClInclude Include="..\lib\cp1129.h" />
+    <ClInclude Include="..\lib\cp1133.h" />
+    <ClInclude Include="..\lib\cp1161.h" />
+    <ClInclude Include="..\lib\cp1162.h" />
+    <ClInclude Include="..\lib\cp1163.h" />
+    <ClInclude Include="..\lib\cp1250.h" />
+    <ClInclude Include="..\lib\cp1251.h" />
+    <ClInclude Include="..\lib\cp1252.h" />
+    <ClInclude Include="..\lib\cp1253.h" />
+    <ClInclude Include="..\lib\cp1254.h" />
+    <ClInclude Include="..\lib\cp1255.h" />
+    <ClInclude Include="..\lib\cp1256.h" />
+    <ClInclude Include="..\lib\cp1257.h" />
+    <ClInclude Include="..\lib\cp1258.h" />
+    <ClInclude Include="..\lib\cp437.h" />
+    <ClInclude Include="..\lib\cp737.h" />
+    <ClInclude Include="..\lib\cp775.h" />
+    <ClInclude Include="..\lib\cp850.h" />
+    <ClInclude Include="..\lib\cp852.h" />
+    <ClInclude Include="..\lib\cp853.h" />
+    <ClInclude Include="..\lib\cp855.h" />
+    <ClInclude Include="..\lib\cp856.h" />
+    <ClInclude Include="..\lib\cp857.h" />
+    <ClInclude Include="..\lib\cp858.h" />
+    <ClInclude Include="..\lib\cp860.h" />
+    <ClInclude Include="..\lib\cp861.h" />
+    <ClInclude Include="..\lib\cp862.h" />
+    <ClInclude Include="..\lib\cp863.h" />
+    <ClInclude Include="..\lib\cp864.h" />
+    <ClInclude Include="..\lib\cp865.h" />
+    <ClInclude Include="..\lib\cp866.h" />
+    <ClInclude Include="..\lib\cp869.h" />
+    <ClInclude Include="..\lib\cp874.h" />
+    <ClInclude Include="..\lib\cp922.h" />
+    <ClInclude Include="..\lib\cp932.h" />
+    <ClInclude Include="..\lib\cp932ext.h" />
+    <ClInclude Include="..\lib\cp936ext.h" />
+    <ClInclude Include="..\lib\cp943.h" />
+    <ClInclude Include="..\lib\cp949.h" />
+    <ClInclude Include="..\lib\cp950.h" />
+    <ClInclude Include="..\lib\cp950ext.h" />
+    <ClInclude Include="..\lib\dec_hanyu.h" />
+    <ClInclude Include="..\lib\dec_kanji.h" />
+    <ClInclude Include="..\lib\euc_cn.h" />
+    <ClInclude Include="..\lib\euc_jisx0213.h" />
+    <ClInclude Include="..\lib\euc_jp.h" />
+    <ClInclude Include="..\lib\euc_kr.h" />
+    <ClInclude Include="..\lib\euc_tw.h" />
+    <ClInclude Include="..\lib\flags.h" />
+    <ClInclude Include="..\lib\flushwc.h" />
+    <ClInclude Include="..\lib\gb12345.h" />
+    <ClInclude Include="..\lib\gb12345ext.h" />
+    <ClInclude Include="..\lib\gb18030.h" />
+    <ClInclude Include="..\lib\gb18030ext.h" />
+    <ClInclude Include="..\lib\gb18030uni.h" />
+    <ClInclude Include="..\lib\gb2312.h" />
+    <ClInclude Include="..\lib\gbk.h" />
+    <ClInclude Include="..\lib\gbkext1.h" />
+    <ClInclude Include="..\lib\gbkext2.h" />
+    <ClInclude Include="..\lib\gbkext_inv.h" />
+    <ClInclude Include="..\lib\georgian_academy.h" />
+    <ClInclude Include="..\lib\georgian_ps.h" />
+    <ClInclude Include="..\src\gettext.h" />
+    <ClInclude Include="..\lib\hkscs.h" />
+    <ClInclude Include="..\lib\hp_roman8.h" />
+    <ClInclude Include="..\lib\hz.h" />
+    <ClInclude Include="..\include\iconv.h" />
+    <ClInclude Include="..\lib\iso2022_cn.h" />
+    <ClInclude Include="..\lib\iso2022_cnext.h" />
+    <ClInclude Include="..\lib\iso2022_jp.h" />
+    <ClInclude Include="..\lib\iso2022_jp1.h" />
+    <ClInclude Include="..\lib\iso2022_jp2.h" />
+    <ClInclude Include="..\lib\iso2022_jp3.h" />
+    <ClInclude Include="..\lib\iso2022_kr.h" />
+    <ClInclude Include="..\lib\iso646_cn.h" />
+    <ClInclude Include="..\lib\iso646_jp.h" />
+    <ClInclude Include="..\lib\iso8859_1.h" />
+    <ClInclude Include="..\lib\iso8859_10.h" />
+    <ClInclude Include="..\lib\iso8859_13.h" />
+    <ClInclude Include="..\lib\iso8859_14.h" />
+    <ClInclude Include="..\lib\iso8859_15.h" />
+    <ClInclude Include="..\lib\iso8859_16.h" />
+    <ClInclude Include="..\lib\iso8859_2.h" />
+    <ClInclude Include="..\lib\iso8859_3.h" />
+    <ClInclude Include="..\lib\iso8859_4.h" />
+    <ClInclude Include="..\lib\iso8859_5.h" />
+    <ClInclude Include="..\lib\iso8859_6.h" />
+    <ClInclude Include="..\lib\iso8859_7.h" />
+    <ClInclude Include="..\lib\iso8859_8.h" />
+    <ClInclude Include="..\lib\iso8859_9.h" />
+    <ClInclude Include="..\lib\isoir165.h" />
+    <ClInclude Include="..\lib\isoir165ext.h" />
+    <ClInclude Include="..\lib\java.h" />
+    <ClInclude Include="..\lib\jisx0201.h" />
+    <ClInclude Include="..\lib\jisx0208.h" />
+    <ClInclude Include="..\lib\jisx0212.h" />
+    <ClInclude Include="..\lib\jisx0213.h" />
+    <ClInclude Include="..\lib\johab.h" />
+    <ClInclude Include="..\lib\johab_hangul.h" />
+    <ClInclude Include="..\lib\koi8_r.h" />
+    <ClInclude Include="..\lib\koi8_ru.h" />
+    <ClInclude Include="..\lib\koi8_t.h" />
+    <ClInclude Include="..\lib\koi8_u.h" />
+    <ClInclude Include="..\lib\ksc5601.h" />
+    <ClInclude Include="..\lib\libcharset.h" />
+    <ClInclude Include="..\lib\loop_unicode.h" />
+    <ClInclude Include="..\lib\loop_wchar.h" />
+    <ClInclude Include="..\lib\loops.h" />
+    <ClInclude Include="..\lib\mac_arabic.h" />
+    <ClInclude Include="..\lib\mac_centraleurope.h" />
+    <ClInclude Include="..\lib\mac_croatian.h" />
+    <ClInclude Include="..\lib\mac_cyrillic.h" />
+    <ClInclude Include="..\lib\mac_greek.h" />
+    <ClInclude Include="..\lib\mac_hebrew.h" />
+    <ClInclude Include="..\lib\mac_iceland.h" />
+    <ClInclude Include="..\lib\mac_roman.h" />
+    <ClInclude Include="..\lib\mac_romania.h" />
+    <ClInclude Include="..\lib\mac_thai.h" />
+    <ClInclude Include="..\lib\mac_turkish.h" />
+    <ClInclude Include="..\lib\mac_ukraine.h" />
+    <ClInclude Include="..\lib\mulelao.h" />
+    <ClInclude Include="..\lib\nextstep.h" />
+    <ClInclude Include="..\lib\riscos1.h" />
+    <ClInclude Include="..\lib\shift_jisx0213.h" />
+    <ClInclude Include="..\lib\sjis.h" />
+    <ClInclude Include="..\lib\tcvn.h" />
+    <ClInclude Include="..\lib\tds565.h" />
+    <ClInclude Include="..\lib\tis620.h" />
+    <ClInclude Include="..\lib\translit.h" />
+    <ClInclude Include="..\lib\ucs2.h" />
+    <ClInclude Include="..\lib\ucs2be.h" />
+    <ClInclude Include="..\lib\ucs2internal.h" />
+    <ClInclude Include="..\lib\ucs2le.h" />
+    <ClInclude Include="..\lib\ucs2swapped.h" />
+    <ClInclude Include="..\lib\ucs4.h" />
+    <ClInclude Include="..\lib\ucs4be.h" />
+    <ClInclude Include="..\lib\ucs4internal.h" />
+    <ClInclude Include="..\lib\ucs4le.h" />
+    <ClInclude Include="..\lib\ucs4swapped.h" />
+    <ClInclude Include="..\lib\uhc_1.h" />
+    <ClInclude Include="..\lib\uhc_2.h" />
+    <ClInclude Include="..\lib\utf16.h" />
+    <ClInclude Include="..\lib\utf16be.h" />
+    <ClInclude Include="..\lib\utf16le.h" />
+    <ClInclude Include="..\lib\utf32.h" />
+    <ClInclude Include="..\lib\utf32be.h" />
+    <ClInclude Include="..\lib\utf32le.h" />
+    <ClInclude Include="..\lib\utf7.h" />
+    <ClInclude Include="..\lib\utf8.h" />
+    <ClInclude Include="..\lib\vietcomb.h" />
+    <ClInclude Include="..\lib\viscii.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\lib\Makefile.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

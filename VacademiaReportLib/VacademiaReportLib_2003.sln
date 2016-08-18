@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VacademiaReportLib", "VacademiaReportLib_2003.vcproj", "{0874E78A-7E2C-4399-9F46-8DC4473488F5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug optimized = Debug optimized
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Debug.ActiveCfg = Debug|Win32
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Debug.Build.0 = Debug|Win32
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Debug optimized.ActiveCfg = Debug|Win32
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Debug optimized.Build.0 = Debug|Win32
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Release.ActiveCfg = Release|Win32
+		{0874E78A-7E2C-4399-9F46-8DC4473488F5}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

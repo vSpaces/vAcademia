@@ -1,0 +1,1 @@
+rar a -r -x@arch_exclud cscl3dws_src

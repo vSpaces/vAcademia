@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="libmp3lame_vc10">
+</Property><Property Name="Solution File" Value="D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\libmp3lame\libmp3lame_vc10.sln">
+</Property><Property Name="Date" Value="17 декабря 2013 г.">
+</Property><Property Name="Time" Value="17:58:33">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Converting project file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\libmp3lame\libmp3lame_vc10.vcproj'.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Debug GTK|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Debug|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Release NASM|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Release|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Release NASM|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Release NASM|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="1" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Configuration 'Release NASM|x64' is missing from the project. All the file configuration settings specific to it will be ignored.">
+</Event><Event ErrorLevel="0" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Done converting to new project file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\libmp3lame\libmp3lame_vc10.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="libmp3lame_vc10" Source="libmp3lame_vc10.vcproj" Description="Converted">
+</Event></UpgradeLog>

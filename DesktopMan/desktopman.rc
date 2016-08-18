@@ -1,0 +1,527 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+MANIFEST_RESOURCE_ID    RT_MANIFEST             "res\\desktopman.dll.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_POPUP_IMAGES        BITMAP                  "res\\bitmap1.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_BACKTEXTURE         BITMAP                  "res\\backTexture.bmp"
+IDB_BITMAP_FILLER       BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP_FILLEREMPTY  BITMAP                  "res\\bmp00001.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME_MENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About WTLTrayIconWindow...", ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP MENU
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Задать регион",               ID_DEFINE_REGION
+        MENUITEM "Повторить последний захват",  ID_COPY_SELECTION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FINDER_EMPTY        ICON                    "res\\findere.ICO"
+IDR_MAINFRAME           ICON                    "res\\WTLTrayIconWindow.ico"
+IDD_CONFIRM_DIALOG      ICON                    "res\\idr_main.ico"
+IDI_FINDER_FILLED       ICON                    "res\\finderf.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIRM_DIALOG DIALOGEX 0, 0, 318, 201
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Предпросмотр"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Установить",IDOK,192,180,55,14
+    PUSHBUTTON      "Отменить",IDCANCEL,258,180,55,14
+    CONTROL         "",IDC_VIEW_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,0,0,317,169
+    CONTROL         "",IDC_SLIDER_QUALITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,72,174,103,24
+    LTEXT           "Качество:",IDC_STATIC_QUALITY,18,180,60,8
+    LTEXT           "Устройство:",IDC_STATICDEVICE,218,5,54,9,NOT WS_VISIBLE
+    LTEXT           "Разрешение:",IDC_STATIC_RESOLUTION,218,28,48,8
+    COMBOBOX        IDC_RESOLUTIONS,217,55,65,12,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DEVICELIST,217,19,95,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Вписать",IDC_RADIO_SCALE,"Button",BS_AUTORADIOBUTTON | BS_CENTER | NOT WS_VISIBLE,253,147,43,10
+    CONTROL         "Растянуть",IDC_RADIO_FIT,"Button",BS_AUTORADIOBUTTON | BS_CENTER | NOT WS_VISIBLE,191,147,57,10
+END
+
+IDD_WNDSELECTOR_DIALOG DIALOGEX 0, 0, 296, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбор приложения"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,235,8,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,235,26,50,14
+    CONTROL         114,IDC_STATIC_FINDER_TOOL,"Static",SS_BITMAP | SS_NOTIFY,111,28,21,17,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_NAME_EDIT,55,122,87,14,ES_AUTOHSCROLL | ES_READONLY | WS_DISABLED
+    LTEXT           "Название:",IDC_STATIC_TITLE,15,125,36,8
+    LTEXT           "Размер:",IDC_STATIC_SIZE,150,125,27,8
+    LTEXT           "0,0",IDC_STATIC_SIZEVALUE,182,125,43,8
+    CONTROL         "",IDC_HIDE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,87,10,8
+    LTEXT           "Нажмите на иконку с прицелом, зажав левую кнопку мыши, затем перетащите прицел на окно, которое хотите выбрать.",IDC_STATIC_CAPTION,17,11,211,18
+    LTEXT           "Спрятать окно vAcademia",IDC_STATIC_HIDECLIENT,143,87,88,8
+    PUSHBUTTON      "Выбрать",IDC_BTN_SELECT_FROM_LIST,174,62,50,14
+    GROUPBOX        "",IDC_STATIC,11,4,220,46
+    GROUPBOX        "",IDC_STATIC,11,52,220,30
+    LTEXT           "... или нажмите на кнопку для выбора окна из списка запущенных приложений",IDC_STATIC_CAPTION_SELCT,18,60,149,19
+    GROUPBOX        "",IDC_STATIC_SELECT_,11,113,220,29
+    LTEXT           "Выбранное приложение",IDC_STATIC_SELECT_APLICATION,11,108,89,8
+END
+
+IDD_BUTTONPANEL DIALOGEX 0, 0, 187, 38
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,116,7,50,16
+END
+
+IDD_CONFIRMWEBCAMDIALOG DIALOGEX 0, 0, 318, 198
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_VIEW_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,9,1,201,193
+    CONTROL         "",IDC_SLIDER_QUALITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,216,85,98,24
+    LTEXT           "Качество:",IDC_STATIC_QUALITY,219,76,57,8
+    COMBOBOX        IDC_RESOLUTIONS,216,54,65,12,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Разрешение:",IDC_STATIC_RESOLUTION,217,42,48,8
+    DEFPUSHBUTTON   "Установить",IDOK,207,179,55,14
+    PUSHBUTTON      "Отменить",IDCANCEL,260,179,55,14
+    COMBOBOX        IDC_DEVICELIST,216,18,95,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Устройство:",IDC_STATICDEVICE,216,5,54,9
+    CONTROL         "Вписать",IDC_RADIO_SCALE,"Button",BS_AUTORADIOBUTTON | BS_CENTER | NOT WS_VISIBLE,253,147,43,10
+    CONTROL         "Растянуть",IDC_RADIO_FIT,"Button",BS_AUTORADIOBUTTON | BS_CENTER | NOT WS_VISIBLE,191,147,57,10
+END
+
+IDD_PROCESS_LIST_DLG DIALOGEX 0, 0, 218, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Выбор приложения"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,24,50,14
+    CONTROL         "",IDC_TREE_PROCESSES,"SysTreeView32",WS_BORDER | WS_TABSTOP,7,28,146,118
+    LTEXT           "Выберите приложения для захвата изображения",IDC_STATIC,7,8,146,17
+END
+
+IDD_CONFIRM_TEXTURE_DIALOG DIALOGEX 0, 0, 330, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Установить",IDOK,201,189,55,14
+    PUSHBUTTON      "Отменить",IDCANCEL,267,189,55,14
+    CONTROL         "",IDC_VIEW_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,9,9,317,169
+    CONTROL         "",IDC_SLIDER_QUALITY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,95,145,103,24
+    LTEXT           "Качество:",IDC_STATIC_QUALITY,21,154,60,8
+    LTEXT           "Устройство:",IDC_STATICDEVICE,227,14,54,9,NOT WS_VISIBLE
+    LTEXT           "Разрешение:",IDC_STATIC_RESOLUTION,226,47,48,8
+    COMBOBOX        IDC_RESOLUTIONS,227,63,65,12,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DEVICELIST,227,28,95,30,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Вписать",IDC_RADIO_SCALE,"Button",BS_AUTORADIOBUTTON | BS_CENTER,69,191,43,10
+    CONTROL         "Растянуть",IDC_RADIO_FIT,"Button",BS_AUTORADIOBUTTON | BS_CENTER,7,191,57,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIRM_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 167
+    END
+
+    IDD_WNDSELECTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_BUTTONPANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 31
+    END
+
+    IDD_CONFIRMWEBCAMDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PROCESS_LIST_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_CONFIRM_TEXTURE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,3,0,1170
+ PRODUCTVERSION 0,3,0,1170
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "test1 Module"
+            VALUE "FileVersion", "0, 3, 0, 1170"
+            VALUE "InternalName", "TEST1"
+            VALUE "LegalCopyright", "Copyright 2002"
+            VALUE "OriginalFilename", "WTLTrayIconWindow.exe"
+            VALUE "ProductName", "WTLTrayIconWindow Module"
+            VALUE "ProductVersion", "0, 3, 0, 1170"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_SEARCH_WINDOW CURSOR                  "res\\searchw.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CONFIRMWEBCAMDIALOG DLGINIT
+BEGIN
+    IDC_RESOLUTIONS, 0x403, 2, 0
+0x0020, 
+    IDC_DEVICELIST, 0x403, 10, 0
+0x6674, 0x6666, 0x6666, 0x6868, 0x0068, 
+    0
+END
+
+IDD_CONFIRM_DIALOG DLGINIT
+BEGIN
+    IDC_RESOLUTIONS, 0x403, 2, 0
+0x0020, 
+    IDC_DEVICELIST, 0x403, 10, 0
+0x6674, 0x6666, 0x6666, 0x6868, 0x0068, 
+    0
+END
+
+IDD_CONFIRM_TEXTURE_DIALOG DLGINIT
+BEGIN
+    IDC_RESOLUTIONS, 0x403, 2, 0
+0x0020, 
+    IDC_DEVICELIST, 0x403, 10, 0
+0x6674, 0x6666, 0x6666, 0x6868, 0x0068, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WTLTrayIconWindow"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TEST_DISABLED        "Neiie?iaaou ecia?a?aiea auaaeaiiie iaeanoe"
+    ID_TEST_CHECKED         "This option is checked\nChecked"
+END
+
+STRINGTABLE
+BEGIN
+    ID_DEFINE_REGION        "Задать регион"
+    ID_COPY_SELECTION       "Повторить последний захват"
+END
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,11 @@
+; PathRefiner.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PathRefiner"
+DESCRIPTION  'PathRefiner Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    RefineResourcePath     @1
+    GetRefineResourcePath	@2
+    DeleteRefineResourcePathInfo     @3
+	

@@ -1,0 +1,107 @@
+import "oaidl.idl";
+import "ocidl.idl";
+import "LogEventIntr.idl";
+
+// Connect type flag - флаги позицирования
+cpp_quote( "#define LOG_CONNECT_HTTP	1")	// хттп соединение
+cpp_quote( "#define LOG_CONNECT_SOCKET	2")	// соединение при помощи сокета
+
+	[
+		object,
+		uuid(84B919A8-1608-427D-B8B0-361CDFAB9EB0),
+		helpstring("IEventHandler Interface"),
+		pointer_default(unique)
+	]
+	interface IEventHandler : IUnknown
+	{
+		[helpstring("method handleEvent")]
+		HRESULT handleEvent( [in] WORD aEvent, [in] WORD aDataSize, [in, size_is( aDataSize)] BYTE *aData);
+	};
+
+typedef enum EChannelMode
+{
+	cmInitilization, cmNormal, cmPlay, cmPause, cmResume, cmDisconnection
+} EChannelMode;
+
+	[
+		object,
+		uuid(54296378-95F1-4247-A80F-E3BE62A479BF),
+		helpstring("IEventHandler2 Interface"),
+		pointer_default(unique)
+	]
+	interface IEventHandler2 : IUnknown
+	{
+		[helpstring("method handleEvent")]
+		HRESULT handleEvent( [in] WORD aEventID, [in] WORD aObject, [in] DWORD aGlobalTime, [in] WORD aDataSize, [in, size_is( aDataSize)] BYTE *aData);
+		[helpstring("method getState")]
+		HRESULT getState([in, out] DWORD* aDataSize, [out, size_is( *aDataSize)] BYTE** aData);
+		[helpstring("method setState")]
+		HRESULT setState([in] DWORD aDataSize, [in, size_is( aDataSize)] BYTE* aData);
+		[helpstring("method setMode")]
+		HRESULT setMode( [in] EChannelMode aMode);
+	};
+
+	[
+		object,
+		uuid(A30CDFBB-C552-45EE-92A4-B942B57A6201),
+		helpstring("ILogMan Interface"),
+		pointer_default(unique)
+	]
+	interface ILogMan : IUnknown
+	{
+		[helpstring("method setEventHandler")]
+		HRESULT setEventHandler([in] BYTE aChannel, [in] IUnknown* aEventHandler);
+		[helpstring("method removeEventHandler")]
+		HRESULT removeEventHandler([in] BYTE aChannel, [in] IUnknown* aEventHandler);
+		[helpstring("method sendEvent")]
+		HRESULT sendEvent([in] BYTE aChannel, [in] WORD aEvent, [in] WORD aDataSize, [in, size_is( aDataSize)] BYTE* aData);
+	};
+
+	[
+		object,
+		uuid(F1AB59B2-49D4-461B-8589-0D70ED5451B2),
+		helpstring("ILogMan2 Interface"),
+		pointer_default(unique)
+	]
+	interface ILogMan2 : IUnknown
+	{
+		[helpstring("method setEventHandler2")]
+		HRESULT setEventHandler2([in] BYTE aChannel, [in] IUnknown* aEventHandler);
+		[helpstring("method removeEventHandler2")]
+		HRESULT removeEventHandler2([in] BYTE aChannel, [in] IUnknown* aEventHandler);
+		[helpstring("method sendEvent2")]
+		HRESULT sendEvent2([in] BYTE aChannel, [in] WORD aObject, [in] WORD aDataSize, [in, size_is( aDataSize)] BYTE* aData);
+		[helpstring("method registerObject")]
+		HRESULT registerObject([in] BYTE aChannel, [in] BSTR aObjStringID, [out] WORD* aObject);
+		[helpstring("method findObject")]
+		HRESULT findObject([in] BYTE aChannel, [in] WORD aObject, [out] BSTR* aObjStringID);
+
+		[helpstring("method setNormalMode")]
+		HRESULT setNormalMode( [in] BYTE aChannelNumber, [in, size_is( aChannelNumber)] BYTE* aChannels);
+		[helpstring("method setPlayMode")]
+		HRESULT setPlayMode( [in] BYTE aChannelNumber, [in, size_is( aChannelNumber)] BYTE* aChannels, [in] DWORD aEventID);
+		[helpstring("method pause")]
+		HRESULT pause( [in] BYTE aChannelNumber, [in, size_is( aChannelNumber)] BYTE* aChannels);
+		[helpstring("method resume")]
+		HRESULT resume( [in] BYTE aChannelNumber, [in, size_is( aChannelNumber)] BYTE* aChannels);
+		[helpstring("method setPlayMode2")] HRESULT setPlayMode2([in] BYTE aChannelNumber, [in, size_is( aChannelNumber)] BYTE* aChannels, [in] DWORD aBeginEventID, [in] DWORD aEndEventID);
+		[helpstring("method startRecording")] HRESULT startRecording();
+		[helpstring("method stopRecording")] HRESULT stopRecording();
+		[helpstring("method saveRecording")] HRESULT saveRecording([in] BSTR aName, [in] BSTR aChannels);
+
+		[helpstring("method startManager")] HRESULT startManager();
+		[helpstring("method stopManager")] HRESULT stopManager();
+		[helpstring("method setCommunicationManager")] HRESULT setCommunicationManager([in] IUnknown* aComMan);
+
+		[helpstring("method setPlayMode3")] HRESULT setPlayMode3([in] long aRecID);
+		[helpstring("method saveRecording3")] HRESULT saveRecording3([in] BSTR aName, [in] BYTE aChannel, [out] long* aRecID);
+
+		[helpstring("method sendStateChanges")]
+		HRESULT sendStateChanges([in] WORD aDataSize, [in, size_is( aDataSize)] BYTE* aData);
+		// устанавливаем тип соеденинения 1-HTTP, 2-Socket;
+		[helpstring("method setConnectType")] HRESULT setConnectType([in] int iType);
+		// возвращает тип соеденинения 1-HTTP, 2-Socket;
+		[helpstring("method getConnectType")] HRESULT getConnectType([out] int* aiType);
+		// возвращает текущий процент восстановления лога
+		[helpstring("method getLogRestoreProgress")] HRESULT getLogRestoreProgress([out] double* adblProgress);
+	};

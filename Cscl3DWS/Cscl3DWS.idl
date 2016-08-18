@@ -1,0 +1,129 @@
+// Cscl3DWS.idl : IDL source for Cscl3DWS.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Cscl3DWS.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+//#include "olectl.h"
+
+import "LogManIntr.idl";	
+//import "ComManIntr.idl";	
+//import "SoundManIntr.idl";
+	
+cpp_quote( "#define WM_C3DWSRENDERSCENE WM_APP+0x1")    // отрендерить сцену
+
+	[
+		object,
+		uuid(8C394D19-7F88-4FF6-9E0C-9CDB5A95F470),
+		dual,
+		helpstring("IWS3D Interface"),
+		pointer_default(unique)
+	]
+	interface IWS3D : IDispatch
+	{
+		[propget, id(1), helpstring("property DefWidth")] HRESULT DefWidth([out, retval] short *pVal);
+		[propput, id(1), helpstring("property DefWidth")] HRESULT DefWidth([in] short newVal);
+		[propget, id(2), helpstring("property DefHeight")] HRESULT DefHeight([out, retval] short *pVal);
+		[propput, id(2), helpstring("property DefHeight")] HRESULT DefHeight([in] short newVal);
+		[id(3), helpstring("method ExecScript")] HRESULT ExecScript([in] BSTR sScript, [in, optional] VARIANT abImmediately);
+		[id(4), helpstring("method setLogManager")] HRESULT setLogManager([in] IUnknown *aLogMan);
+		//[id(5), helpstring("method setSoundManager")] HRESULT setSoundManager( IUnknown *aSoundMan);
+		[id(6), helpstring("method CallLogEvent")] HRESULT CallLogEvent(UINT evID, BSTR uName, BSTR sData);
+		[id(7), helpstring("method loadScene")] HRESULT loadScene(BSTR sSrc);
+		[id(8), helpstring("method Microphone")] HRESULT Microphone(BOOL bOn,	BSTR uName);
+		[id(9), helpstring("method SetAvatarID")] HRESULT SetAvatarID(UINT aid);
+		[id(10), helpstring("method initResManager")] HRESULT initResManager();
+		[id(11), helpstring("method getAuthoring")] HRESULT getAuthoring([out] IUnknown **IAuthoring);
+		[id(12), helpstring("method setAvatarName")] HRESULT setAvatarName([in] BSTR sName);
+		[id(13), helpstring("method loadUI")] HRESULT loadUI(BSTR sSrc);
+		[id(14), helpstring("method initialize")] HRESULT initialize(HWND wnd);
+		[propget, id(15), helpstring("property moduleBase")] HRESULT moduleBase([out, retval] BSTR *pVal);
+		[propput, id(15), helpstring("property moduleBase")] HRESULT moduleBase([in] BSTR newVal);
+		[propget, id(16), helpstring("property userBase")] HRESULT userBase([out, retval] BSTR *pVal);
+		[propput, id(16), helpstring("property userBase")] HRESULT userBase([in] BSTR newVal);
+		[propget, id(17), helpstring("property UIBase")] HRESULT UIBase([out, retval] BSTR *pVal);
+		[propput, id(17), helpstring("property UIBase")] HRESULT UIBase([in] BSTR newVal);
+		[propget, id(18), helpstring("property UISkinBase")] HRESULT UISkinBase([out, retval] BSTR *pVal);
+		[propput, id(18), helpstring("property UISkinBase")] HRESULT UISkinBase([in] BSTR newVal);
+		[id(19), helpstring("method saveScene")] HRESULT saveScene(BSTR sFilePath);
+		[id(20), helpstring("method getSysCommand")] HRESULT getSysCommand(BSTR* psCmd);
+		[id(21), helpstring("method loadSceneN")] HRESULT loadSceneN([in]UINT sceneNum);
+		[id(22), helpstring("method Resize")] HRESULT Resize([in] short aiWidth, [in] short aiHeight);
+		[id(23), helpstring("method setEditor")] HRESULT setEditor([in] IUnknown *IEditor);
+		[id(24), helpstring("method loadModule")] HRESULT loadModule(BSTR sModuleID, BSTR sScene);
+		[id(25), helpstring("method SaveSnapshot")] HRESULT SaveSnapshot(BSTR fileName, BSTR text);
+		[id(26), helpstring("method SetScreenMode")] HRESULT SetScreenMode(DWORD adwWidth, DWORD adwHeight, DWORD adwBPP, BOOL abFullscreen);
+		[id(27), helpstring("method Update")] HRESULT Update(DWORD adwTime);
+		[propget, id(28), helpstring("property RegKey")] HRESULT RegKey([out, retval] BSTR *pVal);
+		[propput, id(28), helpstring("property RegKey")] HRESULT RegKey([in] BSTR newVal);
+		[id(29), helpstring("method SetArguments")] HRESULT SetArguments([in]BSTR* appArgs);
+		[id(30), helpstring("method OnKeyDown")] HRESULT OnKeyDown(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(31), helpstring("method OnKeyUp")] HRESULT OnKeyUp(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(32), helpstring("method OnLButtonDown")] HRESULT OnLButtonDown(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(33), helpstring("method OnLButtonUp")] HRESULT OnLButtonUp(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(34), helpstring("method OnMouseMove")] HRESULT OnMouseMove(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(35), helpstring("method OnRButtonDown")] HRESULT OnRButtonDown(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(36), helpstring("method OnRButtonUp")] HRESULT OnRButtonUp(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(37), helpstring("method OnMouseWheel")] HRESULT OnMouseWheel(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(38), helpstring("method OnSetCursor")] HRESULT OnSetCursor(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(39), helpstring("method PrepareForDestroy")] HRESULT PrepareForDestroy();
+		[id(40), helpstring("method OnCopyData")] HRESULT OnCopyData(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(41), helpstring("method getSettingValue")] HRESULT getSettingValue([in] BSTR sName, [out, retval] BSTR* psVal);
+		[id(42), helpstring("method setSettingValue")] HRESULT setSettingValue([in] BSTR sName, [in] BSTR psVal);
+		[id(43), helpstring("method put_PathIni")] HRESULT put_PathIni([in] BSTR newVal);
+		[id(44), helpstring("method setLocationUrl")] HRESULT setLocationUrl([in] BSTR sUrl);
+		[id(45), helpstring("method GetCSForWindow")] HRESULT GetCSForWindow([in] HWND ahWnd, [out, retval] IUnknown** apCS);
+		[id(46), helpstring("method SetLogAndTracerMode")] HRESULT SetLogAndTracerMode([in] BOOL bUseLog, [in] BOOL bUseTracer);
+		[id(47), helpstring("method OnMButtonDown")] HRESULT OnMButtonDown(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(48), helpstring("method OnMButtonUp")] HRESULT OnMButtonUp(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL* bHandled);
+		[id(49), helpstring("method setConnectType")] HRESULT setConnectType([in] int aType);
+		[id(50), helpstring("method putLocalBase")] HRESULT putLocalBase([in] BSTR aVal);
+		[id(51), helpstring("method putRepositoryBase")] HRESULT putRepositoryBase([in] BSTR aVal);
+		[id(52), helpstring("method setProxy")] HRESULT setProxy([in] BYTE aProxyUsing, [in] BSTR aProxy, [in] BSTR aProxyUser, [in] BSTR aProxyPassword);
+		
+
+	};
+
+[
+	uuid(0DD9BDA8-65C4-473C-8C56-954BF3774A7A),
+	version(1.0),
+	helpstring("Cscl3DWS 1.0 Type Library")
+]
+library CSCL3DWSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E56FB9E2-516B-4AB9-8F88-21004D5A648C),
+		helpstring("_IWS3DEvents Interface")
+	]
+	dispinterface _IWS3DEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("method OnLoaded")] HRESULT OnLoaded();
+		[id(2), helpstring("method OnLogEvent")] HRESULT OnLogEvent(BSTR name, VARIANT aEventID, VARIANT type, BSTR data);
+		[id(3), helpstring("method OnSceneLoaded")] HRESULT OnSceneLoaded();
+		[id(4), helpstring("method OnCommand")] HRESULT OnCommand(BSTR cmd,BSTR par);
+		[id(5), helpstring("method OnInitialized")] HRESULT OnInitialized();
+		[id(6), helpstring("method OnExecSysCommand")] HRESULT OnExecSysCommand();
+		[id(7), helpstring("method OnMinimize")] HRESULT OnMinimize();
+		[id(8), helpstring("method OnExit")] HRESULT OnExit();
+		[id(9), helpstring("method OnRepainted")] HRESULT OnRepainted();
+		[id(10), helpstring("method OnLogInitialized")] HRESULT OnLogInitialized();
+	};
+
+	[
+		uuid(F61784B8-B188-4491-9B0A-EA1434EB041B),
+		helpstring("WS3D Class")
+	]
+	coclass WS3D
+	{
+		[default] interface IWS3D;
+		[default, source] dispinterface _IWS3DEvents;
+		interface IEventHandler;
+	};
+};

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<window>
+  <!-- Define all bitmaps used in skin -->
+  <bitmaps>
+    <bitmap name="buttons" src="toolbar.bmp"/>
+    <bitmap name="mainmenu" src="mainmenu.bmp"/>
+  </bitmaps>
+  <!-- Define all form`s elements to be skinned -->
+  <skin>
+    <level valign="Top">
+      <element align="Left" srcRect="0,0,12,68"    bitmap="mainmenu"  />
+      <element align="Right" srcRect="51,0,10,68"    bitmap="mainmenu"  />
+      <element align="Justify" srcRect="10,0,42,68" bitmapTile="true"   bitmap="mainmenu"  />
+    </level>
+  </skin>
+  <controls>
+      <control name="btnCut"   srcRect="0,0,120,30" bitmap="buttons"/>
+      <control name="btnCopy"  srcRect="0,30,120,30" bitmap="buttons"/>
+      <control name="btnPaste" srcRect="0,60,120,30" bitmap="buttons"/>
+      <control name="btnDelete" srcRect="0,90,120,30" bitmap="buttons"/>
+      <control name="btnUndo" srcRect="0,120,120,30" bitmap="buttons"/>
+      <control name="btnRedo" srcRect="0,150,120,30" bitmap="buttons"/>
+  </controls>
+  <properties>
+    <property name="btnCut.BorderStyle" value="None"/>
+    <property name="btnCopy.BorderStyle" value="None"/>
+    <property name="btnPaste.BorderStyle" value="None"/>
+    <property name="btnDelete.BorderStyle" value="None"/>
+    <property name="btnUndo.BorderStyle" value="None"/>
+    <property name="btnRedo.BorderStyle" value="None"/>
+  </properties>
+</window>

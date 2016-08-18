@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<window>
+  <!-- Base dialog form -->
+  <include file="mainform.xml"/>
+  <!-- Define all bitmaps used in skin -->
+  <bitmaps>
+    <bitmap name="formbuttons" src="formbuttons.bmp"/>
+  </bitmaps>
+  <controls>
+      <control name="StatusPanel">
+	<window>
+	  <!-- Define all bitmaps used in skin -->
+	  <bitmaps>
+	    <bitmap name="bmain" src="toolbar_text.bmp"/>
+	  </bitmaps>
+	  <!-- Define all form`s elements to be skinned -->
+	  <skin>
+	    <level valign="Top">
+	      <element align="Left" srcRect="0,240,9,48"    bitmap="bmain"  />
+	      <element align="Right" srcRect="112,240,8,48"  bitmap="bmain" />
+	      <element align="Justify"  srcRect="9,240,103,48"  bitmap="bmain" />
+	    </level>
+	  </skin>
+	</window>
+      </control>
+      <control name="ContentPanel.button1" srcRect="0,22,260,22" bitmap="formbuttons"/>
+      <control name="ContentPanel.button2" srcRect="0,0,260,22" bitmap="formbuttons"/>
+      <control name="panel5.button3" srcRect="96,45,72,18" bitmap="formbuttons"/>
+      <control name="ContentPanel.linePanel.btnLineStyleExists" srcRect="170,45,64,16" bitmap="formbuttons"/>
+      <control name="ContentPanel.fillPanel.btnFillStyleExists" srcRect="170,45,64,16" bitmap="formbuttons"/>
+      <control name="ContentPanel.linePanel" file="bigpanel.xml"/>
+      <control name="ContentPanel.fillPanel" file="bigpanel.xml"/>
+  </controls>
+  <!--<properties>
+    <property name="ContentPanel.linePanel.label14.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.linePanel.label9.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.linePanel.label8.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.linePanel.label5.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.label15.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.solidRadio.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.gradientRadio.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.bitmapRadio.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.bitmapPanel.label12.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.bitmapPanel.label11.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.bitmapPanel.label13.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.gradientPanel.label6.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.gradientPanel.label7.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.gradientPanel.radioLinear.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.gradientPanel.radioRadial.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.solidPanel.label10.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.fillPanel.solidPanel.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.gradientPanel.BackColor" value="#CAC8F0"/>
+    <property name="ContentPanel.bitmapPanel.BackColor" value="#CAC8F0"/>
+    <property name="label1.BackColor" value="#E7E6FD"/>
+    <property name="label1.ForeColor" value="#000000"/>
+    <property name="textboxName.BackColor" value="#E7E6FD"/>
+  </properties>-->
+</window>

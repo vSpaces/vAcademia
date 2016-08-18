@@ -1,0 +1,19 @@
+
+	// Cal3d_max_exporter.idl : IDL source for Cal3d_max_exporter.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (Cal3d_max_exporter.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(0C414FCF-C084-4955-9B8C-90A269669310),
+	version(1.0),
+	helpstring("Cal3d_max_exporter 1.0 Type Library")
+]
+library Cal3d_max_exporterLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

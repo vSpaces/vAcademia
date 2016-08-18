@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoipManAudioCapture_2008", "AudioCapture_2008.vcproj", "{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug optimized|Win32 = Debug optimized|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug optimized|Win32.ActiveCfg = Debug optimized|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug optimized|Win32.Build.0 = Debug optimized|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug|Win32.Build.0 = Debug|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Release|Win32.ActiveCfg = Release|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

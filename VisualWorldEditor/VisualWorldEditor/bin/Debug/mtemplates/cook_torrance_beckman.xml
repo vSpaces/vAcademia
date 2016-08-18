@@ -1,0 +1,11 @@
+<material>
+	<shader>shaders/cook_torrance_beckman</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%light_position" />
+	<param name="lightPower" type="float" value="1" vmin="0" vmax="3" />
+	<param name="specularIntensivity" type="float" value="0.9" vmin="0" vmax="1" />
+	<param name="roughnessValue" type="float" value="0.3" vmin="0" vmax="2" />
+	<param name="refAtNormIncidence" type="float" value="0.9" vmin="0" vmax="2" />
+</material>

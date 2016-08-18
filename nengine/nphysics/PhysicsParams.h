@@ -1,0 +1,22 @@
+
+#pragma once
+
+#define MAX_CONTACT_COUNT	4
+#define PHYSICS_GRAVITY		-450.0f
+
+#define AVATAR_MAX_DELTA_Z	35.0f
+#define AVATAR_RETURN_PATH	35.0f
+#define MIN_RAYTRACE_Z		-200.0f
+#define AVATAR_HALF_HEIGHT	100.0f
+
+#define RAY_LENGTH			2000.0f
+#define RAY_MAX_Z			(RAY_LENGTH + MIN_RAYTRACE_Z)
+
+#define UNREAL_DELTA		4000.0f
+
+#define MIN_UNREAL_Z		-500.0f
+#define MAX_UNREAL_Z		3000.0f
+
+#define MIN_Z				100.0f
+
+#define MAX_SKIPPED_TIME	5000

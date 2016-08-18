@@ -1,0 +1,69 @@
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\VisualWorldEditor.exe.config
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\VisualWorldEditor.exe
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\VisualWorldEditor.pdb
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\CustomControls.dll
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Jayrock.Json.dll
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\MySql.Data.dll
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Nini.dll
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\ResolveAssemblyReference.cache
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.AboutEditorBox.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.ClientMySqlLogin.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.EditorTextBox.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LibraryAddingForm.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LodInfo.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.mainForm.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.MaterialForm.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Options.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.OverwriteMessage.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Properties.Resources.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.PropGrid.resources
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.csproj.GenerateResource.Cache
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.exe
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.pdb
+C:\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.GroupForm.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.exe.config
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.exe
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.pdb
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\CustomControls.dll
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Jayrock.Json.dll
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\MySql.Data.dll
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Nini.dll
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\ResolveAssemblyReference.cache
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.AboutEditorBox.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.ClientMySqlLogin.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.EditorTextBox.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.GroupForm.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LibraryAddingForm.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LodInfo.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.mainForm.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.MaterialForm.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Options.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.OverwriteMessage.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Properties.Resources.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.PropGrid.resources
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.csproj.GenerateResource.Cache
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\Vacademy Editor.exe
+C:\release_Q3\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\Vacademy Editor.pdb
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.exe.config
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.exe
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Vacademy Editor.pdb
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\CustomControls.dll
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Jayrock.Json.dll
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\MySql.Data.dll
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\bin\Debug\Nini.dll
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\ResolveAssemblyReference.cache
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.AboutEditorBox.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.ClientMySqlLogin.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.EditorTextBox.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.GroupForm.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LibraryAddingForm.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.LodInfo.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.mainForm.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.MaterialForm.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Options.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.OverwriteMessage.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.Properties.Resources.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.PropGrid.resources
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\VisualWorldEditor.csproj.GenerateResource.Cache
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\Vacademy Editor.exe
+D:\vacademia\vuEngine\VisualWorldEditor\VisualWorldEditor\obj\Debug\Vacademy Editor.pdb

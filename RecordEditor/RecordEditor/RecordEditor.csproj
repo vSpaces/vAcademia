@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1749D948-2295-4274-8404-D6387981E397}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RecordEditor</RootNamespace>
+    <AssemblyName>RecordEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <PublishUrl>http://localhost/RecordEditor/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\RecordEditor\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\RecordEditor\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command.cs" />
+    <Compile Include="DataBuffer.cs" />
+    <Compile Include="DataReader.cs" />
+    <Compile Include="DataWriter.cs" />
+    <Compile Include="Logic\Context.cs" />
+    <Compile Include="Logic\PlayerSession.cs" />
+    <Compile Include="Logic\PlayMode.cs" />
+    <Compile Include="Logic\RecordController.cs" />
+    <Compile Include="Logic\RecordControllerEventArgs.cs" />
+    <Compile Include="Logic\RecordControllerEventHandler.cs" />
+    <Compile Include="Logic\RecordDocument.cs" />
+    <Compile Include="Logic\RError.cs" />
+    <Compile Include="Logic\MessageHandler.cs">
+    </Compile>
+    <Compile Include="OpenRecordList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenRecordList.Designer.cs">
+      <DependentUpon>OpenRecordList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordDescription.cs" />
+    <Compile Include="RecordEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordEditor.Designer.cs">
+      <DependentUpon>RecordEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PipeConnector.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="OpenRecordList.resx">
+      <DependentUpon>OpenRecordList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordEditor.resx">
+      <DependentUpon>RecordEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\AFXBaseDialog.resx">
+      <DependentUpon>AFXBaseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\BaseDialog.resx">
+      <DependentUpon>BaseDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\MainMenuPanel.resx">
+      <DependentUpon>MainMenuPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\MainToolBar.resx">
+      <DependentUpon>MainToolBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\AFXTextEdit.resx">
+      <DependentUpon>AFXTextEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\Controls\ToggleButton.resx">
+      <DependentUpon>ToggleButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\ResBorderForm.resx">
+      <DependentUpon>ResBorderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\ResizableButton.resx">
+      <DependentUpon>ResizableButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\seButton.resx">
+      <DependentUpon>seButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\sePanel.resx">
+      <DependentUpon>sePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\seRadioButton.resx">
+      <DependentUpon>seRadioButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\skinctrls.resx">
+      <DependentUpon>skinctrls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\SkinEdit.resx">
+      <DependentUpon>SkinEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\SkinnedForm.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\SkinNumeric.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skin\SkinBase\slider.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainToolbar.resx">
+      <DependentUpon>MainToolbar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TimeLine.resx">
+      <DependentUpon>TimeLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SkinConsts.cs" />
+    <Compile Include="Skin\SkinBase\AFXBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skin\BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skin\BitmapLibrary.cs" />
+    <Compile Include="Skin\MainMenuPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\MainToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\Platform.cs" />
+    <Compile Include="Skin\Settings.cs" />
+    <Compile Include="Skin\SkinBase\AFXTextEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\ColorScheme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\ComboBoxResizable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\ComboBoxSkinned.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\FlatPopupMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\MenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\ToggleButtonStyles.cs" />
+    <Compile Include="Skin\SkinBase\ResBorderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\ResizableButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\ResizableSkinController.cs" />
+    <Compile Include="Skin\SkinBase\seButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\sePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\seRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\skin.cs" />
+    <Compile Include="Skin\SkinBase\SkinBitmap.cs" />
+    <Compile Include="Skin\SkinBase\skinctrls.cs">
+    </Compile>
+    <Compile Include="Skin\SkinBase\SkinEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\SkinElement.cs" />
+    <Compile Include="Skin\SkinBase\SkinLevel.cs" />
+    <Compile Include="Skin\SkinBase\SkinnedForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\SkinNumeric.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\SkinSettings.cs" />
+    <Compile Include="Skin\SkinBase\slider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\SkinBase\Controls\ToggleResizableButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Skin\version.cs" />
+    <Compile Include="TimeLine.cs" />
+    <Compile Include="UI\MainToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\MainToolbar.Designer.cs">
+      <DependentUpon>MainToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TimeInterval.cs" />
+    <Compile Include="UI\TimeLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\TimeLine.Designer.cs">
+      <DependentUpon>TimeLine.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

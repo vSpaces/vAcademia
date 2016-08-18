@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdump", "mdump_2008.vcproj", "{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mdump_test", "..\mdump_test\mdump_test.vcproj", "{9E61ABA2-D77B-4F58-8D59-CF00D522466D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D} = {781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug optimized|Win32 = Debug optimized|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Debug optimized|Win32.ActiveCfg = Debug optimized|Win32
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Debug optimized|Win32.Build.0 = Debug optimized|Win32
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Debug|Win32.Build.0 = Debug|Win32
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Release|Win32.ActiveCfg = Release|Win32
+		{781B20F3-F4B2-4DF6-8B2B-4CCAE1A8437D}.Release|Win32.Build.0 = Release|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Debug optimized|Win32.ActiveCfg = Debug|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Debug optimized|Win32.Build.0 = Debug|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Debug|Win32.Build.0 = Debug|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Release|Win32.ActiveCfg = Release|Win32
+		{9E61ABA2-D77B-4F58-8D59-CF00D522466D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

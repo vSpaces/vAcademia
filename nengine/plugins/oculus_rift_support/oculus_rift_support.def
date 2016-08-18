@@ -1,0 +1,8 @@
+; chem3drnd.def : Declares the module parameters for the DLL.
+
+LIBRARY      "oculus_rift_support"
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateOculusRiftObject			@1
+

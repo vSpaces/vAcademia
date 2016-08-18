@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>nrendertarget</ProjectName>
+    <ProjectGuid>{528A1A5E-ADBF-4D7A-B056-D233AFC29F7C}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../plugins/oculus_rift_support/;../nengine/;../ncommon/;../nmath/;../nphysics/;../include/ode/;../include/;../nmodelloader/;../ninfo/;../interfaces/;../../;../nanimation/;../ntexture/;../../LogWriter;../../nmemoryprofiler/;../plugins/kinect_plugin/kinect_plugin/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;USE_3D_ANIMATION;USE_PHYSICS;USE_GEOMETRY_OPTIMIZATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/$(Configuration)/$(ProjectName).lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../plugins/oculus_rift_support/;../nengine/;../ncommon/;../nmath/;../nphysics/;../include/ode/;../include/;../nmodelloader/;../ninfo/;../interfaces/;../../;../nanimation/;../ntexture/;../../LogWriter;..\..\nmemoryprofiler\;../plugins/kinect_plugin/kinect_plugin/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;USE_3D_ANIMATION;USE_PHYSICS;USE_GEOMETRY_OPTIMIZATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Lib>
+      <OutputFile>../../lib/$(Configuration)/$(ProjectName).lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CircleTool.cpp" />
+    <ClCompile Include="ClearScreenTool.cpp" />
+    <ClCompile Include="CommonToolRoutines.cpp" />
+    <ClCompile Include="CopyBlockTool.cpp" />
+    <ClCompile Include="EraserTool.cpp" />
+    <ClCompile Include="Filter.cpp" />
+    <ClCompile Include="FilterPalette.cpp" />
+    <ClCompile Include="FilterSequence.cpp" />
+    <ClCompile Include="FilterSequencePalette.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="LineTool.cpp" />
+    <ClCompile Include="PBuffer.cpp" />
+    <ClCompile Include="PenTool.cpp" />
+    <ClCompile Include="RectangleCommonRoutines.cpp" />
+    <ClCompile Include="RectangleTool.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="ResizeableBuffer.cpp" />
+    <ClCompile Include="SimpleDrawingTarget.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Synch.cpp" />
+    <ClCompile Include="SynchBuffer.cpp" />
+    <ClCompile Include="TextTool.cpp" />
+    <ClCompile Include="ToolPalette.cpp" />
+    <ClCompile Include="ToolsParameters.cpp" />
+    <ClCompile Include="UndoTool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CircleTool.h" />
+    <ClInclude Include="ClearScreenTool.h" />
+    <ClInclude Include="CommonToolRoutines.h" />
+    <ClInclude Include="CopyBlockTool.h" />
+    <ClInclude Include="EraserTool.h" />
+    <ClInclude Include="Filter.h" />
+    <ClInclude Include="FilterPalette.h" />
+    <ClInclude Include="FilterSequence.h" />
+    <ClInclude Include="FilterSequencePalette.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="GlobalParams.h" />
+    <ClInclude Include="GlobalVars.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="IDrawingTarget.h" />
+    <ClInclude Include="ISynch.h" />
+    <ClInclude Include="ISynchPlayer.h" />
+    <ClInclude Include="ITool.h" />
+    <ClInclude Include="LineTool.h" />
+    <ClInclude Include="PBuffer.h" />
+    <ClInclude Include="PenTool.h" />
+    <ClInclude Include="RectangleCommonRoutines.h" />
+    <ClInclude Include="RectangleTool.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="ResizeableBuffer.h" />
+    <ClInclude Include="SimpleDrawingTarget.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Synch.h" />
+    <ClInclude Include="SynchBuffer.h" />
+    <ClInclude Include="TextTool.h" />
+    <ClInclude Include="ToolPalette.h" />
+    <ClInclude Include="ToolsParameters.h" />
+    <ClInclude Include="UndoTool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<list>
+	<template src="phong_diffuse.xml">Стандартное диффузное освещение (Фонг)</template>
+	<template src="phong_no_shadows.xml">Стандартное освещение без теней</template>
+	<template src="foliage_wind.xml">Растительность с ветром</template>
+	<template src="trava.xml">Трава</template>
+	<template src="trava_with_fade.xml">Трава c прозрачностью от расстояния</template>
+	<template src="trava_special.xml">Трава особая</template>
+	<template src="trava_without_wind.xml">Трава без ветра</template>
+	<template src="oldstyle_example_bump_diffuse_normal.xml">Бамп</template>
+	<template src="oldstyle_example_bump_diffuse_normal_alpha.xml">Бамп с прозрачностью</template>
+	<template src="oldstyle_example_bump_diffuse_normal_specular.xml">Бамп с блеском</template>
+	<template src="bump_no_shadows.xml">Бамп без теней</template>
+	<template src="bump_specular_no_shadows.xml">Бамп без теней с блеском</template>
+	<template src="metall.xml">Металл</template>
+	<template src="plastic.xml">Пластик</template>
+	<template src="cook_torrance_beckman.xml">Освещение Кука-Торренса (по Бекману)</template>
+	<template src="glass.xml">Стекло с блеском</template>
+	<template src="glass_reflectance.xml">Стекло с отражением неба</template>
+	<template src="anisotropy.xml">Для параллельных полу</template>
+	<template src="bump.xml">Микрорельеф для параллельных полу</template>
+	<template src="parallax.xml">Параллакс</template>
+	<template src="ekran.xml">Экран</template>
+	<template src="ekran_lighting.xml">Экран светлый</template>
+	<template src="phong_detail_no_shadows.xml">С текстурой детализации без теней</template>
+	<template src="windows.xml">Отражения на окна</template>
+	<template src="fire.xml">Костер №1</template>
+	<template src="fire2.xml">Костер №2</template>
+	<template src="fire3.xml">Костер №3</template>
+	<template src="fire4.xml">Костер №4</template>
+	<template src="boom.xml">Взрыв №1</template>
+	<template src="boom2.xml">Взрыв №2</template>
+	<template src="boom3.xml">Взрыв №3</template>
+	<template src="boom4.xml">Взрыв №4</template>
+	<template src="falling_water.xml">Падающая вода</template>
+	<template src="bubbles.xml">Пузырики</template>
+	<template src="water.xml">Вода</template>
+</list>

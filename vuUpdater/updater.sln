@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "updater", "updater.vcproj", "{0340100F-CCDB-4440-97D9-9485967DF46E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComMan", "..\ComMan\ComMan.vcproj", "{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug MT = Debug MT
+		DebugVU2007 = DebugVU2007
+		Natura3D_Release = Natura3D_Release
+		Natura3D_Release_VU2007 = Natura3D_Release_VU2007
+		Release = Release
+		Release MinDependency = Release MinDependency
+		Semi_Release = Semi_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Debug.ActiveCfg = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Debug.Build.0 = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Debug MT.ActiveCfg = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Debug MT.Build.0 = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.DebugVU2007.ActiveCfg = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.DebugVU2007.Build.0 = Debug|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Natura3D_Release.ActiveCfg = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Natura3D_Release.Build.0 = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Natura3D_Release_VU2007.ActiveCfg = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Natura3D_Release_VU2007.Build.0 = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Release.ActiveCfg = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Release.Build.0 = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Release MinDependency.ActiveCfg = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Release MinDependency.Build.0 = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Semi_Release.ActiveCfg = Release|Win32
+		{0340100F-CCDB-4440-97D9-9485967DF46E}.Semi_Release.Build.0 = Release|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Debug.ActiveCfg = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Debug MT.ActiveCfg = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Debug MT.Build.0 = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.DebugVU2007.ActiveCfg = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.DebugVU2007.Build.0 = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Natura3D_Release.ActiveCfg = N3DRelease|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Natura3D_Release.Build.0 = N3DRelease|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Natura3D_Release_VU2007.ActiveCfg = N3DRelease|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Natura3D_Release_VU2007.Build.0 = N3DRelease|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Release.ActiveCfg = Debug|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Release MinDependency.ActiveCfg = Release MinDependency|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Release MinDependency.Build.0 = Release MinDependency|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Semi_Release.ActiveCfg = N3DRelease|Win32
+		{E1158A8E-876B-4E47-ADA1-DBF45ADA3669}.Semi_Release.Build.0 = N3DRelease|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

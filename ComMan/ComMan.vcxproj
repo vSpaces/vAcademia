@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="N3DRelease|Win32">
+      <Configuration>N3DRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>ComMan</ProjectName>
+    <ProjectGuid>{3060942A-845A-42A0-895C-97524F11B16A}</ProjectGuid>
+    <RootNamespace>ComMan</RootNamespace>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>AtlProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\ResMan\Protocol;..\Common;.\md5;.\ComMan;..\UnZip\lib;..\libxml2\include;..\Cscl3DWS\oms;..\Cscl3DWS\res;..\nengine\nmath\;..\nengine\interfaces\;..\nengine\ncommon\;..\Cscl3DWS\rmml;..\Cscl3DWS\;..\LogWriter\;..\bigFileMan\;..\Cscl3DWS\InfoMan;..\rtl;..\DesktopMan\include;..\nmemoryprofiler;..\Cscl3DWS\rm;..\Cscl3DWS\RenderManager\Classes;..\nengine\nengine;..\nengine\include;..\mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;COMMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MTd /MDd %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>CrashHandler.lib;mdump.lib;libcurl.lib;odbc32.lib;odbccp32.lib;wininet.lib;Winmm.lib;ws2_32.lib;unzip32d.lib;libxml2.lib;zlib32.lib;logwriter.lib;bigfileman.lib;rtl.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>curl\;..\UnZip\lib\;..\common\lib;..\libxml2\win32\bin.msvc\;../lib/$(Configuration);..\nengine\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\ComMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Common;..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/ComMan.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\ResMan\Protocol;..\Common;.\md5;.\ComMan;..\UnZip\lib;..\libxml2\include;..\Cscl3DWS\oms;..\Cscl3DWS\res;..\nengine\nmath\;..\nengine\interfaces\;..\nengine\ncommon\;..\Cscl3DWS\rmml;..\Cscl3DWS\;..\LogWriter\;..\bigFileMan\;..\Cscl3DWS\InfoMan;..\rtl;..\DesktopMan\include;..\nmemoryprofiler;..\Cscl3DWS\rm;..\Cscl3DWS\RenderManager\Classes;..\nengine\nengine;..\nengine\include;..\mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>CrashHandler.lib;mdump.lib;libcurl.lib;odbc32.lib;odbccp32.lib;wininet.lib;winmm.lib;Ws2_32.lib;..\UnZip\lib\unzip32.lib;libxml2.lib;zlib32.lib;logwriter.lib;bigfileman.lib;rtl.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>curl\;..\UnZip\lib\;..\common\lib;..\libxml2\win32\bin.msvc\;../lib/$(Configuration);..\nengine\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;libcmt.lib; atlmincrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\ComMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\ReleaseMinDependency/ComMan.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\ResMan\Protocol;..\Common;.\md5;.\ComMan;..\UnZip\lib;..\libxml2\include;..\libiconv\include;..\Cscl3DWS\oms;..\Cscl3DWS\res;..\nengine\nmath\;..\nengine\interfaces\;..\nengine\ncommon\;..\Cscl3DWS\rmml;..\Cscl3DWS\;..\LogWriter\;..\bigFileMan\;..\Cscl3DWS\InfoMan;..\rtl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;wininet.lib;Winmm.lib;ws2_32.lib;unzip32d.lib;libxml2.lib;libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>curl\;..\UnZip\lib\;..\common\lib;..\libxml2\win32\bin.msvc\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ComMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <AdditionalIncludeDirectories>..\Common;..\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/ComMan.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CrashHandlerInThread.cpp" />
+    <ClCompile Include="..\Common\Mutex.cpp" />
+    <ClCompile Include="..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="..\nengine\ncommon\FileFunctions.cpp" />
+    <ClCompile Include="..\VacademiaReportLib\XUnzip.cpp" />
+    <ClCompile Include="AsyncConnect.cpp">
+    </ClCompile>
+    <ClCompile Include="asyncmoduleimpl.cpp" />
+    <ClCompile Include="BigFileResource.cpp" />
+    <ClCompile Include="ClientSession.cpp" />
+    <ClCompile Include="ClientUDPSession.cpp" />
+    <ClCompile Include="ComMan.cpp">
+    </ClCompile>
+    <ClCompile Include="ComManager.cpp" />
+    <ClCompile Include="ConnectionManager.cpp" />
+    <ClCompile Include="..\Common\DataBuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\common\DataBuffer2.cpp" />
+    <ClCompile Include="DestroyableConnection.cpp" />
+    <ClCompile Include="FileFind.cpp">
+    </ClCompile>
+    <ClCompile Include="FileResource.cpp">
+    </ClCompile>
+    <ClCompile Include="HTTP.cpp">
+    </ClCompile>
+    <ClCompile Include="InfoQueryMan.cpp" />
+    <ClCompile Include="..\nengine\ncommon\IniFile.cpp" />
+    <ClCompile Include="LocalRepository.cpp">
+    </ClCompile>
+    <ClCompile Include="md5\md5.cpp">
+    </ClCompile>
+    <ClCompile Include="..\nengine\ncommon\PlatformDependent.cpp" />
+    <ClCompile Include="ProxyFinder.cpp">
+    </ClCompile>
+    <ClCompile Include="RemoteResource.cpp">
+    </ClCompile>
+    <ClCompile Include="RemoteSession.cpp" />
+    <ClCompile Include="ResMan.cpp">
+    </ClCompile>
+    <ClCompile Include="ResManager.cpp" />
+    <ClCompile Include="ResManCreation.cpp">
+    </ClCompile>
+    <ClCompile Include="ResModule.cpp">
+    </ClCompile>
+    <ClCompile Include="ResourceImpl.cpp">
+    </ClCompile>
+    <ClCompile Include="ResSessionHandler.cpp" />
+    <ClCompile Include="SessionsInfoMan.cpp" />
+    <ClCompile Include="SocketConnection.cpp" />
+    <ClCompile Include="SocksConnection.cpp" />
+    <ClCompile Include="SocksSocket.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\nengine\ncommon\StringFunctions.cpp" />
+    <ClCompile Include="UploadSessionHandler.cpp" />
+    <ClCompile Include="..\Common\UrlParser.cpp" />
+    <ClCompile Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.cpp" />
+    <ClCompile Include="WinSocketConnection.cpp" />
+    <ClCompile Include="..\nengine\ncommon\XMLPropertiesList.cpp" />
+    <ClCompile Include="..\unzip\lib\Zlibengn.cpp" />
+    <ClCompile Include="ResMan\Protocol\AddNewFileInfoListIn.cpp" />
+    <ClCompile Include="..\Common\CommonPacketIn.cpp" />
+    <ClCompile Include="..\Common\CommonPacketOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\FileInfoIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\FileInfoQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\MultiFileInfoIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\MultiFileInfoQueryOut.cpp" />
+    <ClCompile Include="PackClientSetupIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\PackUpdateClientFilesAndGetInfoIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\PackUpdateClientFilesAndGetInfoQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\QueryMessageIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\QueryPackageIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\QueryPackageOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\ReadRemoteResourceIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\ReadRemoteResourceQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\RegisterRemoteResourceInfoIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\RegisterRemoteResourceQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\RootFileInfo2QueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\RootFileInfoList2In.cpp" />
+    <ClCompile Include="ResMan\Protocol\RootFileInfoListIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\RootFileInfoQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\UploadFileInfoIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\UploadFileInfoQueryOut.cpp" />
+    <ClCompile Include="ResMan\Protocol\WriteRemoteResourceIn.cpp" />
+    <ClCompile Include="ResMan\Protocol\WriteRemoteResourceQueryOut.cpp" />
+    <ClCompile Include="WriteUpdaterLogQueryOut.cpp" />
+    <ClCompile Include="HttpsPacketIn.cpp" />
+    <ClCompile Include="HttpsPacketOut.cpp" />
+    <ClCompile Include="HttpsProxyConnection.cpp" />
+    <ClCompile Include="TunnelClient.cpp" />
+    <ClCompile Include="TunnelConnection.cpp" />
+    <ClCompile Include="TunnelServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ComMan.def" />
+    <None Include="commanag.bmp" />
+    <None Include="ComManager.rgs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CrashHandlerInThread.h" />
+    <ClInclude Include="..\Common\Mutex.h" />
+    <ClInclude Include="..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="..\nengine\ncommon\FileFunctions.h" />
+    <ClInclude Include="..\nengine\ncommon\PlatformDependent.h" />
+    <ClInclude Include="..\VacademiaReportLib\XUnzip.h" />
+    <ClInclude Include="BigFileResource.h" />
+    <ClInclude Include="ResMan\Protocol\RootFileInfoListIn.h" />
+    <ClInclude Include="AsyncConnect.h" />
+    <ClInclude Include="ClientSession.h" />
+    <ClInclude Include="ComManager.h" />
+    <ClInclude Include="..\Common\Common.h" />
+    <ClInclude Include="common_globals.h" />
+    <ClInclude Include="ConnectionManager.h" />
+    <ClInclude Include="..\Common\consts.h" />
+    <ClInclude Include="..\Common\DataBuffer.h" />
+    <ClInclude Include="..\common\DataBuffer2.h" />
+    <ClInclude Include="DestroyableConnection.h" />
+    <CustomBuildStep Include="dlldatax.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='N3DRelease|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <ClInclude Include="FileFind.h" />
+    <ClInclude Include="FileResource.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="..\nengine\ncommon\HelperFunctions.h" />
+    <ClInclude Include="HTTP.h" />
+    <ClInclude Include="IConnection.h" />
+    <ClInclude Include="InfoQueryMan.h" />
+    <ClInclude Include="..\nengine\ncommon\IniFile.h" />
+    <ClInclude Include="LocalRepository.h" />
+    <ClInclude Include="md5\md5.h" />
+    <ClInclude Include="ProxyFinder.h" />
+    <ClInclude Include="ProxySettings.h" />
+    <ClInclude Include="RemoteResource.h" />
+    <ClInclude Include="RemoteSession.h" />
+    <ClInclude Include="..\Cscl3DWS\res\res_consts.h" />
+    <ClInclude Include="ResMan.h" />
+    <ClInclude Include="ResManCreation.h" />
+    <ClInclude Include="ResModule.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceImpl.h" />
+    <ClInclude Include="ResSessionHandler.h" />
+    <ClInclude Include="SessionsInfoMan.h" />
+    <ClInclude Include="SocketConnection.h" />
+    <ClInclude Include="SocksConnection.h" />
+    <ClInclude Include="SocksSocket.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="..\nengine\ncommon\StringFunctions.h" />
+    <ClInclude Include="..\Unzip\lib\unzip32.h" />
+    <ClInclude Include="UploadSessionHandler.h" />
+    <ClInclude Include="..\Common\UrlParser.h" />
+    <ClInclude Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.h" />
+    <ClInclude Include="WinSocketConnection.h" />
+    <ClInclude Include="..\nengine\ncommon\XMLPropertiesList.h" />
+    <ClInclude Include="..\UnZip\lib\zlib.h" />
+    <ClInclude Include="ResMan\Protocol\AddNewFileInfoListIn.h" />
+    <ClInclude Include="..\Common\CommonPacketIn.h" />
+    <ClInclude Include="..\Common\CommonPacketOut.h" />
+    <ClInclude Include="ResMan\Protocol\FileInfoIn.h" />
+    <ClInclude Include="ResMan\Protocol\FileInfoQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\MultiFileInfoIn.h" />
+    <ClInclude Include="ResMan\Protocol\MultiFileInfoQueryOut.h" />
+    <ClInclude Include="PackClientSetupIn.h" />
+    <ClInclude Include="ResMan\Protocol\PackUpdateClientFilesAndGetInfoIn.h" />
+    <ClInclude Include="ResMan\Protocol\PackUpdateClientFilesAndGetInfoQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\QueryMessageIn.h" />
+    <ClInclude Include="ResMan\Protocol\QueryPackageIn.h" />
+    <ClInclude Include="ResMan\Protocol\QueryPackageOut.h" />
+    <ClInclude Include="ResMan\Protocol\ReadRemoteResourceIn.h" />
+    <ClInclude Include="ResMan\Protocol\ReadRemoteResourceQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\RegisterRemoteResourceInfoIn.h" />
+    <ClInclude Include="ResMan\Protocol\RegisterRemoteResourceQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\RootFileInfo2QueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\RootFileInfoList2In.h" />
+    <ClInclude Include="ResMan\Protocol\RootFileInfoQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\UploadFileInfoIn.h" />
+    <ClInclude Include="ResMan\Protocol\UploadFileInfoQueryOut.h" />
+    <ClInclude Include="ResMan\Protocol\WriteRemoteResourceQueryOut.h" />
+    <ClInclude Include="WriteUpdaterLogQueryOut.h" />
+    <ClInclude Include="HttpsPacketIn.h" />
+    <ClInclude Include="HttpsPacketOut.h" />
+    <ClInclude Include="HttpsProxyConnection.h" />
+    <ClInclude Include="ITunnelClient.h" />
+    <ClInclude Include="ITunnelPacket.h" />
+    <ClInclude Include="TunnelClient.h" />
+    <ClInclude Include="TunnelConnection.h" />
+    <ClInclude Include="TunnelServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bigFileMan\BigFileMan.vcxproj">
+      <Project>{a83833fa-0657-401c-85fe-efa9cef58f01}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\LogWriter\LogWriter.vcxproj">
+      <Project>{40ac89ea-ce65-467a-8bc2-4568f05ab791}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\mdump\mdump.vcxproj">
+      <Project>{781b20f3-f4b2-4df6-8b2b-4ccae1a8437d}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\PathRefiner\PathRefiner.vcxproj">
+      <Project>{b2a7219a-6b9b-4b04-8ef7-13357dd8ab4d}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

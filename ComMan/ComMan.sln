@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComMan", "ComMan.vcproj", "{3060942A-845A-42A0-895C-97524F11B16A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		N3DRelease = N3DRelease
+		Release = Release
+		Semi_Release = Semi_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3060942A-845A-42A0-895C-97524F11B16A}.Debug.ActiveCfg = Debug|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.Debug.Build.0 = Debug|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.N3DRelease.ActiveCfg = N3DRelease|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.N3DRelease.Build.0 = N3DRelease|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.Release.ActiveCfg = Release|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.Release.Build.0 = Release|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.Semi_Release.ActiveCfg = Semi_Release|Win32
+		{3060942A-845A-42A0-895C-97524F11B16A}.Semi_Release.Build.0 = Semi_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>VoipManClient</ProjectName>
+    <ProjectGuid>{9AA05CB1-0288-424F-BD9D-3B36073FC00F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Common;..\VoipManCommon\;..\VoipManCommon\ConaitoSDK;..\VoipManCommon\PipeProtocol;..\VoipManServer\;..\..\Cscl3DWS\ServiceMan;..\..\Cscl3DWS\;..\..\Cscl3DWS\oms;..\..\Cscl3DWS\rm;..\..\Cscl3DWS\rmml;..\..\ComMan;.\;include\soundLog;include\micRecorder;include\micRecorder\paec;..\..\nengine\nmath;..\..\nengine\interfaces;..\..\LogWriter\;..\AudioCapture\Include;..\..\rtl;..\..\nmemoryprofiler\;  ..\mumble\mumble-1.2.3\src\SDKInterface\; ..\..\Launcher;..\..\Cscl3DWS\SyncMan;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;VOIPMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;winmm.lib;Rpcrt4.lib;Psapi.lib;Setupapi.lib;libmp3lame_vc10.lib;mpglib_vc10.lib;strmiids.lib;dsound.lib;logWriter.lib;VoipManAudioCapture.lib;vAcademiaVoipClient.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../VoipManCommon/lib/lame;../VoipManCommon/lib/ConaitoSDK/Evo3.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;LIBCMTD.lib;LIBCMT.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\VoipManClient.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\Common;..\VoipManCommon\;..\VoipManCommon\ConaitoSDK;..\VoipManCommon\PipeProtocol;..\VoipManServer\;..\..\Cscl3DWS\ServiceMan;..\..\Cscl3DWS\;..\..\Cscl3DWS\oms;..\..\Cscl3DWS\rm;..\..\Cscl3DWS\rmml;..\..\ComMan;.\;include\soundLog;include\micRecorder;include\micRecorder\paec;..\..\nengine\nmath;..\..\nengine\interfaces;..\..\LogWriter\;..\AudioCapture\Include;..\..\rtl;..\..\nmemoryprofiler;..\mumble\mumble-1.2.3\src\SDKInterface\;..\..\Launcher;..\..\Cscl3DWS\SyncMan;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VOIPMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;winmm.lib;Rpcrt4.lib;Psapi.lib;Setupapi.lib;libmp3lame_vc10.lib;mpglib_vc10.lib;strmiids.lib;dsound.lib;logWriter.lib;VoipManAudioCapture.lib;vAcademiaVoipClient.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../VoipManCommon/lib/lame;../VoipManCommon/lib/ConaitoSDK/Evo3.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\VoipManClient.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>libc.lib;LIBCMT.lib;</IgnoreSpecificDefaultLibraries>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AssemblyDebug>
+      </AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="..\VoipManCommon\soundLog\cthread.cpp" />
+    <ClCompile Include="..\VoipManCommon\soundLog\Frame.cpp" />
+    <ClCompile Include="..\VoipManCommon\soundLog\FrameManager.cpp" />
+    <ClCompile Include="..\VoipManCommon\soundLog\MP3Encoder.cpp" />
+    <ClCompile Include="..\VoipManCommon\soundLog\RecordState.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\WizardFindedDeviceOut.cpp" />
+    <ClCompile Include="src\AsyncConnection.cpp" />
+    <ClCompile Include="..\VoipManCommon\CommandQueue.cpp" />
+    <ClCompile Include="..\..\common\DataBuffer2.cpp" />
+    <ClCompile Include="..\VoipManCommon\DataStorage.cpp" />
+    <ClCompile Include="src\PipeProtocol\LogIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\LogOut.cpp" />
+    <ClCompile Include="..\..\Common\Mutex.cpp" />
+    <ClCompile Include="PipeServer.cpp" />
+    <ClCompile Include="src\PipeProtocol\WizardFindedDeviceIn.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Voip3DSoundCalcManager.cpp" />
+    <ClCompile Include="src\VoipManager.cpp" />
+    <ClCompile Include="src\VoipManagerPipe.cpp" />
+    <ClCompile Include="src\VoipManClient.cpp" />
+    <ClCompile Include="VoipManCommands.cpp" />
+    <ClCompile Include="src\PipeProtocol\AcceptingOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\AddUserIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\ChannelJoinedIn.cpp" />
+    <ClCompile Include="..\VoipManCommon\PipeProtocol\CommonPipePacketIn.cpp" />
+    <ClCompile Include="..\VoipManCommon\PipeProtocol\CommonPipePacketOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\ConnectionStatusIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\ConnectToEVoipOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\ConnectToEVoipResultIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\CurrentInputLevelIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\DisconnectOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\DoLoginOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetDevicesOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetDevicesResultIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetInputDevicesOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetInputDevicesResultIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetMyUserIDIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetOutputDevicesOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\GetOutputDevicesResultIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\HandleTransmissionStateChangedOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\InitVoipSystemOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\InitVoipSystemResultIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\RemoveUserIn.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetAutoGaneControlEnabledOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetEnableDenoisingOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetUserGainLevelOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetUserVolumeOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetVoiceActivationLevelOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\SetVoiceGainLevelOut.cpp" />
+    <ClCompile Include="src\PipeProtocol\UserTalkingIn.cpp" />
+    <ClCompile Include="..\VoipManCommon\ConaitoSDK\EvoSettings.cpp" />
+    <ClCompile Include="src\ConaitoSDK\VoipManagerConaito.cpp" />
+    <ClCompile Include="src\ConaitoSDK\VoipWindowClient.cpp" />
+    <ClCompile Include="src\RecordServer\PlayServer.cpp" />
+    <ClCompile Include="src\RecordServer\RecordServer.cpp" />
+    <ClCompile Include="src\RecordServer\RecordServerBase.cpp" />
+    <ClCompile Include="src\RecordServer\SelfRecordServer.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\AudioFilesInfoQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\AudioPlayedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\CopyAudioFileQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\DeleteRecordQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\DeleteRecordsQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\EvoClientWorkStateChanged.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\MixedAudioCreatedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\NotifiedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\PlayAudioFileQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\PlaySessionConnectedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\RecordStartedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\RemoveUserAudioQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\StartPlayingQueryOut.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\StartRecordingQueryOut.cpp" />
+    <ClCompile Include="..\..\common\CommonPacketIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\FileCreatedQueryIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\RecordFinishedIn.cpp" />
+    <ClCompile Include="src\RecordServer\Protocol\RecordPlayFinishedIn.cpp" />
+    <ClCompile Include="src\Protocol\RegisterRecordQueryOut.cpp" />
+    <ClCompile Include="src\Protocol\VoipServerRequestQueryOut.cpp" />
+    <ClCompile Include="src\Protocol\VoipServersQueryIn.cpp" />
+    <ClCompile Include="..\VoipManCommon\DeviceList\WTMicContoller.cpp" />
+    <ClCompile Include="..\VoipManCommon\DeviceList\WTMicContollerImpl.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\micRecorder.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\Wave.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\WaveBuffer.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\WaveDevice.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\WaveIn.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\WaveInterface.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\paec\mdf.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\paec\misc.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\paec\paec.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\VoipManCommon\micRecorder\paec\preprocess.cpp" />
+    <ClCompile Include="..\VoipManCommon\micRecorder\paec\smallft.cpp" />
+    <ClCompile Include="..\VoipManCommon\Mixer\DSMixer.cpp" />
+    <ClCompile Include="..\VoipManCommon\Mixer\DSMixer2.cpp" />
+    <ClCompile Include="..\VoipManCommon\Mixer\DSMixer2Impl.cpp" />
+    <ClCompile Include="..\VoipManCommon\Mixer\Mixer.cpp" />
+    <ClCompile Include="..\VoipManServer\PipeClient.cpp" />
+    <ClCompile Include="..\VoipManServer\src\VoipManager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\VoipManServer\src\VoipManagerPipeEVO.cpp" />
+    <ClCompile Include="..\VoipManServer\VoipManCommands.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\AcceptingIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\AddUserOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ChannelJoinedOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ChannelLeftOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ConfirmationOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ConnectionStatusOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ConnectToEVoipIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\ConnectToEVoipResultOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\CurrentInputLevelOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\DisconnectIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\DoLoginIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetDevicesIn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetDevicesResultOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetInputDevicesIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetInputDevicesResultOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetMyUserIDOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetOutputDevicesIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetOutputDevicesResultOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\GetUserIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\HandleTransmissionStateChangedIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\InitVoipSystemIn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\InitVoipSystemResultOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\KickedOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\RemoveUserOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetAutoGaneControlEnabledIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetEnableDenoisingIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetUserGainLevelIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetUserVolumeIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetVoiceActivationLevelIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\SetVoiceGainLevelIn.cpp" />
+    <ClCompile Include="..\VoipManServer\src\PipeProtocol\UserTalkingOut.cpp" />
+    <ClCompile Include="..\VoipManServer\src\ConaitoSDK\VoipManagerConaitoServer.cpp" />
+    <ClCompile Include="..\VoipManServer\src\ConaitoSDK\VoipWindow.cpp" />
+    <ClCompile Include="src\VistaAudioEngine\CPolicyConfig.cpp" />
+    <ClCompile Include="src\VistaAudioEngine\VistaAudioEngine.cpp" />
+    <ClCompile Include="src\Win7EmptyDevicesStub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VoipManClient.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="..\VoipManCommon\soundLog\cthread.h" />
+    <ClInclude Include="..\VoipManCommon\soundLog\Frame.h" />
+    <ClInclude Include="..\VoipManCommon\soundLog\FrameManager.h" />
+    <ClInclude Include="..\VoipManCommon\soundLog\MP3Encoder.h" />
+    <ClInclude Include="..\VoipManCommon\soundLog\RecordState.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\WizardFindedDeviceOut.h" />
+    <ClInclude Include="..\VoipManServer\PipeClient.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetDevicesResultOut.h" />
+    <ClInclude Include="include\PipeProtocol\WizardFindedDeviceIn.h" />
+    <ClInclude Include="src\VistaAudioEngine\VistaAudioEngine.h" />
+    <ClInclude Include="include\AsyncConnection.h" />
+    <ClInclude Include="..\VoipManCommon\CommandQueue.h" />
+    <ClInclude Include="..\VoipManCommon\Commands.h" />
+    <ClInclude Include="..\VoipManCommon\DataStorage.h" />
+    <ClInclude Include="include\Errors.h" />
+    <ClInclude Include="..\..\Common\Mutex.h" />
+    <ClInclude Include="PipeServer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="include\Voip3DSoundCalcManager.h" />
+    <ClInclude Include="include\VoipManager.h" />
+    <ClInclude Include="include\VoipManagerPipe.h" />
+    <ClInclude Include="include\VoipManClient.h" />
+    <ClInclude Include="include\PipeProtocol\AcceptingOut.h" />
+    <ClInclude Include="include\PipeProtocol\AddUserIn.h" />
+    <ClInclude Include="include\PipeProtocol\ChannelJoinedIn.h" />
+    <ClInclude Include="..\VoipManCommon\PipeProtocol\CommonPipePacketIn.h" />
+    <ClInclude Include="..\VoipManCommon\PipeProtocol\CommonPipePacketOut.h" />
+    <ClInclude Include="include\PipeProtocol\ConnectionStatusIn.h" />
+    <ClInclude Include="include\PipeProtocol\ConnectToEVoipOut.h" />
+    <ClInclude Include="include\PipeProtocol\ConnectToEVoipResultIn.h" />
+    <ClInclude Include="include\PipeProtocol\CurrentInputLevelIn.h" />
+    <ClInclude Include="include\PipeProtocol\DisconnectOut.h" />
+    <ClInclude Include="include\PipeProtocol\DoLoginOut.h" />
+    <ClInclude Include="include\PipeProtocol\EnableVoiceActivationOut.h" />
+    <ClInclude Include="include\PipeProtocol\GetDevicesIn.h" />
+    <ClInclude Include="include\PipeProtocol\GetDevicesOut.h" />
+    <ClInclude Include="include\PipeProtocol\GetDevicesResultIn.h" />
+    <ClInclude Include="include\PipeProtocol\GetInputDevicesOut.h" />
+    <ClInclude Include="include\PipeProtocol\GetInputDevicesResultIn.h" />
+    <ClInclude Include="include\PipeProtocol\GetMyUserIDIn.h" />
+    <ClInclude Include="include\PipeProtocol\GetOutputDevicesOut.h" />
+    <ClInclude Include="include\PipeProtocol\GetOutputDevicesResultIn.h" />
+    <ClInclude Include="include\PipeProtocol\HandleTransmissionStateChangedOut.h" />
+    <ClInclude Include="include\PipeProtocol\InitVoipSystemIn.h" />
+    <ClInclude Include="include\PipeProtocol\InitVoipSystemOut.h" />
+    <ClInclude Include="include\PipeProtocol\InitVoipSystemResultIn.h" />
+    <ClInclude Include="include\PipeProtocol\RemoveUserIn.h" />
+    <ClInclude Include="include\PipeProtocol\SetAutoGaneControlEnabledOut.h" />
+    <ClInclude Include="include\PipeProtocol\SetEnableDenoisingOut.h" />
+    <ClInclude Include="include\PipeProtocol\SetUserGainLevelOut.h" />
+    <ClInclude Include="include\PipeProtocol\SetUserVolumeOut.h" />
+    <ClInclude Include="include\PipeProtocol\SetVoiceActivationLevelOut.h" />
+    <ClInclude Include="include\PipeProtocol\SetVoiceGainLevelOut.h" />
+    <ClInclude Include="include\PipeProtocol\UserTalkingIn.h" />
+    <ClInclude Include="..\VoipManCommon\ConaitoSDK\EvoSettings.h" />
+    <ClInclude Include="include\ConaitoSDK\VoipManagerConaito.h" />
+    <ClInclude Include="include\ConaitoSDK\VoipWindowClient.h" />
+    <ClInclude Include="include\RecordServer\Protocol\EvoClientWorkStateChangedQueryIn.h" />
+    <ClInclude Include="include\RecordServer\PlayServer.h" />
+    <ClInclude Include="include\RecordServer\RecordServer.h" />
+    <ClInclude Include="include\RecordServer\RecordServerBase.h" />
+    <ClInclude Include="include\RecordServer\SelfRecordServer.h" />
+    <ClInclude Include="include\RecordServer\Protocol\CommonVoipPacketOut.h" />
+    <ClInclude Include="include\RecordServer\Protocol\CopyAudioFileQueryOut.h" />
+    <ClInclude Include="include\RecordServer\Protocol\DeleteRecordsQueryOut.h" />
+    <ClInclude Include="include\RecordServer\Protocol\FileCreatedQueryIn.h" />
+    <ClInclude Include="include\RecordServer\Protocol\PlayAudioFileQueryOut.h" />
+    <ClInclude Include="include\RecordServer\Protocol\StartRecordingQueryOut.h" />
+    <ClInclude Include="..\..\common\CommonPacketIn.h" />
+    <ClInclude Include="include\Protocol\RegisterRecordQueryOut.h" />
+    <ClInclude Include="include\Protocol\VoipServerRequestQueryOut.h" />
+    <ClInclude Include="include\Protocol\VoipServersQueryIn.h" />
+    <ClInclude Include="..\VoipManCommon\Mixer\DSMixer.h" />
+    <ClInclude Include="..\VoipManCommon\Mixer\DSMixer2.h" />
+    <ClInclude Include="..\VoipManCommon\Mixer\IVolume.h" />
+    <ClInclude Include="..\VoipManCommon\Mixer\Mixer.h" />
+    <ClInclude Include="..\VoipManCommon\DeviceList\WTMicContoller.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\micrec_consts.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\micRecorder.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\Wave.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\WaveBuffer.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\WaveDevice.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\WaveIn.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\WaveInterface.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\arch.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\config.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\misc.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\paec.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\smallft.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\speex_echo.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\speex_preprocess.h" />
+    <ClInclude Include="..\VoipManCommon\micRecorder\paec\speex_types.h" />
+    <ClInclude Include="..\VoipManServer\include\VoipManagerPipeEVO.h" />
+    <ClInclude Include="..\VoipManCommon\ConaitoSDK\EvoVoIP.h" />
+    <ClInclude Include="..\VoipManServer\include\ConaitoSDK\VoipManagerConaitoServer.h" />
+    <ClInclude Include="..\VoipManServer\include\ConaitoSDK\VoipWindow.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\AcceptingIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\AddUserOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ChannelJoinedOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ChannelLeftOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ConfirmationOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ConnectionStatusOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ConnectToEVoipIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\ConnectToEVoipResultOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\CurrentInputLevelOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\DisconnectIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\DoLoginIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetDevicesIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetInputDevicesIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetInputDevicesResultOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetMyUserIDOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetOutputDevicesIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetOutputDevicesResultOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\GetUserIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\HandleTransmissionStateChangedIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\InitVoipSystemIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\InitVoipSystemResultOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\KickedOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\RemoveUserOut.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetAutoGaneControlEnabledIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetEnableDenoisingIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetUserGainLevelIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetUserVolumeIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetVoiceActivationLevelIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\SetVoiceGainLevelIn.h" />
+    <ClInclude Include="..\VoipManServer\include\PipeProtocol\UserTalkingOut.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VoipManClient.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ComMan\ComMan.vcxproj">
+      <Project>{3060942a-845a-42a0-895c-97524f11b16a}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cscl3DWS\rmml\rmml.vcxproj">
+      <Project>{1f0b13c6-1c8f-44c4-9f8f-c48b1aff0a95}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Cscl3DWS\ServiceMan\ServiceMan.vcxproj">
+      <Project>{b615c4f3-2aaf-43cd-82ae-79f8a839b7c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\AudioCapture\AudioCapture.vcxproj">
+      <Project>{d2b854cc-1d97-47ca-bb33-38b2e0e82beb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,165 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LAUNCHER            ICON                    "..\\common\\icons\\vAcademia.ico"
+IDI_SMALL               ICON                    "..\\common\\icons\\vAcademia.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_LAUNCHER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW DIALOGEX 0, 0, 284, 105
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION
+CAPTION "Виртуальная академия"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Кажется приложении 'Виртуальная академия' зависла. Хотите помочь разработчикам? Нажмите кнопку 'Да'. В этом случае программа произведет сбор необходимой информации по ошибке и отправит ее разработчикам.",IDC_STATIC_1,8,6,271,28
+    PUSHBUTTON      "Да",IDC_BTN_OK,77,84,50,14
+    PUSHBUTTON      "Нет",IDC_BTN_NO,139,84,50,14
+    LTEXT           "Никакая конфиденциальная информация не будет передана.",IDC_STATIC_2,7,34,272,8
+    LTEXT           "Если вы нажмете кнопку «Нет», то никакая информация отправлена не будет. В любом случае программа постарается продолжить работу.",IDC_STATIC_3,8,44,271,19
+    CONTROL         "Не показывать больше данное окно при повторении ошибки",IDC_CHECK_HIDEWND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,66,223,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_SPLASH_DOT1         PNG                     "icons\\bitmap1.png"
+IDB_SPLASH_DOT2         PNG                     "icons\\bitmap2.png"
+IDB_SPLASH_DOT3         PNG                     "icons\\bitmap3.png"
+IDB_CADR1               PNG                     "icons\\cadr1.png"
+IDB_CADR2               PNG                     "icons\\cadr2.png"
+IDB_CADR3               PNG                     "icons\\cadr3.png"
+IDB_TEXT1               PNG                     "icons\\text1.png"
+IDB_TEXT1_R             PNG                     "icons\\text1_r.png"
+IDB_TEXT2               PNG                     "icons\\text2.png"
+IDB_TEXT2_R             PNG                     "icons\\text2_r.png"
+IDB_TEXT3               PNG                     "icons\\text3.png"
+IDB_TEXT3_R             PNG                     "icons\\text3_r.png"
+IDB_T_SCRIPTS_R         PNG                     "icons\\t_scripts_r.png"
+IDB_T_INTERF            PNG                     "icons\\t_interf.png"
+IDB_T_INTERF_R          PNG                     "icons\\t_interf_r.png"
+IDB_T_LIBRARIES         PNG                     "icons\\t_libraries.png"
+IDB_T_LIBRARIES_R       PNG                     "icons\\t_libraries_r.png"
+IDB_T_SCRIPTS           PNG                     "icons\\t_scripts.png"
+IDB_SPLASH              PNG                     "icons\\splash.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "Launcher"
+    IDC_LAUNCHER            "LAUNCHER"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

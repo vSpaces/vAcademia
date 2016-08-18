@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug MT|Win32">
+      <Configuration>Debug MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release MT|Win32">
+      <Configuration>Release MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>js32</ProjectName>
+    <ProjectGuid>{D197323B-F5FC-470E-BA40-A0CB8160A556}</ProjectGuid>
+    <RootNamespace>js32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">../../../bin/Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">../../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">../../../bin/Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">../../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../src; ../../../nsprpub/pr/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;JSFILE;EXPORT_JS_API;XP_WIN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/js.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;XP_WIN;JSFILE;EXPORT_JS_API;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration)\bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/js.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../../src;../../../nsprpub/pr/include;../../../common/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;WIN32;XP_WIN;JSFILE;EXPORT_JS_API;JS_THREADSAFE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BrowseInformation>false</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Winmm.lib;nspr.lib;crashhandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration)\bin;..\..\..\nsprpub\nsprpub___Win32_Debug;../../../lib/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\lib\Debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/js.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../src;../../../nsprpub/pr/include;../../../common/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;WIN32;JSFILE;EXPORT_JS_API;XP_WIN;JS_THREADSAFE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/OPT:NOICF %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Winmm.lib;nspr.lib;crashhandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(ProjectDir)\$(Platform)\$(Configuration)\bin;..\..\..\nsprpub\nsprpub___Win32_Release;../../../lib/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\lib\Release\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/js.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\nanojit\Allocator.cpp" />
+    <ClCompile Include="..\..\src\nanojit\Assembler.cpp" />
+    <ClCompile Include="..\..\src\nanojit\avmplus.cpp" />
+    <ClCompile Include="..\..\src\nanojit\CodeAlloc.cpp" />
+    <ClCompile Include="..\..\src\nanojit\Containers.cpp" />
+    <ClCompile Include="..\..\src\nanojit\Fragmento.cpp" />
+    <ClCompile Include="..\..\src\jsapi.cpp" />
+    <ClCompile Include="..\..\src\jsarena.cpp" />
+    <ClCompile Include="..\..\src\jsarray.cpp" />
+    <ClCompile Include="..\..\src\jsatom.cpp" />
+    <ClCompile Include="..\..\src\jsbool.cpp" />
+    <ClCompile Include="..\..\src\jsbuiltins.cpp" />
+    <ClCompile Include="..\..\src\jscntxt.cpp" />
+    <ClCompile Include="..\..\src\jscpucfg.cpp" />
+    <ClCompile Include="..\..\src\jsdate.cpp" />
+    <ClCompile Include="..\..\src\jsdbgapi.cpp" />
+    <ClCompile Include="..\..\src\jsdhash.cpp" />
+    <ClCompile Include="..\..\src\jsdtoa.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release MT|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jsemit.cpp" />
+    <ClCompile Include="..\..\src\jsexn.cpp" />
+    <ClCompile Include="..\..\src\jsfile.cpp" />
+    <ClCompile Include="..\..\src\jsfun.cpp" />
+    <ClCompile Include="..\..\src\jsgc.cpp" />
+    <ClCompile Include="..\..\src\jshash.cpp" />
+    <ClCompile Include="..\..\src\jsinterp.cpp" />
+    <ClCompile Include="..\..\src\jsinvoke.cpp" />
+    <ClCompile Include="..\..\src\jsiter.cpp" />
+    <ClCompile Include="..\..\src\jslock.cpp" />
+    <ClCompile Include="..\..\src\jslog2.cpp" />
+    <ClCompile Include="..\..\src\jsmath.cpp" />
+    <ClCompile Include="..\..\src\jsnum.cpp" />
+    <ClCompile Include="..\..\src\jsobj.cpp" />
+    <ClCompile Include="..\..\src\json.cpp" />
+    <ClCompile Include="..\..\src\jsopcode.cpp" />
+    <ClCompile Include="..\..\src\jsparse.cpp" />
+    <ClCompile Include="..\..\src\jsprf.cpp" />
+    <ClCompile Include="..\..\src\jsregexp.cpp" />
+    <ClCompile Include="..\..\src\jsscan.cpp" />
+    <ClCompile Include="..\..\src\jsscope.cpp" />
+    <ClCompile Include="..\..\src\jsscript.cpp" />
+    <ClCompile Include="..\..\src\jsstr.cpp" />
+    <ClCompile Include="..\..\src\jstask.cpp" />
+    <ClCompile Include="..\..\src\jstracer.cpp" />
+    <ClCompile Include="..\..\src\jsutil.cpp" />
+    <ClCompile Include="..\..\src\jsxdrapi.cpp" />
+    <ClCompile Include="..\..\src\jsxml.cpp" />
+    <ClCompile Include="..\..\src\nanojit\LIR.cpp" />
+    <ClCompile Include="..\..\src\nanojit\Nativei386.cpp" />
+    <ClCompile Include="..\..\src\prmjtime.cpp" />
+    <ClCompile Include="..\..\src\nanojit\RegAlloc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\js-confdefs.h" />
+    <ClInclude Include="..\..\src\js-config.h" />
+    <ClInclude Include="..\..\src\jsapi.h" />
+    <ClInclude Include="..\..\src\jsarena.h" />
+    <ClInclude Include="..\..\src\jsarray.h" />
+    <ClInclude Include="..\..\src\jsatom.h" />
+    <ClInclude Include="..\..\src\jsatominlines.h" />
+    <ClInclude Include="..\..\src\jsbit.h" />
+    <ClInclude Include="..\..\src\jsbool.h" />
+    <ClInclude Include="..\..\src\jsbuiltins.h" />
+    <ClInclude Include="..\..\src\jsclist.h" />
+    <ClInclude Include="..\..\src\jscntxt.h" />
+    <ClInclude Include="..\..\src\jscompat.h" />
+    <ClInclude Include="..\..\src\jscpucfg.h" />
+    <ClInclude Include="..\..\src\jsdate.h" />
+    <ClInclude Include="..\..\src\jsdbgapi.h" />
+    <ClInclude Include="..\..\src\jsdhash.h" />
+    <ClInclude Include="..\..\src\jsdtoa.h" />
+    <ClInclude Include="..\..\src\jsdtracef.h" />
+    <ClInclude Include="..\..\src\jsemit.h" />
+    <ClInclude Include="..\..\src\jsexn.h" />
+    <ClInclude Include="..\..\src\jsfile.h" />
+    <ClInclude Include="..\..\src\jsfun.h" />
+    <ClInclude Include="..\..\src\jsgc.h" />
+    <ClInclude Include="..\..\src\jshash.h" />
+    <ClInclude Include="..\..\src\jsinterp.h" />
+    <ClInclude Include="..\..\src\jsinttypes.h" />
+    <ClInclude Include="..\..\src\jsiter.h" />
+    <ClInclude Include="..\..\src\jslibmath.h" />
+    <ClInclude Include="..\..\src\jslock.h" />
+    <ClInclude Include="..\..\src\jslong.h" />
+    <ClInclude Include="..\..\src\jsmath.h" />
+    <ClInclude Include="..\..\src\jsnum.h" />
+    <ClInclude Include="..\..\src\jsobj.h" />
+    <ClInclude Include="..\..\src\jsobjinlines.h" />
+    <ClInclude Include="..\..\src\json.h" />
+    <ClInclude Include="..\..\src\jsopcode.h" />
+    <ClInclude Include="..\..\src\jsotypes.h" />
+    <ClInclude Include="..\..\src\jsparse.h" />
+    <ClInclude Include="..\..\src\jsprf.h" />
+    <ClInclude Include="..\..\src\jsprvtd.h" />
+    <ClInclude Include="..\..\src\jspubtd.h" />
+    <ClInclude Include="..\..\src\jsregexp.h" />
+    <ClInclude Include="..\..\src\jsscan.h" />
+    <ClInclude Include="..\..\src\jsscope.h" />
+    <ClInclude Include="..\..\src\jsscript.h" />
+    <ClInclude Include="..\..\src\jsscriptinlines.h" />
+    <ClInclude Include="..\..\src\jsstaticcheck.h" />
+    <ClInclude Include="..\..\src\jsstdint.h" />
+    <ClInclude Include="..\..\src\jsstr.h" />
+    <ClInclude Include="..\..\src\jsstrinlines.h" />
+    <ClInclude Include="..\..\src\jstask.h" />
+    <ClInclude Include="..\..\src\jstl.h" />
+    <ClInclude Include="..\..\src\jstracer.h" />
+    <ClInclude Include="..\..\src\jstypes.h" />
+    <ClInclude Include="..\..\src\jsutil.h" />
+    <ClInclude Include="..\..\src\jsvector.h" />
+    <ClInclude Include="..\..\src\jsversion.h" />
+    <ClInclude Include="..\..\src\jsxdrapi.h" />
+    <ClInclude Include="..\..\src\jsxml.h" />
+    <ClInclude Include="..\..\src\mp.h" />
+    <ClInclude Include="..\..\src\prmjtime.h" />
+    <ClInclude Include="..\..\src\resource.h" />
+    <ClInclude Include="..\..\src\nanojit\Allocator.h" />
+    <ClInclude Include="..\..\src\nanojit\Assembler.h" />
+    <ClInclude Include="..\..\src\nanojit\avmplus.h" />
+    <ClInclude Include="..\..\src\nanojit\CodeAlloc.h" />
+    <ClInclude Include="..\..\src\nanojit\Containers.h" />
+    <ClInclude Include="..\..\src\nanojit\Fragmento.h" />
+    <ClInclude Include="..\..\src\nanojit\LIR.h" />
+    <ClInclude Include="..\..\src\nanojit\nanojit.h" />
+    <ClInclude Include="..\..\src\nanojit\Native.h" />
+    <ClInclude Include="..\..\src\nanojit\Nativei386.h" />
+    <ClInclude Include="..\..\src\nanojit\RegAlloc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\js.msg" />
+    <None Include="..\..\src\jsopcode.tbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\nsprpub\nsprpub.vcxproj">
+      <Project>{38c644cf-1034-4a4f-b73c-6448844712d5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="jsoplengen.vcxproj">
+      <Project>{7af45e05-2362-4092-958c-9728c298ccdc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

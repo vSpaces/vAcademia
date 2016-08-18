@@ -1,0 +1,790 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MATERIALPROPSDLG DIALOGEX 0, 0, 406, 266
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,54,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    LTEXT           "Step",IDC_STEP,55,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,55,17,342,11
+    EDITTEXT        IDC_TEXTPATH,159,57,201,13,ES_AUTOHSCROLL
+    CONTROL         "Export Materials",IDC_MATERIALS,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,60,89,92,11
+    GROUPBOX        "Static",IDC_STATIC,216,89,146,43
+    CONTROL         "Override material Diffuse",IDC_CHECKAMB,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,223,101,93,10
+    CONTROL         "Override material Ambient",IDC_CHECKDIF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,223,116,96,10
+    CONTROL         "",IDC_BUTTON1,"Button",BS_OWNERDRAW | BS_FLAT,325,99,15,
+                    13,WS_EX_STATICEDGE
+    CONTROL         "",IDC_BUTTON2,"Button",BS_OWNERDRAW | BS_FLAT,325,113,
+                    15,13,WS_EX_STATICEDGE
+    CONTROL         "Keep config parameters",IDC_KEEPCFG,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,60,106,92,11
+    CONTROL         "Use textures path ",IDC_USETEXTURESPATH,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,60,57,92,10
+    EDITTEXT        IDC_MTRLPATH,159,73,201,13,ES_AUTOHSCROLL
+    CONTROL         "Use materials path",IDC_USEMATERIALSPATH,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,60,73,92,10
+    CONTROL         "Generate materials names [name%i.crf]",
+                    IDC_GETMTRLSNAMES,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,60,121,142,11
+    CONTROL         "Separate common objects",IDC_SEPCOMMONOBJECTS,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,67,183,105,11
+    CONTROL         "Separate common textures",IDC_SEPCOMMONTEXTURES,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,67,199,105,10
+    CONTROL         "Find level of detail for objects",IDC_USELODS,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,67,214,105,10
+    CONTROL         "Use prefix as directory name",IDC_USEPREFIXES,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,67,170,105,10
+    GROUPBOX        "Directories structures",IDC_STATIC,59,159,146,100
+    GROUPBOX        "Arrangement map",IDC_STATIC,217,158,176,44
+    CONTROL         "Generate map SQL",IDC_GENSQL,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,224,171,96,10
+    CONTROL         "Generate objects DBIDs",IDC_GENDBID,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,224,187,96,10
+    CONTROL         "Generate global coordinates for objects",
+                    IDC_GENGLOBALCOORDS,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,60,137,142,11
+    CONTROL         "Autoexport to server",IDC_AUTOEXPORT,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | WS_TABSTOP,
+                    60,43,92,8
+    CONTROL         "Slider1",IDC_QUALITY_SLIDER,"msctls_trackbar32",
+                    WS_TABSTOP,278,210,107,20
+    LTEXT           "Textures quality",IDC_STATIC,217,212,50,8
+    LTEXT           "Best",IDC_STATIC,369,231,15,8
+    LTEXT           "Lowest",IDC_STATIC,275,233,24,8
+    CONTROL         "High-poly model",IDC_USEFLOATVERTEX,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | BS_VCENTER | 
+                    WS_TABSTOP,295,42,66,10
+END
+
+IDD_LIGHTS DIALOG  0, 0, 226, 199
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scene's lights"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Set",IDOK,7,178,50,14
+    PUSHBUTTON      "Close",IDCANCEL,147,178,50,14
+    LISTBOX         IDC_LIST1,7,20,212,55,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Max properties",IDC_STATIC,7,81,212,43
+    GROUPBOX        "Natura3D properties",IDC_STATIC,7,126,212,49
+    LTEXT           "Flare",IDC_STATIC,13,138,16,9
+    EDITTEXT        IDC_EDIT1,36,136,163,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BUTTON1,199,136,14,12
+    LTEXT           "Max size:",IDC_STATIC,13,156,30,11
+    EDITTEXT        IDC_EDIT2,48,154,42,13,ES_AUTOHSCROLL
+    LTEXT           "Max sdist.:",IDC_STATIC,116,156,35,11
+    EDITTEXT        IDC_EDIT3,156,154,42,13,ES_AUTOHSCROLL
+    LTEXT           "Color",IDC_STATIC,14,95,17,8
+    LTEXT           "Real color",IDC_STATIC,14,111,33,8
+    CONTROL         "",IDC_BUTTON2,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,52,95,38,11
+    CONTROL         "",IDC_BUTTON3,"Button",BS_OWNERDRAW | BS_FLAT | 
+                    WS_TABSTOP,52,111,38,11
+    LTEXT           "Export filename",IDC_STATIC,13,9,49,9
+    EDITTEXT        IDC_EDIT4,66,7,133,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "..",IDC_BUTTON4,199,7,14,12
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 186, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Внимание!"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Да",IDOK,40,73,50,14
+    PUSHBUTTON      "Нет",IDCANCEL,97,73,50,14
+    LTEXT           "Ресурс:",IDC_STATIC,7,7,172,9
+    LTEXT           "Ресурс:",IDC_RESNAME,7,20,172,9
+    LTEXT           "уже существует. Перезаписать?",IDC_STATIC,7,33,118,9
+    CONTROL         "Больше не показывать это окно",IDC_HIDEWND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,48,148,10
+END
+
+IDD_AUTOEXPORTUTILITY DIALOGEX 0, 0, 102, 90
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Автоэкспорт",IDC_DOAUTOEXPORT,7,48,88,14
+    PUSHBUTTON      "Настройки",IDC_AUTOEXPORTSETTINGS,7,69,88,14
+    PUSHBUTTON      "Weld selection",IDC_WELD,7,7,88,14,WS_DISABLED
+    PUSHBUTTON      "Экспорт в библиотеку",IDC_LIBEXPORT,7,22,88,14
+END
+
+IDD_AUDOEXPORTSETTINGSDIALOG DIALOGEX 0, 0, 324, 136
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройка автоэкспорта"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Сохранить",IDOK,209,115,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,267,115,50,14
+    LTEXT           "Адрес до parser.php:",IDC_STATIC,7,29,69,8
+    LTEXT           "Путь к папке geometry:",IDC_STATIC,7,48,78,8
+    EDITTEXT        IDC_PARSERURL,90,27,199,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GEOMETRYPATH,90,45,199,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON5,295,45,22,14
+    CONTROL         "Экспорт в высокополигональном формате",IDC_AUTOHPOLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,64,162,10
+	CONTROL         "Экспортировать только геометрию",IDC_AUTOGEOMETRYONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,84,162,10
+	CONTROL         "Экспорт без текстур",IDC_AUTOWITHOUTTEXTURES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,89,104,162,10
+	AUTORADIOBUTTON		"192.168.0.77", IDC_SERVER77, 10, 7, 80, 12
+	AUTORADIOBUTTON		"192.168.0.78", IDC_SERVER78, 90, 7, 80, 12
+	AUTORADIOBUTTON		"Свой", IDC_SERVER_OTHER, 170, 7, 80, 12
+//	GROUPBOX		"123", IDC_GROUP, 10, 10, 10, 10
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MATERIALPROPSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_LIGHTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_AUTOEXPORTUTILITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 95
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_AUDOEXPORTSETTINGSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_CAL3D_MAX_EXPORTER  REGISTRY                "Cal3d_max_exporter_7.rgs"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLARES DIALOG  0, 0, 232, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Flares objects"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Set",IDSet,7,145,50,14
+    PUSHBUTTON      "Close",IDCANCEL,169,146,50,14
+    GROUPBOX        "Natura3D properties",IDC_STATIC,7,92,212,49
+    LTEXT           "Flare",IDC_STATIC,13,105,16,9
+    EDITTEXT        IDC_EDIT1,37,102,163,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "..",IDC_BUTTON1,199,102,14,12
+    LTEXT           "Max size:",IDC_STATIC,13,122,30,11
+    EDITTEXT        IDC_EDIT2,49,121,42,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Max sdist.:",IDC_STATIC,117,122,35,11
+    EDITTEXT        IDC_EDIT3,157,121,42,13,ES_AUTOHSCROLL | WS_DISABLED
+    LISTBOX         IDC_LIST1,7,30,212,55,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FLARES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Switzerland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DES)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN_SWISS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 233, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D - About"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,176,45,50,14
+    CONTROL         IDI_TYPE_DUMMY,IDC_STATIC,"Static",SS_BITMAP | 
+                    SS_REALSIZEIMAGE,7,7,56,52,WS_EX_CLIENTEDGE
+    CTEXT           "Cal3D - Character Animation Library",IDC_STATIC,68,7,
+                    158,8
+    CTEXT           "Copyright (C) 2001, 2002  Bruno Heidelberger",
+                    IDC_STATIC,68,29,158,8
+    CTEXT           "3D Studio MAX Exporter Plugin 0.7",IDC_STATIC,68,18,158,
+                    8
+    PUSHBUTTON      "http://cal3d.sourceforge.net",IDC_URL,68,45,101,14,
+                    BS_FLAT | WS_DISABLED
+END
+
+IDD_SKELETON_HIERARCHY_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Skeleton Hierarchy"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_HIERARCHY,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,57,61,342,199
+    PUSHBUTTON      "&None selection",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Select the nodes you want to export:",IDC_STATIC,57,50,
+                    342,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+END
+
+IDD_SKELETON_FILE_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Skeleton File"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_LRU,58,67,288,71,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Browse...",IDC_BROWSE,349,66,50,14
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,54,14,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Select the corresponding skeleton file:",IDC_STATIC,58,
+                    54,214,8
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,58,11,342,1
+    LTEXT           "Step",IDC_STEP,58,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,58,17,342,36
+    LTEXT           "Select the corresponding face file:",IDC_STATIC2,58,93,
+                    214,8
+    COMBOBOX        IDC_FACEEX,58,105,288,78,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Browse...",IDC_BROWSEF,349,104,50,14
+    COMBOBOX        IDC_EXPCONFIGFILE,58,165,288,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Browse...",IDC_BROWSEECF,349,164,50,14
+    LTEXT           "Select the export configuration file:",IDC_STATICECF,58,
+                    153,214,8
+    COMBOBOX        IDC_EXPCONFIGNAME,58,195,145,71,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Configuration:",IDC_STATICCONF,58,184,58,8
+    CONTROL         "Export all configurations",IDC_EXPALL,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFT | BS_VCENTER | WS_TABSTOP,219,
+                    197,90,10
+END
+
+IDD_ANIMATION_TIME_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Animation Time"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_START_FRAME,121,66,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_END_FRAME,273,66,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DISPLACEMENT,121,107,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_FPS,121,150,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    LTEXT           "Start Frame:",IDC_STATIC,73,68,39,8
+    LTEXT           "End Frame:",IDC_STATIC,231,68,37,8
+    LTEXT           "Displacement:",IDC_STATIC,73,109,47,8
+    LTEXT           "Frames",IDC_STATIC,166,109,50,8
+    LTEXT           "Frame Rate:",IDC_STATIC,73,152,43,8
+    LTEXT           "Frames/Second",IDC_STATIC,166,152,60,8
+    GROUPBOX        "1 - Set the start and end frame of the animation",
+                    IDC_STATIC,57,50,342,36
+    GROUPBOX        "2 - Set the displacement of the keyframes within the animation",
+                    IDC_STATIC,57,92,342,36
+    GROUPBOX        "3 - Set the frame rate (fps) of the animation",
+                    IDC_STATIC,57,135,342,36
+    CONTROL         "Make relative",IDC_RELANIM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,64,215,62,9
+    CONTROL         "Save first",IDC_SAVEFIRST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,64,226,61,9
+    CONTROL         "Save last",IDC_SAVELAST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,226,62,9
+    PUSHBUTTON      "&Save configuration...",IDC_SAVEECF,307,222,82,13,NOT 
+                    WS_VISIBLE
+    CONTROL         "Common animation",IDC_COMMON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,215,86,9
+    CONTROL         "Stay at last",IDC_STAY_ATLAST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,221,215,86,9
+    CONTROL         "Keep frame in place",IDC_WALKANIMATION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,221,226,83,9
+    GROUPBOX        "4 - Set the floor for animation (0 - default)",
+                    IDC_STATIC,57,177,342,33
+    EDITTEXT        IDC_ZPOSITION,121,191,40,14,ES_AUTOHSCROLL
+    LTEXT           "Z position:",IDC_STATIC,73,193,35,8
+    LTEXT           "mm/Units",IDC_STATIC,166,193,60,8
+    CONTROL         "Optimize animations",IDC_OPTIMIZEANIMATIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,63,239,79,9
+    CONTROL         "Keep rotations in animation",IDC_KEEPRTNSINANIMATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,221,239,103,9
+END
+
+IDD_BONE_ASSIGNMENT_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Bone Assignment"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_MAX_BONE_COUNT,131,66,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_WEIGHT_THRESHOLD,131,116,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    LTEXT           "Max. Number of:",IDC_STATIC,71,68,53,8
+    LTEXT           "Weight Threshold:",IDC_STATIC,71,118,60,8
+    GROUPBOX        "1 - Set the maximum number of bones influencing one mesh vertex",
+                    IDC_STATIC,57,50,342,40
+    GROUPBOX        "2 - Set the minimum weight a bone needs to be taken into account",
+                    IDC_STATIC,57,100,342,40
+    LTEXT           "Bones per Vertex",IDC_STATIC,176,68,55,8
+    CONTROL         "Flip mesh faces",IDC_ENABLE_FLIP,"Button",
+                    BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,57,156,69,14
+    CONTROL         "Save configuration file",IDC_SAVECONFIG,"Button",
+                    BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,57,174,90,14
+    CONTROL         "Generate shadow data",IDC_SHADOWDATA,"Button",
+                    BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,57,192,91,14
+    CONTROL         "Use local mesh coordinates",IDC_LOCALCOORDINATES,"Button",
+                    BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,57,209,104,14
+    CONTROL         "Normalize vertex weights",IDC_NORMALIZEWEIGHTS,"Button",
+                    BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,175,156,94,14
+    CONTROL         "Use left assigment to right",
+                    IDC_CHECK_USE_LEFT_ASSIGMENT2RIGHT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,179,105,10
+    CONTROL         "Use right assigment to left",
+                    IDC_CHECK_USE_RIGHT_ASSIGMENT2LEFT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,196,106,10
+    LTEXT           "Compare value exact",IDC_STATIC,187,232,68,8
+    EDITTEXT        IDC_POS_COMPARE_VALUE_EXACT,265,230,51,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_LOD_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Level of Detail"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    GROUPBOX        "1 - Set the LOD properties",IDC_STATIC,57,50,342,40
+    CONTROL         "Automatically create progressive meshes",IDC_ENABLE_LOD,
+                    "Button",BS_AUTOCHECKBOX | BS_BOTTOM | WS_TABSTOP,71,66,
+                    175,14
+END
+
+IDD_MATERIAL_SELECTION_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Material Selection"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Select the material you want to export:",IDC_STATIC,57,
+                    50,214,8
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    LISTBOX         IDC_MATERIAL,58,61,342,199,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MATERIAL_MAPS_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Material Maps"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Edit the maps of this material:",IDC_STATIC,57,50,214,8
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    CONTROL         "List1",IDC_MAPS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,57,61,342,199
+END
+
+IDD_SPRINGSYSTEM_PAGE DIALOGEX 0, 0, 400, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Cal3D Export - Spring System"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "About Cal3D",ID_APP_ABOUT,0,246,53,14,0,
+                    WS_EX_STATICEDGE
+    CONTROL         4002,IDC_STATIC,"Static",SS_BITMAP,0,0,53,246
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,11,342,1
+    LTEXT           "Step",IDC_STEP,57,0,342,8
+    LTEXT           "Description",IDC_DESCRIPTION,57,14,342,36
+    GROUPBOX        "1 - Set the spring system properties",IDC_STATIC,57,50,
+                    342,40
+    CONTROL         "Automatically create a spring system for unattached vertices",
+                    IDC_ENABLE_SPRINGSYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    BS_BOTTOM | WS_TABSTOP,71,66,253,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        VERTGUIDE, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_SKELETON_HIERARCHY_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+
+    IDD_SKELETON_FILE_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 54
+        VERTGUIDE, 58
+        HORZGUIDE, 79
+    END
+
+    IDD_ANIMATION_TIME_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+    END
+
+    IDD_BONE_ASSIGNMENT_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        VERTGUIDE, 176
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+
+    IDD_LOD_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+
+    IDD_MATERIAL_SELECTION_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+
+    IDD_MATERIAL_MAPS_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+
+    IDD_SPRINGSYSTEM_PAGE, DIALOG
+    BEGIN
+        VERTGUIDE, 53
+        VERTGUIDE, 57
+        HORZGUIDE, 50
+        HORZGUIDE, 61
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\cal3d_max_exporter.rc2""  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standardkomponenten\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,7,0,0
+ PRODUCTVERSION 0,7,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080704b0"
+        BEGIN
+            VALUE "CompanyName", " "
+            VALUE "FileDescription", "Cal3D Exporter Plugin"
+            VALUE "FileVersion", "0.7"
+            VALUE "InternalName", "cal3d_max_exporter"
+            VALUE "LegalCopyright", "Copyright © 2001, 2002 Bruno Heidelberger"
+            VALUE "LegalTrademarks", "GNU General Public License"
+            VALUE "OriginalFilename", "cal3d_max_exporter.dle"
+            VALUE "ProductName", "Cal3D Character Animation Library Exporter Plugin"
+            VALUE "ProductVersion", "0.7"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x807, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CAL3D_LOGO          BITMAP                  "res\\cal3d.bmp"
+IDB_CAL3D_BAR           BITMAP                  "res\\cal3d_bar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TYPE_BONE           ICON                    "res\\type_bone.ico"
+IDI_TYPE_OTHER          ICON                    "res\\type_other.ico"
+IDI_TYPE_DUMMY          ICON                    "res\\type_dummy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_SKELETON_EXPORT_DESCRIPTION 
+                            "The exporter has found the nodes below that match the criteria for Cal3D bones. Select the ones you want to export. Keep in mind that only the selected ones can be used later in animation and mesh exports."
+    IDS_NULL                "..."
+    IDS_ANIMATION_EXPORT_DESCRIPTION 
+                            "The exporter needs the corresponding skeleton to assign the animation tracks to the bones. Choose a previously exported Cal3D skeleton file below."
+    IDS_ANIMATION_EXPORT_DESCRIPTION_2 
+                            "The nodes below were previously exported as Cal3D bones. Select the ones you want to export an animation track for."
+    IDS_ANIMATION_EXPORT_DESCRIPTION_3 
+                            "The exporter has tried to query the animation time values. Adjust them carefully. Make sure that the start and end frame are correctly set for animation cycles, and use the displacement to synchronize different ones."
+    IDS_MESH_EXPORT_DESCRIPTION 
+                            "The exporter needs the corresponding skeleton to assign the mesh vertices to the bones. Choose a previously exported Cal3D skeleton file below."
+    IDS_MESH_EXPORT_DESCRIPTION2 
+                            "Each mesh vertex can be influenced by one or more bones with different weights. If you limit the number of bones per vertex below, the exporter will only take the strongest bone influences per vertex into account. A minimum weight threshold can also be set."
+    IDS_MESH_EXPORT_DESCRIPTION3 
+                            "Cal3D supports progressive meshes for level-of-detail. The exporter can automatically create them now. This will take a while for complex models."
+    IDS_MATERIAL_EXPORT_DESCRIPTION 
+                            "The exporter has found the materials below that match the criteria for Cal3D materials. Select the one you want to export."
+    IDS_MATERIAL_EXPORT_DESCRIPTION2 
+                            "The selected material contains the maps below."
+    IDS_MESH_EXPORT_DESCRIPTION4 
+                            "EXPERIMENTAL!!! Cal3D supports spring systems for features such as cloth animation. The exporter can automatically create them now. This will take a while for complex models."
+    IDS_MESH_EXPORT_DESCRIPTION5 
+                            "You can override MAX material properties or textures search path for complex models"
+    IDS_AUTOEXPORT_MESHES   "Autoexport to VirtualUniver server"
+END
+
+#endif    // German (Switzerland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\cal3d_max_exporter.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "l.deu\afxres.rc"          // Standardkomponenten
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

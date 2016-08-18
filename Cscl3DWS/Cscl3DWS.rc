@@ -1,0 +1,283 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_BIG_ARROW           CURSOR                  "arrow_l.cur"
+IDC_BIG_WAIT            CURSOR                  "busy_l.cur"
+IDC_SIZE1               CURSOR                  "size1_i.cur"
+IDC_SIZE2               CURSOR                  "size2_i.cur"
+IDC_SIZE3               CURSOR                  "size3_i.cur"
+IDC_SIZE4               CURSOR                  "size4_i.cur"
+IDC_BIG_HAND            CURSOR                  "harrow.cur"
+IDC_BEAM                CURSOR                  "beam_i.cur"
+IDC_BIG_BEAM            CURSOR                  "beam_il.cur"
+IDC_DRAG                CURSOR                  "hmove.cur"
+IDC_COPY_3D             CURSOR                  "copy_3d.cur"
+IDC_PLACE_3D            CURSOR                  "place_3d.cur"
+IDC_SELECT_3D           CURSOR                  "select_3d.cur"
+IDC_PEN                 CURSOR                  "cursor1.cur"
+IDC_ERASE_8             CURSOR                  "erase_8.cur"
+IDC_ERASE_4             CURSOR                  "erase_4.cur"
+IDC_PLACE_3D_IMPOSSIBILITY CURSOR               "place_3d_impossibility.cur"
+IDC_SCALE_3D            CURSOR                  "scale.cur"
+IDC_SCALE_3D_IMPOSSIBILITY CURSOR               "scale_impossibility.cur"
+IDC_UPDOWN              CURSOR                  "c_updown.cur"
+IDC_ERASE_12            CURSOR                  "erase_12.cur"
+IDC_ERASE_16            CURSOR                  "erase_16.cur"
+IDC_ERASE_20            CURSOR                  "erase_20.cur"
+IDC_ERASE_26            CURSOR                  "erase_26.cur"
+IDC_ERASE_32            CURSOR                  "erase_32.cur"
+IDC_ERASE_10            CURSOR                  "erase_10.cur"
+IDC_ERASE_3             CURSOR                  "erase_2.cur"
+IDC_ERASE_6             CURSOR                  "erase_6.cur"
+IDC_MOVE_3D_PLANE_IMPOSSIBILITY CURSOR          "move3dplane_impossibility.cur"
+IDC_ROTATE_3D_IMPOSSIBILITY CURSOR              "rotate_3d_impossibility.cur"
+IDC_TEXTSTICKER1 	CURSOR        		"textsticker_1.cur"
+IDC_TEXTSTICKER2 	CURSOR        		"textsticker_2.cur"
+IDC_TEXTSTICKER3 	CURSOR        		"textsticker_3.cur"
+IDC_TEXTSTICKER4 	CURSOR        		"textsticker_4.cur"
+IDC_TEXTSTICKER5 	CURSOR        		"textsticker_5.cur"
+IDC_TEXTSTICKER6 	CURSOR        		"textsticker_6.cur"
+IDC_TEXTSTICKER7 	CURSOR        		"textsticker_7.cur"
+IDC_TEXTSTICKER8 	CURSOR        		"textsticker_8.cur"
+IDC_TEXTSTICKER9 	CURSOR        		"textsticker_9.cur"
+IDC_TEXTSTICKER10 	CURSOR        		"textsticker_10.cur"
+IDC_IMAGESTICKER1       CURSOR         		"picsticker_1.cur"
+IDC_IMAGESTICKER2       CURSOR         		"picsticker_2.cur"
+IDC_IMAGESTICKER3       CURSOR         		"picsticker_3.cur"
+IDC_IMAGESTICKER4       CURSOR         		"picsticker_4.cur"
+IDC_IMAGESTICKER5       CURSOR         		"picsticker_5.cur"
+IDC_IMAGESTICKER6       CURSOR         		"picsticker_6.cur"
+IDC_IMAGESTICKER7       CURSOR         		"picsticker_7.cur"
+IDC_IMAGESTICKER8       CURSOR         		"picsticker_8.cur"
+IDC_IMAGESTICKER9       CURSOR         		"picsticker_9.cur"
+IDC_IMAGESTICKER10       CURSOR         	"picsticker_10.cur"
+IDC_HEALCURSOR			CURSOR				"heal.cur"
+IDC_FIREOFFCURSOR		CURSOR				"fireoff.cur"
+IDC_REMOVEBOXCURSOR		CURSOR				"removebox.cur"
+IDC_STRETCHERCURSOR		CURSOR				"stretcher.cur"
+IDC_PEOPLEDRAGCURSOR		CURSOR			"peopleDrag.cur"
+IDC_TRIAGECURSOR		CURSOR				"triage.cur"
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRACE_REFS DIALOGEX 0, 0, 163, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Trace referenses"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,54,7,102,14,ES_AUTOHSCROLL
+    LTEXT           "Object name:",IDC_STATIC,7,9,44,8
+    CONTROL         "Lost objects only (parent==null) ",IDC_CHK_LOST,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,25,138,10
+    CONTROL         "All",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,12,38,
+                    100,10
+    CONTROL         "Any 3D object",IDC_RADIO_3DO,"Button",
+                    BS_AUTORADIOBUTTON,12,50,61,10
+    CONTROL         "3D character",IDC_RADIO_CHARACTER,"Button",
+                    BS_AUTORADIOBUTTON,12,62,76,10
+    CONTROL         "3D group",IDC_RADIO_GROUP,"Button",BS_AUTORADIOBUTTON,
+                    12,74,45,10
+    CONTROL         "Composition",IDC_RADIO_COMP,"Button",BS_AUTORADIOBUTTON,
+                    12,85,55,10
+    DEFPUSHBUTTON   "OK",IDOK,22,106,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,106,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TRACE_REFS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER_COPY        CURSOR                  "arrowcop.cur"
+IDC_POINTER_DELETE      CURSOR                  "delete.cur"
+IDC_MOVE_3D_PLANE       CURSOR                  "move3dplane.cur"
+IDC_ROTATE_3D_PLANE     CURSOR                  "rotate3dplane.cur"
+IDC_MOVE_3D             CURSOR                  "move_3d.cur"
+IDC_ROTATE_3D           CURSOR                  "rotate_3d.cur"
+IDC_POINTER_CREATE      CURSOR                  "arrowcreate.cur"
+IDC_POINTER             CURSOR                  "arrow.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Cscl3DWS Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Cscl3DWS"
+            VALUE "LegalCopyright", "Copyright 2004"
+            VALUE "OriginalFilename", "Cscl3DWS.DLL"
+            VALUE "ProductName", "Cscl3DWS Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "Cscl3DWS"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WS3D                BITMAP                  "ws3d.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_WS3D                REGISTRY                "WS3D.rgs"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

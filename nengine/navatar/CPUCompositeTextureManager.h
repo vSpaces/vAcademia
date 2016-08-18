@@ -1,0 +1,19 @@
+
+#pragma once
+
+#include "ICompositeTextureManager.h"
+
+class CCPUCompositeTextureManager : public ICompositeTextureManager
+{
+public:
+	CCPUCompositeTextureManager();
+	~CCPUCompositeTextureManager();
+
+	void UpdateTexture(unsigned int textureID);
+	void SetMainManager(void* manager);
+	void SetObject3D(C3DObject* obj3d);
+
+private:
+	void* m_manager;
+	C3DObject* m_obj3d;
+};

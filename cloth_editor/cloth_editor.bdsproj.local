@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010.02.25 19:41:58.174.pas,C:\Users\nap\Documents\Borland Studio Projects\Unit1.pas=C:\Work\mmlab\cloth_editor\mainform.pas</Transaction>
+    <Transaction>2010.02.25 19:41:58.174.dfm,C:\Users\nap\Documents\Borland Studio Projects\Unit1.dfm=C:\Work\mmlab\cloth_editor\mainform.dfm</Transaction>
+    <Transaction>2010.02.25 19:45:45.642.bdsproj,C:\Users\nap\Documents\Borland Studio Projects\Project1.bdsproj=C:\Work\mmlab\cloth_editor\cloth_editor.bdsproj</Transaction>
+    <Transaction>2010.02.25 20:48:17.210.pas,C:\Work\mmlab\cloth_editor\Unit2.pas=C:\Work\mmlab\cloth_editor\materialform.pas</Transaction>
+    <Transaction>2010.02.25 20:48:17.210.dfm,C:\Work\mmlab\cloth_editor\Unit2.dfm=C:\Work\mmlab\cloth_editor\materialform.dfm</Transaction>
+    <Transaction>2010.02.25 21:26:11.312.pas,C:\Work\mmlab\cloth_editor\Unit3.pas=C:\Work\mmlab\cloth_editor\editmaterialform.pas</Transaction>
+    <Transaction>2010.02.25 21:26:11.312.dfm,C:\Work\mmlab\cloth_editor\Unit3.dfm=C:\Work\mmlab\cloth_editor\editmaterialform.dfm</Transaction>
+    <Transaction>2010.03.02 00:22:08.725.pas,C:\Work\mmlab\cloth_editor\Unit4.pas=C:\Work\mmlab\cloth_editor\clipboxform.pas</Transaction>
+    <Transaction>2010.03.02 00:22:08.739.dfm,C:\Work\mmlab\cloth_editor\Unit4.dfm=C:\Work\mmlab\cloth_editor\clipboxform.dfm</Transaction>
+    <Transaction>2010.07.30 23:24:31.177.pas,C:\Work\mmlab\cloth_editor\Unit5.pas=C:\Work\mmlab\cloth_editor\advice.pas</Transaction>
+    <Transaction>2010.07.30 23:24:31.177.dfm,C:\Work\mmlab\cloth_editor\Unit5.dfm=C:\Work\mmlab\cloth_editor\advice.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

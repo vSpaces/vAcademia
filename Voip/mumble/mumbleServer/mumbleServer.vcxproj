@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{173CC743-48CA-421E-B16D-CE66531FDA80}</ProjectGuid>
+    <RootNamespace>mumble</RootNamespace>
+    <ProjectName>vAcademiaVoipServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Users\Sinitsyn\trunk\vuEngine\Voip\mumble\mumble-1.2.3\libs\QtMumble\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\mumble-1.2.3\src\murmur; ..\mumble-1.2.3\src; ..\mumble-1.2.3\src\mumble; ..\mumble-1.2.3\src\bonjour; ..\mumble-1.2.3\celt-0.7.0-src\libcelt;  ..\mumble-1.2.3\speex\include; ..\..\..\..\libs; ..\..\..\..\libs\QtMumble\include; ..\..\..\..\libs\protobuf\include; ..\..\..\..\libs\OpenSSL\include; ..\..\..\..\libs\protobuf\include\google\protobuf; ..\..\..\..\libs\Boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions> USE_SQL; WINDOW;UNICODE;QT_LARGEFILE_SUPPORT;QT_EVAL;QT_DLL;QT_NO_DEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_THREAD_SUPPORT;WIN32;USE_WASAPI;MURMUR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qwave.lib;QtXmld4.lib;QtSqld4.lib;QtNetworkd4.lib;QtGuid4.lib;QtCored4.lib;qtmaind.lib;libprotobufd.lib;libmysqld.lib;avrt.lib;ole32.lib;winmm.lib;libeay32.lib;ssleay32.lib;Ws2_32.lib;dbghelp.lib;Wintrust.lib;delayimp.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\mumble-1.2.3\libs\Boost\lib;..\mumble-1.2.3\libs\mysql\lib;..\mumble-1.2.3\libs\OpenSSL\lib;..\mumble-1.2.3\libs\protobuf_2010;..\mumble-1.2.3\libs\QtMumble\lib;..\mumble-1.2.3\libs\QtMumble\pluginlibs;..\mumble-1.2.3\libs\libsndfile\lib;..\mumble-1.2.3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>shell32.dll; AVRT.DLL; Qwave.DLL;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\mumble-1.2.3\src\murmur; ..\mumble-1.2.3\src; ..\mumble-1.2.3\src\mumble; ..\mumble-1.2.3\src\bonjour; ..\mumble-1.2.3\celt-0.7.0-src\libcelt;  ..\mumble-1.2.3\speex\include; ..\..\..\..\libs; ..\..\..\..\libs\QtMumble\include; ..\..\..\..\libs\protobuf\include; ..\..\..\..\libs\OpenSSL\include; ..\..\..\..\libs\protobuf\include\google\protobuf; ..\..\..\..\libs\Boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions> USE_SQL; WINDOW;UNICODE;QT_LARGEFILE_SUPPORT;QT_EVAL;QT_DLL;QT_NO_DEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_THREAD_SUPPORT;WIN32;USE_WASAPI;MURMUR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qwave.lib;QtXml4.lib;QtSql4.lib;QtNetwork4.lib;QtGui4.lib;QtCore4.lib;qtmain.lib;libprotobuf.lib;libmysql.lib;avrt.lib;ole32.lib;winmm.lib;libeay32.lib;ssleay32.lib;Ws2_32.lib;dbghelp.lib;Wintrust.lib;delayimp.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\mumble-1.2.3\libs\Boost\lib;..\mumble-1.2.3\libs\mysql\lib;..\mumble-1.2.3\libs\OpenSSL\lib;..\mumble-1.2.3\libs\protobuf_2010;..\mumble-1.2.3\libs\QtMumble\lib;..\mumble-1.2.3\libs\QtMumble\pluginlibs;..\mumble-1.2.3\libs\libsndfile\lib;..\mumble-1.2.3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>shell32.dll; AVRT.DLL; Qwave.DLL;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\mumble-1.2.3\src\ACL.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Cert.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Channel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Connection.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\CryptState.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Group.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\main.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Messages.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Meta.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Mumble.pb.cc" />
+    <ClCompile Include="..\mumble-1.2.3\src\Net.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\OSInfo.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Register.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\RPC.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Server.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\ServerDB.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\ServerUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\SSL.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Timer.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\Tray.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\User.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Version.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_ACL.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Channel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Connection.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\moc\moc_Meta.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\moc\moc_Server.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\moc\moc_ServerUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\moc\moc_Tray.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\murmur\qrc_murmur.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\mumble-1.2.3\src\ACL.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Channel.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Connection.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\CryptState.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Group.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\Meta.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Mumble.pb.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\murmur_pch.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\MurmurI.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Net.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\OSInfo.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\Server.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\ServerDB.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\ServerUser.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\SSL.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Timer.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\murmur\Tray.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\User.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\mumble-1.2.3\src\murmur\murmur.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

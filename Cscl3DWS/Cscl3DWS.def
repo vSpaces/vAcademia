@@ -1,0 +1,5 @@
+; Cscl3DWS.def : Declares the module parameters.
+
+LIBRARY      "Cscl3DWS.DLL"
+
+EXPORTS

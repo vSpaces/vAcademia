@@ -1,0 +1,31 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+cpp_quote( "#pragma pack(1)")
+typedef struct CLogEvent
+{
+	BYTE btChannel;
+	DWORD dwChannelSq;
+	WORD wEvent;
+	WORD wDataSize;
+	[size_is( wDataSize)] BYTE btData[];
+} CLogEvent;
+
+typedef struct CLogEvent2
+{
+	BYTE btChannel;
+	WORD wObject;
+	DWORD dwObjectSq;
+	DWORD dwTimeDelta;
+	WORD wDataSize;
+	[size_is( wDataSize)] BYTE btData[];
+} CLogEvent2;
+
+typedef struct CLogState2
+{
+	BYTE btChannel;
+	DWORD dwEventID;
+	DWORD dwDataSize;
+	[size_is( dwDataSize)] BYTE btData[];
+} CLogState2;
+cpp_quote( "#pragma pack()")

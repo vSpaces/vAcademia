@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Launcher", "Launcher_2008.vcproj", "{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rtl_2008", "..\rtl\rtl_2008.vcproj", "{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoipManAudioCapture_2008", "..\Voip\AudioCapture\AudioCapture_2008.vcproj", "{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrashHandler_2008", "..\CrashHandler\CrashHandler_2008.vcproj", "{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug optimized|Win32 = Debug optimized|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Debug optimized|Win32.ActiveCfg = Debug optimized|Win32
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Debug optimized|Win32.Build.0 = Debug optimized|Win32
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Debug|Win32.Build.0 = Debug|Win32
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Release|Win32.ActiveCfg = Release|Win32
+		{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}.Release|Win32.Build.0 = Release|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug optimized|Win32.ActiveCfg = Debug optimized|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug optimized|Win32.Build.0 = Debug optimized|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug|Win32.Build.0 = Debug|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Release|Win32.ActiveCfg = Release|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Release|Win32.Build.0 = Release|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug optimized|Win32.ActiveCfg = Debug optimized|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug optimized|Win32.Build.0 = Debug optimized|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Debug|Win32.Build.0 = Debug|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Release|Win32.ActiveCfg = Release|Win32
+		{D2B854CC-1D97-47CA-BB33-38B2E0E82BEB}.Release|Win32.Build.0 = Release|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Debug optimized|Win32.ActiveCfg = Debug|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Debug optimized|Win32.Build.0 = Debug|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Debug|Win32.Build.0 = Debug|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Release|Win32.ActiveCfg = Release|Win32
+		{EB3E89F7-3941-4C0A-A675-7C5ED1D9592A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

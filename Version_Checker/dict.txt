@@ -1,0 +1,40 @@
+[Russian]
+Virtual Academia. Проверка версии
+Некорректные данные
+Доступно обновление клиента vAcademia
+Текущая версия
+Обновить приложение?
+Новых обновлений нет
+Больше не спрашивать меня об этой версии
+Не могу получить необходимые параметры
+Обновите vAcademia с официального сайта
+Произошла ошибка
+Не удалось запустить updater
+Да
+Нет
+Желательное обновление
+Обязательное обновление
+Требуется полное обновление
+Текущая версия клиента не сможет авторизоваться
+Обновить
+Новая версия
+[English]
+Virtual Academia. Version checker
+Incorrect value
+vAcademia client update available
+Current version
+Update? 
+No new updates 
+Do not ask me about this version 
+Can not get the necessary parameters 
+Update vAcademia from the official site 
+An error has occurred 
+Failed to start updater
+Yes
+No
+Desired update
+Required update
+Required full update
+The current version of the client can not log
+Update
+New version

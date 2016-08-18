@@ -1,0 +1,2088 @@
+ libnspr4
+
+ Timestamp is 4bb1a452 (Tue Mar 30 11:12:18 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0004756bH .text                   CODE
+ 0002:00000000 00000104H .CRT$XCA                DATA
+ 0002:00000104 00000104H .CRT$XCZ                DATA
+ 0002:00000208 00000104H .CRT$XIA                DATA
+ 0002:0000030c 00000104H .CRT$XIAA               DATA
+ 0002:00000410 00000104H .CRT$XIC                DATA
+ 0002:00000514 00000104H .CRT$XIZ                DATA
+ 0002:00000618 00000004H .CRT$XLA                DATA
+ 0002:0000061c 00000004H .CRT$XLZ                DATA
+ 0002:00000620 00007a94H .rdata                  DATA
+ 0002:000080b4 0000011cH .rdata$T                DATA
+ 0002:000081d0 0000016fH .rdata$debug            DATA
+ 0002:00008340 00000104H .rdata$sxdata           DATA
+ 0002:00008444 00000104H .rtc$IAA                DATA
+ 0002:00008548 00000104H .rtc$IZZ                DATA
+ 0002:0000864c 00000104H .rtc$TAA                DATA
+ 0002:00008750 00000104H .rtc$TZZ                DATA
+ 0002:00008858 0000019eH .xdata$x                DATA
+ 0002:00008a00 00003536H .edata                  DATA
+ 0003:00000000 00000922H .data                   DATA
+ 0003:00000940 00002890H .bss                    DATA
+ 0004:00000000 00000064H .idata$2                DATA
+ 0004:00000064 00000014H .idata$3                DATA
+ 0004:00000078 000004ecH .idata$4                DATA
+ 0004:00000564 000004ecH .idata$5                DATA
+ 0004:00000a50 00000e61H .idata$6                DATA
+ 0005:00000000 00000101H .tls                    DATA
+ 0005:00000104 00000118H .tls$                   DATA
+ 0005:0000021c 00000101H .tls$ZZZ                DATA
+ 0006:00000000 00000169H .rsrc$01                DATA
+ 0006:00000170 00000426H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       __except_list              00000000     <absolute>
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:0000002c       __tls_array                0000002c     <absolute>
+ 0000:00009876       __ldused                   00009876     <absolute>
+ 0000:00009876       __fltused                  00009876     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:000019f0       _libVersionPoint           100029f0 f   prvrsion.obj
+ 0001:00001a00       __PR_Getfd                 10002a00 f   prfdcach.obj
+ 0001:00001cd0       __PR_Putfd                 10002cd0 f   prfdcach.obj
+ 0001:00001ea0       _PR_SetFDCacheSize         10002ea0 f   prfdcach.obj
+ 0001:00002030       __PR_InitFdCache           10003030 f   prfdcach.obj
+ 0001:000021a0       __PR_CleanupFdCache        100031a0 f   prfdcach.obj
+ 0001:000022e0       __PR_InitMW                100032e0 f   prmwait.obj
+ 0001:00002670       __PR_CleanupMW             10003670 f   prmwait.obj
+ 0001:000026e0       _NT_HashRemoveInternal     100036e0 f   prmwait.obj
+ 0001:00002850       _PR_AddWaitFileDesc        10003850 f   prmwait.obj
+ 0001:000034a0       _PR_WaitRecvReady          100044a0 f   prmwait.obj
+ 0001:000039d0       _PR_CancelWaitFileDesc     100049d0 f   prmwait.obj
+ 0001:00003b70       _PR_CancelWaitGroup        10004b70 f   prmwait.obj
+ 0001:000040a0       _PR_CreateWaitGroup        100050a0 f   prmwait.obj
+ 0001:00004370       _PR_DestroyWaitGroup       10005370 f   prmwait.obj
+ 0001:000045b0       _PR_CreateMWaitEnumerator  100055b0 f   prmwait.obj
+ 0001:00004610       _PR_DestroyMWaitEnumerator 10005610 f   prmwait.obj
+ 0001:000046c0       _PR_EnumerateWaitGroup     100056c0 f   prmwait.obj
+ 0001:000048f0       __PR_SocketGetSocketOption 100058f0 f   prmapopt.obj
+ 0001:00004c60       __PR_SocketSetSocketOption 10005c60 f   prmapopt.obj
+ 0001:00004fa0       __PR_MapOptionName         10005fa0 f   prmapopt.obj
+ 0001:00005020       __PR_InvalidInt            10006020 f   priometh.obj
+ 0001:00005070       __PR_InvalidInt16          10006070 f   priometh.obj
+ 0001:000050c0       __PR_InvalidInt64          100060c0 f   priometh.obj
+ 0001:00005120       __PR_InvalidStatus         10006120 f   priometh.obj
+ 0001:00005170       __PR_InvalidDesc           10006170 f   priometh.obj
+ 0001:000051c0       _PR_GetDescType            100061c0 f   priometh.obj
+ 0001:000051d0       _PR_Close                  100061d0 f   priometh.obj
+ 0001:000051f0       _PR_Read                   100061f0 f   priometh.obj
+ 0001:00005220       _PR_Write                  10006220 f   priometh.obj
+ 0001:00005250       _PR_Seek                   10006250 f   priometh.obj
+ 0001:00005280       _PR_Seek64                 10006280 f   priometh.obj
+ 0001:000052b0       _PR_Available              100062b0 f   priometh.obj
+ 0001:000052d0       _PR_Available64            100062d0 f   priometh.obj
+ 0001:000052f0       _PR_GetOpenFileInfo        100062f0 f   priometh.obj
+ 0001:00005310       _PR_GetOpenFileInfo64      10006310 f   priometh.obj
+ 0001:00005330       _PR_Sync                   10006330 f   priometh.obj
+ 0001:00005350       _PR_Connect                10006350 f   priometh.obj
+ 0001:00005380       _PR_ConnectContinue        10006380 f   priometh.obj
+ 0001:000053b0       _PR_Accept                 100063b0 f   priometh.obj
+ 0001:000053e0       _PR_Bind                   100063e0 f   priometh.obj
+ 0001:00005400       _PR_Shutdown               10006400 f   priometh.obj
+ 0001:00005420       _PR_Listen                 10006420 f   priometh.obj
+ 0001:00005440       _PR_Recv                   10006440 f   priometh.obj
+ 0001:00005470       _PR_Send                   10006470 f   priometh.obj
+ 0001:000054a0       _PR_Writev                 100064a0 f   priometh.obj
+ 0001:000054f0       _PR_RecvFrom               100064f0 f   priometh.obj
+ 0001:00005530       _PR_SendTo                 10006530 f   priometh.obj
+ 0001:00005570       _PR_TransmitFile           10006570 f   priometh.obj
+ 0001:000055b0       _PR_AcceptRead             100065b0 f   priometh.obj
+ 0001:000055f0       _PR_GetSockName            100065f0 f   priometh.obj
+ 0001:00005610       _PR_GetPeerName            10006610 f   priometh.obj
+ 0001:00005630       _PR_GetSocketOption        10006630 f   priometh.obj
+ 0001:00005650       _PR_SetSocketOption        10006650 f   priometh.obj
+ 0001:00005670       _PR_SendFile               10006670 f   priometh.obj
+ 0001:000056a0       _PR_EmulateAcceptRead      100066a0 f   priometh.obj
+ 0001:000057a0       _PR_EmulateSendFile        100067a0 f   priometh.obj
+ 0001:00005d30       __pr_ipv6_is_present       10006d30 f   pripv6.obj
+ 0001:000068d0       __pr_push_ipv6toipv4_layer 100078d0 f   pripv6.obj
+ 0001:000069b0       _pl_FDDestructor           100079b0 f   prlayer.obj
+ 0001:00007ce0       _PR_GetDefaultIOMethods    10008ce0 f   prlayer.obj
+ 0001:00007cf0       _PR_CreateIOLayerStub      10008cf0 f   prlayer.obj
+ 0001:00007db0       _PR_CreateIOLayer          10008db0 f   prlayer.obj
+ 0001:00007e80       _PR_PushIOLayer            10008e80 f   prlayer.obj
+ 0001:00008070       _PR_PopIOLayer             10009070 f   prlayer.obj
+ 0001:00008280       _PR_GetUniqueIdentity      10009280 f   prlayer.obj
+ 0001:000085d0       _PR_GetNameForIdentity     100095d0 f   prlayer.obj
+ 0001:00008660       _PR_GetLayersIdentity      10009660 f   prlayer.obj
+ 0001:000086e0       _PR_GetIdentitiesLayer     100096e0 f   prlayer.obj
+ 0001:00008780       __PR_InitLayerCache        10009780 f   prlayer.obj
+ 0001:000087e0       __PR_CleanupLayerCache     100097e0 f   prlayer.obj
+ 0001:000088a0       __PR_InitLog               100098a0 f   prlog.obj
+ 0001:00008ba0       __PR_LogCleanup            10009ba0 f   prlog.obj
+ 0001:00008cc0       _PR_NewLogModule           10009cc0 f   prlog.obj
+ 0001:00008ec0       _PR_SetLogFile             10009ec0 f   prlog.obj
+ 0001:00008fa0       _PR_SetLogBuffering        10009fa0 f   prlog.obj
+ 0001:00009020       _PR_LogPrint               1000a020 f   prlog.obj
+ 0001:00009c80       _PR_LogFlush               1000ac80 f   prlog.obj
+ 0001:00009fa0       _PR_Abort                  1000afa0 f   prlog.obj
+ 0001:00009fc0       _PR_Assert                 1000afc0 f   prlog.obj
+ 0001:0000a000       _PR_CreateFileMap          1000b000 f   prmmap.obj
+ 0001:0000a0d0       _PR_GetMemMapAlignment     1000b0d0 f   prmmap.obj
+ 0001:0000a0e0       _PR_MemMap                 1000b0e0 f   prmmap.obj
+ 0001:0000a110       _PR_MemUnmap               1000b110 f   prmmap.obj
+ 0001:0000a130       _PR_CloseFileMap           1000b130 f   prmmap.obj
+ 0001:0000a180       _PR_NewPollableEvent       1000b180 f   prpolevt.obj
+ 0001:0000a430       _PR_DestroyPollableEvent   1000b430 f   prpolevt.obj
+ 0001:0000a450       _PR_SetPollableEvent       1000b450 f   prpolevt.obj
+ 0001:0000a490       _PR_WaitForPollableEvent   1000b490 f   prpolevt.obj
+ 0001:0000a550       _PR_sxprintf               1000b550 f   prprf.obj
+ 0001:0000a5a0       _PR_vsxprintf              1000b5a0 f   prprf.obj
+ 0001:0000c6e0       _PR_smprintf               1000d6e0 f   prprf.obj
+ 0001:0000c720       _PR_smprintf_free          1000d720 f   prprf.obj
+ 0001:0000c740       _PR_vsmprintf              1000d740 f   prprf.obj
+ 0001:0000c920       _PR_snprintf               1000d920 f   prprf.obj
+ 0001:0000c970       _PR_vsnprintf              1000d970 f   prprf.obj
+ 0001:0000cab0       _PR_sprintf_append         1000dab0 f   prprf.obj
+ 0001:0000caf0       _PR_vsprintf_append        1000daf0 f   prprf.obj
+ 0001:0000cbb0       _PR_sscanf                 1000dbb0 f   prscanf.obj
+ 0001:0000e630       _PR_fprintf                1000f630 f   prstdio.obj
+ 0001:0000e670       _PR_vfprintf               1000f670 f   prstdio.obj
+ 0001:0000e6f0       __PR_InitCMon              1000f6f0 f   prcmon.obj
+ 0001:0000ea20       __PR_CleanupCMon           1000fa20 f   prcmon.obj
+ 0001:0000eb40       _PR_CEnterMonitor          1000fb40 f   prcmon.obj
+ 0001:0000eda0       _PR_CExitMonitor           1000fda0 f   prcmon.obj
+ 0001:0000ef10       _PR_CWait                  1000ff10 f   prcmon.obj
+ 0001:0000efa0       _PR_CNotify                1000ffa0 f   prcmon.obj
+ 0001:0000f030       _PR_CNotifyAll             10010030 f   prcmon.obj
+ 0001:0000f0c0       _PR_CSetOnMonitorRecycle   100100c0 f   prcmon.obj
+ 0001:0000f0d0       _PR_NewRWLock              100100d0 f   prrwlock.obj
+ 0001:0000f2a0       _PR_DestroyRWLock          100102a0 f   prrwlock.obj
+ 0001:0000f340       _PR_RWLock_Rlock           10010340 f   prrwlock.obj
+ 0001:0000f420       _PR_RWLock_Wlock           10010420 f   prrwlock.obj
+ 0001:0000f560       _PR_RWLock_Unlock          10010560 f   prrwlock.obj
+ 0001:0000f6d0       __PR_InitRWLocks           100106d0 f   prrwlock.obj
+ 0001:0000f970       __PR_InitTPD               10010970 f   prtpd.obj
+ 0001:0000f9d0       __PR_CleanupTPD            100109d0 f   prtpd.obj
+ 0001:0000f9e0       _PR_NewThreadPrivateIndex  100109e0 f   prtpd.obj
+ 0001:0000fac0       _PR_SetThreadPrivate       10010ac0 f   prtpd.obj
+ 0001:0000fcd0       _PR_GetThreadPrivate       10010cd0 f   prtpd.obj
+ 0001:0000fd30       __PR_DestroyThreadPrivate  10010d30 f   prtpd.obj
+ 0001:0000fe60       __PR_InitLinker            10010e60 f   prlink.obj
+ 0001:0000ff60       __PR_ShutdownLinker        10010f60 f   prlink.obj
+ 0001:0000ffb0       _PR_SetLibraryPath         10010fb0 f   prlink.obj
+ 0001:00010070       _PR_GetLibraryPath         10011070 f   prlink.obj
+ 0001:00010150       _PR_GetLibraryName         10011150 f   prlink.obj
+ 0001:00010210       _PR_FreeLibraryName        10011210 f   prlink.obj
+ 0001:00010230       _PR_LoadLibraryWithFlags   10011230 f   prlink.obj
+ 0001:000102b0       _PR_LoadLibrary            100112b0 f   prlink.obj
+ 0001:00010850       _PR_UnloadLibrary          10011850 f   prlink.obj
+ 0001:00010ac0       _PR_FindSymbol             10011ac0 f   prlink.obj
+ 0001:00010c30       _PR_FindFunctionSymbol     10011c30 f   prlink.obj
+ 0001:00010c50       _PR_FindSymbolAndLibrary   10011c50 f   prlink.obj
+ 0001:00010d50       _PR_FindFunctionSymbolAndLibrary 10011d50 f   prlink.obj
+ 0001:00010d70       _PR_LoadStaticLibrary      10011d70 f   prlink.obj
+ 0001:00010f20       _PR_GetLibraryFilePathname 10011f20 f   prlink.obj
+ 0001:000110b0       _PR_Malloc                 100120b0 f   prmem.obj
+ 0001:000110d0       _PR_Calloc                 100120d0 f   prmem.obj
+ 0001:000110f0       _PR_Realloc                100120f0 f   prmem.obj
+ 0001:00011110       _PR_Free                   10012110 f   prmem.obj
+ 0001:00011130       _PR_GetPageShift           10012130 f   prosdep.obj
+ 0001:00011290       _PR_GetPageSize            10012290 f   prosdep.obj
+ 0001:000112b0       _PR_OpenSharedMemory       100122b0 f   prshm.obj
+ 0001:000112f0       _PR_AttachSharedMemory     100122f0 f   prshm.obj
+ 0001:00011310       _PR_DetachSharedMemory     10012310 f   prshm.obj
+ 0001:00011330       _PR_CloseSharedMemory      10012330 f   prshm.obj
+ 0001:00011350       _PR_DeleteSharedMemory     10012350 f   prshm.obj
+ 0001:00011380       _PR_OpenAnonFileMap        10012380 f   prshma.obj
+ 0001:000113a0       _PR_ProcessAttrSetInheritableFileMap 100123a0 f   prshma.obj
+ 0001:000113c0       _PR_GetInheritedFileMap    100123c0 f   prshma.obj
+ 0001:000113f0       _PR_ExportFileMapAsString  100123f0 f   prshma.obj
+ 0001:00011410       _PR_ImportFileMapFromString 10012410 f   prshma.obj
+ 0001:00011430       __PR_InitSegs              10012430 f   prseg.obj
+ 0001:00011440       __PR_NewSegment            10012440 f   prseg.obj
+ 0001:000114b0       __PR_DestroySegment        100124b0 f   prseg.obj
+ 0001:000114d0       _PR_CreateAlarm            100124d0 f   pralarm.obj
+ 0001:00011970       _PR_DestroyAlarm           10012970 f   pralarm.obj
+ 0001:00011a30       _PR_SetAlarm               10012a30 f   pralarm.obj
+ 0001:00011b50       _PR_ResetAlarm             10012b50 f   pralarm.obj
+ 0001:00011bb0       __PR_InitAtomic            10012bb0 f   pratom.obj
+ 0001:00011bc0       _PR_AtomicIncrement        10012bc0 f   pratom.obj
+ 0001:00011be0       _PR_AtomicDecrement        10012be0 f   pratom.obj
+ 0001:00011c00       _PR_AtomicSet              10012c00 f   pratom.obj
+ 0001:00011c20       _PR_AtomicAdd              10012c20 f   pratom.obj
+ 0001:00011c40       _PR_CreateStack            10012c40 f   pratom.obj
+ 0001:00011d10       _PR_DestroyStack           10012d10 f   pratom.obj
+ 0001:00011d80       _PR_CreateCounter          10012d80 f   prcountr.obj
+ 0001:000121f0       _PR_DestroyCounter         100131f0 f   prcountr.obj
+ 0001:00012370       _PR_GetCounterHandleFromName 10013370 f   prcountr.obj
+ 0001:000124b0       _PR_GetCounterNameFromHandle 100134b0 f   prcountr.obj
+ 0001:00012540       _PR_IncrementCounter       10013540 f   prcountr.obj
+ 0001:000125b0       _PR_DecrementCounter       100135b0 f   prcountr.obj
+ 0001:00012620       _PR_AddToCounter           10013620 f   prcountr.obj
+ 0001:00012690       _PR_SubtractFromCounter    10013690 f   prcountr.obj
+ 0001:00012700       _PR_GetCounter             10013700 f   prcountr.obj
+ 0001:00012740       _PR_SetCounter             10013740 f   prcountr.obj
+ 0001:00012790       _PR_FindNextCounterQname   10013790 f   prcountr.obj
+ 0001:00012830       _PR_FindNextCounterRname   10013830 f   prcountr.obj
+ 0001:000128e0       __PR_InitDtoa              100138e0 f   prdtoa.obj
+ 0001:00012900       __PR_CleanupDtoa           10013900 f   prdtoa.obj
+ 0001:00012950       _PR_strtod                 10013950 f   prdtoa.obj
+ 0001:00015560       _freedtoa                  10016560 f   prdtoa.obj
+ 0001:000155b0       _PR_dtoa                   100165b0 f   prdtoa.obj
+ 0001:00017210       _PR_cnvtf                  10018210 f   prdtoa.obj
+ 0001:000175d0       __PR_InitEnv               100185d0 f   prenv.obj
+ 0001:000175f0       __PR_CleanupEnv            100185f0 f   prenv.obj
+ 0001:00017620       _PR_GetEnv                 10018620 f   prenv.obj
+ 0001:00017690       _PR_SetEnv                 10018690 f   prenv.obj
+ 0001:00017720       _nspr_InitializePRErrorTable 10018720 f   prerr.obj
+ 0001:00017740       _PR_GetError               10018740 f   prerror.obj
+ 0001:00017760       _PR_GetOSError             10018760 f   prerror.obj
+ 0001:00017780       _PR_SetError               10018780 f   prerror.obj
+ 0001:000177c0       _PR_SetErrorText           100187c0 f   prerror.obj
+ 0001:000178e0       _PR_GetErrorTextLength     100188e0 f   prerror.obj
+ 0001:00017900       _PR_GetErrorText           10018900 f   prerror.obj
+ 0001:00017950       _PR_ErrorToString          10018950 f   prerrortable.obj
+ 0001:00017c40       _PR_ErrorToName            10018c40 f   prerrortable.obj
+ 0001:00017cc0       _PR_ErrorLanguages         10018cc0 f   prerrortable.obj
+ 0001:00017cd0       _PR_ErrorInstallTable      10018cd0 f   prerrortable.obj
+ 0001:00017d60       _PR_ErrorInstallCallback   10018d60 f   prerrortable.obj
+ 0001:00017e60       _PR_VersionCheck           10018e60 f   prinit.obj
+ 0001:00017fd0       _PR_Initialized            10018fd0 f   prinit.obj
+ 0001:00017fe0       __PR_ImplicitInitialization 10018fe0 f   prinit.obj
+ 0001:000182b0       _PR_DisableClockInterrupts 100192b0 f   prinit.obj
+ 0001:000182d0       _PR_EnableClockInterrupts  100192d0 f   prinit.obj
+ 0001:000182f0       _PR_BlockClockInterrupts   100192f0 f   prinit.obj
+ 0001:00018300       _PR_UnblockClockInterrupts 10019300 f   prinit.obj
+ 0001:00018310       _PR_Init                   10019310 f   prinit.obj
+ 0001:00018320       _PR_Initialize             10019320 f   prinit.obj
+ 0001:00018350       _PR_Cleanup                10019350 f   prinit.obj
+ 0001:000185f0       _PR_ProcessExit            100195f0 f   prinit.obj
+ 0001:00018610       _PR_NewProcessAttr         10019610 f   prinit.obj
+ 0001:00018650       _PR_ResetProcessAttr       10019650 f   prinit.obj
+ 0001:000186c0       _PR_DestroyProcessAttr     100196c0 f   prinit.obj
+ 0001:00018740       _PR_ProcessAttrSetStdioRedirect 10019740 f   prinit.obj
+ 0001:000187b0       _PR_SetStdioRedirect       100197b0 f   prinit.obj
+ 0001:00018800       _PR_ProcessAttrSetCurrentDirectory 10019800 f   prinit.obj
+ 0001:000188a0       _PR_ProcessAttrSetInheritableFD 100198a0 f   prinit.obj
+ 0001:00018ae0       _PR_GetInheritedFD         10019ae0 f   prinit.obj
+ 0001:00018d30       _PR_CreateProcess          10019d30 f   prinit.obj
+ 0001:00018d60       _PR_CreateProcessDetached  10019d60 f   prinit.obj
+ 0001:00018e00       _PR_DetachProcess          10019e00 f   prinit.obj
+ 0001:00018e20       _PR_WaitProcess            10019e20 f   prinit.obj
+ 0001:00018e40       _PR_KillProcess            10019e40 f   prinit.obj
+ 0001:00018ee0       __PR_CleanupCallOnce       10019ee0 f   prinit.obj
+ 0001:00018f30       _PR_CallOnce               10019f30 f   prinit.obj
+ 0001:00019030       _PR_CallOnceWithArg        1001a030 f   prinit.obj
+ 0001:00019140       __PR_Obsolete              1001a140 f   prinit.obj
+ 0001:00019190       __PR_InitClock             1001a190 f   prinrval.obj
+ 0001:00019200       _PR_IntervalNow            1001a200 f   prinrval.obj
+ 0001:00019220       _PR_TicksPerSecond         1001a220 f   prinrval.obj
+ 0001:00019240       _PR_SecondsToInterval      1001a240 f   prinrval.obj
+ 0001:00019260       _PR_MillisecondsToInterval 1001a260 f   prinrval.obj
+ 0001:00019320       _PR_MicrosecondsToInterval 1001a320 f   prinrval.obj
+ 0001:000193e0       _PR_IntervalToSeconds      1001a3e0 f   prinrval.obj
+ 0001:00019400       _PR_IntervalToMilliseconds 1001a400 f   prinrval.obj
+ 0001:000194c0       _PR_IntervalToMicroseconds 1001a4c0 f   prinrval.obj
+ 0001:00019580       __PR_MakeNativeIPCName     1001a580 f   pripc.obj
+ 0001:00019650       _PR_CeilingLog2            1001a650 f   prlog2.obj
+ 0001:00019720       _PR_FloorLog2              1001a720 f   prlog2.obj
+ 0001:000197e0       _LL_Zero                   1001a7e0 f   prlong.obj
+ 0001:00019800       _LL_MaxInt                 1001a800 f   prlong.obj
+ 0001:00019820       _LL_MinInt                 1001a820 f   prlong.obj
+ 0001:00019840       _LL_MaxUint                1001a840 f   prlong.obj
+ 0001:00019860       __PR_InitNet               1001a860 f   prnetdb.obj
+ 0001:00019880       __PR_CleanupNet            1001a880 f   prnetdb.obj
+ 0001:000198b0       _PR_GetHostByName          1001a8b0 f   prnetdb.obj
+ 0001:00019f20       _PR_GetIPNodeByName        1001af20 f   prnetdb.obj
+ 0001:0001a020       _PR_GetHostByAddr          1001b020 f   prnetdb.obj
+ 0001:0001a330       _PR_GetProtoByName         1001b330 f   prnetdb.obj
+ 0001:0001a630       _PR_GetProtoByNumber       1001b630 f   prnetdb.obj
+ 0001:0001a740       __PR_NetAddrSize           1001b740 f   prnetdb.obj
+ 0001:0001a790       _PR_EnumerateHostEnt       1001b790 f   prnetdb.obj
+ 0001:0001a8c0       _PR_InitializeNetAddr      1001b8c0 f   prnetdb.obj
+ 0001:0001a990       _PR_SetNetAddr             1001b990 f   prnetdb.obj
+ 0001:0001ab80       _PR_IsNetAddrType          1001bb80 f   prnetdb.obj
+ 0001:0001ae20       _PR_ConvertIPv4AddrToIPv6  1001be20 f   prnetdb.obj
+ 0001:0001ae80       _PR_ntohs                  1001be80 f   prnetdb.obj
+ 0001:0001aea0       _PR_ntohl                  1001bea0 f   prnetdb.obj
+ 0001:0001aec0       _PR_htons                  1001bec0 f   prnetdb.obj
+ 0001:0001aee0       _PR_htonl                  1001bee0 f   prnetdb.obj
+ 0001:0001af00       _PR_ntohll                 1001bf00 f   prnetdb.obj
+ 0001:0001afb0       _PR_htonll                 1001bfb0 f   prnetdb.obj
+ 0001:0001b060       __pr_find_getaddrinfo      1001c060 f   prnetdb.obj
+ 0001:0001b170       _PR_GetAddrInfoByName      1001c170 f   prnetdb.obj
+ 0001:0001b340       _PR_FreeAddrInfo           1001c340 f   prnetdb.obj
+ 0001:0001b370       _PR_EnumerateAddrInfo      1001c370 f   prnetdb.obj
+ 0001:0001b4d0       _PR_GetCanonNameFromAddrInfo 1001c4d0 f   prnetdb.obj
+ 0001:0001b530       _PR_StringToNetAddr        1001c530 f   prnetdb.obj
+ 0001:0001bd30       _PR_NetAddrToString        1001cd30 f   prnetdb.obj
+ 0001:0001c8d0       _PR_CreateOrderedLock      1001d8d0 f   prolock.obj
+ 0001:0001c920       _PR_DestroyOrderedLock     1001d920 f   prolock.obj
+ 0001:0001c960       _PR_LockOrderedLock        1001d960 f   prolock.obj
+ 0001:0001c9a0       _PR_UnlockOrderedLock      1001d9a0 f   prolock.obj
+ 0001:0001c9f0       __pr_CopyLowBits           1001d9f0 f   prrng.obj
+ 0001:0001ca40       _PR_GetRandomNoise         1001da40 f   prrng.obj
+ 0001:0001ca60       _PR_GetDirectorySeparator  1001da60 f   prsystem.obj
+ 0001:0001ca70       _PR_GetDirectorySepartor   1001da70 f   prsystem.obj
+ 0001:0001cab0       _PR_GetPathSeparator       1001dab0 f   prsystem.obj
+ 0001:0001cac0       _PR_GetSystemInfo          1001dac0 f   prsystem.obj
+ 0001:0001cc30       _PR_GetNumberOfProcessors  1001dc30 f   prsystem.obj
+ 0001:0001cc60       _PR_GetPhysicalMemorySize  1001dc60 f   prsystem.obj
+ 0001:0001cd30       _PR_GetGCRegisters         1001dd30 f   prthinfo.obj
+ 0001:0001cd50       _PR_ThreadScanStackPointers 1001dd50 f   prthinfo.obj
+ 0001:0001cf20       _PR_ScanStackPointers      1001df20 f   prthinfo.obj
+ 0001:0001cf80       _PR_GetStackSpaceLeft      1001df80 f   prthinfo.obj
+ 0001:0001d040       _PR_CreateThreadPool       1001e040 f   prtpool.obj
+ 0001:0001e620       _PR_QueueJob               1001f620 f   prtpool.obj
+ 0001:0001e730       _PR_QueueJob_Read          1001f730 f   prtpool.obj
+ 0001:0001ea50       _PR_QueueJob_Write         1001fa50 f   prtpool.obj
+ 0001:0001ea80       _PR_QueueJob_Accept        1001fa80 f   prtpool.obj
+ 0001:0001eab0       _PR_QueueJob_Connect       1001fab0 f   prtpool.obj
+ 0001:0001eb60       _PR_QueueJob_Timer         1001fb60 f   prtpool.obj
+ 0001:0001edc0       _PR_CancelJob              1001fdc0 f   prtpool.obj
+ 0001:0001f100       _PR_JoinJob                10020100 f   prtpool.obj
+ 0001:0001f190       _PR_ShutdownThreadPool     10020190 f   prtpool.obj
+ 0001:0001f1f0       _PR_JoinThreadPool         100201f0 f   prtpool.obj
+ 0001:0001f730       _PR_CreateTrace            10020730 f   prtrace.obj
+ 0001:0001fe20       _PR_DestroyTrace           10020e20 f   prtrace.obj
+ 0001:0001ffa0       _PR_Trace                  10020fa0 f   prtrace.obj
+ 0001:00020150       _PR_SetTraceOption         10021150 f   prtrace.obj
+ 0001:00020550       _PR_GetTraceOption         10021550 f   prtrace.obj
+ 0001:000205f0       _PR_GetTraceHandleFromName 100215f0 f   prtrace.obj
+ 0001:00020730       _PR_GetTraceNameFromHandle 10021730 f   prtrace.obj
+ 0001:000207c0       _PR_FindNextTraceQname     100217c0 f   prtrace.obj
+ 0001:00020860       _PR_FindNextTraceRname     10021860 f   prtrace.obj
+ 0001:00020910       _PR_RecordTraceEntries     10021910 f   prtrace.obj
+ 0001:00020f40       _PR_GetTraceEntries        10021f40 f   prtrace.obj
+ 0001:000211e0       _PR_ExplodeTime            100221e0 f   prtime.obj
+ 0001:000215f0       _PR_ImplodeTime            100225f0 f   prtime.obj
+ 0001:00021b80       _PR_NormalizeTime          10022b80 f   prtime.obj
+ 0001:000220d0       __PR_InitTime              100230d0 f   prtime.obj
+ 0001:000220f0       __PR_CleanupTime           100230f0 f   prtime.obj
+ 0001:00022120       _PR_LocalTimeParameters    10023120 f   prtime.obj
+ 0001:00022490       _PR_USPacificTimeParameters 10023490 f   prtime.obj
+ 0001:000226f0       _PR_GMTParameters          100236f0 f   prtime.obj
+ 0001:00022720       _PR_ParseTimeStringToExplodedTime 10023720 f   prtime.obj
+ 0001:00024610       _PR_ParseTimeString        10025610 f   prtime.obj
+ 0001:00024670       _PR_FormatTime             10025670 f   prtime.obj
+ 0001:00024760       _PR_FormatTimeUSEnglish    10025760 f   prtime.obj
+ 0001:00025970       _PR_OpenDir                10026970 f   prdir.obj
+ 0001:000259f0       _PR_ReadDir                100269f0 f   prdir.obj
+ 0001:00025a30       _PR_CloseDir               10026a30 f   prdir.obj
+ 0001:00025a90       _PR_MkDir                  10026a90 f   prdir.obj
+ 0001:00025ad0       _PR_MakeDir                10026ad0 f   prdir.obj
+ 0001:00025b20       _PR_RmDir                  10026b20 f   prdir.obj
+ 0001:000261d0       _PR_GetFileMethods         100271d0 f   prfile.obj
+ 0001:000261e0       _PR_GetPipeMethods         100271e0 f   prfile.obj
+ 0001:000261f0       _PR_Open                   100271f0 f   prfile.obj
+ 0001:000262b0       _PR_OpenFile               100272b0 f   prfile.obj
+ 0001:00026370       _PR_GetSysfdTableMax       10027370 f   prfile.obj
+ 0001:00026380       _PR_SetSysfdTableSize      10027380 f   prfile.obj
+ 0001:000263a0       _PR_Delete                 100273a0 f   prfile.obj
+ 0001:000263d0       _PR_GetFileInfo            100273d0 f   prfile.obj
+ 0001:00026410       _PR_GetFileInfo64          10027410 f   prfile.obj
+ 0001:00026460       _PR_Rename                 10027460 f   prfile.obj
+ 0001:000264a0       _PR_Access                 100274a0 f   prfile.obj
+ 0001:000264e0       _PR_ImportFile             100274e0 f   prfile.obj
+ 0001:00026550       _PR_ImportPipe             10027550 f   prfile.obj
+ 0001:000265d0       _PR_Stat                   100275d0 f   prfile.obj
+ 0001:00026600       _PR_LockFile               10027600 f   prfile.obj
+ 0001:00026770       _PR_TLockFile              10027770 f   prfile.obj
+ 0001:000268a0       _PR_UnlockFile             100278a0 f   prfile.obj
+ 0001:00026940       _PR_CreatePipe             10027940 f   prfile.obj
+ 0001:00026aa0       __PR_InitIO                10027aa0 f   prio.obj
+ 0001:00026bc0       __PR_CleanupIO             10027bc0 f   prio.obj
+ 0001:00026c80       _PR_GetSpecialFD           10027c80 f   prio.obj
+ 0001:00026d30       _PR_AllocFileDesc          10027d30 f   prio.obj
+ 0001:00026d90       _PR_FreeFileDesc           10027d90 f   prio.obj
+ 0001:00026dd0       _PR_Poll                   10027dd0 f   prio.obj
+ 0001:00026df0       _PR_SetFDInheritable       10027df0 f   prio.obj
+ 0001:00026e60       _PT_FPrintStats            10027e60 f   prio.obj
+ 0001:00026e70       _IsValidNetAddr            10027e70 f   prsocket.obj
+ 0001:000271e0       _PR_ImportTCPSocket        100281e0 f   prsocket.obj
+ 0001:00027270       _PR_ImportUDPSocket        10028270 f   prsocket.obj
+ 0001:000272f0       _PR_CreateSocketPollFd     100282f0 f   prsocket.obj
+ 0001:00027370       _PR_DestroySocketPollFd    10028370 f   prsocket.obj
+ 0001:00027610       _PR_GetConnectStatus       10028610 f   prsocket.obj
+ 0001:00027930       _PR_NTFast_Accept          10028930 f   prsocket.obj
+ 0001:00028840       _PR_NTFast_AcceptRead      10029840 f   prsocket.obj
+ 0001:00028a10       _PR_NTFast_AcceptRead_WithTimeoutCallback 10029a10 f   prsocket.obj
+ 0001:00028be0       _PR_NTFast_UpdateAcceptContext 10029be0 f   prsocket.obj
+ 0001:00028f10       _PR_GetTCPMethods          10029f10 f   prsocket.obj
+ 0001:00028f20       _PR_GetUDPMethods          10029f20 f   prsocket.obj
+ 0001:00028f40       __pr_test_ipv6_socket      10029f40 f   prsocket.obj
+ 0001:00028f90       _PR_Socket                 10029f90 f   prsocket.obj
+ 0001:00029100       _PR_NewTCPSocket           1002a100 f   prsocket.obj
+ 0001:00029130       _PR_NewUDPSocket           1002a130 f   prsocket.obj
+ 0001:00029160       _PR_OpenTCPSocket          1002a160 f   prsocket.obj
+ 0001:00029180       _PR_OpenUDPSocket          1002a180 f   prsocket.obj
+ 0001:000291a0       _PR_NewTCPSocketPair       1002a1a0 f   prsocket.obj
+ 0001:00029460       _PR_FileDesc2NativeHandle  1002a460 f   prsocket.obj
+ 0001:000294b0       _PR_ChangeFileDescNativeHandle 1002a4b0 f   prsocket.obj
+ 0001:000294d0       _PR_FD_ZERO                1002a4d0 f   prsocket.obj
+ 0001:000294f0       _PR_FD_SET                 1002a4f0 f   prsocket.obj
+ 0001:00029550       _PR_FD_CLR                 1002a550 f   prsocket.obj
+ 0001:000295f0       _PR_FD_ISSET               1002a5f0 f   prsocket.obj
+ 0001:00029640       _PR_FD_NSET                1002a640 f   prsocket.obj
+ 0001:000296b0       _PR_FD_NCLR                1002a6b0 f   prsocket.obj
+ 0001:00029770       _PR_FD_NISSET              1002a770 f   prsocket.obj
+ 0001:000297d0       _PR_Select                 1002a7d0 f   prsocket.obj
+ 0001:00029d60       _PR_OpenSemaphore          1002ad60 f   pripcsem.obj
+ 0001:00029df0       _PR_WaitSemaphore          1002adf0 f   pripcsem.obj
+ 0001:00029e10       _PR_PostSemaphore          1002ae10 f   pripcsem.obj
+ 0001:00029e30       _PR_CloseSemaphore         1002ae30 f   pripcsem.obj
+ 0001:00029e50       _PR_DeleteSemaphore        1002ae50 f   pripcsem.obj
+ 0001:00029ec0       __PR_CleanupThread         1002aec0 f   prcthr.obj
+ 0001:00029f60       _PR_Yield                  1002af60 f   prcthr.obj
+ 0001:00029fa0       _PR_Sleep                  1002afa0 f   prcthr.obj
+ 0001:0002a480       _PR_GetThreadID            1002b480 f   prcthr.obj
+ 0001:0002a4a0       _PR_GetThreadPriority      1002b4a0 f   prcthr.obj
+ 0001:0002a4b0       _PR_GetCurrentThread       1002b4b0 f   prcthr.obj
+ 0001:0002a4d0       _PR_Interrupt              1002b4d0 f   prcthr.obj
+ 0001:0002a740       _PR_ClearInterrupt         1002b740 f   prcthr.obj
+ 0001:0002a950       _PR_BlockInterrupt         1002b950 f   prcthr.obj
+ 0001:0002ab60       _PR_UnblockInterrupt       1002bb60 f   prcthr.obj
+ 0001:0002ad70       _PR_GetSP                  1002bd70 f   prcthr.obj
+ 0001:0002ad90       _GetExecutionEnvironment   1002bd90 f   prcthr.obj
+ 0001:0002ada0       _SetExecutionEnvironment   1002bda0 f   prcthr.obj
+ 0001:0002adc0       _PR_GetThreadAffinityMask  1002bdc0 f   prcthr.obj
+ 0001:0002ade0       _PR_SetThreadAffinityMask  1002bde0 f   prcthr.obj
+ 0001:0002ae00       _PR_SetCPUAffinityMask     1002be00 f   prcthr.obj
+ 0001:0002ae70       _PR_SetThreadRecycleMode   1002be70 f   prcthr.obj
+ 0001:0002ae80       _PR_CreateThreadGCAble     1002be80 f   prcthr.obj
+ 0001:0002aec0       _PR_AttachThreadGCAble     1002bec0 f   prcthr.obj
+ 0001:0002aee0       _PR_SetThreadGCAble        1002bee0 f   prcthr.obj
+ 0001:0002af50       _PR_ClearThreadGCAble      1002bf50 f   prcthr.obj
+ 0001:0002afc0       _PR_GetThreadScope         1002bfc0 f   prcthr.obj
+ 0001:0002b020       _PR_GetThreadType          1002c020 f   prcthr.obj
+ 0001:0002b040       _PR_GetThreadState         1002c040 f   prcthr.obj
+ 0001:0002b060       __PR_DumpPrintf            1002c060 f   prdump.obj
+ 0001:0002b0e0       __PR_DumpThread            1002c0e0 f   prdump.obj
+ 0001:0002b200       __PR_DumpThreads           1002c200 f   prdump.obj
+ 0001:0002b3a0       _PR_ShowStatus             1002c3a0 f   prdump.obj
+ 0001:0002b500       _PR_SetThreadDumpProc      1002c500 f   prdump.obj
+ 0001:0002b520       _PR_NewMonitor             1002c520 f   prmon.obj
+ 0001:0002b5e0       _PR_NewNamedMonitor        1002c5e0 f   prmon.obj
+ 0001:0002b610       _PR_DestroyMonitor         1002c610 f   prmon.obj
+ 0001:0002b660       _PR_EnterMonitor           1002c660 f   prmon.obj
+ 0001:0002b6c0       _PR_TestAndEnterMonitor    1002c6c0 f   prmon.obj
+ 0001:0002b730       _PR_ExitMonitor            1002c730 f   prmon.obj
+ 0001:0002b790       _PR_GetMonitorEntryCount   1002c790 f   prmon.obj
+ 0001:0002b7d0       _PR_AssertCurrentThreadInMonitor 1002c7d0 f   prmon.obj
+ 0001:0002b7f0       _PR_Wait                   1002c7f0 f   prmon.obj
+ 0001:0002b880       _PR_Notify                 1002c880 f   prmon.obj
+ 0001:0002b8d0       _PR_NotifyAll              1002c8d0 f   prmon.obj
+ 0001:0002b920       __PR_MonitorToString       1002c920 f   prmon.obj
+ 0001:0002b9c0       _PR_NewSem                 1002c9c0 f   prsem.obj
+ 0001:0002ba80       _PR_DestroySem             1002ca80 f   prsem.obj
+ 0001:0002baf0       _PR_WaitSem                1002caf0 f   prsem.obj
+ 0001:0002bba0       _PR_PostSem                1002cba0 f   prsem.obj
+ 0001:0002bc00       _PR_GetValueSem            1002cc00 f   prsem.obj
+ 0001:0002bc50       __PR_InitCPUs              1002cc50 f   prucpu.obj
+ 0001:0002bcd0       __PR_CleanupCPUs           1002ccd0 f   prucpu.obj
+ 0001:0002c6e0       _PR_SetConcurrency         1002d6e0 f   prucpu.obj
+ 0001:0002c7b0       __PR_GetPrimordialCPU      1002d7b0 f   prucpu.obj
+ 0001:0002c820       __PR_NotifyThread          1002d820 f   prucv.obj
+ 0001:0002cbc0       __PR_NotifyLockedThread    1002dbc0 f   prucv.obj
+ 0001:0002ce30       __PR_WaitCondVar           1002de30 f   prucv.obj
+ 0001:0002d460       __PR_NotifyCondVar         1002e460 f   prucv.obj
+ 0001:0002d740       __PR_CondVarToString       1002e740 f   prucv.obj
+ 0001:0002d7d0       __PR_ClockInterrupt        1002e7d0 f   prucv.obj
+ 0001:0002e030       _PR_NewCondVar             1002f030 f   prucv.obj
+ 0001:0002e110       _PR_DestroyCondVar         1002f110 f   prucv.obj
+ 0001:0002e170       _PR_WaitCondVar            1002f170 f   prucv.obj
+ 0001:0002e220       _PR_NotifyCondVar          1002f220 f   prucv.obj
+ 0001:0002e2c0       _PR_NotifyAllCondVar       1002f2c0 f   prucv.obj
+ 0001:0002e560       _PRP_NewNakedCondVar       1002f560 f   prucv.obj
+ 0001:0002e600       _PRP_DestroyNakedCondVar   1002f600 f   prucv.obj
+ 0001:0002e690       _PRP_NakedWait             1002f690 f   prucv.obj
+ 0001:0002e6f0       _PRP_NakedNotify           1002f6f0 f   prucv.obj
+ 0001:0002e750       _PRP_NakedBroadcast        1002f750 f   prucv.obj
+ 0001:0002e9d0       __PR_InitLocks             1002f9d0 f   prulock.obj
+ 0001:0002e9e0       __PR_IntsOn                1002f9e0 f   prulock.obj
+ 0001:0002ecd0       __PR_UnblockLockWaiter     1002fcd0 f   prulock.obj
+ 0001:0002eea0       _PR_NewLock                1002fea0 f   prulock.obj
+ 0001:0002ef50       _PR_DestroyLock            1002ff50 f   prulock.obj
+ 0001:0002efb0       _PR_Lock                   1002ffb0 f   prulock.obj
+ 0001:0002f480       _PR_Unlock                 10030480 f   prulock.obj
+ 0001:0002f860       _PR_AssertCurrentThreadOwnsLock 10030860 f   prulock.obj
+ 0001:0002f8b0       _PR_TestAndLock            100308b0 f   prulock.obj
+ 0001:0002fb60       _PRP_TryLock               10030b60 f   prulock.obj
+ 0001:0002fb80       __PR_InitStacks            10030b80 f   prustack.obj
+ 0001:0002fba0       __PR_CleanupStacks         10030ba0 f   prustack.obj
+ 0001:0002fbd0       __PR_NewStack              10030bd0 f   prustack.obj
+ 0001:0002ff50       __PR_FreeStack             10030f50 f   prustack.obj
+ 0001:00030010       __PR_InitThreads           10031010 f   pruthr.obj
+ 0001:000302c0       __PR_CleanupThreads        100312c0 f   pruthr.obj
+ 0001:000303f0       __PR_NotifyJoinWaiters     100313f0 f   pruthr.obj
+ 0001:000305e0       __PR_RecycleThread         100315e0 f   pruthr.obj
+ 0001:00030740       __PR_NativeDestroyThread   10031740 f   pruthr.obj
+ 0001:00030840       __PR_UserDestroyThread     10031840 f   pruthr.obj
+ 0001:00030930       __PR_NativeRunThread       10031930 f   pruthr.obj
+ 0001:00030cb0       __PR_SetThreadPriority     10031cb0 f   pruthr.obj
+ 0001:00031280       __PR_Schedule              10032280 f   pruthr.obj
+ 0001:000319d0       __PR_NativeCreateThread    100329d0 f   pruthr.obj
+ 0001:00031c40       __PR_CreateThread          10032c40 f   pruthr.obj
+ 0001:00032ed0       _PR_CreateThread           10033ed0 f   pruthr.obj
+ 0001:00032f10       __PRI_AttachThread         10033f10 f   pruthr.obj
+ 0001:00033420       _PR_AttachThread           10034420 f   pruthr.obj
+ 0001:00033430       _PR_DetachThread           10034430 f   pruthr.obj
+ 0001:00033440       __PRI_DetachThread         10034440 f   pruthr.obj
+ 0001:000335c0       _PR_JoinThread             100345c0 f   pruthr.obj
+ 0001:00033be0       _PR_SetThreadPriority      10034be0 f   pruthr.obj
+ 0001:00033c60       _PR_SuspendAll             10034c60 f   pruthr.obj
+ 0001:000342d0       _PR_ResumeAll              100352d0 f   pruthr.obj
+ 0001:00034960       _PR_EnumerateThreads       10035960 f   pruthr.obj
+ 0001:00034ab0       __PR_AddSleepQ             10035ab0 f   pruthr.obj
+ 0001:00034d40       __PR_DelSleepQ             10035d40 f   pruthr.obj
+ 0001:00034ec0       __PR_AddThreadToRunQ       10035ec0 f   pruthr.obj
+ 0001:00035090       __PR_MD_GET_ENV            10036090 f   ntmisc.obj
+ 0001:000350b0       __PR_MD_PUT_ENV            100360b0 f   ntmisc.obj
+ 0001:000350d0       _PR_Now                    100360d0 f   ntmisc.obj
+ 0001:00035120       __PR_CreateWindowsProcess  10036120 f   ntmisc.obj
+ 0001:00035b90       __PR_DetachWindowsProcess  10036b90 f   ntmisc.obj
+ 0001:00035bc0       __PR_WaitWindowsProcess    10036bc0 f   ntmisc.obj
+ 0001:00035ca0       __PR_KillWindowsProcess    10036ca0 f   ntmisc.obj
+ 0001:00035cf0       __MD_WindowsGetHostName    10036cf0 f   ntmisc.obj
+ 0001:00035d70       __MD_WindowsGetSysInfo     10036d70 f   ntmisc.obj
+ 0001:00035f90       __MD_WindowsGetReleaseName 10036f90 f   ntmisc.obj
+ 0001:00036090       __MD_CreateFileMap         10037090 f   ntmisc.obj
+ 0001:000361d0       __MD_GetMemMapAlignment    100371d0 f   ntmisc.obj
+ 0001:000361f0       __MD_MemMap                100371f0 f   ntmisc.obj
+ 0001:000362d0       __MD_MemUnmap              100372d0 f   ntmisc.obj
+ 0001:00036310       __MD_CloseFileMap          10037310 f   ntmisc.obj
+ 0001:00036340       __PR_MD_ATOMIC_INCREMENT   10037340 f   ntmisc.obj
+ 0001:00036360       __PR_MD_ATOMIC_DECREMENT   10037360 f   ntmisc.obj
+ 0001:00036380       __PR_MD_ATOMIC_ADD         10037380 f   ntmisc.obj
+ 0001:000363a0       _PR_StackPush              100373a0 f   ntmisc.obj
+ 0001:000363d0       _PR_StackPop               100373d0 f   ntmisc.obj
+ 0001:00036410       __PR_NT_InitSids           10037410 f   ntsec.obj
+ 0001:00036710       __PR_NT_FreeSids           10037710 f   ntsec.obj
+ 0001:00036770       __PR_NT_MakeSecurityDescriptorACL 10037770 f   ntsec.obj
+ 0001:00036b60       __PR_NT_FreeSecurityDescriptorACL 10037b60 f   ntsec.obj
+ 0001:00036ba0       __PR_MD_NEW_SEM            10037ba0 f   ntsem.obj
+ 0001:00036bd0       __PR_MD_DESTROY_SEM        10037bd0 f   ntsem.obj
+ 0001:00036bf0       __PR_MD_TIMED_WAIT_SEM     10037bf0 f   ntsem.obj
+ 0001:00036c30       __PR_MD_WAIT_SEM           10037c30 f   ntsem.obj
+ 0001:00036c50       __PR_MD_POST_SEM           10037c50 f   ntsem.obj
+ 0001:00036c70       __PR_MD_INTERVAL_INIT      10037c70 f   ntinrval.obj
+ 0001:00036c80       __PR_MD_GET_INTERVAL       10037c80 f   ntinrval.obj
+ 0001:00036c90       __PR_MD_INTERVAL_PER_SEC   10037c90 f   ntinrval.obj
+ 0001:00036ca0       __MD_HomeGCRegisters       10037ca0 f   ntgc.obj
+ 0001:00036ed0       _GetMyFiberID              10037ed0 f   ntgc.obj
+ 0001:00036ef0       __PR_MD_PAUSE_CPU          10037ef0 f   ntio.obj
+ 0001:00037ba0       __PR_MD_WAIT               10038ba0 f   ntio.obj
+ 0001:00038020       __PR_Unblock_IO_Wait       10039020 f   ntio.obj
+ 0001:00038210       __PR_MD_WAKEUP_WAITER      10039210 f   ntio.obj
+ 0001:00038350       __PR_MD_INIT_IO            10039350 f   ntio.obj
+ 0001:00038670       __md_Associate             10039670 f   ntio.obj
+ 0001:000386d0       __PR_MD_SOCKET             100396d0 f   ntio.obj
+ 0001:00038710       __PR_MD_connect_thread     10039710 f   ntio.obj
+ 0001:00038760       __PR_MD_CONNECT            10039760 f   ntio.obj
+ 0001:00038950       __PR_MD_BIND               10039950 f   ntio.obj
+ 0001:000389a0       __PR_MD_UPDATE_ACCEPT_CONTEXT 100399a0 f   ntio.obj
+ 0001:000389d0       __PR_MD_FAST_ACCEPT        100399d0 f   ntio.obj
+ 0001:000398e0       __PR_MD_FAST_ACCEPT_READ   1003a8e0 f   ntio.obj
+ 0001:0003a3c0       __PR_MD_SENDFILE           1003b3c0 f   ntio.obj
+ 0001:0003aa20       __PR_MD_RECV               1003ba20 f   ntio.obj
+ 0001:0003af30       __PR_MD_SEND               1003bf30 f   ntio.obj
+ 0001:0003b410       __PR_MD_SENDTO             1003c410 f   ntio.obj
+ 0001:0003b500       __PR_MD_RECVFROM           1003c500 f   ntio.obj
+ 0001:0003b5f0       __PR_MD_WRITEV             1003c5f0 f   ntio.obj
+ 0001:0003b740       __PR_MD_LISTEN             1003c740 f   ntio.obj
+ 0001:0003b790       __PR_MD_SHUTDOWN           1003c790 f   ntio.obj
+ 0001:0003b7e0       __PR_MD_GETSOCKNAME        1003c7e0 f   ntio.obj
+ 0001:0003b830       __PR_MD_GETPEERNAME        1003c830 f   ntio.obj
+ 0001:0003b960       __PR_MD_GETSOCKOPT         1003c960 f   ntio.obj
+ 0001:0003b9c0       __PR_MD_SETSOCKOPT         1003c9c0 f   ntio.obj
+ 0001:0003ba20       __PR_MD_OPEN               1003ca20 f   ntio.obj
+ 0001:0003bbb0       __PR_MD_OPEN_FILE          1003cbb0 f   ntio.obj
+ 0001:0003bdc0       __PR_MD_READ               1003cdc0 f   ntio.obj
+ 0001:0003c4d0       __PR_MD_WRITE              1003d4d0 f   ntio.obj
+ 0001:0003cba0       __PR_MD_SOCKETAVAILABLE    1003dba0 f   ntio.obj
+ 0001:0003cbf0       __PR_MD_PIPEAVAILABLE      1003dbf0 f   ntio.obj
+ 0001:0003cc30       __PR_MD_LSEEK              1003dc30 f   ntio.obj
+ 0001:0003cce0       __PR_MD_LSEEK64            1003dce0 f   ntio.obj
+ 0001:0003cdd0       __PR_MD_FSYNC              1003ddd0 f   ntio.obj
+ 0001:0003ce30       __PR_MD_CLOSE              1003de30 f   ntio.obj
+ 0001:0003d030       __PR_MD_SET_FD_INHERITABLE 1003e030 f   ntio.obj
+ 0001:0003d0b0       __PR_MD_INIT_FD_INHERITABLE 1003e0b0 f   ntio.obj
+ 0001:0003d0e0       __PR_MD_QUERY_FD_INHERITABLE 1003e0e0 f   ntio.obj
+ 0001:0003d180       _FlipSlashes               1003e180 f   ntio.obj
+ 0001:0003d1c0       __PR_MD_CLOSE_DIR          1003e1c0 f   ntio.obj
+ 0001:0003d230       __PR_MD_OPEN_DIR           1003e230 f   ntio.obj
+ 0001:0003d390       __PR_MD_READ_DIR           1003e390 f   ntio.obj
+ 0001:0003d500       __PR_MD_DELETE             1003e500 f   ntio.obj
+ 0001:0003d540       __PR_FileTimeToPRTime      1003e540 f   ntio.obj
+ 0001:0003d6d0       __PR_MD_STAT               1003e6d0 f   ntio.obj
+ 0001:0003d840       __PR_MD_GETFILEINFO64      1003e840 f   ntio.obj
+ 0001:0003d970       __PR_MD_GETFILEINFO        1003e970 f   ntio.obj
+ 0001:0003d9e0       __PR_MD_GETOPENFILEINFO64  1003e9e0 f   ntio.obj
+ 0001:0003dac0       __PR_MD_GETOPENFILEINFO    1003eac0 f   ntio.obj
+ 0001:0003db70       __PR_MD_RENAME             1003eb70 f   ntio.obj
+ 0001:0003dbb0       __PR_MD_ACCESS             1003ebb0 f   ntio.obj
+ 0001:0003dc70       __PR_MD_MKDIR              1003ec70 f   ntio.obj
+ 0001:0003dcb0       __PR_MD_MAKE_DIR           1003ecb0 f   ntio.obj
+ 0001:0003dd80       __PR_MD_RMDIR              1003ed80 f   ntio.obj
+ 0001:0003ddc0       __PR_MD_LOCKFILE           1003edc0 f   ntio.obj
+ 0001:0003e1d0       __PR_MD_TLOCKFILE          1003f1d0 f   ntio.obj
+ 0001:0003e6f0       __PR_MD_UNLOCKFILE         1003f6f0 f   ntio.obj
+ 0001:0003e7a0       __PR_MD_MAKE_NONBLOCK      1003f7a0 f   ntio.obj
+ 0001:0003e7b0       _IsFileLocalInit           1003f7b0 f   ntio.obj
+ 0001:0003ea40       _IsFileLocal               1003fa40 f   ntio.obj
+ 0001:0003ec20       _PR_NT_CancelIo            1003fc20 f   ntio.obj
+ 0001:00040f30       __nt_handle_restarted_io   10041f30 f   ntthread.obj
+ 0001:00041200       __PR_MD_EARLY_INIT         10042200 f   ntthread.obj
+ 0001:00041290       __PR_MD_CLEANUP_BEFORE_EXIT 10042290 f   ntthread.obj
+ 0001:00041300       __PR_MD_INIT_THREAD        10042300 f   ntthread.obj
+ 0001:00041400       __PR_MD_CREATE_THREAD      10042400 f   ntthread.obj
+ 0001:000415a0       __PR_MD_JOIN_THREAD        100425a0 f   ntthread.obj
+ 0001:000415f0       __PR_MD_END_THREAD         100425f0 f   ntthread.obj
+ 0001:00041610       __PR_MD_YIELD              10042610 f   ntthread.obj
+ 0001:00041620       __PR_MD_SET_PRIORITY       10042620 f   ntthread.obj
+ 0001:00041720       __PR_MD_CLEAN_THREAD       10042720 f   ntthread.obj
+ 0001:00041940       __PR_MD_EXIT_THREAD        10042940 f   ntthread.obj
+ 0001:00041b40       __PR_MD_EXIT               10042b40 f   ntthread.obj
+ 0001:00041b60       __pr_fiber_mainline        10042b60 f   ntthread.obj
+ 0001:00041c50       __PR_MD_CREATE_USER_THREAD 10042c50 f   ntthread.obj
+ 0001:00041cd0       __PR_MD_CREATE_PRIMORDIAL_USER_THREAD 10042cd0 f   ntthread.obj
+ 0001:00041dc0       __PR_MD_INIT_CONTEXT       10042dc0 f   ntthread.obj
+ 0001:00041e70       __PR_MD_SWITCH_CONTEXT     10042e70 f   ntthread.obj
+ 0001:00041ed0       __PR_MD_RESTORE_CONTEXT    10042ed0 f   ntthread.obj
+ 0001:000420b0       __PR_MD_SETTHREADAFFINITYMASK 100430b0 f   ntthread.obj
+ 0001:000420f0       __PR_MD_GETTHREADAFFINITYMASK 100430f0 f   ntthread.obj
+ 0001:00042130       __PR_MD_SUSPEND_CPU        10043130 f   ntthread.obj
+ 0001:00042150       __PR_MD_RESUME_CPU         10043150 f   ntthread.obj
+ 0001:00042170       __PR_MD_SUSPEND_THREAD     10043170 f   ntthread.obj
+ 0001:000421d0       __PR_MD_RESUME_THREAD      100431d0 f   ntthread.obj
+ 0001:00042200       __MD_CURRENT_THREAD        10043200 f   ntthread.obj
+ 0001:000422a0       _DllMain@12                100432a0 f   ntdllmn.obj
+ 0001:00042370       __MD_win32_map_default_error 10043370 f   win32_errors.obj
+ 0001:00042bc0       __MD_win32_map_opendir_error 10043bc0 f   win32_errors.obj
+ 0001:00042be0       __MD_win32_map_closedir_error 10043be0 f   win32_errors.obj
+ 0001:00042c00       __MD_unix_readdir_error    10043c00 f   win32_errors.obj
+ 0001:00042c20       __MD_win32_map_delete_error 10043c20 f   win32_errors.obj
+ 0001:00042c40       __MD_win32_map_stat_error  10043c40 f   win32_errors.obj
+ 0001:00042cc0       __MD_win32_map_fstat_error 10043cc0 f   win32_errors.obj
+ 0001:00042ce0       __MD_win32_map_rename_error 10043ce0 f   win32_errors.obj
+ 0001:00042d00       __MD_win32_map_access_error 10043d00 f   win32_errors.obj
+ 0001:00042d20       __MD_win32_map_mkdir_error 10043d20 f   win32_errors.obj
+ 0001:00042d40       __MD_win32_map_rmdir_error 10043d40 f   win32_errors.obj
+ 0001:00042d60       __MD_win32_map_read_error  10043d60 f   win32_errors.obj
+ 0001:00042d80       __MD_win32_map_transmitfile_error 10043d80 f   win32_errors.obj
+ 0001:00042da0       __MD_win32_map_write_error 10043da0 f   win32_errors.obj
+ 0001:00042dc0       __MD_win32_map_lseek_error 10043dc0 f   win32_errors.obj
+ 0001:00042de0       __MD_win32_map_fsync_error 10043de0 f   win32_errors.obj
+ 0001:00042e00       __MD_win32_map_close_error 10043e00 f   win32_errors.obj
+ 0001:00042e20       __MD_win32_map_socket_error 10043e20 f   win32_errors.obj
+ 0001:00042e60       __MD_win32_map_recv_error  10043e60 f   win32_errors.obj
+ 0001:00042e80       __MD_win32_map_recvfrom_error 10043e80 f   win32_errors.obj
+ 0001:00042ea0       __MD_win32_map_send_error  10043ea0 f   win32_errors.obj
+ 0001:00042f00       __MD_win32_map_sendto_error 10043f00 f   win32_errors.obj
+ 0001:00042f60       __MD_win32_map_accept_error 10043f60 f   win32_errors.obj
+ 0001:00042fd0       __MD_win32_map_acceptex_error 10043fd0 f   win32_errors.obj
+ 0001:00042ff0       __MD_win32_map_connect_error 10043ff0 f   win32_errors.obj
+ 0001:00043070       __MD_win32_map_bind_error  10044070 f   win32_errors.obj
+ 0001:000430d0       __MD_win32_map_listen_error 100440d0 f   win32_errors.obj
+ 0001:00043140       __MD_win32_map_shutdown_error 10044140 f   win32_errors.obj
+ 0001:00043160       __MD_win32_map_getsockname_error 10044160 f   win32_errors.obj
+ 0001:000431c0       __MD_win32_map_getpeername_error 100441c0 f   win32_errors.obj
+ 0001:000431e0       __MD_win32_map_getsockopt_error 100441e0 f   win32_errors.obj
+ 0001:00043200       __MD_win32_map_setsockopt_error 10044200 f   win32_errors.obj
+ 0001:00043220       __MD_win32_map_open_error  10044220 f   win32_errors.obj
+ 0001:00043240       __MD_win32_map_gethostname_error 10044240 f   win32_errors.obj
+ 0001:00043260       __MD_win32_map_select_error 10044260 f   win32_errors.obj
+ 0001:000432c0       __MD_win32_map_lockf_error 100442c0 f   win32_errors.obj
+ 0001:000432e0       __PR_MD_OPEN_SEMAPHORE     100442e0 f   w32ipcsem.obj
+ 0001:000434f0       __PR_MD_WAIT_SEMAPHORE     100444f0 f   w32ipcsem.obj
+ 0001:000436d0       __PR_MD_POST_SEMAPHORE     100446d0 f   w32ipcsem.obj
+ 0001:00043710       __PR_MD_CLOSE_SEMAPHORE    10044710 f   w32ipcsem.obj
+ 0001:00043760       __PR_NTFiberSafeSelect     10044760 f   w32poll.obj
+ 0001:000438b0       __PR_MD_PR_POLL            100448b0 f   w32poll.obj
+ 0001:000443d0       __PR_MD_GetRandomNoise     100453d0 f   w32rng.obj
+ 0001:000445f0       __MD_OpenSharedMemory      100455f0 f   w32shm.obj
+ 0001:00044b60       __MD_AttachSharedMemory    10045b60 f   w32shm.obj
+ 0001:00044c30       __MD_DetachSharedMemory    10045c30 f   w32shm.obj
+ 0001:00044ce0       __MD_CloseSharedMemory     10045ce0 f   w32shm.obj
+ 0001:00044dd0       __MD_DeleteSharedMemory    10045dd0 f   w32shm.obj
+ 0001:00044de0       __md_OpenAnonFileMap       10045de0 f   w32shm.obj
+ 0001:00044ef0       __md_ExportFileMapAsString 10045ef0 f   w32shm.obj
+ 0001:00044f80       __md_ImportFileMapFromString 10045f80 f   w32shm.obj
+ 0001:00045076       _AllocateAndInitializeSid@44 10046076 f   advapi32:ADVAPI32.dll
+ 0001:0004507c       _CopySid@12                1004607c f   advapi32:ADVAPI32.dll
+ 0001:00045082       _GetLengthSid@4            10046082 f   advapi32:ADVAPI32.dll
+ 0001:00045088       _GetTokenInformation@20    10046088 f   advapi32:ADVAPI32.dll
+ 0001:0004508e       _OpenProcessToken@12       1004608e f   advapi32:ADVAPI32.dll
+ 0001:00045094       _FreeSid@4                 10046094 f   advapi32:ADVAPI32.dll
+ 0001:0004509a       _SetSecurityDescriptorDacl@16 1004609a f   advapi32:ADVAPI32.dll
+ 0001:000450a0       _AddAccessAllowedAce@16    100460a0 f   advapi32:ADVAPI32.dll
+ 0001:000450a6       _InitializeAcl@12          100460a6 f   advapi32:ADVAPI32.dll
+ 0001:000450ac       _SetSecurityDescriptorGroup@12 100460ac f   advapi32:ADVAPI32.dll
+ 0001:000450b2       _SetSecurityDescriptorOwner@12 100460b2 f   advapi32:ADVAPI32.dll
+ 0001:000450b8       _InitializeSecurityDescriptor@8 100460b8 f   advapi32:ADVAPI32.dll
+ 0001:000450be       _WSAGetLastError@0         100460be f   wsock32:WSOCK32.dll
+ 0001:000450c4       _closesocket@4             100460c4 f   wsock32:WSOCK32.dll
+ 0001:000450ca       _htonl@4                   100460ca f   wsock32:WSOCK32.dll
+ 0001:000450d0       _gethostbyname@4           100460d0 f   wsock32:WSOCK32.dll
+ 0001:000450d6       _gethostbyaddr@12          100460d6 f   wsock32:WSOCK32.dll
+ 0001:000450dc       _getprotobyname@4          100460dc f   wsock32:WSOCK32.dll
+ 0001:000450e2       _getprotobynumber@4        100460e2 f   wsock32:WSOCK32.dll
+ 0001:000450e8       _htons@4                   100460e8 f   wsock32:WSOCK32.dll
+ 0001:000450ee       _ntohs@4                   100460ee f   wsock32:WSOCK32.dll
+ 0001:000450f4       _ntohl@4                   100460f4 f   wsock32:WSOCK32.dll
+ 0001:000450fa       _inet_addr@4               100460fa f   wsock32:WSOCK32.dll
+ 0001:00045100       _getsockopt@20             10046100 f   wsock32:WSOCK32.dll
+ 0001:00045106       _accept@12                 10046106 f   wsock32:WSOCK32.dll
+ 0001:0004510c       _connect@12                1004610c f   wsock32:WSOCK32.dll
+ 0001:00045112       _listen@8                  10046112 f   wsock32:WSOCK32.dll
+ 0001:00045118       _getsockname@12            10046118 f   wsock32:WSOCK32.dll
+ 0001:0004511e       _bind@12                   1004611e f   wsock32:WSOCK32.dll
+ 0001:00045124       _socket@12                 10046124 f   wsock32:WSOCK32.dll
+ 0001:0004512a       _gethostname@8             1004612a f   wsock32:WSOCK32.dll
+ 0001:00045130       _WSAStartup@8              10046130 f   wsock32:WSOCK32.dll
+ 0001:00045136       _ioctlsocket@12            10046136 f   wsock32:WSOCK32.dll
+ 0001:0004513c       _setsockopt@20             1004613c f   wsock32:WSOCK32.dll
+ 0001:00045142       _GetAcceptExSockaddrs@32   10046142 f   wsock32:WSOCK32.dll
+ 0001:00045148       _AcceptEx@32               10046148 f   wsock32:WSOCK32.dll
+ 0001:0004514e       _TransmitFile@28           1004614e f   wsock32:WSOCK32.dll
+ 0001:00045154       _shutdown@8                10046154 f   wsock32:WSOCK32.dll
+ 0001:0004515a       _getpeername@12            1004615a f   wsock32:WSOCK32.dll
+ 0001:00045160       ___WSAFDIsSet@8            10046160 f   wsock32:WSOCK32.dll
+ 0001:00045166       _recv@16                   10046166 f   wsock32:WSOCK32.dll
+ 0001:0004516c       _send@16                   1004616c f   wsock32:WSOCK32.dll
+ 0001:00045172       _sendto@24                 10046172 f   wsock32:WSOCK32.dll
+ 0001:00045178       _recvfrom@24               10046178 f   wsock32:WSOCK32.dll
+ 0001:0004517e       _select@20                 1004617e f   wsock32:WSOCK32.dll
+ 0001:00045184       _WSASetLastError@4         10046184 f   wsock32:WSOCK32.dll
+ 0001:0004518a       _WSACleanup@0              1004618a f   wsock32:WSOCK32.dll
+ 0001:00045190       _timeGetTime@0             10046190 f   winmm:WINMM.dll
+ 0001:00045196       _memset                    10046196 f   MSVCRT:MSVCR90.dll
+ 0001:0004519c       _atoi                      1004619c f   MSVCRT:MSVCR90.dll
+ 0001:000451a2       _fprintf                   100461a2 f   MSVCRT:MSVCR90.dll
+ 0001:000451a8       ___iob_func                100461a8 f   MSVCRT:MSVCR90.dll
+ 0001:000451ae       _exit                      100461ae f   MSVCRT:MSVCR90.dll
+ 0001:000451b4       _memcpy                    100461b4 f   MSVCRT:MSVCR90.dll
+ 0001:000451ba       @__security_check_cookie@4 100461ba f   MSVCRT:secchk.obj
+ 0001:000451ca       _strcpy                    100461ca f   MSVCRT:MSVCR90.dll
+ 0001:000451d0       _strlen                    100461d0 f   MSVCRT:MSVCR90.dll
+ 0001:000451d6       _sscanf                    100461d6 f   MSVCRT:MSVCR90.dll
+ 0001:000451dc       _free                      100461dc f   MSVCRT:MSVCR90.dll
+ 0001:000451e2       _fclose                    100461e2 f   MSVCRT:MSVCR90.dll
+ 0001:000451e8       _setvbuf                   100461e8 f   MSVCRT:MSVCR90.dll
+ 0001:000451ee       _fopen                     100461ee f   MSVCRT:MSVCR90.dll
+ 0001:000451f4       _strcmp                    100461f4 f   MSVCRT:MSVCR90.dll
+ 0001:000451fa       _fflush                    100461fa f   MSVCRT:MSVCR90.dll
+ 0001:00045200       _fwrite                    10046200 f   MSVCRT:MSVCR90.dll
+ 0001:00045210       _abort                     10046210 f   MSVCRT:MSVCR90.dll
+ 0001:00045220       __aullrem                  10046220 f   MSVCRT:ullrem.obj
+ 0001:000452a0       __aulldiv                  100462a0 f   MSVCRT:ulldiv.obj
+ 0001:00045308       _sprintf                   10046308 f   MSVCRT:MSVCR90.dll
+ 0001:0004530e       _isdigit                   1004630e f   MSVCRT:MSVCR90.dll
+ 0001:00045314       _isspace                   10046314 f   MSVCRT:MSVCR90.dll
+ 0001:0004531a       _memchr                    1004631a f   MSVCRT:MSVCR90.dll
+ 0001:00045320       _strchr                    10046320 f   MSVCRT:MSVCR90.dll
+ 0001:00045326       _strtoul                   10046326 f   MSVCRT:MSVCR90.dll
+ 0001:0004532c       _strtol                    1004632c f   MSVCRT:MSVCR90.dll
+ 0001:00045332       _tolower                   10046332 f   MSVCRT:MSVCR90.dll
+ 0001:00045340       __allmul                   10046340 f   MSVCRT:llmul.obj
+ 0001:00045374       _getenv                    10046374 f   MSVCRT:MSVCR90.dll
+ 0001:0004537a       _strstr                    1004637a f   MSVCRT:MSVCR90.dll
+ 0001:00045380       _strrchr                   10046380 f   MSVCRT:MSVCR90.dll
+ 0001:00045386       _malloc                    10046386 f   MSVCRT:MSVCR90.dll
+ 0001:0004538c       _calloc                    1004638c f   MSVCRT:MSVCR90.dll
+ 0001:00045392       _realloc                   10046392 f   MSVCRT:MSVCR90.dll
+ 0001:000453a0       __ftol2_sse                100463a0 f   MSVCRT:ftol2.obj
+ 0001:000453a9       __ftol2_pentium4           100463a9 f   MSVCRT:ftol2.obj
+ 0001:000453bc       __ftol2_sse_excpt          100463bc f   MSVCRT:ftol2.obj
+ 0001:000453d6       __ftol2                    100463d6 f   MSVCRT:ftol2.obj
+ 0001:0004544c       _strcat                    1004644c f   MSVCRT:MSVCR90.dll
+ 0001:00045452       _strerror                  10046452 f   MSVCRT:MSVCR90.dll
+ 0001:00045458       __errno                    10046458 f   MSVCRT:MSVCR90.dll
+ 0001:0004545e       __wassert                  1004645e f   MSVCRT:MSVCR90.dll
+ 0001:00045464       _strncmp                   10046464 f   MSVCRT:MSVCR90.dll
+ 0001:00045470       __aullshr                  10046470 f   MSVCRT:ullshr.obj
+ 0001:00045490       __allshl                   10046490 f   MSVCRT:llshl.obj
+ 0001:000454b0       __allshr                   100464b0 f   MSVCRT:llshr.obj
+ 0001:000454e0       __allrem                   100464e0 f   MSVCRT:llrem.obj
+ 0001:000455a0       __alldiv                   100465a0 f   MSVCRT:lldiv.obj
+ 0001:0004564a       __localtime64              1004664a f   MSVCRT:MSVCR90.dll
+ 0001:00045650       _isalpha                   10046650 f   MSVCRT:MSVCR90.dll
+ 0001:00045656       __mktime64                 10046656 f   MSVCRT:MSVCR90.dll
+ 0001:0004565c       _strftime                  1004665c f   MSVCRT:MSVCR90.dll
+ 0001:00045662       _memmove                   10046662 f   MSVCRT:MSVCR90.dll
+ 0001:00045668       _qsort                     10046668 f   MSVCRT:MSVCR90.dll
+ 0001:0004566e       _strpbrk                   1004666e f   MSVCRT:MSVCR90.dll
+ 0001:00045674       __stricmp                  10046674 f   MSVCRT:MSVCR90.dll
+ 0001:0004567a       __mbsinc                   1004667a f   MSVCRT:MSVCR90.dll
+ 0001:00045680       __stat64i32                10046680 f   MSVCRT:MSVCR90.dll
+ 0001:00045686       __mbsdec                   10046686 f   MSVCRT:MSVCR90.dll
+ 0001:0004568c       __access                   1004668c f   MSVCRT:MSVCR90.dll
+ 0001:00045692       __beginthreadex            10046692 f   MSVCRT:MSVCR90.dll
+ 0001:00045698       __endthreadex              10046698 f   MSVCRT:MSVCR90.dll
+ 0001:0004569e       __exit                     1004669e f   MSVCRT:MSVCR90.dll
+ 0001:000456b0       __chkstk                   100466b0 f   MSVCRT:chkstk.obj
+ 0001:000456b0       __alloca_probe             100466b0     MSVCRT:chkstk.obj
+ 0001:000456dc       __time64                   100466dc f   MSVCRT:MSVCR90.dll
+ 0001:000456e2       _NtCurrentTeb              100466e2 f i MSVCRT:crtdll.obj
+ 0001:00045738       __CRT_INIT@12              10046738 f   MSVCRT:crtdll.obj
+ 0001:00045a74       __DllMainCRTStartup@12     10046a74 f   MSVCRT:crtdll.obj
+ 0001:00045a97       ___report_gsfailure        10046a97 f   MSVCRT:gs_report.obj
+ 0001:00045bed       __get_sse2_info            10046bed f   MSVCRT:cpu_disp.obj
+ 0001:00045c4f       ___sse2_available_init     10046c4f f   MSVCRT:cpu_disp.obj
+ 0001:00045c5c       ___clean_type_info_names   10046c5c f   MSVCRT:tncleanup.obj
+ 0001:00045c68       __onexit                   10046c68 f   MSVCRT:atonexit.obj
+ 0001:00045d0d       _atexit                    10046d0d f   MSVCRT:atonexit.obj
+ 0001:00045d24       __RTC_Initialize           10046d24 f   MSVCRT:_initsect_.obj
+ 0001:00045d4a       __RTC_Terminate            10046d4a f   MSVCRT:_initsect_.obj
+ 0001:00045d70       __encode_pointer           10046d70 f   MSVCRT:MSVCR90.dll
+ 0001:00045d76       __malloc_crt               10046d76 f   MSVCRT:MSVCR90.dll
+ 0001:00045d7c       __encoded_null             10046d7c f   MSVCRT:MSVCR90.dll
+ 0001:00045d82       __decode_pointer           10046d82 f   MSVCRT:MSVCR90.dll
+ 0001:00045d90       __ValidateImageBase        10046d90 f   MSVCRT:pesect.obj
+ 0001:00045dd0       __FindPESection            10046dd0 f   MSVCRT:pesect.obj
+ 0001:00045e20       __IsNonwritableInCurrentImage 10046e20 f   MSVCRT:pesect.obj
+ 0001:00045ede       __initterm                 10046ede f   MSVCRT:MSVCR90.dll
+ 0001:00045ee4       __initterm_e               10046ee4 f   MSVCRT:MSVCR90.dll
+ 0001:00045eea       __amsg_exit                10046eea f   MSVCRT:MSVCR90.dll
+ 0001:00045ef0       ___CppXcptFilter           10046ef0 f   MSVCRT:MSVCR90.dll
+ 0001:00045ef8       __SEH_prolog4              10046ef8 f   MSVCRT:sehprolg4.obj
+ 0001:00045f3d       __SEH_epilog4              10046f3d f   MSVCRT:sehprolg4.obj
+ 0001:00045f51       __except_handler4          10046f51 f   MSVCRT:chandler4gs.obj
+ 0001:00045f76       ___security_init_cookie    10046f76 f   MSVCRT:gs_support.obj
+ 0001:0004600c       __crt_debugger_hook        1004700c f   MSVCRT:MSVCR90.dll
+ 0001:00046012       ___clean_type_info_names_internal 10047012 f   MSVCRT:MSVCR90.dll
+ 0001:00046018       __unlock                   10047018 f   MSVCRT:MSVCR90.dll
+ 0001:0004601e       ___dllonexit               1004701e f   MSVCRT:MSVCR90.dll
+ 0001:00046024       __lock                     10047024 f   MSVCRT:MSVCR90.dll
+ 0001:0004602a       __except_handler4_common   1004702a f   MSVCRT:MSVCR90.dll
+ 0001:00046030       _InterlockedCompareExchange@12 10047030 f   kernel32:KERNEL32.dll
+ 0001:00046036       _ReadFile@20               10047036 f   kernel32:KERNEL32.dll
+ 0001:0004603c       _GetLastError@0            1004703c f   kernel32:KERNEL32.dll
+ 0001:00046042       _LeaveCriticalSection@4    10047042 f   kernel32:KERNEL32.dll
+ 0001:00046048       _EnterCriticalSection@4    10047048 f   kernel32:KERNEL32.dll
+ 0001:0004604e       _InitializeCriticalSection@4 1004704e f   kernel32:KERNEL32.dll
+ 0001:00046054       _DeleteCriticalSection@4   10047054 f   kernel32:KERNEL32.dll
+ 0001:0004605a       _OutputDebugStringA@4      1004705a f   kernel32:KERNEL32.dll
+ 0001:00046060       _TlsSetValue@8             10047060 f   kernel32:KERNEL32.dll
+ 0001:00046066       _TlsGetValue@4             10047066 f   kernel32:KERNEL32.dll
+ 0001:0004606c       _DebugBreak@0              1004706c f   kernel32:KERNEL32.dll
+ 0001:00046072       _GetModuleHandleA@4        10047072 f   kernel32:KERNEL32.dll
+ 0001:00046078       _LoadLibraryExW@12         10047078 f   kernel32:KERNEL32.dll
+ 0001:0004607e       _WideCharToMultiByte@32    1004707e f   kernel32:KERNEL32.dll
+ 0001:00046084       _MultiByteToWideChar@24    10047084 f   kernel32:KERNEL32.dll
+ 0001:0004608a       _FreeLibrary@4             1004708a f   kernel32:KERNEL32.dll
+ 0001:00046090       _GetProcAddress@8          10047090 f   kernel32:KERNEL32.dll
+ 0001:00046096       _GetModuleFileNameW@12     10047096 f   kernel32:KERNEL32.dll
+ 0001:0004609c       _GetModuleHandleW@4        1004709c f   kernel32:KERNEL32.dll
+ 0001:000460a2       _GetSystemInfo@4           100470a2 f   kernel32:KERNEL32.dll
+ 0001:000460a8       _InterlockedExchange@8     100470a8 f   kernel32:KERNEL32.dll
+ 0001:000460ae       _GlobalMemoryStatus@4      100470ae f   kernel32:KERNEL32.dll
+ 0001:000460b4       _CloseHandle@4             100470b4 f   kernel32:KERNEL32.dll
+ 0001:000460ba       _CreatePipe@16             100470ba f   kernel32:KERNEL32.dll
+ 0001:000460c0       _GetStdHandle@4            100470c0 f   kernel32:KERNEL32.dll
+ 0001:000460c6       _Sleep@4                   100470c6 f   kernel32:KERNEL32.dll
+ 0001:000460cc       _TryEnterCriticalSection@4 100470cc f   kernel32:KERNEL32.dll
+ 0001:000460d2       _SystemTimeToFileTime@8    100470d2 f   kernel32:KERNEL32.dll
+ 0001:000460d8       _GetSystemTime@4           100470d8 f   kernel32:KERNEL32.dll
+ 0001:000460de       _CreateProcessA@40         100470de f   kernel32:KERNEL32.dll
+ 0001:000460e4       _FreeEnvironmentStringsA@4 100470e4 f   kernel32:KERNEL32.dll
+ 0001:000460ea       _GetEnvironmentStrings@0   100470ea f   kernel32:KERNEL32.dll
+ 0001:000460f0       _GetExitCodeProcess@8      100470f0 f   kernel32:KERNEL32.dll
+ 0001:000460f6       _WaitForSingleObject@8     100470f6 f   kernel32:KERNEL32.dll
+ 0001:000460fc       _TerminateProcess@8        100470fc f   kernel32:KERNEL32.dll
+ 0001:00046102       _GetVersionExA@4           10047102 f   kernel32:KERNEL32.dll
+ 0001:00046108       _CreateFileMappingA@24     10047108 f   kernel32:KERNEL32.dll
+ 0001:0004610e       _FormatMessageA@28         1004710e f   kernel32:KERNEL32.dll
+ 0001:00046114       _MapViewOfFile@20          10047114 f   kernel32:KERNEL32.dll
+ 0001:0004611a       _UnmapViewOfFile@4         1004711a f   kernel32:KERNEL32.dll
+ 0001:00046120       _GetCurrentProcess@0       10047120 f   kernel32:KERNEL32.dll
+ 0001:00046126       _CreateSemaphoreA@16       10047126 f   kernel32:KERNEL32.dll
+ 0001:0004612c       _ReleaseSemaphore@12       1004712c f   kernel32:KERNEL32.dll
+ 0001:00046132       _GetThreadContext@8        10047132 f   kernel32:KERNEL32.dll
+ 0001:00046138       _GetQueuedCompletionStatus@20 10047138 f   kernel32:KERNEL32.dll
+ 0001:0004613e       _DeleteFiber@4             1004713e f   kernel32:KERNEL32.dll
+ 0001:00046144       _PostQueuedCompletionStatus@16 10047144 f   kernel32:KERNEL32.dll
+ 0001:0004614a       _CreateIoCompletionPort@16 1004714a f   kernel32:KERNEL32.dll
+ 0001:00046150       _ResetEvent@4              10047150 f   kernel32:KERNEL32.dll
+ 0001:00046156       _GetOverlappedResult@16    10047156 f   kernel32:KERNEL32.dll
+ 0001:0004615c       _WaitForMultipleObjects@16 1004715c f   kernel32:KERNEL32.dll
+ 0001:00046162       _WriteFile@20              10047162 f   kernel32:KERNEL32.dll
+ 0001:00046168       _SetFilePointer@16         10047168 f   kernel32:KERNEL32.dll
+ 0001:0004616e       _CreateFileA@28            1004716e f   kernel32:KERNEL32.dll
+ 0001:00046174       _FlushFileBuffers@4        10047174 f   kernel32:KERNEL32.dll
+ 0001:0004617a       _SetHandleInformation@12   1004717a f   kernel32:KERNEL32.dll
+ 0001:00046180       _GetHandleInformation@8    10047180 f   kernel32:KERNEL32.dll
+ 0001:00046186       _FindClose@4               10047186 f   kernel32:KERNEL32.dll
+ 0001:0004618c       _FindFirstFileA@8          1004718c f   kernel32:KERNEL32.dll
+ 0001:00046192       _FindNextFileA@8           10047192 f   kernel32:KERNEL32.dll
+ 0001:00046198       _DeleteFileA@4             10047198 f   kernel32:KERNEL32.dll
+ 0001:0004619e       _FileTimeToSystemTime@8    1004719e f   kernel32:KERNEL32.dll
+ 0001:000461a4       _GetFileAttributesExA@12   100471a4 f   kernel32:KERNEL32.dll
+ 0001:000461aa       _GetFileInformationByHandle@8 100471aa f   kernel32:KERNEL32.dll
+ 0001:000461b0       _MoveFileA@8               100471b0 f   kernel32:KERNEL32.dll
+ 0001:000461b6       _CreateDirectoryA@8        100471b6 f   kernel32:KERNEL32.dll
+ 0001:000461bc       _RemoveDirectoryA@4        100471bc f   kernel32:KERNEL32.dll
+ 0001:000461c2       _LockFileEx@24             100471c2 f   kernel32:KERNEL32.dll
+ 0001:000461c8       _UnlockFileEx@20           100471c8 f   kernel32:KERNEL32.dll
+ 0001:000461ce       _lstrlenA@4                100471ce f   kernel32:KERNEL32.dll
+ 0001:000461d4       _GetVolumeInformationA@32  100471d4 f   kernel32:KERNEL32.dll
+ 0001:000461da       _GetDriveTypeA@4           100471da f   kernel32:KERNEL32.dll
+ 0001:000461e0       _SetErrorMode@4            100471e0 f   kernel32:KERNEL32.dll
+ 0001:000461e6       _GetLogicalDriveStringsA@8 100471e6 f   kernel32:KERNEL32.dll
+ 0001:000461ec       _CancelIo@4                100471ec f   kernel32:KERNEL32.dll
+ 0001:000461f2       _TlsAlloc@0                100471f2 f   kernel32:KERNEL32.dll
+ 0001:000461f8       _TlsFree@4                 100471f8 f   kernel32:KERNEL32.dll
+ 0001:000461fe       _CreateEventA@16           100471fe f   kernel32:KERNEL32.dll
+ 0001:00046204       _DuplicateHandle@28        10047204 f   kernel32:KERNEL32.dll
+ 0001:0004620a       _GetCurrentThread@0        1004720a f   kernel32:KERNEL32.dll
+ 0001:00046210       _ResumeThread@4            10047210 f   kernel32:KERNEL32.dll
+ 0001:00046216       _SetThreadPriority@8       10047216 f   kernel32:KERNEL32.dll
+ 0001:0004621c       _ConvertThreadToFiber@4    1004721c f   kernel32:KERNEL32.dll
+ 0001:00046222       _CreateFiber@12            10047222 f   kernel32:KERNEL32.dll
+ 0001:00046228       _SwitchToFiber@4           10047228 f   kernel32:KERNEL32.dll
+ 0001:0004622e       _SetLastError@4            1004722e f   kernel32:KERNEL32.dll
+ 0001:00046234       _SetThreadAffinityMask@8   10047234 f   kernel32:KERNEL32.dll
+ 0001:0004623a       _GetProcessAffinityMask@12 1004723a f   kernel32:KERNEL32.dll
+ 0001:00046240       _SuspendThread@4           10047240 f   kernel32:KERNEL32.dll
+ 0001:00046246       _OpenSemaphoreA@12         10047246 f   kernel32:KERNEL32.dll
+ 0001:0004624c       _GetTickCount@0            1004724c f   kernel32:KERNEL32.dll
+ 0001:00046252       _QueryPerformanceCounter@4 10047252 f   kernel32:KERNEL32.dll
+ 0001:00046258       _OpenFileMappingA@12       10047258 f   kernel32:KERNEL32.dll
+ 0001:0004625e       _UnhandledExceptionFilter@4 1004725e f   kernel32:KERNEL32.dll
+ 0001:00046264       _SetUnhandledExceptionFilter@4 10047264 f   kernel32:KERNEL32.dll
+ 0001:0004626a       _IsDebuggerPresent@0       1004726a f   kernel32:KERNEL32.dll
+ 0001:00046270       _GetCurrentThreadId@0      10047270 f   kernel32:KERNEL32.dll
+ 0001:00046276       _GetCurrentProcessId@0     10047276 f   kernel32:KERNEL32.dll
+ 0001:0004627c       _GetSystemTimeAsFileTime@4 1004727c f   kernel32:KERNEL32.dll
+ 0001:00046282       __strdup                   10047282 f   MSVCRT:MSVCR90.dll
+ 0001:00046288       __putenv                   10047288 f   MSVCRT:MSVCR90.dll
+ 0002:00000000       ___xc_a                    10049000     MSVCRT:cinitexe.obj
+ 0002:00000104       ___xc_z                    10049104     MSVCRT:cinitexe.obj
+ 0002:00000208       ___xi_a                    10049208     MSVCRT:cinitexe.obj
+ 0002:00000514       ___xi_z                    10049514     MSVCRT:cinitexe.obj
+ 0002:00000618       ___xl_a                    10049618     MSVCRT:tlssup.obj
+ 0002:0000061c       ___xl_z                    1004961c     MSVCRT:tlssup.obj
+ 0002:0000063c       ??_C@_00CNPNBAHC@?$AA@     1004963c     prvrsion.obj
+ 0002:00000640       ??_C@_0DB@HABIKPPD@License?5information?3?5http?3?1?1www?4@ 10049640     prvrsion.obj
+ 0002:00000680       ??_C@_0EM@IKPMBEKH@Copyright?5?$CIc?$CJ?51998?5Netscape?5Comm@ 10049680     prvrsion.obj
+ 0002:000006dc       ??_C@_03HPADHAHE@N?1A?$AA@ 100496dc     prvrsion.obj
+ 0002:000006e0       ??_C@_0BB@BOGKMJGN@Portable?5runtime?$AA@ 100496e0     prvrsion.obj
+ 0002:000006f4       ??_C@_0N@NFPNJKJM@libnspr4?4dll?$AA@ 100496f4     prvrsion.obj
+ 0002:00000704       ??_C@_0BE@EAJCJDJ@2010?903?930?507?312?315?$AA@ 10049704     prvrsion.obj
+ 0002:0000071c       ??_C@_0CI@LBNIDJEJ@_PR_FILEDESC_FREED?5?$DN?$DN?5fd?9?$DOsecret@ 1004971c     prfdcach.obj
+ 0002:0000074c       ??_C@_0CE@FBEBMODC@PR_INVALID_IO_LAYER?5?$DN?$DN?5fd?9?$DOident@ 1004974c     prfdcach.obj
+ 0002:00000778       ??_C@_0CD@NONNLBII@?$CG_pr_faulty_methods?5?$DN?$DN?5fd?9?$DOmetho@ 10049778     prfdcach.obj
+ 0002:000007a4       ??_C@_0BK@EJJCGJIO@NULL?5?$DN?$DN?5_pr_fd_cache?4tail?$AA@ 100497a4     prfdcach.obj
+ 0002:000007c4       ??_C@_0BI@EPIBBPMI@0?5?$DN?$DN?5_pr_fd_cache?4count?$AA@ 100497c4     prfdcach.obj
+ 0002:000007e0       ??_C@_0BL@LLLIDGPL@NULL?5?$CB?$DN?5_pr_fd_cache?4stack?$AA@ 100497e0     prfdcach.obj
+ 0002:00000800       ??_C@_0EG@FKNIIGHN@c?3?1Users?1Tandy?1Programming?1mozil@ 10049800     prfdcach.obj
+ 0002:00000854       ??_C@_0CC@KPBMANAL@NULL?5?$DN?$DN?5_pr_fd_cache?4tail?9?$DOhighe@ 10049854     prfdcach.obj
+ 0002:0000087c       ??_C@_0BK@KFCKFPOK@NULL?5?$DN?$DN?5_pr_fd_cache?4head?$AA@ 1004987c     prfdcach.obj
+ 0002:0000089c       ??_C@_0CB@BIANKEKN@PR_NSPR_IO_LAYER?5?$DN?$DN?5fd?9?$DOidentity@ 1004989c     prfdcach.obj
+ 0002:000008c4       ??_C@_02OALMFNJO@FD?$AA@   100498c4     prfdcach.obj
+ 0002:000008c8       ??_C@_0BI@JLDDJHBA@NULL?5?$CB?$DN?5_pr_fd_cache?4ml?$AA@ 100498c8     prfdcach.obj
+ 0002:000008e4       ??_C@_0BI@DHKBICNB@NSPR_FD_CACHE_SIZE_HIGH?$AA@ 100498e4     prfdcach.obj
+ 0002:00000900       ??_C@_0BH@MAJDBBPN@NSPR_FD_CACHE_SIZE_LOW?$AA@ 10049900     prfdcach.obj
+ 0002:00000960       ??_C@_0BB@HHFBHKPC@NULL?5?$CB?$DN?5mw_state?$AA@ 10049960     prmwait.obj
+ 0002:00000974       ??_C@_0BA@MAOEPLOL@NULL?5?$CB?$DN?5mw_lock?$AA@ 10049974     prmwait.obj
+ 0002:00000988       ??_C@_0EF@IDAIIJMP@c?3?1Users?1Tandy?1Programming?1mozil@ 10049988     prmwait.obj
+ 0002:000009dc       ??_C@_0BG@FIKMBLOI@2?5?$DN?$DN?5timer?9?$DOref_count?$AA@ 100499dc     prmwait.obj
+ 0002:000009f8       ??_C@_0N@HNMHAHHF@0?5?$CB?$DN?5hoffset?$AA@ 100499f8     prmwait.obj
+ 0002:00000a08       ??_C@_07PIDKCFBG@0?5?$CB?$DN?5st?$AA@ 10049a08     prmwait.obj
+ 0002:00000a14       ??_C@_0P@CAAFECFL@NULL?5?$CB?$DN?5bottom?$AA@ 10049a14     prmwait.obj
+ 0002:00000a28       ??_C@_0BB@EOHDFPJN@NULL?5?$CB?$DN?5desc?9?$DOfd?$AA@ 10049a28     prmwait.obj
+ 0002:00000a3c       ??_C@_0BD@CHEKCHJC@_prmw_error?5?$CB?$DN?5hrv?$AA@ 10049a3c     prmwait.obj
+ 0002:00000a54       ??_C@_0CN@JLMOEIKI@desc?5?$DM?5?$CGoldHash?9?$DOrecv_wait?5?$CL?5old@ 10049a54     prmwait.obj
+ 0002:00000a8c       ??_C@_0O@OBDEDGLH@pidx?5?$DM?5primes?$AA@ 10049a8c     prmwait.obj
+ 0002:00000a9c       ??_C@_0BE@IKJEMKMC@?$CB?$CCWhat?5shall?5I?5do?$DP?$CC?$AA@ 10049a9c     prmwait.obj
+ 0002:00000ab4       ??_C@_0BB@JOHAHCNC@What?5shall?5I?5do?$DP?$AA@ 10049ab4     prmwait.obj
+ 0002:00000ac8       ??_C@_0BI@MKKELHBH@closesocket?5failed?3?5?$CFd?6?$AA@ 10049ac8     prmwait.obj
+ 0002:00000ae4       ??_C@_0DM@HAODLAHO@PR_INTERVAL_NO_TIMEOUT?5?$DN?$DN?5overla@ 10049ae4     prmwait.obj
+ 0002:00000b2c       ??_C@_0DM@KACKBHAC@PR_INTERVAL_NO_TIMEOUT?5?$CB?$DN?5overla@ 10049b2c     prmwait.obj
+ 0002:00000b74       ??_C@_01GBGANLPD@0?$AA@    10049b74     prmwait.obj
+ 0002:00000b78       ??_C@_0BB@EPOLCJHD@io_ready?5?$CB?$DN?5NULL?$AA@ 10049b78     prmwait.obj
+ 0002:00000b8c       ??_C@_0BG@GPGCEJJF@?$CIme?$CJ?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 10049b8c     prmwait.obj
+ 0002:00000ba8       ??_C@_0O@NKPJIDCH@NULL?5?$CB?$DN?5group?$AA@ 10049ba8     prmwait.obj
+ 0002:00000bb8       ??_C@_0CE@OAOEMNOC@_PR_ENUM_SEALED?5?$DN?$DN?5enumerator?9?$DOs@ 10049bb8     prmwait.obj
+ 0002:00000be4       ??_C@_0BD@NDAAFECB@NULL?5?$CB?$DN?5enumerator?$AA@ 10049be4     prmwait.obj
+ 0002:00000bfc       ??_C@_0BJ@IMIGLKHN@me?5?$DN?$DN?5enumerator?9?$DOthread?$AA@ 10049bfc     prmwait.obj
+ 0002:00000c1c       ??_C@_0BG@JNAFMEAI@Unknown?5socket?5option?$AA@ 10049c1c     prmapopt.obj
+ 0002:00000c38       ??_C@_0BJ@JLLFIKHA@sizeof?$CIlinger?$CJ?5?$DN?$DN?5length?$AA@ 10049c38     prmapopt.obj
+ 0002:00000c58       ??_C@_0EG@MBNOPEJC@c?3?1Users?1Tandy?1Programming?1mozil@ 10049c58     prmapopt.obj
+ 0002:00000cb0       ??_C@_0GJ@DJENKHDG@?$CIfd?9?$DOsecret?9?$DOmd?4io_model_committ@ 10049cb0     prmapopt.obj
+ 0002:00000d30       ??_C@_0BJ@GIODPKAB@?$CB?$CCI?1O?5method?5is?5invalid?$CC?$AA@ 10049d30     priometh.obj
+ 0002:00000d50       ??_C@_0EG@MBGFCHCD@c?3?1Users?1Tandy?1Programming?1mozil@ 10049d50     priometh.obj
+ 0002:00000da4       ??_C@_0BG@HAEBIHNK@I?1O?5method?5is?5invalid?$AA@ 10049da4     priometh.obj
+ 0002:00000dc0       ??_C@_0BA@NAHDHGBJ@rv?5?$DN?$DN?5sfd?9?$DOtlen?$AA@ 10049dc0     priometh.obj
+ 0002:00000dd4       ??_C@_0BA@FDCOKDLL@0?5?$DN?$DN?5file_bytes?$AA@ 10049dd4     priometh.obj
+ 0002:00000de8       ??_C@_09OAAFOCJJ@rv?5?$DN?$DN?5len?$AA@ 10049de8     priometh.obj
+ 0002:00000df4       ??_C@_0CE@GLHNHPNI@?$CIfile_mmap_offset?5?$CF?5alignment?$CJ?5?$DN@ 10049df4     priometh.obj
+ 0002:00000e20       ??_C@_0DO@MMEMIEIA@rv?5?$DN?$DN?5sfd?9?$DOhlen?5?$CL?5len?5?$CL?5?$CI?$CIlen?5?$DN?$DN@ 10049e20     priometh.obj
+ 0002:00000e6c       ??_C@_0CL@LHNKCIEF@PR_INVALID_IO_LAYER?5?$CB?$DN?5_pr_ipv6_@ 10049e6c     pripv6.obj
+ 0002:00000ea0       ??_C@_0EE@IDKPOCBG@c?3?1Users?1Tandy?1Programming?1mozil@ 10049ea0     pripv6.obj
+ 0002:00000ef4       ??_C@_0BD@NIOKEHHF@Ipv6_to_Ipv4?5layer?$AA@ 10049ef4     pripv6.obj
+ 0002:00000f0c       ??_C@_0CH@ILJPAMMB@PR_AF_INET6?5?$DN?$DN?5src_v6addr?9?$DOipv6?4@ 10049f0c     pripv6.obj
+ 0002:00000f3c       ??_C@_0BB@OGFIJBHD@PR_SUCCESS?5?$DN?$DN?5rv?$AA@ 10049f3c     pripv6.obj
+ 0002:00000f50       ??_C@_0BC@FDAOODH@fd?9?$DOlower?5?$CB?$DN?5NULL?$AA@ 10049f50     pripv6.obj
+ 0002:00000f68       ??_C@_0L@LDHMPKLI@fd?5?$CB?$DN?5NULL?$AA@ 10049f68     pripv6.obj
+ 0002:00000f78       ??_C@_0CG@BENPFEGI@PR_AF_INET?5?$DN?$DN?5src_v4addr?9?$DOinet?4f@ 10049f78     pripv6.obj
+ 0002:00000fa8       ??_C@_0BC@MPGJNDMI@sd?9?$DOlower?5?$CB?$DN?5NULL?$AA@ 10049fa8     pripv6.obj
+ 0002:00000fc0       ??_C@_0L@GMNNJCDB@sd?5?$CB?$DN?5NULL?$AA@ 10049fc0     pripv6.obj
+ 0002:00000fd0       ??_C@_0CE@OABFFHGO@IsValidNetAddr?$CIipv6addr?$CJ?5?$DN?$DN?5PR_T@ 10049fd0     pripv6.obj
+ 0002:00001000       ??_C@_0EF@EELCBCIO@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a000     prlayer.obj
+ 0002:00001054       ??_C@_0CK@GPFLMFFG@fd?9?$DOmethods?9?$DOfile_type?5?$DN?$DN?5PR_DES@ 1004a054     prlayer.obj
+ 0002:00001088       ??_C@_0BD@EAIBFAF@fd?9?$DOsecret?5?$DN?$DN?5NULL?$AA@ 1004a088     prlayer.obj
+ 0002:000010a0       ??_C@_0DK@BFPNAAAP@?$CIPR_NSPR_IO_LAYER?5?$CB?$DN?5ident?$CJ?5?$CG?$CG?5?$CI@ 1004a0a0     prlayer.obj
+ 0002:000010e8       ??_C@_0BH@IGDEBLJ@PR_IO_LAYER_HEAD?5?$CB?$DN?5id?$AA@ 1004a0e8     prlayer.obj
+ 0002:00001104       ??_C@_0P@PCGMPNGF@insert?5?$CB?$DN?5NULL?$AA@ 1004a104     prlayer.obj
+ 0002:00001118       ??_C@_0O@NGKIGFLH@stack?5?$CB?$DN?5NULL?$AA@ 1004a118     prlayer.obj
+ 0002:00001128       ??_C@_0BA@HKHHDFAM@NULL?5?$CB?$DN?5extract?$AA@ 1004a128     prlayer.obj
+ 0002:0000113c       ??_C@_0O@JMLMFFGB@NULL?5?$CB?$DN?5stack?$AA@ 1004a13c     prlayer.obj
+ 0002:0000114c       ??_C@_07KDEJBBOB@0?5?$CB?$DN?5id?$AA@ 1004a14c     prlayer.obj
+ 0002:00001158       ??_C@_0CO@OCDKDODD@identity_cache?4ident?5?$DM?$DN?5identity@ 1004a158     prlayer.obj
+ 0002:00001190       ??_C@_0O@NEALGOA@NULL?5?$DN?$DN?5names?$AA@ 1004a190     prlayer.obj
+ 0002:000011a0       ??_C@_0CO@DFPKPPIG@?$CIPRDescIdentity?$CJ0x7fff?5?$DO?5identit@ 1004a1a0     prlayer.obj
+ 0002:000011d8       ??_C@_0BO@MMIFBEJG@ident?5?$DM?$DN?5identity_cache?4ident?$AA@ 1004a1d8     prlayer.obj
+ 0002:000011fc       ??_C@_0BC@KKMJEPFA@NULL?5?$CB?$DN?5fd?9?$DOlower?$AA@ 1004a1fc     prlayer.obj
+ 0002:00001214       ??_C@_0L@LOOKDDHA@NULL?5?$CB?$DN?5fd?$AA@ 1004a214     prlayer.obj
+ 0002:00001224       ??_C@_0BK@ONGPHMAK@NULL?5?$CB?$DN?5identity_cache?4ml?$AA@ 1004a224     prlayer.obj
+ 0002:00001244       ??_C@_0CF@OOHPCBGD@Unable?5to?5create?5nspr?5log?5file?5?8@ 1004a244     prlog.obj
+ 0002:00001270       ??_C@_0O@DFNODIOH@NSPR_LOG_FILE?$AA@ 1004a270     prlog.obj
+ 0002:00001280       ??_C@_05CIGKPEHD@?5?0?5?$CFn?$AA@ 1004a280     prlog.obj
+ 0002:00001288       ??_C@_03NFKEKGGK@all?$AA@  1004a288     prlog.obj
+ 0002:0000128c       ??_C@_09OMDJNLDP@timestamp?$AA@ 1004a28c     prlog.obj
+ 0002:00001298       ??_C@_07NBFOMEGJ@bufsize?$AA@ 1004a298     prlog.obj
+ 0002:000012a4       ??_C@_04JNABKDKF@sync?$AA@ 1004a2a4     prlog.obj
+ 0002:000012b0       ??_C@_0EN@BLBOLOOE@?$CF63?$FLABCDEFGHIJKLMNOPQRSTUVWXYZab@ 1004a2b0     prlog.obj
+ 0002:0000130c       ??_C@_0BB@FOFFBPIC@NSPR_LOG_MODULES?$AA@ 1004a30c     prlog.obj
+ 0002:00001320       ??_C@_01NOFIACDB@w?$AA@    1004a320     prlog.obj
+ 0002:00001324       ??_C@_08DHFKJDNC@WinDebug?$AA@ 1004a324     prlog.obj
+ 0002:00001330       ??_C@_0BP@HJHJGKJA@_me?5?$DN?$DN?5_PR_MD_CURRENT_THREAD?$CI?$CJ?$AA@ 1004a330     prlog.obj
+ 0002:00001358       ??_C@_0ED@KFOGIDGP@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a358     prlog.obj
+ 0002:000013a8       ??_C@_09FBIJNJHA@?$CFld?$FL?$CFp?$FN?3?5?$AA@ 1004a3a8     prlog.obj
+ 0002:000013b4       ??_C@_0CK@KJKMHMMJ@?$CF04d?9?$CF02d?9?$CF02d?5?$CF02d?3?$CF02d?3?$CF02d?4?$CF0@ 1004a3b4     prlog.obj
+ 0002:000013e8       ??_C@_08FLEMCONJ@Aborting?$AA@ 1004a3e8     prlog.obj
+ 0002:000013f4       ??_C@_0CB@CEKDDGMF@Assertion?5failure?3?5?$CFs?0?5at?5?$CFs?3?$CFd?6@ 1004a3f4     prlog.obj
+ 0002:00001420       ??_C@_0FD@LPJEFND@prot?5?$DN?$DN?5PR_PROT_READONLY?5?$HM?$HM?5prot@ 1004a420     prmmap.obj
+ 0002:00001488       ??_C@_0EE@KEBHJLDD@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a488     prmmap.obj
+ 0002:000014e0       ??_C@_0EG@HHOGDPK@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a4e0     prpolevt.obj
+ 0002:00001534       ??_C@_0BF@LPMCIFNO@NSPR?5pollable?5events?$AA@ 1004a534     prpolevt.obj
+ 0002:00001550       ??_C@_0CO@DDILMALH@NULL?5?$DN?$DN?5event?9?$DOhigher?5?$CG?$CG?5NULL?5?$DN?$DN@ 1004a550     prpolevt.obj
+ 0002:00001588       ??_C@_0BE@MCLEIKKL@buf?$FLi?$FN?5?$DN?$DN?5magicChar?$AA@ 1004a588     prpolevt.obj
+ 0002:000015a0       ??_C@_0BB@JGGOGLEG@0123456789ABCDEF?$AA@ 1004a5a0     prprf.obj
+ 0002:000015b4       ??_C@_0BB@JCEFLFJE@0123456789abcdef?$AA@ 1004a5b4     prprf.obj
+ 0002:000015c8       ??_C@_01LOCGONAA@?$AA?$AA@ 1004a5c8     prprf.obj
+ 0002:000015cc       ??_C@_01FGNFDNOH@?$CF?$AA@ 1004a5cc     prprf.obj
+ 0002:000015d0       ??_C@_01CLKCMJKC@?5?$AA@   1004a5d0     prprf.obj
+ 0002:000015d8       ??_C@_0ED@PBDOHFNJ@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a5d8     prprf.obj
+ 0002:00001628       ??_C@_0BM@PPLHAMFE@strlen?$CIfout?$CJ?5?$DM?5sizeof?$CIfout?$CJ?$AA@ 1004a628     prprf.obj
+ 0002:0000164c       ??_C@_09MDJAPNAK@?$CKp?5?$CB?$DN?5?8L?8?$AA@ 1004a64c     prprf.obj
+ 0002:00001658       ??_C@_0CH@BEKKGMLP@?$CIamount?5?$DO?50?$CJ?5?$CG?$CG?5?$CIamount?5?$DM?5sizeof@ 1004a658     prprf.obj
+ 0002:00001688       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 1004a688     prprf.obj
+ 0002:00001690       ??_C@_0CN@CCGJOIJG@?$CIPRUint32?$CJ?$CIss?9?$DOcur?5?9?5ss?9?$DObase?$CJ?5?$DM@ 1004a690     prprf.obj
+ 0002:000016c8       ??_C@_0BE@KNFJFI@?$CIPRInt32?$CJoutlen?5?$DO?50?$AA@ 1004a6c8     prprf.obj
+ 0002:00001718       ??_C@_0EF@DBJIFBAP@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a718     prscanf.obj
+ 0002:0000176c       ??_C@_0L@NBKPLPFP@base?5?$DN?$DN?516?$AA@ 1004a76c     prscanf.obj
+ 0002:0000177c       ??_C@_09GHGJHAPP@base?5?$CB?$DN?50?$AA@ 1004a77c     prscanf.obj
+ 0002:00001788       ??_C@_0DD@MGMGAMFF@base?5?$DN?$DN?50?5?$HM?$HM?5base?5?$DN?$DN?58?5?$HM?$HM?5base?5?$DN@ 1004a788     prscanf.obj
+ 0002:000017c8       ??_C@_0CK@JOFFJCLF@expanded?5monitor?5cache?5to?5?$CFd?5?$CIbu@ 1004a7c8     prcmon.obj
+ 0002:000017fc       ??_C@_0CK@JKELFPOI@unable?5to?5grow?5monitor?5cache?5has@ 1004a7fc     prcmon.obj
+ 0002:00001830       ??_C@_0BI@LNCIPPNE@p?9?$DOcacheEntryCount?5?$DN?$DN?50?$AA@ 1004a830     prcmon.obj
+ 0002:0000184c       ??_C@_0BF@DBIPMGGC@num_free_entries?5?$DO?50?$AA@ 1004a84c     prcmon.obj
+ 0002:00001868       ??_C@_0EJ@NFLOIPLK@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a868     prcmon.obj
+ 0002:000018c0       ??_C@_0BL@MKHNIOPH@rwlock?9?$DOrw_reader_cnt?5?$DN?$DN?50?$AA@ 1004a8c0     prrwlock.obj
+ 0002:000018e0       ??_C@_0EL@NGINFIEN@c?3?1Users?1Tandy?1Programming?1mozil@ 1004a8e0     prrwlock.obj
+ 0002:00001940       ??_C@_0FO@PFCCBMOE@?$CIrwlock?9?$DOrw_rank?5?$DN?$DN?5PR_RWLOCK_RA@ 1004a940     prrwlock.obj
+ 0002:000019b0       ??_C@_0L@HPJPBGMC@me?5?$CB?$DN?5NULL?$AA@ 1004a9b0     prrwlock.obj
+ 0002:000019c0       ??_C@_0BK@IMHJCGLK@rwlock?9?$DOrw_lock_cnt?5?$DN?$DN?5?91?$AA@ 1004a9c0     prrwlock.obj
+ 0002:000019e0       ??_C@_0BH@LDDOEFCH@rwlock?9?$DOrw_owner?5?$DN?$DN?5me?$AA@ 1004a9e0     prrwlock.obj
+ 0002:000019fc       ??_C@_0BJ@KBPIFPPL@rwlock?9?$DOrw_lock_cnt?5?$CB?$DN?50?$AA@ 1004a9fc     prrwlock.obj
+ 0002:00001a1c       ??_C@_0L@BNEOODNA@lock_stack?$AA@ 1004aa1c     prrwlock.obj
+ 0002:00001a2c       ??_C@_0BD@NOBOLOGD@lock_stack?5?$CB?$DN?5NULL?$AA@ 1004aa2c     prrwlock.obj
+ 0002:00001a44       ??_C@_0BM@GCDKDMJA@NULL?5?$CB?$DN?5_pr_tpd_destructors?$AA@ 1004aa44     prtpd.obj
+ 0002:00001a68       ??_C@_0EI@GOJKDEFJ@c?3?1Users?1Tandy?1Programming?1mozil@ 1004aa68     prtpd.obj
+ 0002:00001ac0       ??_C@_0BB@NGPHPJBL@NULL?5?$CB?$DN?5newIndex?$AA@ 1004aac0     prtpd.obj
+ 0002:00001ad4       ??_C@_0BI@HFKOGGBM@index?5?$DM?5self?9?$DOtpdLength?$AA@ 1004aad4     prtpd.obj
+ 0002:00001af0       ??_C@_0HD@HJJHJKND@?$CI?$CINULL?5?$DN?$DN?5self?9?$DOprivateData?$CJ?5?$CG?$CG?5@ 1004aaf0     prtpd.obj
+ 0002:00001b7c       ??_C@_0BF@KKBGABBB@0?5?$CB?$DN?5self?9?$DOtpdLength?$AA@ 1004ab7c     prtpd.obj
+ 0002:00001b98       ??_C@_0BJ@FKLHIDOM@Loaded?5library?5?$CFs?5?$CIinit?$CJ?$AA@ 1004ab98     prlink.obj
+ 0002:00001bb8       ??_C@_0L@NMLACBOJ@Executable?$AA@ 1004abb8     prlink.obj
+ 0002:00001bc8       ??_C@_0M@DICCFICH@linker?9lock?$AA@ 1004abc8     prlink.obj
+ 0002:00001bd8       ??_C@_06PHCAGNF@?4?$DL?2lib?$AA@ 1004abd8     prlink.obj
+ 0002:00001be0       ??_C@_0BA@MPOJOFMM@LD_LIBRARY_PATH?$AA@ 1004abe0     prlink.obj
+ 0002:00001bf4       ??_C@_02DKCKIIND@?$CFs?$AA@ 1004abf4     prlink.obj
+ 0002:00001bf8       ??_C@_05BMGBEOOC@?$CFs?2?$CFs?$AA@ 1004abf8     prlink.obj
+ 0002:00001c00       ??_C@_04HDOCAJNK@?$CFs?$CFs?$AA@ 1004ac00     prlink.obj
+ 0002:00001c08       ??_C@_07MHLIEPKG@?$CFs?2?$CFs?$CFs?$AA@ 1004ac08     prlink.obj
+ 0002:00001c14       ??_C@_04HLONOPDM@?4dll?$AA@ 1004ac14     prlink.obj
+ 0002:00001c1c       ??_C@_0BN@CIHPHABI@Loaded?5library?5?$CFs?5?$CIload?5lib?$CJ?$AA@ 1004ac1c     prlink.obj
+ 0002:00001c40       ??_C@_08HPBFPDOD@error?5?$CFd?$AA@ 1004ac40     prlink.obj
+ 0002:00001c4c       ??_C@_0BJ@NNHLCGND@?$CFs?5incr?5?$DN?$DO?5?$CFd?5?$CIfind?5lib?$CJ?$AA@ 1004ac4c     prlink.obj
+ 0002:00001c6c       ??_C@_0BE@NAMHCMDI@Unloaded?5library?5?$CFs?$AA@ 1004ac6c     prlink.obj
+ 0002:00001c84       ??_C@_0CO@CAKBCLJH@?$CB?$CC_pr_loadmap?5and?5lib?9?$DOrefCount?5@ 1004ac84     prlink.obj
+ 0002:00001cc0       ??_C@_0EJ@IJOHMMNL@c?3?1Users?1Tandy?1Programming?1mozil@ 1004acc0     prlink.obj
+ 0002:00001d18       ??_C@_0CL@OEMIFIJH@_pr_loadmap?5and?5lib?9?$DOrefCount?5in@ 1004ad18     prlink.obj
+ 0002:00001d4c       ??_C@_0O@NCLJPEKD@?$CFs?5decr?5?$DN?$DO?5?$CFd?$AA@ 1004ad4c     prlink.obj
+ 0002:00001d5c       ??_C@_0M@BAJACIDD@lib?5?$CB?$DN?5NULL?$AA@ 1004ad5c     prlink.obj
+ 0002:00001d6c       ??_C@_0BH@EPINKNDE@?$CFs?5incr?5?$DN?$DO?5?$CFd?5?$CIfor?5?$CFs?$CJ?$AA@ 1004ad6c     prlink.obj
+ 0002:00001d88       ??_C@_0BP@EOHJCGBL@Loaded?5library?5?$CFs?5?$CIstatic?5lib?$CJ?$AA@ 1004ad88     prlink.obj
+ 0002:00001db0       ??_C@_0BC@EIOGNKCO@lm?9?$DOrefCount?5?$DN?$DN?51?$AA@ 1004adb0     prlink.obj
+ 0002:00001dc8       ??_C@_0DO@HCNNANEF@?$CIresult?9?$DOstaticTable?5?$DN?$DN?5NULL?$CJ?5?$HM?$HM@ 1004adc8     prlink.obj
+ 0002:00001e18       __real@3fe0000000000000    1004ae18     pralarm.obj
+ 0002:00001e24       ??_C@_0DB@IHMIHBAJ@PR_Counter?3?5Create?3?5QName?3?5?$CFs?5?$CFp@ 1004ae24     prcountr.obj
+ 0002:00001e60       ??_C@_0M@PPNJFCIH@rnp?5?$CB?$DN?5NULL?$AA@ 1004ae60     prcountr.obj
+ 0002:00001e70       ??_C@_0BJ@GPHANIMN@strcmp?$CIrnp?9?$DOname?0?5rName?$CJ?$AA@ 1004ae70     prcountr.obj
+ 0002:00001e90       ??_C@_0M@IIEHIAHH@qnp?5?$CB?$DN?5NULL?$AA@ 1004ae90     prcountr.obj
+ 0002:00001ea0       ??_C@_0CK@KHIMMKOJ@strlen?$CIdescription?$CJ?5?$DM?$DN?5PRCOUNTER@ 1004aea0     prcountr.obj
+ 0002:00001ed4       ??_C@_0CE@GMHJFGM@strlen?$CIrName?$CJ?5?$DM?$DN?5PRCOUNTER_NAME_@ 1004aed4     prcountr.obj
+ 0002:00001f00       ??_C@_0CE@KDMPPOAA@strlen?$CIqName?$CJ?5?$DM?$DN?5PRCOUNTER_NAME_@ 1004af00     prcountr.obj
+ 0002:00001f30       ??_C@_0EI@IDENDLKH@c?3?1Users?1Tandy?1Programming?1mozil@ 1004af30     prcountr.obj
+ 0002:00001f88       ??_C@_0CE@JLPIGLFE@PR_Counter?3?5Initialization?5compl@ 1004af88     prcountr.obj
+ 0002:00001fb4       ??_C@_08KKLAKCLE@counters?$AA@ 1004afb4     prcountr.obj
+ 0002:00001fc0       ??_C@_0BE@MHJFEAFH@counterLock?5?$DN?$DN?5NULL?$AA@ 1004afc0     prcountr.obj
+ 0002:00001fd8       ??_C@_0CK@INJLKEJD@PR_Counter?3?5Deleting?5unused?5QNam@ 1004afd8     prcountr.obj
+ 0002:0000200c       ??_C@_0CD@KPNDAIBJ@PR_Counter?3?5Deleting?5RName?3?5?$CFs?0?5@ 1004b00c     prcountr.obj
+ 0002:00002038       ??_C@_0CL@CDNJOKBL@PR_Counter?3?5Deleting?3?5QName?3?5?$CFs?0@ 1004b038     prcountr.obj
+ 0002:0000206c       ??_C@_0CI@LJBCOMFF@PR_Counter?3?5GetConterHandleFromN@ 1004b06c     prcountr.obj
+ 0002:0000209c       ??_C@_0DM@ENNBDODD@PR_Counter?3?5GetCounterHandleFrom@ 1004b09c     prcountr.obj
+ 0002:000020e8       ??_C@_0FH@LCOABINA@PR_Counter?3?5GetConterNameFromHan@ 1004b0e8     prcountr.obj
+ 0002:00002150       ??_C@_0BP@FPPMAPPO@PR_Counter?3?5Increment?3?5?$CFp?0?5?$CFld?$AA@ 1004b150     prcountr.obj
+ 0002:00002178       ??_C@_0BP@JFAAOMKP@PR_Counter?3?5Decrement?3?5?$CFp?0?5?$CFld?$AA@ 1004b178     prcountr.obj
+ 0002:000021a0       ??_C@_0CC@JEBGGNDA@PR_Counter?3?5AddToCounter?3?5?$CFp?0?5?$CFl@ 1004b1a0     prcountr.obj
+ 0002:000021c8       ??_C@_0CJ@BIPFAPG@PR_Counter?3?5SubtractFromCounter?3@ 1004b1c8     prcountr.obj
+ 0002:000021fc       ??_C@_0CA@IJGADID@PR_Counter?3?5GetCounter?3?5?$CFp?0?5?$CFld?$AA@ 1004b1fc     prcountr.obj
+ 0002:00002224       ??_C@_0CA@KGLNEDPP@PR_Counter?3?5SetCounter?3?5?$CFp?0?5?$CFld?$AA@ 1004b224     prcountr.obj
+ 0002:0000224c       ??_C@_0DD@JLDCFBOB@PR_Counter?3?5FindNextQname?3?5Handl@ 1004b24c     prcountr.obj
+ 0002:00002290       ??_C@_0EB@CMBKFIOH@PR_Counter?3?5FindNextRname?3?5Rhand@ 1004b290     prcountr.obj
+ 0002:00002420       __real@3fcfffff94a03595    1004b420     prdtoa.obj
+ 0002:00002430       __real@3fe0000035afe535    1004b430     prdtoa.obj
+ 0002:00002440       __real@3fdfffff94a03595    1004b440     prdtoa.obj
+ 0002:00002450       __real@41dfffffffc00000    1004b450     prdtoa.obj
+ 0002:00002460       __real@bff0000000000000    1004b460     prdtoa.obj
+ 0002:00002470       __real@3ff0000000000000    1004b470     prdtoa.obj
+ 0002:00002480       __real@4000000000000000    1004b480     prdtoa.obj
+ 0002:00002490       __real@0000000000000000    1004b490     prdtoa.obj
+ 0002:0000249c       ??_C@_0CE@JJPKIPG@cmp?5called?5with?5b?9?$DOx?$FLb?9?$DOwds?91?$FN?5?$DN@ 1004b49c     prdtoa.obj
+ 0002:000024c8       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 1004b4c8     prdtoa.obj
+ 0002:000024cc       ??_C@_0CE@LHELIPEF@cmp?5called?5with?5a?9?$DOx?$FLa?9?$DOwds?91?$FN?5?$DN@ 1004b4cc     prdtoa.obj
+ 0002:000024f8       ??_C@_0O@LOPGAHPL@zero?5y?5in?5b2d?$AA@ 1004b4f8     prdtoa.obj
+ 0002:00002508       __real@4014000000000000    1004b508     prdtoa.obj
+ 0002:00002518       __real@401c000000000000    1004b518     prdtoa.obj
+ 0002:00002528       __real@4024000000000000    1004b528     prdtoa.obj
+ 0002:00002538       __real@3fd34413509f79fb    1004b538     prdtoa.obj
+ 0002:00002548       __real@3fc68a288b60c8b3    1004b548     prdtoa.obj
+ 0002:00002558       __real@3fd287a7636f4361    1004b558     prdtoa.obj
+ 0002:00002568       __real@3ff8000000000000    1004b568     prdtoa.obj
+ 0002:00002574       ??_C@_03ICJPMMHB@NaN?$AA@  1004b574     prdtoa.obj
+ 0002:00002578       ??_C@_08KEBCLIFP@Infinity?$AA@ 1004b578     prdtoa.obj
+ 0002:00002584       ??_C@_0BN@IMJJBOEB@oversized?5quotient?5in?5quorem?$AA@ 1004b584     prdtoa.obj
+ 0002:000025a8       ??_C@_0BF@BNOAFBKL@oversize?5b?5in?5quorem?$AA@ 1004b5a8     prdtoa.obj
+ 0002:000025c4       ??_C@_03HMNOHIEN@?$CF?$CLd?$AA@ 1004b5c4     prdtoa.obj
+ 0002:000025c8       ??_C@_05IAIJEAEJ@prerr?$AA@ 1004b5c8     prerr.obj
+ 0002:000025d0       ??_C@_0CE@GFICAMNG@Placeholder?5for?5the?5end?5of?5the?5l@ 1004b5d0     prerr.obj
+ 0002:000025fc       ??_C@_0N@LMPNLMHC@PR_MAX_ERROR?$AA@ 1004b5fc     prerr.obj
+ 0002:00002610       ??_C@_0FO@BCEGKLMI@The?5one?9time?5function?5was?5previo@ 1004b610     prerr.obj
+ 0002:00002680       ??_C@_0BD@JMFIFCA@PR_CALL_ONCE_ERROR?$AA@ 1004b680     prerr.obj
+ 0002:00002698       ??_C@_0BK@FFMJBHC@The?5library?5is?5not?5loaded?$AA@ 1004b698     prerr.obj
+ 0002:000026b8       ??_C@_0BM@KONGANDH@PR_LIBRARY_NOT_LOADED_ERROR?$AA@ 1004b6b8     prerr.obj
+ 0002:000026dc       ??_C@_0BE@DGMKCHAF@Host?5is?5unreachable?$AA@ 1004b6dc     prerr.obj
+ 0002:000026f4       ??_C@_0BK@BILECHBE@PR_HOST_UNREACHABLE_ERROR?$AA@ 1004b6f4     prerr.obj
+ 0002:00002714       ??_C@_0BD@OAFHECHI@Connection?5aborted?$AA@ 1004b714     prerr.obj
+ 0002:0000272c       ??_C@_0BJ@JPKAOPPO@PR_CONNECT_ABORTED_ERROR?$AA@ 1004b72c     prerr.obj
+ 0002:0000274c       ??_C@_0BA@NEGECJF@Socket?5shutdown?$AA@ 1004b74c     prerr.obj
+ 0002:00002760       ??_C@_0BJ@GDCFNFP@PR_SOCKET_SHUTDOWN_ERROR?$AA@ 1004b760     prerr.obj
+ 0002:00002780       ??_C@_0BA@LPIEBGEK@Network?5is?5down?$AA@ 1004b780     prerr.obj
+ 0002:00002794       ??_C@_0BG@HIJPDICI@PR_NETWORK_DOWN_ERROR?$AA@ 1004b794     prerr.obj
+ 0002:000027b0       ??_C@_0CC@BHDLBIDN@Object?5state?5improper?5for?5reques@ 1004b7b0     prerr.obj
+ 0002:000027d8       ??_C@_0BH@MGAKFEHF@PR_INVALID_STATE_ERROR?$AA@ 1004b7d8     prerr.obj
+ 0002:000027f4       ??_C@_0BI@GMACDMDO@The?5wait?5group?5is?5empty?$AA@ 1004b7f4     prerr.obj
+ 0002:00002810       ??_C@_0BF@OBGDOLCP@PR_GROUP_EMPTY_ERROR?$AA@ 1004b810     prerr.obj
+ 0002:00002830       ??_C@_0EH@MNLNNIOM@Operation?5has?5already?5been?5initi@ 1004b830     prerr.obj
+ 0002:00002888       ??_C@_0BL@HKKPADFH@PR_ALREADY_INITIATED_ERROR?$AA@ 1004b888     prerr.obj
+ 0002:000028a8       ??_C@_0EB@NPAIOFAP@Operation?5is?5still?5in?5progress?5?$CI@ 1004b8a8     prerr.obj
+ 0002:000028f8       ??_C@_0BF@BPNNHPNH@PR_IN_PROGRESS_ERROR?$AA@ 1004b8f8     prerr.obj
+ 0002:00002914       ??_C@_0BO@EDMIECPA@The?5I?1O?5operation?5was?5aborted?$AA@ 1004b914     prerr.obj
+ 0002:00002938       ??_C@_0BL@CCGHMLFD@PR_OPERATION_ABORTED_ERROR?$AA@ 1004b938     prerr.obj
+ 0002:00002958       ??_C@_0BB@PENEKCL@The?5file?5is?5busy?$AA@ 1004b958     prerr.obj
+ 0002:0000296c       ??_C@_0BG@INEGMOJM@PR_FILE_IS_BUSY_ERROR?$AA@ 1004b96c     prerr.obj
+ 0002:00002988       ??_C@_0L@FCLNKJKA@Seek?5error?$AA@ 1004b988     prerr.obj
+ 0002:00002998       ??_C@_0BD@BBMFIBK@PR_FILE_SEEK_ERROR?$AA@ 1004b998     prerr.obj
+ 0002:000029b0       ??_C@_0BI@HKPOOLIC@Encountered?5end?5of?5file?$AA@ 1004b9b0     prerr.obj
+ 0002:000029cc       ??_C@_0BF@HKCHOPHF@PR_END_OF_FILE_ERROR?$AA@ 1004b9cc     prerr.obj
+ 0002:000029e8       ??_C@_0CB@ICHGFAGD@No?5more?5entries?5in?5the?5directory@ 1004b9e8     prerr.obj
+ 0002:00002a10       ??_C@_0BH@LGKOJIDJ@PR_NO_MORE_FILES_ERROR?$AA@ 1004ba10     prerr.obj
+ 0002:00002a2c       ??_C@_0BF@LMDCGHOG@The?5device?5is?5locked?$AA@ 1004ba2c     prerr.obj
+ 0002:00002a48       ??_C@_0BK@PJPMAKMB@PR_DEVICE_IS_LOCKED_ERROR?$AA@ 1004ba48     prerr.obj
+ 0002:00002a68       ??_C@_0CM@NLFIDCAK@The?5required?5device?5was?5in?5an?5in@ 1004ba68     prerr.obj
+ 0002:00002a9c       ??_C@_0BO@ENPHICBC@PR_INVALID_DEVICE_STATE_ERROR?$AA@ 1004ba9c     prerr.obj
+ 0002:00002ac0       ??_C@_0DJ@IBMNCBPP@Directory?5is?5full?4?5?5No?5additiona@ 1004bac0     prerr.obj
+ 0002:00002b04       ??_C@_0BP@GFMDKCHK@PR_MAX_DIRECTORY_ENTRIES_ERROR?$AA@ 1004bb04     prerr.obj
+ 0002:00002b2c       ??_C@_0DH@GMFIPID@Cannot?5create?5or?5rename?5a?5filena@ 1004bb2c     prerr.obj
+ 0002:00002b70       ??_C@_0BF@EBBFLHEF@PR_FILE_EXISTS_ERROR?$AA@ 1004bb70     prerr.obj
+ 0002:00002b8c       ??_C@_0DF@IPMBGJGB@The?5directory?5object?5in?5the?5file@ 1004bb8c     prerr.obj
+ 0002:00002bcc       ??_C@_0BN@LLNBKPDD@PR_DIRECTORY_CORRUPTED_ERROR?$AA@ 1004bbcc     prerr.obj
+ 0002:00002bf0       ??_C@_0DI@ONOMILGP@Cannot?5rename?5a?5file?5to?5a?5file?5s@ 1004bbf0     prerr.obj
+ 0002:00002c34       ??_C@_0BJ@MIAJHCKK@PR_NOT_SAME_DEVICE_ERROR?$AA@ 1004bc34     prerr.obj
+ 0002:00002c58       ??_C@_0EE@ONJLFFPA@Cannot?5delete?5or?5rename?5a?5file?5o@ 1004bc58     prerr.obj
+ 0002:00002cac       ??_C@_0BM@KKMHGOEI@PR_FILESYSTEM_MOUNTED_ERROR?$AA@ 1004bcac     prerr.obj
+ 0002:00002cd0       ??_C@_0CM@PBAPFLBA@Cannot?5delete?5a?5directory?5that?5i@ 1004bcd0     prerr.obj
+ 0002:00002d04       ??_C@_0BN@DBOBHACA@PR_DIRECTORY_NOT_EMPTY_ERROR?$AA@ 1004bd04     prerr.obj
+ 0002:00002d28       ??_C@_0CI@FGABNFKO@Cannot?5write?5to?5a?5read?9only?5file@ 1004bd28     prerr.obj
+ 0002:00002d58       ??_C@_0BO@JLEJBCJB@PR_READ_ONLY_FILESYSTEM_ERROR?$AA@ 1004bd58     prerr.obj
+ 0002:00002d7c       ??_C@_0DE@LDFEMBEP@Cannot?5perform?5directory?5operati@ 1004bd7c     prerr.obj
+ 0002:00002dbc       ??_C@_0BH@IKOJNABO@PR_NOT_DIRECTORY_ERROR?$AA@ 1004bdbc     prerr.obj
+ 0002:00002dd8       ??_C@_0P@DBCHBMCI@File?5not?5found?$AA@ 1004bdd8     prerr.obj
+ 0002:00002dec       ??_C@_0BI@EHCNLOKJ@PR_FILE_NOT_FOUND_ERROR?$AA@ 1004bdec     prerr.obj
+ 0002:00002e08       ??_C@_0BG@HGAAIHBF@File?5name?5is?5too?5long?$AA@ 1004be08     prerr.obj
+ 0002:00002e24       ??_C@_0BH@DMCMABKH@PR_NAME_TOO_LONG_ERROR?$AA@ 1004be24     prerr.obj
+ 0002:00002e40       ??_C@_0BD@PFMGDKPG@Symbolic?5link?5loop?$AA@ 1004be40     prerr.obj
+ 0002:00002e58       ??_C@_0O@JDAMEONP@PR_LOOP_ERROR?$AA@ 1004be58     prerr.obj
+ 0002:00002e68       ??_C@_0DG@JHNJBJPJ@Cannot?5perform?5a?5normal?5file?5ope@ 1004be68     prerr.obj
+ 0002:00002ea8       ??_C@_0BG@CLAKAMAB@PR_IS_DIRECTORY_ERROR?$AA@ 1004bea8     prerr.obj
+ 0002:00002ec4       ??_C@_0BI@DNEJPDEL@PR_NO_SEEK_DEVICE_ERROR?$AA@ 1004bec4     prerr.obj
+ 0002:00002ee0       ??_C@_0O@HNNMNKHL@PR_PIPE_ERROR?$AA@ 1004bee0     prerr.obj
+ 0002:00002ef0       ??_C@_0CI@HGFAANJK@The?5device?5for?5storing?5the?5file?5@ 1004bef0     prerr.obj
+ 0002:00002f20       ??_C@_0BJ@FNBFOJAP@PR_NO_DEVICE_SPACE_ERROR?$AA@ 1004bf20     prerr.obj
+ 0002:00002f40       ??_C@_0DJ@GJOBIAPG@Write?5would?5result?5in?5file?5large@ 1004bf40     prerr.obj
+ 0002:00002f84       ??_C@_0BG@IOGEIINN@PR_FILE_TOO_BIG_ERROR?$AA@ 1004bf84     prerr.obj
+ 0002:00002fa0       ??_C@_0BL@JBGALNAF@The?5file?5is?5already?5locked?$AA@ 1004bfa0     prerr.obj
+ 0002:00002fc0       ??_C@_0BI@NBDHAGFO@PR_FILE_IS_LOCKED_ERROR?$AA@ 1004bfc0     prerr.obj
+ 0002:00002fdc       ??_C@_0CE@JMAHKEKC@The?5operation?5would?5have?5deadloc@ 1004bfdc     prerr.obj
+ 0002:00003008       ??_C@_0BC@HICOAGKN@PR_DEADLOCK_ERROR?$AA@ 1004c008     prerr.obj
+ 0002:00003020       ??_C@_06CGLFEPBO@Unused?$AA@ 1004c020     prerr.obj
+ 0002:00003028       ??_C@_0P@IIMFMOJO@PR_RANGE_ERROR?$AA@ 1004c028     prerr.obj
+ 0002:0000303c       ??_C@_0BN@LAANIDEE@TCP?5connection?5reset?5by?5peer?$AA@ 1004c03c     prerr.obj
+ 0002:00003060       ??_C@_0BH@LJGHJLEA@PR_CONNECT_RESET_ERROR?$AA@ 1004c060     prerr.obj
+ 0002:00003080       ??_C@_0EK@HAANIJBC@The?5value?5requested?5is?5too?5large@ 1004c080     prerr.obj
+ 0002:000030d8       ??_C@_0BJ@LJJJAKMH@PR_BUFFER_OVERFLOW_ERROR?$AA@ 1004c0d8     prerr.obj
+ 0002:000030f8       ??_C@_0CL@BLBPHLNK@Access?5to?5the?5remote?5file?5has?5be@ 1004c0f8     prerr.obj
+ 0002:0000312c       ??_C@_0BF@NHJFHMN@PR_REMOTE_FILE_ERROR?$AA@ 1004c12c     prerr.obj
+ 0002:00003148       ??_C@_0EC@MALILAPC@The?5host?5operating?5system?5does?5n@ 1004c148     prerr.obj
+ 0002:00003198       ??_C@_0CA@JOBHDIJJ@PR_PROTOCOL_NOT_SUPPORTED_ERROR?$AA@ 1004c198     prerr.obj
+ 0002:000031c0       ??_C@_0DJ@DHEHKMKF@The?5requested?5operation?5is?5not?5s@ 1004c1c0     prerr.obj
+ 0002:00003204       ??_C@_0CB@HACLBFJJ@PR_OPERATION_NOT_SUPPORTED_ERROR@ 1004c204     prerr.obj
+ 0002:0000322c       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 1004c22c     prerr.obj
+ 0002:0000323c       ??_C@_0BK@KKFBPOMM@PR_NO_ACCESS_RIGHTS_ERROR?$AA@ 1004c23c     prerr.obj
+ 0002:0000325c       ??_C@_0CF@JFLJHMLG@TCP?5file?5descriptor?5is?5already?5b@ 1004c25c     prerr.obj
+ 0002:00003288       ??_C@_0CB@DPABOJKF@PR_SOCKET_ADDRESS_IS_BOUND_ERROR@ 1004c288     prerr.obj
+ 0002:000032b0       ??_C@_0DN@OLNLEKBI@TCP?9specific?5function?5attempted?5@ 1004c2b0     prerr.obj
+ 0002:000032fc       ??_C@_0BI@OJKLKLGO@PR_NOT_TCP_SOCKET_ERROR?$AA@ 1004c2fc     prerr.obj
+ 0002:00003318       ??_C@_0DL@LEFKPGIC@Network?5operation?5attempted?5on?5n@ 1004c318     prerr.obj
+ 0002:00003360       ??_C@_0BE@GEINCDMB@PR_NOT_SOCKET_ERROR?$AA@ 1004c360     prerr.obj
+ 0002:00003378       ??_C@_0BN@CECPMGDO@System?5open?5FD?5table?5is?5full?$AA@ 1004c378     prerr.obj
+ 0002:0000339c       ??_C@_0BN@CCGNEPKO@PR_SYS_DESC_TABLE_FULL_ERROR?$AA@ 1004c39c     prerr.obj
+ 0002:000033c0       ??_C@_0BO@NBPKOBLG@Process?5open?5FD?5table?5is?5full?$AA@ 1004c3c0     prerr.obj
+ 0002:000033e4       ??_C@_0BO@DGDPCPNB@PR_PROC_DESC_TABLE_FULL_ERROR?$AA@ 1004c3e4     prerr.obj
+ 0002:00003408       ??_C@_0DB@IGLMHIIF@Attempt?5to?5access?5a?5TPD?5key?5that@ 1004c408     prerr.obj
+ 0002:00003444       ??_C@_0BD@EECDKIKK@PR_TPD_RANGE_ERROR?$AA@ 1004c444     prerr.obj
+ 0002:0000345c       ??_C@_0DD@CEHNDNPO@A?5directory?5lookup?5on?5a?5network?5@ 1004c45c     prerr.obj
+ 0002:0000349c       ??_C@_0BK@IOKJHCEH@PR_DIRECTORY_LOOKUP_ERROR?$AA@ 1004c49c     prerr.obj
+ 0002:000034bc       ??_C@_0BO@JFFKNIFJ@Insufficient?5system?5resources?$AA@ 1004c4bc     prerr.obj
+ 0002:000034e0       ??_C@_0CA@IHAMLFHO@PR_INSUFFICIENT_RESOURCES_ERROR?$AA@ 1004c4e0     prerr.obj
+ 0002:00003508       ??_C@_0DI@DLJAOPEF@Symbol?5not?5found?5in?5any?5of?5the?5l@ 1004c508     prerr.obj
+ 0002:0000354c       ??_C@_0BF@DLCBKNJ@PR_FIND_SYMBOL_ERROR?$AA@ 1004c54c     prerr.obj
+ 0002:00003568       ??_C@_0CC@MJEJJGKB@Failure?5to?5unload?5dynamic?5librar@ 1004c568     prerr.obj
+ 0002:00003590       ??_C@_0BI@MGNAFENB@PR_UNLOAD_LIBRARY_ERROR?$AA@ 1004c590     prerr.obj
+ 0002:000035ac       ??_C@_0CA@IDJNMAJJ@Failure?5to?5load?5dynamic?5library?$AA@ 1004c5ac     prerr.obj
+ 0002:000035d4       ??_C@_0BG@ENHNOIHH@PR_LOAD_LIBRARY_ERROR?$AA@ 1004c5d4     prerr.obj
+ 0002:000035f0       ??_C@_0CJ@FDGPLKLD@Network?5file?5descriptor?5is?5not?5c@ 1004c5f0     prerr.obj
+ 0002:00003624       ??_C@_0BH@GGMFOLIO@PR_NOT_CONNECTED_ERROR?$AA@ 1004c624     prerr.obj
+ 0002:00003640       ??_C@_0BN@MEIBPKIJ@Connection?5attempt?5timed?5out?$AA@ 1004c640     prerr.obj
+ 0002:00003664       ??_C@_0BJ@POLLEEMO@PR_CONNECT_TIMEOUT_ERROR?$AA@ 1004c664     prerr.obj
+ 0002:00003684       ??_C@_0CJ@DOKBMPLA@Network?5address?5is?5presently?5unr@ 1004c684     prerr.obj
+ 0002:000036b8       ??_C@_0BN@HNLOPDEP@PR_NETWORK_UNREACHABLE_ERROR?$AA@ 1004c6b8     prerr.obj
+ 0002:000036dc       ??_C@_0BL@KOHBMEOO@Connection?5refused?5by?5peer?$AA@ 1004c6dc     prerr.obj
+ 0002:000036fc       ??_C@_0BJ@KOEOMEHK@PR_CONNECT_REFUSED_ERROR?$AA@ 1004c6fc     prerr.obj
+ 0002:0000371c       ??_C@_0CA@JLDHOKAK@Local?5Network?5address?5is?5in?5use?$AA@ 1004c71c     prerr.obj
+ 0002:00003744       ??_C@_0BI@PHDFCMIK@PR_ADDRESS_IN_USE_ERROR?$AA@ 1004c744     prerr.obj
+ 0002:00003760       ??_C@_0BL@MCAKKFO@Network?5address?5is?5invalid?$AA@ 1004c760     prerr.obj
+ 0002:00003780       ??_C@_0BF@EGHIJNDG@PR_BAD_ADDRESS_ERROR?$AA@ 1004c780     prerr.obj
+ 0002:0000379c       ??_C@_0BC@GIMHDJLL@Already?5connected?$AA@ 1004c79c     prerr.obj
+ 0002:000037b4       ??_C@_0BG@MHCGDHJB@PR_IS_CONNECTED_ERROR?$AA@ 1004c7b4     prerr.obj
+ 0002:000037d0       ??_C@_0CD@HLHIPGKB@Network?5address?5type?5not?5support@ 1004c7d0     prerr.obj
+ 0002:000037fc       ??_C@_0BP@BOOAAEBP@PR_ADDRESS_NOT_SUPPORTED_ERROR?$AA@ 1004c7fc     prerr.obj
+ 0002:00003824       ??_C@_0CI@JGKJOGPK@Network?5address?5not?5available?5?$CIi@ 1004c824     prerr.obj
+ 0002:00003854       ??_C@_0BP@KMAGDDOD@PR_ADDRESS_NOT_AVAILABLE_ERROR?$AA@ 1004c854     prerr.obj
+ 0002:0000387c       ??_C@_0BK@FCBDHKFP@Invalid?5function?5argument?$AA@ 1004c87c     prerr.obj
+ 0002:0000389c       ??_C@_0BK@NPCIDKHD@PR_INVALID_ARGUMENT_ERROR?$AA@ 1004c89c     prerr.obj
+ 0002:000038bc       ??_C@_0CC@OGHGJIME@The?5directory?5could?5not?5be?5opene@ 1004c8bc     prerr.obj
+ 0002:000038e4       ??_C@_0BI@IICBONIB@PR_DIRECTORY_OPEN_ERROR?$AA@ 1004c8e4     prerr.obj
+ 0002:00003900       ??_C@_0CG@OFCHAKDL@I?1O?5operation?5on?5busy?5file?5descr@ 1004c900     prerr.obj
+ 0002:00003930       ??_C@_0BE@BOJHBFEB@PR_IO_PENDING_ERROR?$AA@ 1004c930     prerr.obj
+ 0002:00003948       ??_C@_0BI@KGKLDCMO@I?1O?5operation?5timed?5out?$AA@ 1004c948     prerr.obj
+ 0002:00003964       ??_C@_0BE@PKCOLELC@PR_IO_TIMEOUT_ERROR?$AA@ 1004c964     prerr.obj
+ 0002:0000397c       ??_C@_0BD@JKDPELNN@I?1O?5function?5error?$AA@ 1004c97c     prerr.obj
+ 0002:00003994       ??_C@_0M@IIEBDIJ@PR_IO_ERROR?$AA@ 1004c994     prerr.obj
+ 0002:000039a4       ??_C@_0BJ@DHGJMDGE@function?5not?5implemented?$AA@ 1004c9a4     prerr.obj
+ 0002:000039c4       ??_C@_0BJ@LCONFCBJ@PR_NOT_IMPLEMENTED_ERROR?$AA@ 1004c9c4     prerr.obj
+ 0002:000039e4       ??_C@_0CI@PPODKLPH@Operation?5interrupted?5by?5another@ 1004c9e4     prerr.obj
+ 0002:00003a14       ??_C@_0BL@JMMNMKEM@PR_PENDING_INTERRUPT_ERROR?$AA@ 1004ca14     prerr.obj
+ 0002:00003a34       ??_C@_0CA@COMEOABH@Some?5unknown?5error?5has?5occurred?$AA@ 1004ca34     prerr.obj
+ 0002:00003a5c       ??_C@_0BB@NHOCCNPK@PR_UNKNOWN_ERROR?$AA@ 1004ca5c     prerr.obj
+ 0002:00003a70       ??_C@_0BI@NBFLFCJE@PR_ILLEGAL_ACCESS_ERROR?$AA@ 1004ca70     prerr.obj
+ 0002:00003a8c       ??_C@_0BP@OPHCHOIK@Invalid?5function?5for?5file?5type?$AA@ 1004ca8c     prerr.obj
+ 0002:00003ab4       ??_C@_0BI@EMEEFLAG@PR_INVALID_METHOD_ERROR?$AA@ 1004cab4     prerr.obj
+ 0002:00003ad0       ??_C@_0CA@FBPPEDJI@Invalid?5memory?5address?5argument?$AA@ 1004cad0     prerr.obj
+ 0002:00003af8       ??_C@_0BG@JIJKGMHI@PR_ACCESS_FAULT_ERROR?$AA@ 1004caf8     prerr.obj
+ 0002:00003b14       ??_C@_0CB@IBPCKKCA@The?5operation?5would?5have?5blocked@ 1004cb14     prerr.obj
+ 0002:00003b3c       ??_C@_0BF@DJMHHJ@PR_WOULD_BLOCK_ERROR?$AA@ 1004cb3c     prerr.obj
+ 0002:00003b58       ??_C@_0BI@IJFOKIKL@Invalid?5file?5descriptor?$AA@ 1004cb58     prerr.obj
+ 0002:00003b74       ??_C@_0BI@ENLLGGLM@PR_BAD_DESCRIPTOR_ERROR?$AA@ 1004cb74     prerr.obj
+ 0002:00003b90       ??_C@_0CB@KLBBCECI@Memory?5allocation?5attempt?5failed@ 1004cb90     prerr.obj
+ 0002:00003bb8       ??_C@_0BH@FIPFNPJO@PR_OUT_OF_MEMORY_ERROR?$AA@ 1004cbb8     prerr.obj
+ 0002:00003ed8       ??_C@_02LFNMGJAP@en?$AA@   1004ced8     prerrortable.obj
+ 0002:00003edc       ??_C@_09ODJGHMGG@i?9default?$AA@ 1004cedc     prerrortable.obj
+ 0002:00003f34       ??_C@_0O@GGLHCKLP@Unknown?5code?5?$AA@ 1004cf34     prerrortable.obj
+ 0002:00003f48       ??_C@_1EA@PLDFBLBL@?$AAs?$AAt?$AAr?$AAc?$AAm?$AAp?$AA?$CI?$AAl?$AAa?$AAn?$AAg?$AAu?$AAa?$AAg?$AAe?$AAs?$AA?$FL?$AA1?$AA?$FN?$AA?0?$AA?5?$AA?$CC?$AAe?$AAn?$AA?$CC?$AA?$CJ?$AA?5?$AA?$DN?$AA?$DN?$AA?5?$AA0?$AA?$AA@ 1004cf48     prerrortable.obj
+ 0002:00003f98       ??_C@_1EO@PCBAAKFL@?$AAs?$AAt?$AAr?$AAc?$AAm?$AAp?$AA?$CI?$AAl?$AAa?$AAn?$AAg?$AAu?$AAa?$AAg?$AAe?$AAs?$AA?$FL?$AA0?$AA?$FN?$AA?0?$AA?5?$AA?$CC?$AAi?$AA?9?$AAd?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AA?$CC@ 1004cf98     prerrortable.obj
+ 0002:00003ff8       ??_C@_1JI@OOLJLLHL@?$AAc?$AA?3?$AA?1?$AAU?$AAs?$AAe?$AAr?$AAs?$AA?1?$AAT?$AAa?$AAn?$AAd?$AAy?$AA?1?$AAP?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AAm?$AAi?$AAn?$AAg?$AA?1?$AAm?$AAo?$AAz?$AAi?$AAl@ 1004cff8     prerrortable.obj
+ 0002:000040b0       ??_C@_0BG@FNBKNDGC@NULL?5?$CB?$DN?5_pr_sleeplock?$AA@ 1004d0b0     prinit.obj
+ 0002:000040d0       ??_C@_0EG@MBEJHAEO@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d0d0     prinit.obj
+ 0002:00004124       ??_C@_04EFNEEPIE@shma?$AA@ 1004d124     prinit.obj
+ 0002:0000412c       ??_C@_03DBKGKAOD@shm?$AA@  1004d12c     prinit.obj
+ 0002:00004130       ??_C@_02DPGMDCM@gc?$AA@    1004d130     prinit.obj
+ 0002:00004134       ??_C@_06FJHNOCKE@thread?$AA@ 1004d134     prinit.obj
+ 0002:0000413c       ??_C@_05KMAGFECK@sched?$AA@ 1004d13c     prinit.obj
+ 0002:00004144       ??_C@_04PNAHEAFM@cvar?$AA@ 1004d144     prinit.obj
+ 0002:0000414c       ??_C@_06JIEOPDBD@linker?$AA@ 1004d14c     prinit.obj
+ 0002:00004154       ??_C@_03KPACMFAJ@mon?$AA@  1004d154     prinit.obj
+ 0002:00004158       ??_C@_02KFNNKBCK@io?$AA@   1004d158     prinit.obj
+ 0002:0000415c       ??_C@_04JGPGOAJF@cmon?$AA@ 1004d15c     prinit.obj
+ 0002:00004164       ??_C@_05DDECJJKE@clock?$AA@ 1004d164     prinit.obj
+ 0002:0000416c       ??_C@_0BJ@MIMFAEKG@NSPR_NATIVE_THREADS_ONLY?$AA@ 1004d16c     prinit.obj
+ 0002:0000418c       ??_C@_0BJ@MGKOOEHG@nspr_native_threads_only?$AA@ 1004d18c     prinit.obj
+ 0002:000041ac       ??_C@_0BA@CNHGMLIK@NULL?5?$CB?$DN?5mainExe?$AA@ 1004d1ac     prinit.obj
+ 0002:000041c0       ??_C@_0CO@OIGMNGDI@PR_Cleanup?3?5clean?5up?5before?5dest@ 1004d1c0     prinit.obj
+ 0002:000041f8       ??_C@_0BP@DBJKIJNP@PR_Cleanup?3?5shutting?5down?5NSPR?$AA@ 1004d1f8     prinit.obj
+ 0002:00004220       ??_C@_0CN@DIBMPGKL@?$CINULL?5?$CB?$DN?5me?$CJ?5?$CG?$CG?5?$CIme?9?$DOflags?5?$CG?5_PR@ 1004d220     prinit.obj
+ 0002:00004258       ??_C@_0BG@LGNANOCI@PR_SetStdioRedirect?$CI?$CJ?$AA@ 1004d258     prinit.obj
+ 0002:00004274       ??_C@_0CB@GNELOILD@PR_ProcessAttrSetStdioRedirect?$CI?$CJ@ 1004d274     prinit.obj
+ 0002:0000429c       ??_C@_0N@DJOFBJDL@?3?$CFs?3?$CFd?30x?$CFlx?$AA@ 1004d29c     prinit.obj
+ 0002:000042ac       ??_C@_0BN@JFBIJBBN@NSPR_INHERIT_FDS?$DN?$CFs?3?$CFd?30x?$CFlx?$AA@ 1004d2ac     prinit.obj
+ 0002:000042d0       ??_C@_08HFDNEKPF@?$CFd?30x?$CFlx?$AA@ 1004d2d0     prinit.obj
+ 0002:000042dc       ??_C@_0BB@COMPKCOE@NSPR_INHERIT_FDS?$AA@ 1004d2dc     prinit.obj
+ 0002:000042f0       ??_C@_0BE@BPDIPCEB@NULL?5?$CB?$DN?5mod_init?4cv?$AA@ 1004d2f0     prinit.obj
+ 0002:00004308       ??_C@_0BE@KFILCFJA@NULL?5?$CB?$DN?5mod_init?4ml?$AA@ 1004d308     prinit.obj
+ 0002:00004320       ??_C@_0CF@POCOFIMG@?8?$CFs?8?5is?5obsolete?4?5Use?5?8?$CFs?8?5inste@ 1004d320     prinit.obj
+ 0002:0000434c       ??_C@_0P@ICKCLIJJ@something?5else?$AA@ 1004d34c     prinit.obj
+ 0002:00004360       ??_C@_0BP@BKGODJAB@ticksPerSec?5?$DM?$DN?5PR_INTERVAL_MAX?$AA@ 1004d360     prinrval.obj
+ 0002:00004388       ??_C@_0BP@HMFBNLJP@ticksPerSec?5?$DO?$DN?5PR_INTERVAL_MIN?$AA@ 1004d388     prinrval.obj
+ 0002:000043b0       ??_C@_0EI@OICNDHIB@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d3b0     prinrval.obj
+ 0002:00004408       __pr_in6addr_any           1004d408     prnetdb.obj
+ 0002:00004418       __pr_in6addr_loopback      1004d418     prnetdb.obj
+ 0002:00004564       ??_C@_0CC@JCDOIJEK@conversion?5?$DN?$DN?5_PRIPAddrIPv4Compa@ 1004d564     prnetdb.obj
+ 0002:0000458c       ??_C@_0BE@DNMIHHFN@from?9?$DOh_length?5?$DN?$DN?54?$AA@ 1004d58c     prnetdb.obj
+ 0002:000045a8       ??_C@_0EH@KBJPDPLB@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d5a8     prnetdb.obj
+ 0002:00004600       ??_C@_0O@MMCJEBHD@af?5?$DN?$DN?5AF_INET?$AA@ 1004d600     prnetdb.obj
+ 0002:00004610       ??_C@_0CA@HGKLDHHE@hostaddr?9?$DOraw?4family?5?$DN?$DN?5AF_INET?$AA@ 1004d610     prnetdb.obj
+ 0002:00004638       ??_C@_0BP@FJPMMGKB@AF_INET?5?$DN?$DN?5hostEnt?9?$DOh_addrtype?$AA@ 1004d638     prnetdb.obj
+ 0002:00004660       ??_C@_0M@NNJNLPKG@getnameinfo?$AA@ 1004d660     prnetdb.obj
+ 0002:00004670       ??_C@_0N@EHOPPMLH@freeaddrinfo?$AA@ 1004d670     prnetdb.obj
+ 0002:00004680       ??_C@_0M@MBIPAJOD@getaddrinfo?$AA@ 1004d680     prnetdb.obj
+ 0002:00004690       ??_C@_0L@KHLHMJB@wship6?4dll?$AA@ 1004d690     prnetdb.obj
+ 0002:000046a0       ??_C@_0L@EANHMAHB@ws2_32?4dll?$AA@ 1004d6a0     prnetdb.obj
+ 0002:000046b0       ??_C@_07LPNKOPED@0?5?$DN?$DN?5rv?$AA@ 1004d6b0     prnetdb.obj
+ 0002:000046bc       ??_C@_0M@CDHNGIPM@?$CFu?4?$CFu?4?$CFu?4?$CFu?$AA@ 1004d6bc     prnetdb.obj
+ 0002:000046cc       ??_C@_0BD@DCEALAPB@?$CB?$CCNot?5implemented?$CC?$AA@ 1004d6cc     prolock.obj
+ 0002:000046e8       ??_C@_0EH@FOJEBLDO@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d6e8     prolock.obj
+ 0002:00004740       ??_C@_0BA@IOJHHLDM@Not?5implemented?$AA@ 1004d740     prolock.obj
+ 0002:00004754       ??_C@_0BK@GOIEIOBN@PR_GetDirectorySepartor?$CI?$CJ?$AA@ 1004d754     prsystem.obj
+ 0002:00004774       ??_C@_0BL@EGNLOAEP@PR_GetDirectorySeparator?$CI?$CJ?$AA@ 1004d774     prsystem.obj
+ 0002:00004794       ??_C@_03NDFEINMN@x86?$AA@  1004d794     prsystem.obj
+ 0002:00004798       ??_C@_0BF@PJNLIDED@GlobalMemoryStatusEx?$AA@ 1004d798     prsystem.obj
+ 0002:000047b4       ??_C@_1BK@MGMFAEKH@?$AAk?$AAe?$AAr?$AAn?$AAe?$AAl?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 1004d7b4     prsystem.obj
+ 0002:000047d8       ??_C@_0EM@FCPHDDJF@?$CIsp?5?$DO?5?$CIPRWord?$CK?$CJt?9?$DOstack?9?$DOstackBo@ 1004d7d8     prthinfo.obj
+ 0002:00004838       ??_C@_0EI@FJAEKABM@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d838     prthinfo.obj
+ 0002:00004890       ??_C@_05NCJADPAO@wthrp?$AA@ 1004d890     prtpool.obj
+ 0002:00004898       ??_C@_03GBCLJGME@thr?$AA@  1004d898     prtpool.obj
+ 0002:000048a0       ??_C@_0EH@IHBMBFEB@c?3?1Users?1Tandy?1Programming?1mozil@ 1004d8a0     prtpool.obj
+ 0002:000048f8       ??_C@_0BK@KJEDIEHN@PR_SUCCESS?5?$DN?$DN?5rval_status?$AA@ 1004d8f8     prtpool.obj
+ 0002:00004918       ??_C@_0CD@HNEIMOBJ@pollfds?$FL0?$FN?4fd?5?$DN?$DN?5tp?9?$DOioq?4notify_@ 1004d918     prtpool.obj
+ 0002:00004944       ??_C@_0BL@IOAKBAHH@pollfds_used?5?$DM?$DN?5pollfd_cnt?$AA@ 1004d944     prtpool.obj
+ 0002:00004964       ??_C@_0BI@CGMKEKAD@NULL?5?$CB?$DN?5tp?9?$DOioq?4pollfds?$AA@ 1004d964     prtpool.obj
+ 0002:00004980       ??_C@_0O@MLIPKIFC@?$CBjobp?9?$DOon_ioq?$AA@ 1004d980     prtpool.obj
+ 0002:00004990       ??_C@_0BH@DJBIKOG@0?5?$DN?$DN?5tpool?9?$DOtimerq?4cnt?$AA@ 1004d990     prtpool.obj
+ 0002:000049ac       ??_C@_0BE@KPGBBMIM@0?5?$DN?$DN?5tpool?9?$DOioq?4cnt?$AA@ 1004d9ac     prtpool.obj
+ 0002:000049c4       ??_C@_0BF@HOCJHANC@0?5?$DN?$DN?5tpool?9?$DOjobq?4cnt?$AA@ 1004d9c4     prtpool.obj
+ 0002:000049e0       ??_C@_0CO@LOJDMCAG@PRTrace?3?5Create?3?5QName?3?5?$CFs?5?$CFp?0?5R@ 1004d9e0     prtrace.obj
+ 0002:00004a18       ??_C@_0CL@IEFCCMCL@PRTRACE?3?5CreateTrace?3?5Qname?3?5?$CFs?0@ 1004da18     prtrace.obj
+ 0002:00004a4c       ??_C@_0CI@BKAIBEGI@strlen?$CIdescription?$CJ?5?$DM?$DN?5PRTRACE_D@ 1004da4c     prtrace.obj
+ 0002:00004a7c       ??_C@_0CC@FMMGOIGE@strlen?$CIrName?$CJ?5?$DM?$DN?5PRTRACE_NAME_MA@ 1004da7c     prtrace.obj
+ 0002:00004aa4       ??_C@_0CC@OPFCMFKH@strlen?$CIqName?$CJ?5?$DM?$DN?5PRTRACE_NAME_MA@ 1004daa4     prtrace.obj
+ 0002:00004ad0       ??_C@_0EH@JCHBMHJD@c?3?1Users?1Tandy?1Programming?1mozil@ 1004dad0     prtrace.obj
+ 0002:00004b28       ??_C@_05IMBNNINJ@trace?$AA@ 1004db28     prtrace.obj
+ 0002:00004b30       ??_C@_0BC@PMBBGHMN@traceLock?5?$CB?$DN?5NULL?$AA@ 1004db30     prtrace.obj
+ 0002:00004b48       ??_C@_0BC@NHAFEDKJ@traceLock?5?$DN?$DN?5NULL?$AA@ 1004db48     prtrace.obj
+ 0002:00004b60       ??_C@_0CO@NDJHKBJB@PRTrace?3?5Got?5trace?5buffer?5of?5siz@ 1004db60     prtrace.obj
+ 0002:00004b98       ??_C@_0CE@BCPEKGJI@PRTrace?3?5Failed?5to?5get?5trace?5buf@ 1004db98     prtrace.obj
+ 0002:00004bc8       ??_C@_0FO@ECPPCBED@NewTraceBuffer?3?5logSegments?3?5?$CFld@ 1004dbc8     prtrace.obj
+ 0002:00004c38       ??_C@_0N@MCBGMLLE@bufSize?5?$CB?$DN?50?$AA@ 1004dc38     prtrace.obj
+ 0002:00004c48       ??_C@_0CH@KFCKFHNC@PRTrace?3?5Deleting?5unused?5QName?3?5@ 1004dc48     prtrace.obj
+ 0002:00004c78       ??_C@_0CA@FNABIHO@PRTrace?3?5Deleting?5RName?3?5?$CFs?0?5?$CFp?$AA@ 1004dc78     prtrace.obj
+ 0002:00004ca0       ??_C@_0CI@CCCKCKOO@PRTrace?3?5Deleting?3?5QName?3?5?$CFs?0?5RN@ 1004dca0     prtrace.obj
+ 0002:00004cd0       ??_C@_0CG@LDAFGIPH@PRSetTraceOption?3?5Invalid?5comman@ 1004dcd0     prtrace.obj
+ 0002:00004d00       ??_C@_0CH@JPLNKGHM@PRSetTraceOption?3?5PRTraceUnLockH@ 1004dd00     prtrace.obj
+ 0002:00004d30       ??_C@_0CK@NBDFLOLJ@PRSetTraceOption?3?5PRTraceLockTra@ 1004dd30     prtrace.obj
+ 0002:00004d64       ??_C@_0CH@GBGHCJJM@PRSetTraceOption?3?5PRTraceStopRec@ 1004dd64     prtrace.obj
+ 0002:00004d94       ??_C@_0CJ@PAOANOFL@PRSetTraceOption?3?5PRTraceResumeR@ 1004dd94     prtrace.obj
+ 0002:00004dc8       ??_C@_0CK@MPBDNGMF@PRSetTraceOption?3?5PRTraceSuspend@ 1004ddc8     prtrace.obj
+ 0002:00004dfc       ??_C@_0CA@LBCIJGMA@PRSetTraceOption?3?5PRTraceResume?$AA@ 1004ddfc     prtrace.obj
+ 0002:00004e24       ??_C@_0CB@DADBJAKL@PRSetTraceOption?3?5PRTraceSuspend@ 1004de24     prtrace.obj
+ 0002:00004e4c       ??_C@_0CF@OMDGCMNG@PRSetTraceOption?3?5PRTraceDisable@ 1004de4c     prtrace.obj
+ 0002:00004e78       ??_C@_0CE@BJOAIGNO@PRSetTraceOption?3?5PRTraceEnable?3@ 1004de78     prtrace.obj
+ 0002:00004ea4       ??_C@_0CG@FJCAFGCH@PRSetTraceOption?3?5PRTraceBufSize@ 1004dea4     prtrace.obj
+ 0002:00004ed4       ??_C@_0CG@GKBEFCDM@PRGetTraceOption?3?5Invalid?5comman@ 1004ded4     prtrace.obj
+ 0002:00004f04       ??_C@_0CG@IADBGMOM@PRGetTraceOption?3?5PRTraceBufSize@ 1004df04     prtrace.obj
+ 0002:00004f34       ??_C@_0DH@BNFFGHBN@PRTrace?3?5GetTraceHandleFromName?3@ 1004df34     prtrace.obj
+ 0002:00004f78       ??_C@_0FE@FLMPHLMJ@PRTrace?3?5GetConterNameFromHandle@ 1004df78     prtrace.obj
+ 0002:00004fdc       ??_C@_0DA@EOMCJGED@PRTrace?3?5FindNextQname?3?5Handle?3?5@ 1004dfdc     prtrace.obj
+ 0002:00005018       ??_C@_0DO@NJHCBDHJ@PRTrace?3?5FindNextRname?3?5Rhandle?3@ 1004e018     prtrace.obj
+ 0002:00005064       ??_C@_0BM@JOHAMLGG@RecordTraceEntries?3?5exiting?$AA@ 1004e064     prtrace.obj
+ 0002:00005088       ??_C@_0CN@FLKJBDFF@RecordTraceEntries?3?5PR_Write?$CI?$CJ?3?5@ 1004e088     prtrace.obj
+ 0002:000050c0       ??_C@_0CO@PIAHBIG@PR_RecordTraceEntries?3?5LostData?5@ 1004e0c0     prtrace.obj
+ 0002:000050f8       ??_C@_0CM@OFBODFHH@PR_RecordTraceEntries?3?5Failed?5to@ 1004e0f8     prtrace.obj
+ 0002:00005130       ??_C@_0EE@CEBEEHIO@RecordTraceEntries?3?5Cannot?5open?5@ 1004e130     prtrace.obj
+ 0002:00005184       ??_C@_0DO@JDFJJAHG@RecordTraceEntries?3?5Environment?5@ 1004e184     prtrace.obj
+ 0002:000051d0       ??_C@_0P@OKCHHOHM@NSPR_TRACE_LOG?$AA@ 1004e1d0     prtrace.obj
+ 0002:000051e4       ??_C@_0BO@GBKEHPHB@PR_RecordTraceEntries?3?5begins?$AA@ 1004e1e4     prtrace.obj
+ 0002:00005208       ??_C@_0CK@BAMEAFIO@RecordTraceEntries?3?5Invalid?5logO@ 1004e208     prtrace.obj
+ 0002:0000523c       ??_C@_0BM@DFOJODNM@RecordTraceEntries?3?5LogStop?$AA@ 1004e23c     prtrace.obj
+ 0002:00005260       ??_C@_0BO@LADIJLJC@RecordTraceEntries?3?5LogResume?$AA@ 1004e260     prtrace.obj
+ 0002:00005284       ??_C@_0BP@LFFFLAHO@RecordTraceEntries?3?5LogSuspend?$AA@ 1004e284     prtrace.obj
+ 0002:000052ac       ??_C@_0BN@FCPNCPMF@RecordTraceEntries?3?5LogReset?$AA@ 1004e2ac     prtrace.obj
+ 0002:000052d0       ??_C@_0DH@GNPJLHPB@RecordTraceEntries?3?5PR_Write?$CI?$CJ?3?5@ 1004e2d0     prtrace.obj
+ 0002:00005314       ??_C@_0DP@JBKKAONN@RecordTraceEntries?3?5PR_Write?$CI?$CJ?5T@ 1004e314     prtrace.obj
+ 0002:00005360       ??_C@_0DC@EMLMEIHG@RecordTraceEntries?3?5PR_Write?$CI?$CJ?5f@ 1004e360     prtrace.obj
+ 0002:0000539c       ??_C@_0CL@JFKCLIGA@WriteTraceSegment?3?5Buffer?3?5?$CFp?0?5A@ 1004e39c     prtrace.obj
+ 0002:000053d0       ??_C@_0CP@IEDPJDDF@PR_GetTraceEntries?3?5Copied?3?5?$CFld?0@ 1004e3d0     prtrace.obj
+ 0002:00005408       ??_C@_0CN@KCNJKHCM@PR_GetTraceEntries?3?5Next?3?5?$CFld?0?5L@ 1004e408     prtrace.obj
+ 0002:00005440       ??_C@_08EDHMEBNP@December?$AA@ 1004e440     prtime.obj
+ 0002:0000544c       ??_C@_08HCHEGEOA@November?$AA@ 1004e44c     prtime.obj
+ 0002:00005458       ??_C@_07JJNFCEND@October?$AA@ 1004e458     prtime.obj
+ 0002:00005464       ??_C@_09BHHEALKD@September?$AA@ 1004e464     prtime.obj
+ 0002:00005470       ??_C@_06LBBHFDDG@August?$AA@ 1004e470     prtime.obj
+ 0002:00005478       ??_C@_04MIEPOIFP@July?$AA@ 1004e478     prtime.obj
+ 0002:00005480       ??_C@_04CNLMGBGM@June?$AA@ 1004e480     prtime.obj
+ 0002:00005488       ??_C@_05DMJDNLEJ@April?$AA@ 1004e488     prtime.obj
+ 0002:00005490       ??_C@_05HPCKOFNC@March?$AA@ 1004e490     prtime.obj
+ 0002:00005498       ??_C@_08GNJGEPFN@February?$AA@ 1004e498     prtime.obj
+ 0002:000054a4       ??_C@_07CGJPFGJA@January?$AA@ 1004e4a4     prtime.obj
+ 0002:000054b0       ??_C@_03MKABNOCG@Dec?$AA@  1004e4b0     prtime.obj
+ 0002:000054b4       ??_C@_03JPJOFNIA@Nov?$AA@  1004e4b4     prtime.obj
+ 0002:000054b8       ??_C@_03BMAOKBAD@Oct?$AA@  1004e4b8     prtime.obj
+ 0002:000054bc       ??_C@_03GGCAPAJC@Sep?$AA@  1004e4bc     prtime.obj
+ 0002:000054c0       ??_C@_03IFJFEIGA@Aug?$AA@  1004e4c0     prtime.obj
+ 0002:000054c4       ??_C@_03LBGABGKK@Jul?$AA@  1004e4c4     prtime.obj
+ 0002:000054c8       ??_C@_03IDFGHECI@Jun?$AA@  1004e4c8     prtime.obj
+ 0002:000054cc       ??_C@_03CNMDKL@May?$AA@    1004e4cc     prtime.obj
+ 0002:000054d0       ??_C@_03LEOLGMJP@Apr?$AA@  1004e4d0     prtime.obj
+ 0002:000054d4       ??_C@_03ODNJBKGA@Mar?$AA@  1004e4d4     prtime.obj
+ 0002:000054d8       ??_C@_03HJBDCHOM@Feb?$AA@  1004e4d8     prtime.obj
+ 0002:000054dc       ??_C@_03JIHJHPIE@Jan?$AA@  1004e4dc     prtime.obj
+ 0002:000054e0       ??_C@_08INBOOONO@Saturday?$AA@ 1004e4e0     prtime.obj
+ 0002:000054ec       ??_C@_06JECMNKMI@Friday?$AA@ 1004e4ec     prtime.obj
+ 0002:000054f4       ??_C@_08HACCIKIA@Thursday?$AA@ 1004e4f4     prtime.obj
+ 0002:00005500       ??_C@_09DLIGFAKA@Wednesday?$AA@ 1004e500     prtime.obj
+ 0002:0000550c       ??_C@_07BAAGCFCM@Tuesday?$AA@ 1004e50c     prtime.obj
+ 0002:00005518       ??_C@_06JLEDEDGH@Monday?$AA@ 1004e518     prtime.obj
+ 0002:00005520       ??_C@_06OOPIFAJ@Sunday?$AA@ 1004e520     prtime.obj
+ 0002:00005528       ??_C@_03FEFJNEK@Sat?$AA@   1004e528     prtime.obj
+ 0002:0000552c       ??_C@_03IDIOELNC@Fri?$AA@  1004e52c     prtime.obj
+ 0002:00005530       ??_C@_03IOFIKPDN@Thu?$AA@  1004e530     prtime.obj
+ 0002:00005534       ??_C@_03MHOMLAJA@Wed?$AA@  1004e534     prtime.obj
+ 0002:00005538       ??_C@_03NAGEINEP@Tue?$AA@  1004e538     prtime.obj
+ 0002:0000553c       ??_C@_03PDAGKDH@Mon?$AA@   1004e53c     prtime.obj
+ 0002:00005540       ??_C@_03KOEHGMDN@Sun?$AA@  1004e540     prtime.obj
+ 0002:000055f0       ??_C@_0HD@JDEHGGLF@result?9?$DOtm_month?5?$DO?5?91?5?$CG?$CG?5result?9@ 1004e5f0     prtime.obj
+ 0002:0000567c       ??_C@_0BB@CJGGFCMF@string?5?$CG?$CG?5result?$AA@ 1004e67c     prtime.obj
+ 0002:00005690       ??_C@_0EG@MHGACLMC@c?3?1Users?1Tandy?1Programming?1mozil@ 1004e690     prtime.obj
+ 0002:000056e4       ??_C@_02HOGMBHDI@?$CFZ?$AA@ 1004e6e4     prtime.obj
+ 0002:000056e8       ??_C@_04FCOCJDHE@?$CF?44d?$AA@ 1004e6e8     prtime.obj
+ 0002:000056f0       ??_C@_08OAHPJFNN@?$CFH?3?$CFM?3?$CFS?$AA@ 1004e6f0     prtime.obj
+ 0002:000056fc       ??_C@_08KAHCGMHG@?$CFm?1?$CFd?1?$CFy?$AA@ 1004e6fc     prtime.obj
+ 0002:00005708       ??_C@_02DPKJAMEF@?$CFd?$AA@ 1004e708     prtime.obj
+ 0002:0000570c       ??_C@_04FGGPOPMG@?$CF?42d?$AA@ 1004e70c     prtime.obj
+ 0002:00005714       ??_C@_02CJNFDJBF@PM?$AA@   1004e714     prtime.obj
+ 0002:00005718       ??_C@_02DEDBPAFC@AM?$AA@   1004e718     prtime.obj
+ 0002:0000571c       ??_C@_04FHKNIFPB@?$CF?43d?$AA@ 1004e71c     prtime.obj
+ 0002:00005724       ??_C@_05HNNDPHHB@?$CF?42ld?$AA@ 1004e724     prtime.obj
+ 0002:0000572c       ??_C@_0BF@GENKMLLO@?$CFa?5?$CFb?5?$CFd?5?$CFH?3?$CFM?3?$CFS?5?$CFY?$AA@ 1004e72c     prtime.obj
+ 0002:00005748       ??_C@_0L@OPPKPNLG@read?5?9?$DO?5?$CFd?$AA@ 1004e748     prfile.obj
+ 0002:00005758       ??_C@_08NFIOLEPC@rv?5?$DN?$DN?5?91?$AA@ 1004e758     prfile.obj
+ 0002:00005768       ??_C@_0EE@KCNGOOMD@c?3?1Users?1Tandy?1Programming?1mozil@ 1004e768     prfile.obj
+ 0002:000057bc       ??_C@_0M@JPLLAFGA@write?5?9?$DO?5?$CFd?$AA@ 1004e7bc     prfile.obj
+ 0002:000057cc       ??_C@_07MLMOCNKD@0?5?$CB?$DN?5rv?$AA@ 1004e7cc     prfile.obj
+ 0002:000057d8       ??_C@_0DD@FFFANHAJ@status?5?$DN?$DN?5PR_SUCCESS?5?$HM?$HM?5fd?9?$DOsecr@ 1004e7d8     prfile.obj
+ 0002:00005818       ??_C@_0DL@MKIFJHOG@?$CIint?$CJ?5osfd?5?$DO?$DN?5PR_StandardInput?5?$CG@ 1004e818     prio.obj
+ 0002:00005860       ??_C@_0EC@MKPBDMLC@c?3?1Users?1Tandy?1Programming?1mozil@ 1004e860     prio.obj
+ 0002:000058b0       ??_C@_02ENHFDPNM@fd?$AA@   1004e8b0     prio.obj
+ 0002:000058b4       ??_C@_0BE@IBJFJLPI@tmp_iov?5?$DN?$DN?5iov_copy?$AA@ 1004e8b4     prsocket.obj
+ 0002:000058d0       ??_C@_0EG@NFPBKDPE@c?3?1Users?1Tandy?1Programming?1mozil@ 1004e8d0     prsocket.obj
+ 0002:00005924       ??_C@_0O@LLDLGALD@connect?5?9?$DO?5?$CFd?$AA@ 1004e924     prsocket.obj
+ 0002:00005934       ??_C@_0BK@DODFHHPK@out_flags?5?$CG?5PR_POLL_WRITE?$AA@ 1004e934     prsocket.obj
+ 0002:00005954       ??_C@_0P@OAKPBDDJ@out_flags?5?$DN?$DN?50?$AA@ 1004e954     prsocket.obj
+ 0002:00005968       ??_C@_0CH@JAOHIPF@IsValidNetAddrLen?$CIaddr?0?5al?$CJ?5?$DN?$DN?5P@ 1004e968     prsocket.obj
+ 0002:00005998       ??_C@_0CA@MJNHDPPO@IsValidNetAddr?$CIaddr?$CJ?5?$DN?$DN?5PR_TRUE?$AA@ 1004e998     prsocket.obj
+ 0002:000059c0       ??_C@_0BM@FFGAJILG@al?5?$DN?$DN?5PR_NETADDR_SIZE?$CIaddr?$CJ?$AA@ 1004e9c0     prsocket.obj
+ 0002:000059e4       ??_C@_0CG@CMEHBMJG@recv?5?9?$DO?5?$CFd?0?5error?5?$DN?5?$CFd?0?5os?5error@ 1004e9e4     prsocket.obj
+ 0002:00005a14       ??_C@_0BL@JKBICHDG@0?5?$DN?$DN?5fd?9?$DOsecret?9?$DOpeekBytes?$AA@ 1004ea14     prsocket.obj
+ 0002:00005a34       ??_C@_0CP@DOPOKKBC@recv?3?5fd?$DN?$CFp?5osfd?$DN?$CFld?5buf?$DN?$CFp?5amou@ 1004ea34     prsocket.obj
+ 0002:00005a6c       ??_C@_0L@PBMNONKH@send?5?9?$DO?5?$CFd?$AA@ 1004ea6c     prsocket.obj
+ 0002:00005a7c       ??_C@_0CG@CDOACIE@send?3?5fd?$DN?$CFp?5osfd?$DN?$CFld?5buf?$DN?$CFp?5amou@ 1004ea7c     prsocket.obj
+ 0002:00005aac       ??_C@_0BM@BDIDOEHL@fd?9?$DOsecret?9?$DOpeekBufSize?5?$DO?50?$AA@ 1004eaac     prsocket.obj
+ 0002:00005ad0       ??_C@_0CM@NEAMLBEE@IsValidNetAddrLen?$CIaddr?0?5addrlen?$CJ@ 1004ead0     prsocket.obj
+ 0002:00005b04       ??_C@_0CA@LNINDEIN@set?9?$DOhsize?5?$DM?5PR_MAX_SELECT_DESC?$AA@ 1004eb04     prsocket.obj
+ 0002:00005b2c       ??_C@_0CA@BNEGJEK@set?9?$DOnsize?5?$DM?5PR_MAX_SELECT_DESC?$AA@ 1004eb2c     prsocket.obj
+ 0002:00005b54       ??_C@_0L@DABNGKAD@unused?5?$DO?50?$AA@ 1004eb54     prsocket.obj
+ 0002:00005b64       ??_C@_0M@FPLAADEN@PR_Select?$CI?$CJ?$AA@ 1004eb64     prsocket.obj
+ 0002:00005b74       ??_C@_09PAJOJHCH@PR_Poll?$CI?$CJ?$AA@ 1004eb74     prsocket.obj
+ 0002:00005b80       ??_C@_0L@GKCMEGHM@PR_Yield?$CI?$CJ?$AA@ 1004eb80     prcthr.obj
+ 0002:00005b90       ??_C@_0BO@CPJEFKNF@PR_Sleep?$CIPR_INTERVAL_NO_WAIT?$CJ?$AA@ 1004eb90     prcthr.obj
+ 0002:00005bb4       ??_C@_0L@OBHAAHCP@cv?5?$CB?$DN?5NULL?$AA@ 1004ebb4     prcthr.obj
+ 0002:00005bc4       ??_C@_0P@EDNCJOIB@PR_Yield?3?5done?$AA@ 1004ebc4     prcthr.obj
+ 0002:00005bd8       ??_C@_0BD@CDCCIMO@PR_Yield?3?5yielding?$AA@ 1004ebd8     prcthr.obj
+ 0002:00005bf0       ??_C@_0EJ@FJIIOINO@c?3?1Users?1Tandy?1Programming?1mozil@ 1004ebf0     prcthr.obj
+ 0002:00005c48       ??_C@_01EEMJAFIK@?6?$AA@   1004ec48     prdump.obj
+ 0002:00005c4c       ??_C@_0L@POOLKPGE@?5suspended?$AA@ 1004ec4c     prdump.obj
+ 0002:00005c5c       ??_C@_0BJ@IFNPECAF@?5condvar?$DN?$CFp?5sleep?$DN?$CFlldms?$AA@ 1004ec5c     prdump.obj
+ 0002:00005c7c       ??_C@_08BCMHAGCD@?5lock?$DN?$CFp?$AA@ 1004ec7c     prdump.obj
+ 0002:00005c88       ??_C@_0CA@LEBGEEJC@?$CF05d?$FL?$CF08p?$FN?5pri?$DN?$CF2d?5flags?$DN0x?$CF02x?$AA@ 1004ec88     prdump.obj
+ 0002:00005cb0       ??_C@_0BE@CJKPEPGL@Suspended?5Threads?3?6?$AA@ 1004ecb0     prdump.obj
+ 0002:00005cc8       ??_C@_0BH@BMIJIOII@CondVar?5wait?5Threads?3?6?$AA@ 1004ecc8     prdump.obj
+ 0002:00005ce4       ??_C@_0BN@KCCJCLOB@CondVar?5timed?5wait?5Threads?3?6?$AA@ 1004ece4     prdump.obj
+ 0002:00005d08       ??_C@_0BD@FIPHJOFA@Runnable?5Threads?3?6?$AA@ 1004ed08     prdump.obj
+ 0002:00005d20       ??_C@_0BB@CHEKPEOI@Current?5Thread?3?6?$AA@ 1004ed20     prdump.obj
+ 0002:00005d34       ??_C@_04LKBGOCHN@?$FL?$CFp?$FN?$AA@ 1004ed34     prmon.obj
+ 0002:00005d3c       ??_C@_0BM@NEBANJOH@?$FL?$CFp?$FN?5owner?$DN?$CFd?$FL?$CFp?$FN?5count?$DN?$CFld?$AA@ 1004ed3c     prmon.obj
+ 0002:00005d60       ??_C@_0BC@CGNBDGFI@sem?9?$DOwaiters?5?$DN?$DN?50?$AA@ 1004ed60     prsem.obj
+ 0002:00005d78       ??_C@_0EI@KGJHFDJJ@c?3?1Users?1Tandy?1Programming?1mozil@ 1004ed78     prsem.obj
+ 0002:00005dd0       ??_C@_0L@KLKEONNA@NULL?5?$CB?$DN?5me?$AA@ 1004edd0     prucpu.obj
+ 0002:00005de0       ??_C@_0FC@JKAMLAO@c?3?1Users?1Tandy?1Programming?1mozil@ 1004ede0     prucpu.obj
+ 0002:00005e44       ??_C@_0BN@DMBPGFOE@cpu?9?$DOidle_thread?9?$DOcpu?5?$DN?$DN?5cpu?$AA@ 1004ee44     prucpu.obj
+ 0002:00005e68       ??_C@_0BG@GIHIPENF@?$CB_native_threads_only?$AA@ 1004ee68     prucpu.obj
+ 0002:00005e84       ??_C@_0BK@JBNGNPAK@?$CIthread?$CJ?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 1004ee84     prucv.obj
+ 0002:00005ea4       ??_C@_0CE@GMMAKFFI@?$CIthread?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_SL@ 1004eea4     prucv.obj
+ 0002:00005ed0       ??_C@_0CD@JMGMPDK@?$CB?$CIthread?9?$DOflags?5?$CG?5_PR_IDLE_THREA@ 1004eed0     prucv.obj
+ 0002:00005efc       ??_C@_0DG@HCOCILKK@_PR_IS_NATIVE_THREAD?$CIme?$CJ?5?$HM?$HM?5_PR_@ 1004eefc     prucv.obj
+ 0002:00005f40       ??_C@_0FB@MCGJLKCL@c?3?1Users?1Tandy?1Programming?1mozil@ 1004ef40     prucv.obj
+ 0002:00005fa4       ??_C@_0BK@FCLPPFDB@_PR_MD_GET_INTSOFF?$CI?$CJ?5?$CB?$DN?50?$AA@ 1004efa4     prucv.obj
+ 0002:00005fc4       ??_C@_0BO@HNNEBJAG@PR_Wait?3?5cvar?$DN?$CFp?5done?5waiting?$AA@ 1004efc4     prucv.obj
+ 0002:00005fe8       ??_C@_0CA@MPNBAGLO@PR_Wait?3?5cvar?$DN?$CFp?5waiting?5for?5?$CFd?$AA@ 1004efe8     prucv.obj
+ 0002:00006010       ??_C@_0CC@KNHNGINJ@thread?5?$DN?$DN?5_PR_MD_CURRENT_THREAD?$CI@ 1004f010     prucv.obj
+ 0002:00006038       ??_C@_0BL@LCBFCALP@_PR_NotifyCondVar?3?5cvar?$DN?$CFp?$AA@ 1004f038     prucv.obj
+ 0002:00006058       ??_C@_0BD@HIFGICKG@?$FL?$CFp?$FN?5owner?$DN?$CFld?$FL?$CFp?$FN?$AA@ 1004f058     prucv.obj
+ 0002:00006070       ??_C@_0ED@ILDGHILG@?$CIthread?9?$DOstate?5?$DN?$DN?5_PR_IO_WAIT?$CJ?5?$HM@ 1004f070     prucv.obj
+ 0002:000060c0       ??_C@_0CB@FGJNAKFE@?$CB?$CIthread?9?$DOflags?5?$CG?5_PR_ON_PAUSEQ?$CJ@ 1004f0c0     prucv.obj
+ 0002:000060e8       ??_C@_0BO@GNDDGHAM@?$CB_PR_IS_NATIVE_THREAD?$CIthread?$CJ?$AA@ 1004f0e8     prucv.obj
+ 0002:0000610c       ??_C@_0BD@DDCDHBBD@thread?9?$DOcpu?5?$DN?$DN?5cpu?$AA@ 1004f10c     prucv.obj
+ 0002:00006124       ??_C@_0BP@GNCOLIBM@ExpireWaits?3?5elapsed?$DN?$CFlld?5usec?$AA@ 1004f124     prucv.obj
+ 0002:0000614c       ??_C@_0N@JJFMGKMF@lock?5?$CB?$DN?5NULL?$AA@ 1004f14c     prucv.obj
+ 0002:0000615c       ??_C@_0CB@GHOPEBD@cvar?9?$DOcondQ?4next?5?$DN?$DN?5?$CGcvar?9?$DOcondQ@ 1004f15c     prucv.obj
+ 0002:00006184       ??_C@_0BH@EKJDDANI@me?5?$CB?$DN?5suspendAllThread?$AA@ 1004f184     prucv.obj
+ 0002:000061a0       ??_C@_0BI@IKGDNHLK@cvar?9?$DOlock?9?$DOowner?5?$DN?$DN?5me?$AA@ 1004f1a0     prucv.obj
+ 0002:000061bc       ??_C@_0BG@LBIGCOAO@PR_NotifyAll?3?5cvar?$DN?$CFp?$AA@ 1004f1bc     prucv.obj
+ 0002:000061d8       ??_C@_0CA@CKPOPCNK@_PR_NAKED_CV_LOCK?5?$DN?$DN?5cvar?9?$DOlock?$AA@ 1004f1d8     prucv.obj
+ 0002:00006200       ??_C@_0BD@KOINECED@IntsOn?$FL0?$FN?3?5?$CFs?5intr?$AA@ 1004f200     prulock.obj
+ 0002:00006218       ??_C@_0BP@HNKEFHMI@?$CB?$CIme?9?$DOflags?5?$CG?5_PR_IDLE_THREAD?$CJ?$AA@ 1004f218     prulock.obj
+ 0002:00006240       ??_C@_0BJ@KHIIFCKE@_PR_MD_GET_INTSOFF?$CI?$CJ?5?$DO?50?$AA@ 1004f240     prulock.obj
+ 0002:00006260       ??_C@_03PBJBJNON@cpu?$AA@  1004f260     prulock.obj
+ 0002:00006268       ??_C@_0FD@JGIBKBLB@c?3?1Users?1Tandy?1Programming?1mozil@ 1004f268     prulock.obj
+ 0002:000062cc       ??_C@_0BF@LELJHKEO@t?9?$DOwait?4lock?5?$DN?$DN?5lock?$AA@ 1004f2cc     prulock.obj
+ 0002:000062e8       ??_C@_0BK@IBEDGGCD@t?9?$DOstate?5?$DN?$DN?5_PR_LOCK_WAIT?$AA@ 1004f2e8     prulock.obj
+ 0002:00006308       ??_C@_0BC@FDMCMIEB@q?5?$CB?$DN?5?$CGlock?9?$DOwaitQ?$AA@ 1004f308     prulock.obj
+ 0002:00006320       ??_C@_0BB@OFBJGOPF@lock?9?$DOowner?5?$DN?$DN?50?$AA@ 1004f320     prulock.obj
+ 0002:00006334       ??_C@_0BC@MFMIPPBM@lock?9?$DOowner?5?$CB?$DN?5me?$AA@ 1004f334     prulock.obj
+ 0002:0000634c       ??_C@_0BC@LBNMDNPM@lock?9?$DOowner?5?$DN?$DN?5me?$AA@ 1004f34c     prulock.obj
+ 0002:00006364       ??_C@_0DJ@FHICHIJH@thread?5stack?3?5base?$DN0x?$CFx?5limit?$DN0x@ 1004f364     prustack.obj
+ 0002:000063a8       ??_C@_0BP@HBLDBBMA@thread?9?$DOstate?5?$CB?$DN?5_PR_JOIN_WAIT?$AA@ 1004f3a8     pruthr.obj
+ 0002:000063d0       ??_C@_0FC@NKDEBNNH@c?3?1Users?1Tandy?1Programming?1mozil@ 1004f3d0     pruthr.obj
+ 0002:00006434       ??_C@_0BH@MHOHFCAN@0?5?$CB?$DN?5thread?9?$DOtpdLength?$AA@ 1004f434     pruthr.obj
+ 0002:00006450       ??_C@_0P@PAIIOEID@thread?5exiting?$AA@ 1004f450     pruthr.obj
+ 0002:00006464       ??_C@_0CB@MKGKPBCA@thread?9?$DOio_suspended?5?$DN?$DN?5PR_FALSE@ 1004f464     pruthr.obj
+ 0002:0000648c       ??_C@_0BP@JKDOKPGH@thread?9?$DOio_pending?5?$DN?$DN?5PR_FALSE?$AA@ 1004f48c     pruthr.obj
+ 0002:000064b4       ??_C@_0CC@HCGFHFCE@?$CIthread?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_RU@ 1004f4b4     pruthr.obj
+ 0002:000064dc       ??_C@_0CE@GHJFNHHH@thread?9?$DOcpu?5?$DN?$DN?5_PR_MD_CURRENT_CP@ 1004f4dc     pruthr.obj
+ 0002:00006508       ??_C@_0BN@LHPAFJDP@thread?9?$DOstate?5?$CB?$DN?5_PR_RUNNING?$AA@ 1004f508     pruthr.obj
+ 0002:0000652c       ??_C@_0BE@DDBGMFBD@switching?5to?5?$CFd?$FL?$CFp?$FN?$AA@ 1004f52c     pruthr.obj
+ 0002:00006548       ??_C@_0EN@FIEMHLH@?$CIme?5?$DN?$DN?5thread?$CJ?5?$HM?$HM?5?$CI?$CIthread?9?$DOstat@ 1004f548     pruthr.obj
+ 0002:000065a4       ??_C@_07NAAKFDPJ@pausing?$AA@ 1004f5a4     pruthr.obj
+ 0002:000065b0       ??_C@_0BP@DFAPDAJM@thread?9?$DOerrorStringLength?5?$DN?$DN?50?$AA@ 1004f5b0     pruthr.obj
+ 0002:000065d8       ??_C@_0DJ@PHKOFEBN@thread?9?$DOerrorString?5?$DN?$DN?50?5?$CG?$CG?5thre@ 1004f5d8     pruthr.obj
+ 0002:0000661c       ??_C@_0CK@GJJPGJFD@thread?9?$DOdumpArg?5?$DN?$DN?50?5?$CG?$CG?5thread?9?$DO@ 1004f61c     pruthr.obj
+ 0002:00006650       ??_C@_0BP@MJPODJIG@thread?9?$DOprivateData?$FLi?$FN?5?$DN?$DN?5NULL?$AA@ 1004f650     pruthr.obj
+ 0002:00006678       ??_C@_0BJ@OFIELOGJ@_PR_IS_NATIVE_THREAD?$CIme?$CJ?$AA@ 1004f678     pruthr.obj
+ 0002:00006698       ??_C@_0BJ@GKIJFODA@me?9?$DOflags?5?$CG?5_PR_ATTACHED?$AA@ 1004f698     pruthr.obj
+ 0002:000066b8       ??_C@_0CD@DIPAJOBC@?$CIthread?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_JO@ 1004f6b8     pruthr.obj
+ 0002:000066e4       ??_C@_0DC@BBIEKAKN@?$CI_PR_ACTIVE_THREAD_PTR?$CIqp?$CJ?$CJ?9?$DOsta@ 1004f6e4     pruthr.obj
+ 0002:00006720       ??_C@_0DA@MCCOAMJL@?$CB_PR_IS_NATIVE_THREAD?$CIthread?$CJ?5?$HM?$HM@ 1004f720     pruthr.obj
+ 0002:0000675c       ??_C@_0N@IIOKFBKO@thread?5?$CB?$DN?5me?$AA@ 1004f75c     pruthr.obj
+ 0002:0000676c       ??_C@_0CG@NCMBEBPE@?$CIthread?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_SU@ 1004f76c     pruthr.obj
+ 0002:0000679c       ??_C@_0N@BPDHHHMH@suspendAllOn?$AA@ 1004f79c     pruthr.obj
+ 0002:000067ac       ??_C@_0CI@GGBEDOOK@_PR_THREAD_PTR?$CIt?9?$DOlinks?4prev?$CJ?5?$DN?$DN@ 1004f7ac     pruthr.obj
+ 0002:000067dc       ??_C@_0CH@NLPGMMHP@thread?9?$DOlinks?4next?5?$CB?$DN?5?$CG_PR_SLEEP@ 1004f7dc     pruthr.obj
+ 0002:0000680c       ??_C@_0DP@BICGNLLA@?$CBthread?9?$DOmd?4thr_bound_cpu?5?$HM?$HM?5?$CIth@ 1004f80c     pruthr.obj
+ 0002:00006858       __pr_filetime_offset       1004f858     ntmisc.obj
+ 0002:00006860       __pr_filetime_divisor      1004f860     ntmisc.obj
+ 0002:0000686c       ??_C@_0BC@MNKBKBHN@NSPR_INHERIT_FDS?$DN?$AA@ 1004f86c     ntmisc.obj
+ 0002:00006884       ??_C@_06IOBDPLFO@?5?$AM?6?$AN?7?$AL?$AA@ 1004f884     ntmisc.obj
+ 0002:0000688c       ??_C@_0BK@LAMMGJNI@dwRetVal?5?$DN?$DN?5WAIT_OBJECT_0?$AA@ 1004f88c     ntmisc.obj
+ 0002:000068b0       ??_C@_0EM@JBLHEEKM@c?3?1Users?1Tandy?1Programming?1mozil@ 1004f8b0     ntmisc.obj
+ 0002:0000690c       ??_C@_0BO@DAKBCKGB@WSANOTINITIALISED?5?$CB?$DN?5syserror?$AA@ 1004f90c     ntmisc.obj
+ 0002:00006930       ??_C@_0BA@ONBFJLGF@Windows_Unknown?$AA@ 1004f930     ntmisc.obj
+ 0002:00006944       ??_C@_0L@OHEBMFEO@Windows_95?$AA@ 1004f944     ntmisc.obj
+ 0002:00006954       ??_C@_0L@FCOPLLAD@Windows_98?$AA@ 1004f954     ntmisc.obj
+ 0002:00006964       ??_C@_05KBEOJPB@?$CFd?4?$CFd?$AA@ 1004f964     ntmisc.obj
+ 0002:0000696c       ??_C@_0L@MKBJOBHN@Windows_NT?$AA@ 1004f96c     ntmisc.obj
+ 0002:0000697c       ??_C@_0DB@JFMHFEOL@?$CIcmd?5?$DN?$DN?5PR_SI_SYSNAME?$CJ?5?$HM?$HM?5?$CIcmd?5?$DN@ 1004f97c     ntmisc.obj
+ 0002:000069b8       ??_C@_0CA@EIAKBABC@fmap?9?$DOprot?5?$DN?$DN?5PR_PROT_WRITECOPY?$AA@ 1004f9b8     ntmisc.obj
+ 0002:000069e0       ??_C@_0BA@JGGLFHAN@md_memmap?$CI?$CJ?3?5?$CFs?$AA@ 1004f9e0     ntmisc.obj
+ 0002:000069f4       ??_C@_0BK@PGPPGMOJ@_pr_nt_sids?4group?5?$CB?$DN?5NULL?$AA@ 1004f9f4     ntsec.obj
+ 0002:00006a14       ??_C@_0BK@OJCPJJFF@_pr_nt_sids?4owner?5?$CB?$DN?5NULL?$AA@ 1004fa14     ntsec.obj
+ 0002:00006a34       ??_C@_07OFFHAAIH@rv?5?$CB?$DN?50?$AA@ 1004fa34     ntsec.obj
+ 0002:00006a40       ??_C@_0EL@JGDDPNAC@c?3?1Users?1Tandy?1Programming?1mozil@ 1004fa40     ntsec.obj
+ 0002:00006a9c       ??_C@_0DG@JNGFAJAI@_PR_NT_InitSids?3?5OpenProcessToke@ 1004fa9c     ntsec.obj
+ 0002:00006ae0       ??_C@_0EK@GDHAPNON@c?3?1Users?1Tandy?1Programming?1mozil@ 1004fae0     ntgc.obj
+ 0002:00006b38       ??_C@_0FJ@BABDANP@?$CBcompleted_io?9?$DOmd?4thr_bound_cpu?5@ 1004fb38     ntio.obj
+ 0002:00006ba4       ??_C@_0CK@EHIFEIEP@?$CIcompleted_io?$CJ?9?$DOqueueCount?5?$DN?$DN?5QU@ 1004fba4     ntio.obj
+ 0002:00006bd8       ??_C@_0CE@GHOKMKKF@completed_io?9?$DOio_pending?5?$DN?$DN?5PR_T@ 1004fbd8     ntio.obj
+ 0002:00006c04       ??_C@_0O@MNFJMOMP@key?5?$DN?$DN?5KEY_IO?$AA@ 1004fc04     ntio.obj
+ 0002:00006c14       ??_C@_0CA@HNICDMBG@?$CIcompleted_io?$CJ?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 1004fc14     ntio.obj
+ 0002:00006c3c       ??_C@_0CH@MFMEJEBE@completed_io?9?$DOmd?4thr_bound_cpu?5?$DN@ 1004fc3c     ntio.obj
+ 0002:00006c6c       ??_C@_0CH@HNNKKDC@completed_io?9?$DOio_suspended?5?$DN?$DN?5PR@ 1004fc6c     ntio.obj
+ 0002:00006c9c       ??_C@_0CF@HHDBIPPI@completed_io?9?$DOio_pending?5?$DN?$DN?5PR_F@ 1004fc9c     ntio.obj
+ 0002:00006cc8       ??_C@_0CB@CHGPCGIL@mdOlp?9?$DOioModel?5?$DN?$DN?5_MD_BlockingIO@ 1004fcc8     ntio.obj
+ 0002:00006cf0       ??_C@_0BJ@MPGPCMIE@?$CIthred?$CJ?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 1004fcf0     ntio.obj
+ 0002:00006d10       ??_C@_0CD@IBCEDMND@?$CIthred?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_SLE@ 1004fd10     ntio.obj
+ 0002:00006d3c       ??_C@_0BB@LMDGEOAP@desc?9?$DOfd?5?$CB?$DN?5NULL?$AA@ 1004fd3c     ntio.obj
+ 0002:00006d50       ??_C@_0O@HJGPKOJE@group?5?$CB?$DN?5NULL?$AA@ 1004fd50     ntio.obj
+ 0002:00006d60       ??_C@_0N@JEEJNFPG@desc?5?$CB?$DN?5NULL?$AA@ 1004fd60     ntio.obj
+ 0002:00006d70       ??_C@_0CE@EBNPCCBP@deadThread?9?$DOstate?5?$DN?$DN?5_PR_DEAD_ST@ 1004fd70     ntio.obj
+ 0002:00006da0       ??_C@_0EK@JGJGPMDE@c?3?1Users?1Tandy?1Programming?1mozil@ 1004fda0     ntio.obj
+ 0002:00006df8       ??_C@_0BP@KBFKJNHB@thread?9?$DOstate?5?$DN?$DN?5_PR_COND_WAIT?$AA@ 1004fdf8     ntio.obj
+ 0002:00006e20       ??_C@_0BE@CPCBOAKP@rv?5?$DN?$DN?5WAIT_OBJECT_0?$AA@ 1004fe20     ntio.obj
+ 0002:00006e38       ??_C@_0BN@FBOBOMPH@thread?9?$DOstate?5?$CB?$DN?5_PR_IO_WAIT?$AA@ 1004fe38     ntio.obj
+ 0002:00006e5c       ??_C@_0CA@DFPABJOI@?$CB?$CIthr?9?$DOflags?5?$CG?5_PR_IDLE_THREAD?$CJ?$AA@ 1004fe5c     ntio.obj
+ 0002:00006e84       ??_C@_0CB@OOHCBOBB@?$CIthr?$CJ?9?$DOqueueCount?5?$DN?$DN?5QUEUE_SLEEP@ 1004fe84     ntio.obj
+ 0002:00006eac       ??_C@_0CN@LJFMOJCJ@thr?9?$DOflags?5?$CG?5?$CI_PR_ON_SLEEPQ?5?$HM?5_P@ 1004feac     ntio.obj
+ 0002:00006ee4       ??_C@_0BK@EFOJNDFL@thr?9?$DOstate?5?$DN?$DN?5_PR_IO_WAIT?$AA@ 1004fee4     ntio.obj
+ 0002:00006f04       ??_C@_0BI@EIONJJEI@thread?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 1004ff04     ntio.obj
+ 0002:00006f20       ??_C@_0CE@CHHMCDBJ@filetime?4prt?5?$DN?$DN?5_pr_filetime_off@ 1004ff20     ntio.obj
+ 0002:00006f4c       ??_C@_0BF@LPHLIJPH@NULL?5?$CB?$DN?5pt_tq?4thread?$AA@ 1004ff4c     ntio.obj
+ 0002:00006f68       ??_C@_0BF@LDANDEED@NULL?5?$CB?$DN?5pt_tq?4new_op?$AA@ 1004ff68     ntio.obj
+ 0002:00006f84       ??_C@_0BB@HAPGAMCC@NULL?5?$CB?$DN?5pt_tq?4ml?$AA@ 1004ff84     ntio.obj
+ 0002:00006f98       ??_C@_08DIKEBGEL@0?5?$DN?$DN?5err?$AA@ 1004ff98     ntio.obj
+ 0002:00006fa4       ??_C@_0CD@KGOILNOA@?$CBfd?9?$DOsecret?9?$DOmd?4io_model_committ@ 1004ffa4     ntio.obj
+ 0002:00006fd0       ??_C@_0BL@NLNCANP@me?9?$DOio_pending?5?$DN?$DN?5PR_FALSE?$AA@ 1004ffd0     ntio.obj
+ 0002:00006ff0       ??_C@_0DK@FBOIIACB@me?9?$DOio_pending?5?$DN?$DN?5PR_FALSE?5?$HM?$HM?5me@ 1004fff0     ntio.obj
+ 0002:00007038       ??_C@_07NALBLDOO@rc?5?$CB?$DN?50?$AA@ 10050038     ntio.obj
+ 0002:00007044       ??_C@_0BE@COJFGBP@rc?5?$DN?$DN?5WAIT_OBJECT_0?$AA@ 10050044     ntio.obj
+ 0002:0000705c       ??_C@_0CA@IBGGAOFF@thread?9?$DOio_suspended?5?$DN?$DN?5PR_TRUE?$AA@ 1005005c     ntio.obj
+ 0002:00007084       ??_C@_0BO@NAEJHFCF@thread?9?$DOio_pending?5?$DN?$DN?5PR_TRUE?$AA@ 10050084     ntio.obj
+ 0002:000070a8       ??_C@_0DA@COHDFCLM@ERROR_IO_PENDING?5?$CB?$DN?5thread?9?$DOmd?4b@ 100500a8     ntio.obj
+ 0002:000070e4       ??_C@_0CB@GHCOJFD@thread?9?$DOflags?5?$CG?5_PR_GLOBAL_SCOPE@ 100500e4     ntio.obj
+ 0002:0000710c       ??_C@_0BN@FJGIOCIE@me?9?$DOmd?4thr_bound_cpu?5?$DN?$DN?5NULL?$AA@ 1005010c     ntio.obj
+ 0002:00007130       ??_C@_0BN@JLHBNMKC@me?9?$DOio_suspended?5?$DN?$DN?5PR_FALSE?$AA@ 10050130     ntio.obj
+ 0002:00007154       ??_C@_0CC@GKLBAKIP@timeout?5?$CB?$DN?5PR_INTERVAL_NO_TIMEOU@ 10050154     ntio.obj
+ 0002:0000717c       ??_C@_0BM@EEELLGGE@me?9?$DOio_suspended?5?$DN?$DN?5PR_TRUE?$AA@ 1005017c     ntio.obj
+ 0002:000071a0       ??_C@_0BM@DJBCIICN@_pr_recycle_INET6_tail?5?$DO?$DN?50?$AA@ 100501a0     ntio.obj
+ 0002:000071c4       ??_C@_0BL@CHIPNCJB@_pr_recycle_INET_tail?5?$DO?$DN?50?$AA@ 100501c4     ntio.obj
+ 0002:000071e4       ??_C@_0BI@LEGOHALH@err?5?$CB?$DN?5ERROR_HANDLE_EOF?$AA@ 100501e4     ntio.obj
+ 0002:00007200       ??_C@_0DJ@IABDCFHL@?$CIloOffset?5?$CB?$DN?50xffffffff?$CJ?5?$HM?$HM?5?$CIGet@ 10050200     ntio.obj
+ 0002:00007248       ??_C@_0FE@PHGEEBLK@?$CIme?9?$DOmd?4overlapped?4overlapped?4Of@ 10050248     ntio.obj
+ 0002:000072ac       ??_C@_0CL@LNGHEGAK@_PR_TRI_UNKNOWN?5?$DN?$DN?5fd?9?$DOsecret?9?$DOi@ 100502ac     ntio.obj
+ 0002:000072e0       ??_C@_04FGAJMCLA@?2?$CK?4?$CK?$AA@ 100502e0     ntio.obj
+ 0002:000072e8       ??_C@_0BA@DOGMAPBB@NO_ERROR?5?$CB?$DN?5err?$AA@ 100502e8     ntio.obj
+ 0002:000072fc       ??_C@_0DH@IBBPFLDM@?$CIcmp?5?1?5PR_USEC_PER_MSEC?$CJ?5?$DN?$DN?5?$CI?$CKpr@ 100502fc     ntio.obj
+ 0002:00007340       ??_C@_0BI@JCADABGK@err?5?$CB?$DN?5ERROR_IO_PENDING?$AA@ 10050340     ntio.obj
+ 0002:0000735c       ??_C@_03GIOIKFCO@C?3?2?$AA@ 1005035c     ntio.obj
+ 0002:00007360       ??_C@_0DO@CAOCOFGG@_PR_IS_NATIVE_THREAD?$CIme?$CJ?5?$HM?$HM?5?$CIme?9@ 10050360     ntio.obj
+ 0002:000073ac       ??_C@_0BM@IMKJDLID@FD_ISSET?$CI?$CISOCKET?$CJosfd?0?5?$CGwr?$CJ?$AA@ 100503ac     ntio.obj
+ 0002:000073d0       ??_C@_0BF@IJMPJFGK@PR_MSG_PEEK?5?$DN?$DN?5flags?$AA@ 100503d0     ntio.obj
+ 0002:000073ec       ??_C@_0BI@INEKLCNG@fd?9?$DOsecret?9?$DOnonblocking?$AA@ 100503ec     ntio.obj
+ 0002:00007408       ??_C@_0L@JPJFNPKK@NULL?5?$CB?$DN?5op?$AA@ 10050408     ntio.obj
+ 0002:00007418       ??_C@_0CL@LLFAPKAI@rv?5?$DO?50?5?$HM?$HM?5WSAGetLastError?$CI?$CJ?5?$DN?$DN?5W@ 10050418     ntio.obj
+ 0002:0000744c       ??_C@_0CD@CLPLEDPF@pt_continuation_done?5?$CB?$DN?5op?9?$DOstat@ 1005044c     ntio.obj
+ 0002:00007478       ??_C@_0BE@KGMJBPB@NULL?5?$CB?$DN?5pollingList?$AA@ 10050478     ntio.obj
+ 0002:00007490       ??_C@_0CA@NNNAGLFM@?$CIrestarted_io?$CJ?9?$DOqueueCount?5?$DN?$DN?50?$AA@ 10050490     ntthread.obj
+ 0002:000074b8       ??_C@_0DE@OGMMNGHL@restarted_io?9?$DOmd?4thr_bound_cpu?5?$DN@ 100504b8     ntthread.obj
+ 0002:000074f8       ??_C@_0CG@BPHDBIHG@restarted_io?9?$DOio_suspended?5?$DN?$DN?5PR@ 100504f8     ntthread.obj
+ 0002:00007528       ??_C@_0EO@PEJDFPGJ@c?3?1Users?1Tandy?1Programming?1mozil@ 10050528     ntthread.obj
+ 0002:00007588       ??_C@_0BE@FJHBNEI@WAIT_OBJECT_0?5?$DN?$DN?5rv?$AA@ 10050588     ntthread.obj
+ 0002:000075a0       ??_C@_0DB@CBOFALLF@PR_SetThreadPriority?3?5can?8t?5set?5@ 100505a0     ntthread.obj
+ 0002:000075dc       ??_C@_02COKOEEKD@rv?$AA@   100505dc     ntthread.obj
+ 0002:000075e0       ??_C@_0BE@HFPHALJK@thread?9?$DOmd?4fiber_id?$AA@ 100505e0     ntthread.obj
+ 0002:000075f8       ??_C@_0BD@PLBKHJNF@0xffffffffUL?5?$CB?$DN?5rv?$AA@ 100505f8     ntthread.obj
+ 0002:00007610       ??_C@_0P@HPOOKBDH@thread?5?$CB?$DN?5NULL?$AA@ 10050610     ntthread.obj
+ 0002:00007624       ??_C@_0BJ@IPDFJMAK@err?5?$CB?$DN?5WSANOTINITIALISED?$AA@ 10050624     win32_errors.obj
+ 0002:00007648       ??_C@_0FC@LKBGAKGE@c?3?1Users?1Tandy?1Programming?1mozil@ 10050648     win32_errors.obj
+ 0002:000076ac       ??_C@_0CJ@JIJPKPNI@rv?5?$DN?$DN?5WAIT_FAILED?5?$HM?$HM?5rv?5?$DN?$DN?5WAIT_@ 100506ac     w32ipcsem.obj
+ 0002:000076e0       ??_C@_0EP@DDDPJLEF@c?3?1Users?1Tandy?1Programming?1mozil@ 100506e0     w32ipcsem.obj
+ 0002:00007740       ??_C@_0BB@MBCLINDK@rv?5?$DN?$DN?5PR_SUCCESS?$AA@ 10050740     w32ipcsem.obj
+ 0002:00007754       ??_C@_0CB@BKFJFECN@WSAGetLastError?$CI?$CJ?5?$DN?$DN?5WSAENOTSOCK@ 10050754     w32poll.obj
+ 0002:0000777c       ??_C@_09IBJGECJI@ready?5?$DO?50?$AA@ 1005077c     w32poll.obj
+ 0002:00007788       ??_C@_0EN@DBDCEHGM@c?3?1Users?1Tandy?1Programming?1mozil@ 10050788     w32poll.obj
+ 0002:000077e4       ??_C@_0DP@KEKPNHFC@PR_OpenSharedMemory?3?5OpenFileMap@ 100507e4     w32shm.obj
+ 0002:00007830       ??_C@_0DN@JAHLJIOB@PR_OpenSharedMemory?3?5OpenFileMap@ 10050830     w32shm.obj
+ 0002:00007880       ??_C@_0EB@OGFOJDNG@PR_OpenSharedMemory?3?5CreateFileM@ 10050880     w32shm.obj
+ 0002:000078d0       ??_C@_0DI@NFLGLPJN@PR_OpenSharedMemory?3?5Request?5exc@ 100508d0     w32shm.obj
+ 0002:00007914       ??_C@_0DE@FAPFDCKK@PR_OpenSharedMemory?3?5CreateFileM@ 10050914     w32shm.obj
+ 0002:00007954       ??_C@_0DE@PAGDKNFL@PR_OpenSharedMemory?3?5New?5shm?9?$DOip@ 10050954     w32shm.obj
+ 0002:00007994       ??_C@_0DG@HEEBPNMP@PR_OpenSharedMemory?3?5New?5PRShare@ 10050994     w32shm.obj
+ 0002:000079d4       ??_C@_0CF@JHCEDBKM@PR_OpenSharedMemory?3?5name?5is?5inv@ 100509d4     w32shm.obj
+ 0002:00007a00       ??_C@_0DM@MDFOCNAI@_MD_AttachSharedMemory?3?5MapViewO@ 10050a00     w32shm.obj
+ 0002:00007a48       ??_C@_0BM@EACNBOPM@shm?9?$DOident?5?$DN?$DN?5_PR_SHM_IDENT?$AA@ 10050a48     w32shm.obj
+ 0002:00007a70       ??_C@_0EM@DCLDBCHB@c?3?1Users?1Tandy?1Programming?1mozil@ 10050a70     w32shm.obj
+ 0002:00007acc       ??_C@_0DO@GCHAGFG@_MD_DetachSharedMemory?3?5UnmapVie@ 10050acc     w32shm.obj
+ 0002:00007b18       ??_C@_0DJ@LDHDMBMD@_MD_CloseSharedMemory?3?5CloseHand@ 10050b18     w32shm.obj
+ 0002:00007b5c       ??_C@_0DB@GDFLMFGM@_md_OpenAnonFileMap?$CI?$CJ?3?5Duplicate@ 10050b5c     w32shm.obj
+ 0002:00007b98       ??_C@_0DC@EKKKCNOD@_md_OpenAnonFileMap?$CI?$CJ?3?5PR_Create@ 10050b98     w32shm.obj
+ 0002:00007bd8       ??_C@_0EC@CIHNOFHC@_md_ExportFileMapAsString?$CI?$CJ?3?5pro@ 10050bd8     w32shm.obj
+ 0002:00007c28       ??_C@_0L@FCGEOHOD@?$CFd?3?$CFld?3?$CFld?$AA@ 10050c28     w32shm.obj
+ 0002:00007c38       ??_C@_0FK@HMPNNNMN@_md_ImportFileMapFromString?$CI?$CJ?3?5f@ 10050c38     w32shm.obj
+ 0002:00007ca4       ??_C@_0DD@MPPGIGFD@_md_ImportFileMapFromString?$CI?$CJ?3?5P@ 10050ca4     w32shm.obj
+ 0002:00007ce4       __pRawDllMain              10050ce4     MSVCRT:crtdll.obj
+ 0002:00007ce4       __pDefaultRawDllMain       10050ce4     MSVCRT:crtdll.obj
+ 0002:00007cf0       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 10050cf0     MSVCRT:tncleanup.obj
+ 0002:00007cf4       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 10050cf4     MSVCRT:tncleanup.obj
+ 0002:00007cf8       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 10050cf8     MSVCRT:tncleanup.obj
+ 0002:00007cfc       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 10050cfc     MSVCRT:tncleanup.obj
+ 0002:00007d00       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 10050d00     MSVCRT:tncleanup.obj
+ 0002:00007d08       __load_config_used         10050d08     MSVCRT:loadcfg.obj
+ 0002:000080b4       __tls_used                 100510b4     MSVCRT:tlssup.obj
+ 0002:00008340       ___safe_se_handler_table   10051340     <linker-defined>
+ 0002:00008444       ___rtc_iaa                 10051444     MSVCRT:_initsect_.obj
+ 0002:00008548       ___rtc_izz                 10051548     MSVCRT:_initsect_.obj
+ 0002:0000864c       ___rtc_taa                 1005164c     MSVCRT:_initsect_.obj
+ 0002:00008750       ___rtc_tzz                 10051750     MSVCRT:_initsect_.obj
+ 0003:00000000       _prVersionDescription_libnspr4 10055000     prvrsion.obj
+ 0003:000000f0       __pr_faulty_methods        100550f0     priometh.obj
+ 0003:00000330       __pr_active_local_threadQ  10055330     prinit.obj
+ 0003:00000338       __pr_active_global_threadQ 10055338     prinit.obj
+ 0003:00000340       __pr_cpuQ                  10055340     prinit.obj
+ 0003:000007a8       __pr_freeStacks            100557a8     prustack.obj
+ 0003:000007b0       __pr_maxFreeStacks         100557b0     prustack.obj
+ 0003:000007d4       __pr_use_static_tls        100557d4     ntthread.obj
+ 0003:000007f8       ___security_cookie         100557f8     MSVCRT:gs_cookie.obj
+ 0003:000007fc       ___security_cookie_complement 100557fc     MSVCRT:gs_cookie.obj
+ 0003:00000800       ___native_dllmain_reason   10055800     MSVCRT:natstart.obj
+ 0003:00000804       ___native_vcclrit_reason   10055804     MSVCRT:natstart.obj
+ 0003:000016fc       __pr_initialized           100566fc     prinit.obj
+ 0003:00001700       __native_threads_only      10056700     prinit.obj
+ 0003:00001714       __getproto_lock            10056714     prnetdb.obj
+ 0003:00001790       __pr_recycleThreads        10056790     prcthr.obj
+ 0003:00001798       __pr_primordialCPU         10056798     prucpu.obj
+ 0003:0000179c       __pr_cpu_affinity_mask     1005679c     prucpu.obj
+ 0003:000017a4       __pr_debugStacks           100567a4     prustack.obj
+ 0003:000017a8       _suspendAllOn              100567a8     pruthr.obj
+ 0003:000017ac       _suspendAllThread          100567ac     pruthr.obj
+ 0003:00002828       _dwCachedVolumeSerialNumbers 10057828     ntio.obj
+ 0003:00002890       _dwLastCachedDrive         10057890     ntio.obj
+ 0003:00002894       _dwRemoveableDrivesToCheck 10057894     ntio.obj
+ 0003:00002bf4       __pr_schedLock             10057bf4     ntthread.obj
+ 0003:00002bf8       __pr_interruptTable        10057bf8     ntthread.obj
+ 0003:00002c08       __tls_index                10057c08     MSVCRT:tlssup.obj
+ 0003:00002f34       ?__type_info_root_node@@3U__type_info_node@@A 10057f34     MSVCRT:tncleanup.obj
+ 0003:00002f40       __nt_idleLock              10057f40     <common>
+ 0003:00002f6c       __pr_lastFiberIndex        10057f6c     <common>
+ 0003:00002f70       __pr_intsOffIndex          10057f70     <common>
+ 0003:00002f78       __nt_idleList              10057f78     <common>
+ 0003:00002f80       __nt_idleCount             10057f80     <common>
+ 0003:00002f84       __pr_currentCPUIndex       10057f84     <common>
+ 0003:00002f88       __pr_currentFiberIndex     10057f88     <common>
+ 0003:00002f8c       __nt_version_gets_lockfile_completion 10057f8c     <common>
+ 0003:00002fc0       _cachedVolumeLock          10057fc0     <common>
+ 0003:00002fd8       __pr_io_restartedIOIndex   10057fd8     <common>
+ 0003:00002fe0       __pr_ioq_lock              10057fe0     <common>
+ 0003:00002ff8       __pr_numUserDead           10057ff8     <common>
+ 0003:00003010       __pr_numNativeDead         10058010     <common>
+ 0003:00003018       __pr_deadUserQ             10058018     <common>
+ 0003:00003020       __pr_global_threads        10058020     <common>
+ 0003:00003028       __pr_deadNativeQ           10058028     <common>
+ 0003:00003030       __pr_primordialExitCVar    10058030     <common>
+ 0003:00003034       __pr_deadQLock             10058034     <common>
+ 0003:00003038       __pr_activeLock            10058038     <common>
+ 0003:0000303c       __pr_local_threads         1005803c     <common>
+ 0003:00003040       __pr_primordialExitCount   10058040     <common>
+ 0003:00003044       __pr_join_counter          10058044     <common>
+ 0003:00003048       __pr_numFreeStacks         10058048     <common>
+ 0003:00003058       __pr_stackLock             10058058     <common>
+ 0003:0000305c       __pr_md_idle_cpus          1005805c     <common>
+ 0003:0000306c       __pr_numCPU                1005806c     <common>
+ 0003:00003070       __pr_cpus_exit             10058070     <common>
+ 0003:00003074       __pr_dumpOut               10058074     <common>
+ 0003:00003080       __pr_flock_lock            10058080     <common>
+ 0003:00003090       __pr_flock_cv              10058090     <common>
+ 0003:00003094       __pr_mon_lm                10058094     <common>
+ 0003:000030b4       __pr_thread_lm             100580b4     <common>
+ 0003:000030b8       __pr_cmon_lm               100580b8     <common>
+ 0003:000030bc       __pr_io_lm                 100580bc     <common>
+ 0003:000030c0       __pr_stderr                100580c0     <common>
+ 0003:000030c4       __pr_sleeplock             100580c4     <common>
+ 0003:000030c8       __pr_shma_lm               100580c8     <common>
+ 0003:000030cc       __pr_shm_lm                100580cc     <common>
+ 0003:000030d0       __pr_stdout                100580d0     <common>
+ 0003:000030d4       __pr_utid                  100580d4     <common>
+ 0003:000030d8       __pr_sched_lm              100580d8     <common>
+ 0003:000030dc       __pr_userActive            100580dc     <common>
+ 0003:000030e0       __pr_stdin                 100580e0     <common>
+ 0003:000030e4       __pr_linker_lm             100580e4     <common>
+ 0003:00003100       __pr_cpuLock               10058100     <common>
+ 0003:00003118       __pr_terminationCVLock     10058118     <common>
+ 0003:0000311c       __pr_clock_lm              1005811c     <common>
+ 0003:00003120       __pr_cvar_lm               10058120     <common>
+ 0003:00003124       __pr_gc_lm                 10058124     <common>
+ 0003:00003128       __pr_maxPTDs               10058128     <common>
+ 0003:0000312c       __pr_systemActive          1005812c     <common>
+ 0003:00003130       __pr_pageShift             10058130     <common>
+ 0003:00003140       __pr_pageSize              10058140     <common>
+ 0003:00003144       __pr_mcacheLock            10058144     <common>
+ 0003:00003160       _tm_vars                   10058160     <common>
+ 0003:00003184       __adjust_fdiv              10058184     <common>
+ 0003:00003190       ___native_startup_state    10058190     <common>
+ 0003:000031a0       ___native_startup_lock     100581a0     <common>
+ 0003:000031a4       ___onexitend               100581a4     <common>
+ 0003:000031b4       ___onexitbegin             100581b4     <common>
+ 0003:000031b8       ___sse2_available          100581b8     <common>
+ 0003:000031c4       ___dyn_tls_init_callback   100581c4     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_ADVAPI32 10059000     advapi32:ADVAPI32.dll
+ 0004:00000014       __IMPORT_DESCRIPTOR_WSOCK32 10059014     wsock32:WSOCK32.dll
+ 0004:00000028       __IMPORT_DESCRIPTOR_WINMM  10059028     winmm:WINMM.dll
+ 0004:0000003c       __IMPORT_DESCRIPTOR_MSVCR90 1005903c     MSVCRT:MSVCR90.dll
+ 0004:00000050       __IMPORT_DESCRIPTOR_KERNEL32 10059050     kernel32:KERNEL32.dll
+ 0004:00000064       __NULL_IMPORT_DESCRIPTOR   10059064     advapi32:ADVAPI32.dll
+ 0004:00000564       __imp__AllocateAndInitializeSid@44 10059564     advapi32:ADVAPI32.dll
+ 0004:00000568       __imp__CopySid@12          10059568     advapi32:ADVAPI32.dll
+ 0004:0000056c       __imp__GetLengthSid@4      1005956c     advapi32:ADVAPI32.dll
+ 0004:00000570       __imp__GetTokenInformation@20 10059570     advapi32:ADVAPI32.dll
+ 0004:00000574       __imp__OpenProcessToken@12 10059574     advapi32:ADVAPI32.dll
+ 0004:00000578       __imp__FreeSid@4           10059578     advapi32:ADVAPI32.dll
+ 0004:0000057c       __imp__SetSecurityDescriptorDacl@16 1005957c     advapi32:ADVAPI32.dll
+ 0004:00000580       __imp__AddAccessAllowedAce@16 10059580     advapi32:ADVAPI32.dll
+ 0004:00000584       __imp__InitializeAcl@12    10059584     advapi32:ADVAPI32.dll
+ 0004:00000588       __imp__SetSecurityDescriptorGroup@12 10059588     advapi32:ADVAPI32.dll
+ 0004:0000058c       __imp__SetSecurityDescriptorOwner@12 1005958c     advapi32:ADVAPI32.dll
+ 0004:00000590       __imp__InitializeSecurityDescriptor@8 10059590     advapi32:ADVAPI32.dll
+ 0004:00000594       \177ADVAPI32_NULL_THUNK_DATA 10059594     advapi32:ADVAPI32.dll
+ 0004:000005c8       __imp__FileTimeToSystemTime@8 100595c8     kernel32:KERNEL32.dll
+ 0004:000005cc       __imp__GetSystemTimeAsFileTime@4 100595cc     kernel32:KERNEL32.dll
+ 0004:000005d0       __imp__GetCurrentProcessId@0 100595d0     kernel32:KERNEL32.dll
+ 0004:000005d4       __imp__GetCurrentThreadId@0 100595d4     kernel32:KERNEL32.dll
+ 0004:000005d8       __imp__IsDebuggerPresent@0 100595d8     kernel32:KERNEL32.dll
+ 0004:000005dc       __imp__SetUnhandledExceptionFilter@4 100595dc     kernel32:KERNEL32.dll
+ 0004:000005e0       __imp__UnhandledExceptionFilter@4 100595e0     kernel32:KERNEL32.dll
+ 0004:000005e4       __imp__OpenFileMappingA@12 100595e4     kernel32:KERNEL32.dll
+ 0004:000005e8       __imp__QueryPerformanceCounter@4 100595e8     kernel32:KERNEL32.dll
+ 0004:000005ec       __imp__GetTickCount@0      100595ec     kernel32:KERNEL32.dll
+ 0004:000005f0       __imp__OpenSemaphoreA@12   100595f0     kernel32:KERNEL32.dll
+ 0004:000005f4       __imp__SuspendThread@4     100595f4     kernel32:KERNEL32.dll
+ 0004:000005f8       __imp__GetProcessAffinityMask@12 100595f8     kernel32:KERNEL32.dll
+ 0004:000005fc       __imp__SetThreadAffinityMask@8 100595fc     kernel32:KERNEL32.dll
+ 0004:00000600       __imp__SetLastError@4      10059600     kernel32:KERNEL32.dll
+ 0004:00000604       __imp__SwitchToFiber@4     10059604     kernel32:KERNEL32.dll
+ 0004:00000608       __imp__CreateFiber@12      10059608     kernel32:KERNEL32.dll
+ 0004:0000060c       __imp__ConvertThreadToFiber@4 1005960c     kernel32:KERNEL32.dll
+ 0004:00000610       __imp__SetThreadPriority@8 10059610     kernel32:KERNEL32.dll
+ 0004:00000614       __imp__ResumeThread@4      10059614     kernel32:KERNEL32.dll
+ 0004:00000618       __imp__GetCurrentThread@0  10059618     kernel32:KERNEL32.dll
+ 0004:0000061c       __imp__DuplicateHandle@28  1005961c     kernel32:KERNEL32.dll
+ 0004:00000620       __imp__CreateEventA@16     10059620     kernel32:KERNEL32.dll
+ 0004:00000624       __imp__TlsFree@4           10059624     kernel32:KERNEL32.dll
+ 0004:00000628       __imp__TlsAlloc@0          10059628     kernel32:KERNEL32.dll
+ 0004:0000062c       __imp__CancelIo@4          1005962c     kernel32:KERNEL32.dll
+ 0004:00000630       __imp__GetLogicalDriveStringsA@8 10059630     kernel32:KERNEL32.dll
+ 0004:00000634       __imp__SetErrorMode@4      10059634     kernel32:KERNEL32.dll
+ 0004:00000638       __imp__GetDriveTypeA@4     10059638     kernel32:KERNEL32.dll
+ 0004:0000063c       __imp__GetVolumeInformationA@32 1005963c     kernel32:KERNEL32.dll
+ 0004:00000640       __imp__lstrlenA@4          10059640     kernel32:KERNEL32.dll
+ 0004:00000644       __imp__UnlockFileEx@20     10059644     kernel32:KERNEL32.dll
+ 0004:00000648       __imp__LockFileEx@24       10059648     kernel32:KERNEL32.dll
+ 0004:0000064c       __imp__RemoveDirectoryA@4  1005964c     kernel32:KERNEL32.dll
+ 0004:00000650       __imp__CreateDirectoryA@8  10059650     kernel32:KERNEL32.dll
+ 0004:00000654       __imp__MoveFileA@8         10059654     kernel32:KERNEL32.dll
+ 0004:00000658       __imp__GetFileInformationByHandle@8 10059658     kernel32:KERNEL32.dll
+ 0004:0000065c       __imp__DeleteFileA@4       1005965c     kernel32:KERNEL32.dll
+ 0004:00000660       __imp__FindNextFileA@8     10059660     kernel32:KERNEL32.dll
+ 0004:00000664       __imp__FindFirstFileA@8    10059664     kernel32:KERNEL32.dll
+ 0004:00000668       __imp__FindClose@4         10059668     kernel32:KERNEL32.dll
+ 0004:0000066c       __imp__GetHandleInformation@8 1005966c     kernel32:KERNEL32.dll
+ 0004:00000670       __imp__SetHandleInformation@12 10059670     kernel32:KERNEL32.dll
+ 0004:00000674       __imp__FlushFileBuffers@4  10059674     kernel32:KERNEL32.dll
+ 0004:00000678       __imp__CreateFileA@28      10059678     kernel32:KERNEL32.dll
+ 0004:0000067c       __imp__SetFilePointer@16   1005967c     kernel32:KERNEL32.dll
+ 0004:00000680       __imp__WriteFile@20        10059680     kernel32:KERNEL32.dll
+ 0004:00000684       __imp__WaitForMultipleObjects@16 10059684     kernel32:KERNEL32.dll
+ 0004:00000688       __imp__GetOverlappedResult@16 10059688     kernel32:KERNEL32.dll
+ 0004:0000068c       __imp__ResetEvent@4        1005968c     kernel32:KERNEL32.dll
+ 0004:00000690       __imp__CreateIoCompletionPort@16 10059690     kernel32:KERNEL32.dll
+ 0004:00000694       __imp__PostQueuedCompletionStatus@16 10059694     kernel32:KERNEL32.dll
+ 0004:00000698       __imp__DeleteFiber@4       10059698     kernel32:KERNEL32.dll
+ 0004:0000069c       __imp__GetQueuedCompletionStatus@20 1005969c     kernel32:KERNEL32.dll
+ 0004:000006a0       __imp__GetThreadContext@8  100596a0     kernel32:KERNEL32.dll
+ 0004:000006a4       __imp__ReleaseSemaphore@12 100596a4     kernel32:KERNEL32.dll
+ 0004:000006a8       __imp__CreateSemaphoreA@16 100596a8     kernel32:KERNEL32.dll
+ 0004:000006ac       __imp__GetCurrentProcess@0 100596ac     kernel32:KERNEL32.dll
+ 0004:000006b0       __imp__UnmapViewOfFile@4   100596b0     kernel32:KERNEL32.dll
+ 0004:000006b4       __imp__MapViewOfFile@20    100596b4     kernel32:KERNEL32.dll
+ 0004:000006b8       __imp__FormatMessageA@28   100596b8     kernel32:KERNEL32.dll
+ 0004:000006bc       __imp__CreateFileMappingA@24 100596bc     kernel32:KERNEL32.dll
+ 0004:000006c0       __imp__GetVersionExA@4     100596c0     kernel32:KERNEL32.dll
+ 0004:000006c4       __imp__TerminateProcess@8  100596c4     kernel32:KERNEL32.dll
+ 0004:000006c8       __imp__WaitForSingleObject@8 100596c8     kernel32:KERNEL32.dll
+ 0004:000006cc       __imp__GetExitCodeProcess@8 100596cc     kernel32:KERNEL32.dll
+ 0004:000006d0       __imp__GetEnvironmentStrings@0 100596d0     kernel32:KERNEL32.dll
+ 0004:000006d4       __imp__FreeEnvironmentStringsA@4 100596d4     kernel32:KERNEL32.dll
+ 0004:000006d8       __imp__CreateProcessA@40   100596d8     kernel32:KERNEL32.dll
+ 0004:000006dc       __imp__GetSystemTime@4     100596dc     kernel32:KERNEL32.dll
+ 0004:000006e0       __imp__SystemTimeToFileTime@8 100596e0     kernel32:KERNEL32.dll
+ 0004:000006e4       __imp__TryEnterCriticalSection@4 100596e4     kernel32:KERNEL32.dll
+ 0004:000006e8       __imp__Sleep@4             100596e8     kernel32:KERNEL32.dll
+ 0004:000006ec       __imp__GetStdHandle@4      100596ec     kernel32:KERNEL32.dll
+ 0004:000006f0       __imp__CreatePipe@16       100596f0     kernel32:KERNEL32.dll
+ 0004:000006f4       __imp__CloseHandle@4       100596f4     kernel32:KERNEL32.dll
+ 0004:000006f8       __imp__GlobalMemoryStatus@4 100596f8     kernel32:KERNEL32.dll
+ 0004:000006fc       __imp__InterlockedExchange@8 100596fc     kernel32:KERNEL32.dll
+ 0004:00000700       __imp__GetFileAttributesExA@12 10059700     kernel32:KERNEL32.dll
+ 0004:00000704       __imp__GetSystemInfo@4     10059704     kernel32:KERNEL32.dll
+ 0004:00000708       __imp__GetModuleHandleW@4  10059708     kernel32:KERNEL32.dll
+ 0004:0000070c       __imp__GetModuleFileNameW@12 1005970c     kernel32:KERNEL32.dll
+ 0004:00000710       __imp__GetProcAddress@8    10059710     kernel32:KERNEL32.dll
+ 0004:00000714       __imp__FreeLibrary@4       10059714     kernel32:KERNEL32.dll
+ 0004:00000718       __imp__MultiByteToWideChar@24 10059718     kernel32:KERNEL32.dll
+ 0004:0000071c       __imp__WideCharToMultiByte@32 1005971c     kernel32:KERNEL32.dll
+ 0004:00000720       __imp__LoadLibraryExW@12   10059720     kernel32:KERNEL32.dll
+ 0004:00000724       __imp__GetModuleHandleA@4  10059724     kernel32:KERNEL32.dll
+ 0004:00000728       __imp__DebugBreak@0        10059728     kernel32:KERNEL32.dll
+ 0004:0000072c       __imp__TlsGetValue@4       1005972c     kernel32:KERNEL32.dll
+ 0004:00000730       __imp__TlsSetValue@8       10059730     kernel32:KERNEL32.dll
+ 0004:00000734       __imp__OutputDebugStringA@4 10059734     kernel32:KERNEL32.dll
+ 0004:00000738       __imp__DeleteCriticalSection@4 10059738     kernel32:KERNEL32.dll
+ 0004:0000073c       __imp__InitializeCriticalSection@4 1005973c     kernel32:KERNEL32.dll
+ 0004:00000740       __imp__EnterCriticalSection@4 10059740     kernel32:KERNEL32.dll
+ 0004:00000744       __imp__LeaveCriticalSection@4 10059744     kernel32:KERNEL32.dll
+ 0004:00000748       __imp__GetLastError@0      10059748     kernel32:KERNEL32.dll
+ 0004:0000074c       __imp__ReadFile@20         1005974c     kernel32:KERNEL32.dll
+ 0004:00000750       __imp__InterlockedCompareExchange@12 10059750     kernel32:KERNEL32.dll
+ 0004:00000754       \177KERNEL32_NULL_THUNK_DATA 10059754     kernel32:KERNEL32.dll
+ 0004:000007cc       __imp___crt_debugger_hook  100597cc     MSVCRT:MSVCR90.dll
+ 0004:000007d0       __imp____clean_type_info_names_internal 100597d0     MSVCRT:MSVCR90.dll
+ 0004:000007d4       __imp___unlock             100597d4     MSVCRT:MSVCR90.dll
+ 0004:000007d8       __imp____dllonexit         100597d8     MSVCRT:MSVCR90.dll
+ 0004:000007dc       __imp___lock               100597dc     MSVCRT:MSVCR90.dll
+ 0004:000007e0       __imp___onexit             100597e0     MSVCRT:MSVCR90.dll
+ 0004:000007e4       __imp___except_handler4_common 100597e4     MSVCRT:MSVCR90.dll
+ 0004:000007e8       __imp____CppXcptFilter     100597e8     MSVCRT:MSVCR90.dll
+ 0004:000007ec       __imp___adjust_fdiv        100597ec     MSVCRT:MSVCR90.dll
+ 0004:000007f0       __imp___amsg_exit          100597f0     MSVCRT:MSVCR90.dll
+ 0004:000007f4       __imp___initterm_e         100597f4     MSVCRT:MSVCR90.dll
+ 0004:000007f8       __imp___initterm           100597f8     MSVCRT:MSVCR90.dll
+ 0004:000007fc       __imp___decode_pointer     100597fc     MSVCRT:MSVCR90.dll
+ 0004:00000800       __imp___encoded_null       10059800     MSVCRT:MSVCR90.dll
+ 0004:00000804       __imp___malloc_crt         10059804     MSVCRT:MSVCR90.dll
+ 0004:00000808       __imp___encode_pointer     10059808     MSVCRT:MSVCR90.dll
+ 0004:0000080c       __imp___time64             1005980c     MSVCRT:MSVCR90.dll
+ 0004:00000810       __imp___exit               10059810     MSVCRT:MSVCR90.dll
+ 0004:00000814       __imp___endthreadex        10059814     MSVCRT:MSVCR90.dll
+ 0004:00000818       __imp___beginthreadex      10059818     MSVCRT:MSVCR90.dll
+ 0004:0000081c       __imp___access             1005981c     MSVCRT:MSVCR90.dll
+ 0004:00000820       __imp___mbsdec             10059820     MSVCRT:MSVCR90.dll
+ 0004:00000824       __imp___stat64i32          10059824     MSVCRT:MSVCR90.dll
+ 0004:00000828       __imp___mbsinc             10059828     MSVCRT:MSVCR90.dll
+ 0004:0000082c       __imp__strcmpi             1005982c     MSVCRT:MSVCR90.dll
+ 0004:0000082c       __imp__stricmp             1005982c     MSVCRT:MSVCR90.dll
+ 0004:0000082c       __imp___stricmp            1005982c     MSVCRT:MSVCR90.dll
+ 0004:00000830       __imp__strpbrk             10059830     MSVCRT:MSVCR90.dll
+ 0004:00000834       __imp___environ            10059834     MSVCRT:MSVCR90.dll
+ 0004:00000838       __imp__memmove             10059838     MSVCRT:MSVCR90.dll
+ 0004:0000083c       __imp__strftime            1005983c     MSVCRT:MSVCR90.dll
+ 0004:00000840       __imp___mktime64           10059840     MSVCRT:MSVCR90.dll
+ 0004:00000844       __imp__isalpha             10059844     MSVCRT:MSVCR90.dll
+ 0004:00000848       __imp___localtime64        10059848     MSVCRT:MSVCR90.dll
+ 0004:0000084c       __imp__strncmp             1005984c     MSVCRT:MSVCR90.dll
+ 0004:00000850       __imp___wassert            10059850     MSVCRT:MSVCR90.dll
+ 0004:00000854       __imp___errno              10059854     MSVCRT:MSVCR90.dll
+ 0004:00000858       __imp__strerror            10059858     MSVCRT:MSVCR90.dll
+ 0004:0000085c       __imp__strcat              1005985c     MSVCRT:MSVCR90.dll
+ 0004:00000860       __imp__realloc             10059860     MSVCRT:MSVCR90.dll
+ 0004:00000864       __imp__calloc              10059864     MSVCRT:MSVCR90.dll
+ 0004:00000868       __imp__malloc              10059868     MSVCRT:MSVCR90.dll
+ 0004:0000086c       __imp__strrchr             1005986c     MSVCRT:MSVCR90.dll
+ 0004:00000870       __imp__strstr              10059870     MSVCRT:MSVCR90.dll
+ 0004:00000874       __imp__getenv              10059874     MSVCRT:MSVCR90.dll
+ 0004:00000878       __imp__tolower             10059878     MSVCRT:MSVCR90.dll
+ 0004:0000087c       __imp__strtol              1005987c     MSVCRT:MSVCR90.dll
+ 0004:00000880       __imp__strtoul             10059880     MSVCRT:MSVCR90.dll
+ 0004:00000884       __imp__strchr              10059884     MSVCRT:MSVCR90.dll
+ 0004:00000888       __imp__memchr              10059888     MSVCRT:MSVCR90.dll
+ 0004:0000088c       __imp__isspace             1005988c     MSVCRT:MSVCR90.dll
+ 0004:00000890       __imp__isdigit             10059890     MSVCRT:MSVCR90.dll
+ 0004:00000894       __imp__sprintf             10059894     MSVCRT:MSVCR90.dll
+ 0004:00000898       __imp__abort               10059898     MSVCRT:MSVCR90.dll
+ 0004:0000089c       __imp__fwrite              1005989c     MSVCRT:MSVCR90.dll
+ 0004:000008a0       __imp__fflush              100598a0     MSVCRT:MSVCR90.dll
+ 0004:000008a4       __imp__strcmp              100598a4     MSVCRT:MSVCR90.dll
+ 0004:000008a8       __imp__fopen               100598a8     MSVCRT:MSVCR90.dll
+ 0004:000008ac       __imp__setvbuf             100598ac     MSVCRT:MSVCR90.dll
+ 0004:000008b0       __imp__fclose              100598b0     MSVCRT:MSVCR90.dll
+ 0004:000008b4       __imp__free                100598b4     MSVCRT:MSVCR90.dll
+ 0004:000008b8       __imp__sscanf              100598b8     MSVCRT:MSVCR90.dll
+ 0004:000008bc       __imp__strlen              100598bc     MSVCRT:MSVCR90.dll
+ 0004:000008c0       __imp__strcpy              100598c0     MSVCRT:MSVCR90.dll
+ 0004:000008c4       __imp__memcpy              100598c4     MSVCRT:MSVCR90.dll
+ 0004:000008c8       __imp__exit                100598c8     MSVCRT:MSVCR90.dll
+ 0004:000008cc       __imp____iob_func          100598cc     MSVCRT:MSVCR90.dll
+ 0004:000008d0       __imp__fprintf             100598d0     MSVCRT:MSVCR90.dll
+ 0004:000008d4       __imp__atoi                100598d4     MSVCRT:MSVCR90.dll
+ 0004:000008d8       __imp__memset              100598d8     MSVCRT:MSVCR90.dll
+ 0004:000008dc       __imp__strdup              100598dc     MSVCRT:MSVCR90.dll
+ 0004:000008dc       __imp___strdup             100598dc     MSVCRT:MSVCR90.dll
+ 0004:000008e0       __imp__qsort               100598e0     MSVCRT:MSVCR90.dll
+ 0004:000008e4       __imp___putenv             100598e4     MSVCRT:MSVCR90.dll
+ 0004:000008e4       __imp__putenv              100598e4     MSVCRT:MSVCR90.dll
+ 0004:000008e8       \177MSVCR90_NULL_THUNK_DATA 100598e8     MSVCRT:MSVCR90.dll
+ 0004:0000094c       __imp__timeGetTime@0       1005994c     winmm:WINMM.dll
+ 0004:00000950       \177WINMM_NULL_THUNK_DATA  10059950     winmm:WINMM.dll
+ 0004:0000097c       __imp__WSACleanup@0        1005997c     wsock32:WSOCK32.dll
+ 0004:00000980       __imp__WSASetLastError@4   10059980     wsock32:WSOCK32.dll
+ 0004:00000984       __imp__select@20           10059984     wsock32:WSOCK32.dll
+ 0004:00000988       __imp__recvfrom@24         10059988     wsock32:WSOCK32.dll
+ 0004:0000098c       __imp__sendto@24           1005998c     wsock32:WSOCK32.dll
+ 0004:00000990       __imp__send@16             10059990     wsock32:WSOCK32.dll
+ 0004:00000994       __imp__recv@16             10059994     wsock32:WSOCK32.dll
+ 0004:00000998       __imp____WSAFDIsSet@8      10059998     wsock32:WSOCK32.dll
+ 0004:0000099c       __imp__getpeername@12      1005999c     wsock32:WSOCK32.dll
+ 0004:000009a0       __imp__shutdown@8          100599a0     wsock32:WSOCK32.dll
+ 0004:000009a4       __imp__TransmitFile@28     100599a4     wsock32:WSOCK32.dll
+ 0004:000009a8       __imp__AcceptEx@32         100599a8     wsock32:WSOCK32.dll
+ 0004:000009ac       __imp__GetAcceptExSockaddrs@32 100599ac     wsock32:WSOCK32.dll
+ 0004:000009b0       __imp__setsockopt@20       100599b0     wsock32:WSOCK32.dll
+ 0004:000009b4       __imp__ioctlsocket@12      100599b4     wsock32:WSOCK32.dll
+ 0004:000009b8       __imp__WSAStartup@8        100599b8     wsock32:WSOCK32.dll
+ 0004:000009bc       __imp__socket@12           100599bc     wsock32:WSOCK32.dll
+ 0004:000009c0       __imp__bind@12             100599c0     wsock32:WSOCK32.dll
+ 0004:000009c4       __imp__getsockname@12      100599c4     wsock32:WSOCK32.dll
+ 0004:000009c8       __imp__listen@8            100599c8     wsock32:WSOCK32.dll
+ 0004:000009cc       __imp__connect@12          100599cc     wsock32:WSOCK32.dll
+ 0004:000009d0       __imp__accept@12           100599d0     wsock32:WSOCK32.dll
+ 0004:000009d4       __imp__getsockopt@20       100599d4     wsock32:WSOCK32.dll
+ 0004:000009d8       __imp__inet_addr@4         100599d8     wsock32:WSOCK32.dll
+ 0004:000009dc       __imp__ntohl@4             100599dc     wsock32:WSOCK32.dll
+ 0004:000009e0       __imp__ntohs@4             100599e0     wsock32:WSOCK32.dll
+ 0004:000009e4       __imp__htons@4             100599e4     wsock32:WSOCK32.dll
+ 0004:000009e8       __imp__getprotobynumber@4  100599e8     wsock32:WSOCK32.dll
+ 0004:000009ec       __imp__getprotobyname@4    100599ec     wsock32:WSOCK32.dll
+ 0004:000009f0       __imp__gethostbyaddr@12    100599f0     wsock32:WSOCK32.dll
+ 0004:000009f4       __imp__gethostbyname@4     100599f4     wsock32:WSOCK32.dll
+ 0004:000009f8       __imp__htonl@4             100599f8     wsock32:WSOCK32.dll
+ 0004:000009fc       __imp__closesocket@4       100599fc     wsock32:WSOCK32.dll
+ 0004:00000a00       __imp__WSAGetLastError@0   10059a00     wsock32:WSOCK32.dll
+ 0004:00000a04       __imp__gethostname@8       10059a04     wsock32:WSOCK32.dll
+ 0004:00000a08       \177WSOCK32_NULL_THUNK_DATA 10059a08     wsock32:WSOCK32.dll
+ 0005:00000000       __tls_start                1005b000     MSVCRT:tlssup.obj
+ 0005:00000104       __pr_io_restarted_io       1005b104     ntio.obj
+ 0005:00000108       __pr_current_fiber         1005b108     ntthread.obj
+ 0005:0000010c       __pr_fiber_last_run        1005b10c     ntthread.obj
+ 0005:00000110       __pr_ints_off              1005b110     ntthread.obj
+ 0005:00000114       __pr_current_cpu           1005b114     ntthread.obj
+ 0005:0000021c       __tls_end                  1005b21c     MSVCRT:tlssup.obj
+
+ entry point at        0001:00045a74
+

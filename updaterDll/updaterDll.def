@@ -1,0 +1,28 @@
+; UpdaterDll.def : Declares the module parameters.
+
+LIBRARY      "UpdaterDll"
+DESCRIPTION  'UpdaterDll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    SetParamsUpdater_export @1
+	StartUpdater_export     @2
+	GetStatus_export        @3
+	GetStep_export          @4
+	GetOneFileStatus_export @5
+	GetInfoText_export      @6
+	GetCurrentLoaded_export @7
+	GetAllSize_export       @8
+	GetErrorCode_export     @9
+	GetClientDir_export		@10
+	GetVacademiaPath_export	@11
+	KIllVA_export			@12
+	KIllVAAll_export		@13
+	Destroy_export          @14
+	MakeIntResource_export  @15
+	LoadIconWarning_export  @16
+	OnCancel_export			@17
+	GetServer_export		@18
+	Quit_export				@19
+	OnSiteOpened_export		@20
+	GetDownloadSiteURL_export @21

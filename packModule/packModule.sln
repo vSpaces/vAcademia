@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "packModule", "packModule.vcxproj", "{F73C727A-D815-48D1-9097-CCCF35EBD66A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BigFileMan", "..\bigFileMan\BigFileMan.vcxproj", "{A83833FA-0657-401C-85FE-EFA9CEF58F01}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rtl", "..\rtl\rtl.vcxproj", "{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73C727A-D815-48D1-9097-CCCF35EBD66A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F73C727A-D815-48D1-9097-CCCF35EBD66A}.Debug|Win32.Build.0 = Debug|Win32
+		{F73C727A-D815-48D1-9097-CCCF35EBD66A}.Release|Win32.ActiveCfg = Release|Win32
+		{F73C727A-D815-48D1-9097-CCCF35EBD66A}.Release|Win32.Build.0 = Release|Win32
+		{A83833FA-0657-401C-85FE-EFA9CEF58F01}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A83833FA-0657-401C-85FE-EFA9CEF58F01}.Release|Win32.ActiveCfg = Release|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Debug|Win32.Build.0 = Debug|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Release|Win32.ActiveCfg = Release|Win32
+		{B76A2B0A-A693-4AC4-9E6F-130C1E55C25B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

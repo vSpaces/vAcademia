@@ -1,0 +1,33 @@
+HKCR
+{
+	Cscl3DWS.WS3D.1 = s 'WS3D Class'
+	{
+		CLSID = s '{F61784B8-B188-4491-9B0A-EA1434EB041B}'
+	}
+	Cscl3DWS.WS3D = s 'WS3D Class'
+	{
+		CLSID = s '{F61784B8-B188-4491-9B0A-EA1434EB041B}'
+		CurVer = s 'Cscl3DWS.WS3D.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F61784B8-B188-4491-9B0A-EA1434EB041B} = s 'WS3D Class'
+		{
+			ProgID = s 'Cscl3DWS.WS3D.1'
+			VersionIndependentProgID = s 'Cscl3DWS.WS3D'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{0DD9BDA8-65C4-473C-8C56-954BF3774A7A}'
+			'Version' = s '1.0'
+		}
+	}
+}

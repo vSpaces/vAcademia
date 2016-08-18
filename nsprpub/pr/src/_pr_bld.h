@@ -1,0 +1,3 @@
+#define _BUILD_STRING "2010-03-30 07:12:15"
+#define _BUILD_TIME 1269933135924076i64
+#define _PRODUCTION "libnspr4.dll"

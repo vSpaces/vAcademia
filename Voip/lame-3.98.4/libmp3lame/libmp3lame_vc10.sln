@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmp3lame_vc10", "libmp3lame_vc10.vcxproj", "{4B152319-0AF6-4E1B-A284-805D6483C5F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug GTK|Win32 = Debug GTK|Win32
+		Debug|Win32 = Debug|Win32
+		Release NASM|Win32 = Release NASM|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Debug GTK|Win32.ActiveCfg = Debug GTK|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Debug GTK|Win32.Build.0 = Debug GTK|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Debug|Win32.Build.0 = Debug|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Release NASM|Win32.ActiveCfg = Release NASM|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Release NASM|Win32.Build.0 = Release NASM|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Release|Win32.ActiveCfg = Release|Win32
+		{4B152319-0AF6-4E1B-A284-805D6483C5F1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

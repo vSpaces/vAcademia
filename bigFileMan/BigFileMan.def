@@ -1,0 +1,12 @@
+; ComMan.def : Declares the module parameters.
+
+LIBRARY      "BigFileMan"
+;DESCRIPTION  'BigFileMan Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    CreateBigFileManagerReader     @1
+    CreateBigFileManagerWriter     @2
+    CreateBigFileManager		   @3
+	DestroyBigFileManager		   @4
+	

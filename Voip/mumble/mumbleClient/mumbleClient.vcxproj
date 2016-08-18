@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{703AACD3-F91C-4AC6-92DD-D2BF99543A4E}</ProjectGuid>
+    <RootNamespace>mumbleClient</RootNamespace>
+    <ProjectName>vAcademiaVoipClient</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP /Zm110 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\mumble-1.2.3\opus\include; ..\mumble-1.2.3\src; ..\mumble-1.2.3\src\mumble; ..\mumble-1.2.3\src\bonjour; ..\mumble-1.2.3\celt-0.7.0-src\libcelt;  ..\mumble-1.2.3\speex\include; ..\..\..\..\libs; ..\..\..\..\libs\QtMumble\include; ..\..\..\..\libs\protobuf\include; ..\..\..\..\libs\OpenSSL\include; ..\..\..\..\libs\protobuf\include\google\protobuf; ..\..\..\..\libs\Boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPUS; WINDOW;UNICODE;QT_LARGEFILE_SUPPORT;QT_EVAL;QT_DLL;QT_NO_DEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_THREAD_SUPPORT;WIN32;USE_WASAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mumble_pch.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Strmiids.lib;Crypt32.lib;Qwave.lib;QtXmld4.lib;QtNetworkd4.lib;QtGuid4.lib;QtCored4.lib;qtmaind.lib;libprotobufd.lib;speex.lib;dsound.lib;dinput8.lib;avrt.lib;ole32.lib;winmm.lib;libeay32.lib;ssleay32.lib;dxguid.lib;Ws2_32.lib;dbghelp.lib;Wintrust.lib;delayimp.lib;Shlwapi.lib;opus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\mumble-1.2.3\libs\Boost\lib;..\mumble-1.2.3\libs\mysql\lib;..\mumble-1.2.3\libs\OpenSSL\lib;..\mumble-1.2.3\libs\protobuf_2010;..\mumble-1.2.3\libs\QtMumble\lib;..\mumble-1.2.3\libs\QtMumble\pluginlibs;..\mumble-1.2.3\libs\libsndfile\lib;..\mumble-1.2.3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>speex.dll; shell32.dll; AVRT.DLL; Qwave.DLL;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\mumble-1.2.3\opus\include; ..\mumble-1.2.3\src; ..\mumble-1.2.3\src\mumble; ..\mumble-1.2.3\src\bonjour; ..\mumble-1.2.3\celt-0.7.0-src\libcelt;  ..\mumble-1.2.3\speex\include; ..\..\..\..\libs; ..\..\..\..\libs\QtMumble\include; ..\..\..\..\libs\protobuf\include; ..\..\..\..\libs\OpenSSL\include; ..\..\..\..\libs\protobuf\include\google\protobuf; ..\..\..\..\libs\Boost\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_OPUS; BOOST_DISABLE_ASSERTS; WINDOW;UNICODE;QT_LARGEFILE_SUPPORT;QT_EVAL;QT_DLL;QT_NO_DEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_THREAD_SUPPORT;WIN32;USE_WASAPI;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>mumble_pch.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Strmiids.lib;Crypt32.lib;QtGui4.lib;QtXml4.lib;QtNetwork4.lib;QtCore4.lib;qtmain.lib;libprotobuf.lib;speex.lib;dsound.lib;dinput8.lib;avrt.lib;ole32.lib;winmm.lib;libeay32.lib;ssleay32.lib;dxguid.lib;Qwave.lib;Ws2_32.lib;dbghelp.lib;Wintrust.lib;delayimp.lib;Shlwapi.lib;opus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\mumble-1.2.3\libs\Boost\lib;..\mumble-1.2.3\libs\mysql\lib;..\mumble-1.2.3\libs\OpenSSL\lib;..\mumble-1.2.3\libs\protobuf_2010;..\mumble-1.2.3\libs\QtMumble\lib;..\mumble-1.2.3\libs\QtMumble\pluginlibs;..\mumble-1.2.3\libs\libsndfile\lib;..\mumble-1.2.3\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>speex.dll; shell32.dll; AVRT.DLL; Qwave.DLL;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <ImportLibrary>../../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\mumble-1.2.3\src\ACL.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Audio.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioInput.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioOutput.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioOutputSpeech.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioOutputUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioStats.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Channel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\ClientUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\ConfigWidget.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Connection.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\CryptState.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\DirectSound.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Global.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Group.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Log.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\main.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\MainWindow.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Messages.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Mumble.pb.cc" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\mumble_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">mumble_pch.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">mumble_pch.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\VolumeTalkingController.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Net.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\NetworkConfig.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\os_win.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\OSInfo.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Plugins.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\ServerHandler.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Settings.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\SharedMemory2.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\SharedMemory_win.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\SocketRPC.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Timer.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\Usage.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\User.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\UserModel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\UserView.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\Version.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\WASAPI.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_ACL.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Audio.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioInput.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioInStream.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioOutput.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioOutputSpeech.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioOutputUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_AudioStats.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Channel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_ClientUser.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_ConfigWidget.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Connection.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_DirectSound.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Log.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_MainWindow.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_NetworkConfig.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Plugins.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_ServerHandler.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_SharedMemory.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_SocketRPC.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_Usage.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_UserModel.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_UserView.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\moc_WASAPI.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\debug\qrc_mumble.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\SDKInterface\SDKInterface.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\AudioInStream.cpp" />
+    <ClCompile Include="..\..\..\Common\SharedMemory.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\SharedMemoryStreamSound.cpp" />
+    <ClCompile Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\StreamSound.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\mumble-1.2.3\src\ACL.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Audio.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioInput.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioOutput.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioOutputSpeech.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioOutputUser.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioStats.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Channel.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ClientUser.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ConfigWidget.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Connection.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\CryptState.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\DirectSound.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Global.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Group.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Log.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\MainWindow.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Message.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Mumble.pb.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\mumble_pch.hpp" />
+    <ClInclude Include="..\..\mumble-1.2.3\src\mumble\murmur_pch.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\SingletonTemplate.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\VolumeTalkingController.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Net.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\NetworkConfig.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\OSInfo.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\PacketDataStream.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Plugins.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\QAppMumble.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ServerHandler.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Settings.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\SharedMemory2.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\SocketRPC.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Timer.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\Usage.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\User.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\UserModel.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\UserView.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\Version.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\WASAPI.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\SDKInterface\MumbleAPI.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\SDKInterface\MumbleErrorCodes.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\SDKInterface\MumbleWndMessage.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\SDKInterface\SDKInterface.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\AudioInStream.h" />
+    <ClInclude Include="..\..\..\Common\SharedMemory.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\SharedMemoryStreamSound.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\AudioInFromStream\StreamSound.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_GlobalShortcut.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_GlobalShortcutTarget.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_Log.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_MainWindow.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_NetworkConfig.h" />
+    <ClInclude Include="..\mumble-1.2.3\src\mumble\ui_Plugins.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\mumble-1.2.3\src\mumble\vAcademVoip.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

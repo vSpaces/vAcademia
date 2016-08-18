@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="js">
+</Property><Property Name="Solution File" Value="C:\Users\Tandy\Programming\mozilla-1.9.2\js\src\js.sln">
+</Property><Property Name="Date" Value="29 марта 2010 г.">
+</Property><Property Name="Time" Value="12:22:41">
+</Property></Properties><Event ErrorLevel="2" Project="C:\Users\Tandy\Programming\mozilla-1.9.2\js\src\js.mdp" Source="js" Description="Cannot load the project due to a corrupt project file.">
+</Event><Event ErrorLevel="2" Project="js" Source="js.mdp" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="js" Source="js.mdp" Description="Not Converted">
+</Event></UpgradeLog>

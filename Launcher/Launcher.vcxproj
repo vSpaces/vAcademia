@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug optimized|Win32">
+      <Configuration>Debug optimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Launcher</ProjectName>
+    <ProjectGuid>{B86B49EE-B3F6-4079-A1A5-1A5B92DBEFD2}</ProjectGuid>
+    <RootNamespace>Launcher</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'">../dlls/Release/</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../voip/AudioCapture/include;../mdump;../common;..\nengine\ncommon;..\nmemoryprofiler;..\ComMan;..\LogWriter;..\nengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LAUNCHER_SLN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;Ws2_32.lib;Psapi.lib;Rpcrt4.lib;mdump.lib;wininet.lib;libcurl.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)vacademia.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);../Comman/curl/;../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;LIBCD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)vacademia.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../voip/AudioCapture/include;../mdump;../common;..\nmemoryprofiler;..\nengine\nmath;..\nengine\ncommon;..\ComMan;..\LogWriter;..\nengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LAUNCHER_SLN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;Ws2_32.lib;Psapi.lib;Rpcrt4.lib;mdump.lib;wininet.lib;libcurl.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)vacademia.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);../Comman/curl/;../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(TargetDir)vacademia.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>../voip/AudioCapture/include;../mdump;../common;..\nmemoryprofiler;..\nengine\nmath;..\nengine\ncommon;..\ComMan;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;LAUNCHER_SLN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Ws2_32.lib;Psapi.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)vacademia.exe</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Launcher.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CrashHandlerInThread.cpp" />
+    <ClCompile Include="..\Common\Mutex.cpp" />
+    <ClCompile Include="..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.cpp" />
+    <ClCompile Include="..\nengine\ncommon\FileFunctions.cpp" />
+    <ClCompile Include="..\nengine\ncommon\StringFunctions.cpp" />
+    <ClCompile Include="..\nengine\ncommon\XMLPropertiesList.cpp" />
+    <ClCompile Include="AlphaRegion.cpp" />
+    <ClCompile Include="ClientSessionStateSender.cpp" />
+    <ClCompile Include="..\mdump\CrashHandler.cpp" />
+    <ClCompile Include="DialogError.cpp" />
+    <ClCompile Include="ffmpeg_shield.cpp" />
+    <ClCompile Include="GdiPlusInit.cpp" />
+    <ClCompile Include="..\nengine\ncommon\HelperFunctions.cpp" />
+    <ClCompile Include="HTTPReader.cpp" />
+    <ClCompile Include="..\nengine\ncommon\IniFile.cpp" />
+    <ClCompile Include="Launcher.cpp" />
+    <ClCompile Include="..\Common\ProcessFinder.cpp" />
+    <ClCompile Include="..\ComMan\ProxyFinder.cpp" />
+    <ClCompile Include="LoadUpdater.cpp" />
+    <ClCompile Include="SocketConnectionTester.cpp" />
+    <ClCompile Include="SplashImage.cpp" />
+    <ClCompile Include="StartUpdater.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug optimized|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\nengine\ncommon\Thread.cpp" />
+    <ClCompile Include="mdump\dump.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CrashHandlerInThread.h" />
+    <ClInclude Include="..\Common\Mutex.h" />
+    <ClInclude Include="..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.h" />
+    <ClInclude Include="..\nengine\ncommon\FileFunctions.h" />
+    <ClInclude Include="..\nengine\ncommon\StringFunctions.h" />
+    <ClInclude Include="..\nengine\ncommon\XMLPropertiesList.h" />
+    <ClInclude Include="AlphaRegion.h" />
+    <ClInclude Include="ClientSessionStateSender.h" />
+    <ClInclude Include="..\mdump\CrashHandler.h" />
+    <ClInclude Include="DialogError.h" />
+    <ClInclude Include="FFMpeg_shield.h" />
+    <ClInclude Include="GdiPlusInit.h" />
+    <ClInclude Include="HTTPReader.h" />
+    <ClInclude Include="..\nengine\ncommon\inifile.h" />
+    <ClInclude Include="Launcher.h" />
+    <ClInclude Include="..\Common\ProcessFinder.h" />
+    <ClInclude Include="..\ComMan\ProxyFinder.h" />
+    <ClInclude Include="..\ComMan\ProxySettings.h" />
+    <ClInclude Include="LoadUpdater.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SocketConnectionTester.h" />
+    <ClInclude Include="SplashImage.h" />
+    <ClInclude Include="StartUpdater.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\nengine\ncommon\Thread.h" />
+    <ClInclude Include="Win7ApplicationIDFix.h" />
+    <ClInclude Include="mdump\dump.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\bitmap1.png" />
+    <None Include="icons\bitmap2.png" />
+    <None Include="icons\bitmap3.png" />
+    <None Include="icons\cadr1.png" />
+    <None Include="icons\cadr2.png" />
+    <None Include="icons\cadr3.png" />
+    <None Include="Launcher.ico" />
+    <None Include="small.ico" />
+    <None Include="icons\splash.png" />
+    <None Include="icons\t_interf.png" />
+    <None Include="icons\t_interf_r.png" />
+    <None Include="icons\t_libraries.png" />
+    <None Include="icons\t_libraries_r.png" />
+    <None Include="icons\t_scripts.png" />
+    <None Include="icons\t_scripts_r.png" />
+    <None Include="icons\text1.png" />
+    <None Include="icons\text1_r.png" />
+    <None Include="icons\text2.png" />
+    <None Include="icons\text2_r.png" />
+    <None Include="icons\text3.png" />
+    <None Include="icons\text3_r.png" />
+    <None Include="..\Common\icons\vAcademia.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Launcher.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Launcher.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

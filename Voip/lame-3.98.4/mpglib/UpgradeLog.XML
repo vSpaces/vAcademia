@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="mpglib_vc10">
+</Property><Property Name="Solution File" Value="D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\mpglib\mpglib_vc10.sln">
+</Property><Property Name="Date" Value="17 декабря 2013 г.">
+</Property><Property Name="Time" Value="18:02:55">
+</Property></Properties><Event ErrorLevel="0" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="Converting project file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\mpglib\mpglib_vc10.vcproj'.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="VCConvertEngine.dll encountered an error.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="VCConvertEngine.dll encountered an error.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="VCConvertEngine could not convert attribute ConfigurationType = 4 under Configuration Debug|x64.">
+</Event><Event ErrorLevel="1" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="VCConvertEngine could not convert attribute CharacterSet = 1 under Configuration Debug|x64.">
+</Event><Event ErrorLevel="2" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="The project file could not be loaded. The 'PropertyGroup' start tag on line 3 position 4 does not match the end tag of 'Project'. Line 17, position 3.  D:\Documents and Settings\jedi\Local Settings\Application Data\Microsoft\MSBuild\v4.0\Microsoft.Cpp.x64.user.props">
+</Event><Event ErrorLevel="2" Project="D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\mpglib\mpglib_vc10.vcproj" Source="" Description="The following error has occurred during XML parsing:&#xA;&#xA;File: D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\mpglib\mpglib_vc10.vcproj&#xA;Line: 93&#xA;Column: 5&#xA;Error Message:&#xA;Системная ошибка: -2146233088.&#xA;&#xA;The file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\Voip\lame-3.98.4\mpglib\mpglib_vc10.vcproj' has failed to load.">
+</Event><Event ErrorLevel="2" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="mpglib_vc10" Source="mpglib_vc10.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="2" Project="" Source="mpglib_vc10.vcproj" Description="Project upgrade failed.">
+</Event></UpgradeLog>

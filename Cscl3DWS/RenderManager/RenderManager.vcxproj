@@ -1,0 +1,1007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug N3DRelease|Win32">
+      <Configuration>Debug N3DRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Natura3D_Release|Win32">
+      <Configuration>Natura3D_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BA5FE88-20C2-4A68-9E8E-160E27D2AF80}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../nengine/plugins/oculus_rift_support/;..\oms\;..\SyncMan;..\resloader;..\res\;..\sm\;classes\;classes\mapmanagers\;..\;..\mme;..\rm;..\rmml;..\js;..\..\resloader;classes\natura3d;..\..\common\;..\..\comman\;classes\mapmanagers\Protocol\;classes\mapmanagers\Handlers\;..\..\nengine\interfaces\;..\..\nengine\nengine\;..\..\nengine\nmath\;..\..\nengine\nphysics\;..\..\nengine\ninfo\;..\..\nengine\ncommon\;..\..\nengine\nanimation\;..\..\nengine\nmodelloader\;..\..\nengine\include\;..\..\nengine\include\ode\;..\..\cal3d\;..\..\;..\serviceman\;include\;..\..\nengine\plugins\video\;..\..\voip\voipmanclient\include;..\..\nengine\plugins\browser\;Protocol;..\..\nengine\nrendertarget\;..\..\nengine\plugins\flash\;..\..\nengine\ntexture\;..\..\LogWriter\;..\..\mdump\;..\..\omsplayer;..\..\rtl;..\..\nmemoryprofiler\;..\..\nengine\navatar\;..\InfoMan;..\..\PlayerLib\;..\..\Launcher;../../nengine/plugins/kinect_plugin/kinect_plugin/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL;USE_3D_ANIMATION;USE_PHYSICS;USE_GEOMETRY_OPTIMIZATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mdump.lib;resloader.lib;odbc32.lib;odbccp32.lib;rmml.lib;winmm.lib;d3dx.lib;cal3d.lib;Dxerr8.lib;ws2_32.lib;syncMan.lib;nengine.lib;nanimation.lib;ncommon.lib;nphysics.lib;nmath.lib;nmodelloader.lib;ninfo.lib;opengl32.lib;glu32.lib;glew32s.lib;tinyxml.lib;freetype235MT.lib;ftgl_dynamic_MTD_D.lib;devil.lib;ilu.lib;ilut.lib;ode_single.lib;serviceman.lib;nvapi.lib;Vfw32.lib;video.lib;zlib32.lib;nrendertarget.lib;freeimage.lib;dxguid.lib;ntexture.lib;logwriter.lib;rtl.lib;navatar.lib;Psapi.lib;CrashHandler.lib;Strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../PlayerLib/$(Configuration)/;../../lib/$(Configuration)/;../../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/RenderManager.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\oms\;..\SyncMan;..\resloader;..\res\;..\sm\;classes\;classes\mapmanagers\;..\;..\mme;..\rm;..\rmml;..\js;..\..\resloader;classes\natura3d;..\..\common\;..\..\comman\;classes\mapmanagers\Protocol\;classes\mapmanagers\Handlers\;..\..\nengine\interfaces\;..\..\nengine\nengine\;..\..\nengine\nmath\;..\..\nengine\nphysics\;..\..\nengine\ninfo\;..\..\nengine\ncommon\;..\..\nengine\nanimation\;..\..\nengine\nmodelloader\;..\..\nengine\include\;..\..\nengine\include\ode\;..\..\cal3d\;..\..\;..\serviceman\;include\;..\..\nengine\plugins\video\;..\..\voip\voipman\include\;..\..\nengine\plugins\browser\;Protocol;..\..\nengine\nrendertarget\;..\..\nengine\plugins\flash\;..\..\nengine\ntexture\;..\..\LogWriter\;..\..\mdump\;..\..\omsplayer;..\..\rtl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mdump.lib;resloader.lib;odbc32.lib;odbccp32.lib;rmml.lib;winmm.lib;d3dx.lib;cal3d.lib;Dxerr8.lib;ws2_32.lib;syncMan.lib;nengine.lib;nanimation.lib;ncommon.lib;nphysics.lib;nmath.lib;nmodelloader.lib;ninfo.lib;opengl32.lib;glu32.lib;glew32s.lib;tinyxml.lib;freetype235MT.lib;ftgl_dynamic_MTD_D.lib;devil.lib;ilu.lib;ilut.lib;ode_single.lib;serviceman.lib;nvapi.lib;Vfw32.lib;video.lib;zlib32.lib;browser.lib;nrendertarget.lib;flash.lib;freeimage.lib;dxguid.lib;ntexture.lib;logwriter.lib;rtl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../PlayerLib/$(Configuration)/;../../lib/$(Configuration)/;../../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\N3DRelease/RenderManager.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../../nengine/plugins/oculus_rift_support/;..\oms\;..\SyncMan;..\resloader;..\res\;..\sm\;classes\;classes\mapmanagers\;..\;..\mme;..\rm;..\rmml;..\js;..\..\resloader;classes\natura3d;..\..\common\;..\..\comman\;classes\mapmanagers\Protocol\;classes\mapmanagers\Handlers\;..\..\nengine\interfaces\;..\..\nengine\nengine\;..\..\nengine\nmath\;..\..\nengine\nphysics\;..\..\nengine\ninfo\;..\..\nengine\ncommon\;..\..\nengine\nanimation\;..\..\nengine\nmodelloader\;..\..\nengine\include\;..\..\nengine\include\ode\;..\..\cal3d\;..\..\;..\serviceman\;include\;..\..\nengine\plugins\video\;..\..\voip\voipmanclient\include;..\..\nengine\plugins\browser\;Protocol;..\..\nengine\nrendertarget\;..\..\nengine\plugins\flash\;..\..\nengine\ntexture\;..\..\LogWriter\;..\..\mdump\;..\..\omsplayer;..\..\rtl;..\..\nmemoryprofiler\;..\..\nengine\navatar\;..\InfoMan;..\..\PlayerLib\;..\..\Launcher;../../nengine/plugins/kinect_plugin/kinect_plugin/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL;USE_3D_ANIMATION;USE_PHYSICS;USE_GEOMETRY_OPTIMIZATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mdump.lib;rtl.lib;resloader.lib;odbc32.lib;odbccp32.lib;cal3d.lib;syncMan.lib;rmml.lib;winmm.lib;nengine.lib;nanimation.lib;ncommon.lib;nphysics.lib;nmath.lib;nmodelloader.lib;ninfo.lib;opengl32.lib;glu32.lib;glew32s.lib;tinyxml.lib;freetype235MT.lib;ftgl_dynamic_MTD.lib;devil.lib;ilu.lib;ilut.lib;ode_single.lib;serviceman.lib;nvapi.lib;Vfw32.lib;video.lib;zlib32.lib;nrendertarget.lib;freeimage.lib;dxguid.lib;ntexture.lib;logwriter.lib;ws2_32.lib;navatar.lib;Psapi.lib;kernel32.lib;CrashHandler.lib;Strmiids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../PlayerLib/$(Configuration)/;../../lib/$(Configuration)/;../../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/RenderManager.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\oms\;..\SyncMan;..\resloader;..\res\;..\sm\;classes\;classes\mapmanagers\;..\;..\mme;..\rm;..\rmml;..\js;..\..\resloader;classes\natura3d;..\..\common\;..\..\comman\;classes\mapmanagers\Protocol\;classes\mapmanagers\Handlers\;..\..\nengine\interfaces\;..\..\nengine\nengine\;..\..\nengine\nmath\;..\..\nengine\nphysics\;..\..\nengine\ninfo\;..\..\nengine\ncommon\;..\..\nengine\nanimation\;..\..\nengine\nmodelloader\;..\..\nengine\include\;..\..\nengine\include\ode\;..\..\cal3d\;..\..\;..\serviceman\;include\;..\..\nengine\plugins\video\;..\..\voip\voipman\include\;..\..\nengine\plugins\browser\;Protocol;..\..\nengine\nrendertarget\;..\..\nengine\plugins\flash\;..\..\nengine\ntexture\;..\..\LogWriter\;..\..\mdump\;..\..\omsplayer;..\..\rtl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>mdump.lib;resloader.lib;odbc32.lib;odbccp32.lib;rmml.lib;winmm.lib;d3dx.lib;cal3d.lib;Dxerr8.lib;ws2_32.lib;syncMan.lib;nengine.lib;nanimation.lib;ncommon.lib;nphysics.lib;nmath.lib;nmodelloader.lib;ninfo.lib;opengl32.lib;glu32.lib;glew32s.lib;tinyxml.lib;freetype235MT.lib;ftgl_dynamic_MTD_D.lib;devil.lib;ilu.lib;ilut.lib;ode_single.lib;serviceman.lib;nvapi.lib;Vfw32.lib;video.lib;zlib32.lib;browser.lib;nrendertarget.lib;flash.lib;freeimage.lib;dxguid.lib;ntexture.lib;logwriter.lib;rtl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../PlayerLib/$(Configuration)/;../../lib/$(Configuration)/;../../nengine/libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\N3DRelease/RenderManager.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\3DSoundFactor.cpp" />
+    <ClCompile Include="..\..\comman\AsyncConnect.cpp" />
+    <ClCompile Include="..\..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="Classes\AudioEventsManager.cpp" />
+    <ClCompile Include="Classes\cave.cpp" />
+    <ClCompile Include="Classes\CodeEditor.cpp" />
+    <ClCompile Include="Classes\Kinect.cpp" />
+    <ClCompile Include="Classes\MapManagers\BaseAsynchLoader.cpp" />
+    <ClCompile Include="Classes\CameraController.cpp" />
+    <ClCompile Include="Classes\CameraInLocation.cpp" />
+    <ClCompile Include="Classes\CameraTarget.cpp" />
+    <ClCompile Include="Classes\CameraTrackController.cpp" />
+    <ClCompile Include="Classes\MapManagers\ClassScriptsLoader.cpp" />
+    <ClCompile Include="Classes\OculusRift.cpp" />
+    <ClCompile Include="Classes\ParticlesDynamic\SingleSmoke.cpp" />
+    <ClCompile Include="Classes\ParticlesDynamic\SmokeOfFire.cpp" />
+    <ClCompile Include="ClothEditorSupporter.cpp" />
+    <ClCompile Include="..\..\Common\Common.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\CreateAvatarHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\CreateObjectsHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\CreateObjectZone.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\CreatePortalsHandler.cpp" />
+    <ClCompile Include="Classes\crossingLine.cpp" />
+    <ClCompile Include="..\..\Common\DataBuffer.cpp" />
+    <ClCompile Include="..\..\common\DataBuffer2.cpp" />
+    <ClCompile Include="Classes\DirectShowFunctions.cpp" />
+    <ClCompile Include="Classes\EngineWarnings.cpp" />
+    <ClCompile Include="Classes\MapManagers\GetObjectsEndTask.cpp" />
+    <ClCompile Include="Classes\GraphicQualityController.cpp" />
+    <ClCompile Include="GraphicsDebugSupporter.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\HandlerBase.cpp" />
+    <ClCompile Include="Classes\KnownProxyServersList.cpp" />
+    <ClCompile Include="Classes\lastscreen.cpp" />
+    <ClCompile Include="Classes\LinkCollector.cpp" />
+    <ClCompile Include="Classes\LinkSubmitter.cpp" />
+    <ClCompile Include="Classes\LoadingEventsController.cpp" />
+    <ClCompile Include="Classes\LoadingQueueInfo.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapManager.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapManagerPriority.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapManagerServer.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapManagerStructures.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapManagerZone.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapObjectStructures.cpp" />
+    <ClCompile Include="Classes\MapManagers\MapServerDataBlock.cpp" />
+    <ClCompile Include="..\..\Common\MD5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Classes\MinimumSystemRequirements.cpp" />
+    <ClCompile Include="Classes\MouseController.cpp" />
+    <ClCompile Include="..\..\common\Mutex.cpp" />
+    <ClCompile Include="Classes\Natura3D\n3d3DObject.cpp" />
+    <ClCompile Include="Classes\Natura3D\n3dGroup.cpp" />
+    <ClCompile Include="Classes\nrm3DGroup.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrm3DMoveCtrl.cpp" />
+    <ClCompile Include="Classes\nrm3DObject.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrm3DScene.cpp" />
+    <ClCompile Include="Classes\nrm3DSoundManager.cpp" />
+    <ClCompile Include="Classes\nrmActiveX.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\NRManager.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmAnim.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmAudio.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmBrowser.cpp" />
+    <ClCompile Include="Classes\nrmCamera.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmCharacter.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmCloud.cpp" />
+    <ClCompile Include="nrmDrawManager.cpp" />
+    <ClCompile Include="Classes\nrmEdit.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmExtraObjects.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmFlash.cpp" />
+    <ClCompile Include="Classes\nrmImage.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmImageFrame.cpp" />
+    <ClCompile Include="Classes\nrmLight.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmLine.cpp" />
+    <ClCompile Include="Classes\nrmMaterial.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmMath3D.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmMOIVisibleStub.cpp" />
+    <ClCompile Include="Classes\nrmMotion.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmObject.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmPath3D.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmPlugin.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmPreview.cpp" />
+    <ClCompile Include="Classes\nrmQuery.cpp" />
+    <ClCompile Include="Classes\nrmText.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmVideo.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmViewport.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\nrmVisemes.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\MapManagers\Handlers\ObjectsByNameHandler.cpp" />
+    <ClCompile Include="Classes\nrmParticles.cpp" />
+    <ClCompile Include="ObjectsCreator.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\ObjectsHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\PrimObjectsLoader.cpp" />
+    <ClCompile Include="..\..\ComMan\ProxyFinder.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\RealityHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\RealityInfo.cpp" />
+    <ClCompile Include="Classes\Recognize.cpp" />
+    <ClCompile Include="RenderManager.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\ResourceUrlParser.cpp" />
+    <ClCompile Include="Classes\RMComp.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\RMContext.cpp" />
+    <ClCompile Include="Classes\Natura3D\rmn3dVideo.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="Classes\MapManagers\Protocol\SetSplashSrcQueryIn.cpp" />
+    <ClCompile Include="Classes\SharingBoardManager.cpp" />
+    <ClCompile Include="Classes\SharingMouseController.cpp" />
+    <ClCompile Include="Classes\SnapshotMaker.cpp" />
+    <ClCompile Include="Classes\SplinePoints.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug N3DRelease|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Disabled</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">WIN32;_DEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;XP_WIN;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD;CSCL</PreprocessorDefinitions>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;_WINDOWS;_MBCS;_USRDLL;RENDERMANAGER_EXPORTS;RM_BUILD;OMS_SM_BUILD;OMS_RM_BUILD</PreprocessorDefinitions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Classes\TexturesPreloader.cpp" />
+    <ClCompile Include="..\..\Common\UrlBuilder.cpp" />
+    <ClCompile Include="Classes\UserSettings.cpp" />
+    <ClCompile Include="Classes\VideoCaptureSupport.cpp" />
+    <ClCompile Include="Classes\WalkController.cpp" />
+    <ClCompile Include="Classes\WhiteBoardManager.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\DeleteObjectHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\ObjectStatusHandler.cpp" />
+    <ClCompile Include="Classes\MapManagers\Handlers\ZonesHandler.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacketOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetZonesStaticObjectsQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\PreviewChatMessageOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\PreviewEventOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\PreviewRecordStopQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\PreviewSetAudioTimeQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\PreviewStatisticOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\SetPreviewDefaultImageOut.cpp" />
+    <ClCompile Include="Classes\WorldEditor\activeobjects.cpp" />
+    <ClCompile Include="Classes\WorldEditor\CommandQueue.cpp" />
+    <ClCompile Include="Classes\WorldEditor\DataStorage.cpp" />
+    <ClCompile Include="Classes\WorldEditor\GroupController.cpp" />
+    <ClCompile Include="Classes\WorldEditor\helpfunctions.cpp" />
+    <ClCompile Include="Classes\WorldEditor\PipeClient.cpp" />
+    <ClCompile Include="Classes\WorldEditor\WorldEditor.cpp" />
+    <ClCompile Include="Classes\WorldEditor\WorldEditorCommands.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\AvatarDescQueryIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\AvatarDescQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\CommonGetObjectsDescQueryIn.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacketIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\CommonPacketInForMapManager.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\DeleteObjectIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\DeleteObjectsByIDQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\DeleteObjectsByNameQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\DeleteRecordsOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetObjectsDescQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetObjectStatusIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetObjectStatusOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetQueryPackageIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetZonesDescQueryIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetZonesDescQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetZonesObjectsDescQueryIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\GetZonesObjectsDescQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\LocationDeleteQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\LocationQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\NatureSettingsIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\ObjectsDescIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\ObjectsDescUpdateOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\RealityDescIn.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\RealityDescQueryOut.cpp" />
+    <ClCompile Include="Classes\MapManagers\Protocol\NatureSettingsQueryOut.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\DataBuffer.h" />
+    <ClInclude Include="..\..\ComMan\ProxyFinder.h" />
+    <ClInclude Include="..\..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="Classes\cave.h" />
+    <ClInclude Include="Classes\CodeEditor.h" />
+    <ClInclude Include="Classes\Kinect.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\DeleteObjectIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\DelCommunicationLocationOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetZonesStaticObjectsQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\DeleteRecordsOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\NatureSettingsQueryOut.h" />
+    <ClInclude Include="..\..\common\3DSoundFactor.h" />
+    <ClInclude Include="..\..\Common\ATLCPImplMT.h" />
+    <ClInclude Include="Classes\AudioEventsManager.h" />
+    <ClInclude Include="Classes\MapManagers\BaseAsynchLoader.h" />
+    <ClInclude Include="Classes\CameraController.h" />
+    <ClInclude Include="Classes\CameraInLocation.h" />
+    <ClInclude Include="Classes\CameraTarget.h" />
+    <ClInclude Include="Classes\CameraTrackController.h" />
+    <ClInclude Include="Classes\MapManagers\ClassScriptsLoader.h" />
+    <ClInclude Include="Classes\OculusRift.h" />
+    <ClInclude Include="Classes\ParticlesDynamic\SingleSmoke.h" />
+    <ClInclude Include="Classes\ParticlesDynamic\SmokeOfFire.h" />
+    <ClInclude Include="ClothEditorSupporter.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\CreateAvatarHandler.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\CreateObjectsHandler.h" />
+    <ClInclude Include="Classes\MapManagers\CreateObjectZone.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\CreatePortalsHandler.h" />
+    <ClInclude Include="Classes\crossingLine.h" />
+    <ClInclude Include="Classes\DirectShowFunctions.h" />
+    <ClInclude Include="Classes\EngineWarnings.h" />
+    <ClInclude Include="Classes\MapManagers\GetObjectsEndTask.h" />
+    <ClInclude Include="GlobalDefines.h" />
+    <ClInclude Include="Include\GraphicQualityController.h" />
+    <ClInclude Include="GraphicsDebugSupporter.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\HandlerBase.h" />
+    <ClInclude Include="Classes\IMouseController.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\IObjectReceivedHandler.h" />
+    <ClInclude Include="Classes\KnownProxyServersList.h" />
+    <ClInclude Include="Classes\lastscreen.h" />
+    <ClInclude Include="Classes\LinkCollector.h" />
+    <ClInclude Include="Classes\LinkSubmitter.h" />
+    <ClInclude Include="Classes\LoadingEventsController.h" />
+    <ClInclude Include="Classes\LoadingQueueInfo.h" />
+    <ClInclude Include="Classes\MapManagers\MapManager.h" />
+    <ClInclude Include="Classes\MapManagers\MapManagerPriority.h" />
+    <ClInclude Include="Classes\MapManagers\MapManagerServer.h" />
+    <ClInclude Include="Classes\MapManagers\MapManagerStructures.h" />
+    <ClInclude Include="Classes\MapManagers\MapManagerStructures2.h" />
+    <ClInclude Include="Classes\MapManagers\MapManagerZone.h" />
+    <ClInclude Include="Classes\MapManagers\MapObjectStructures.h" />
+    <ClInclude Include="Classes\MapManagers\MapServerDataBlock.h" />
+    <ClInclude Include="Classes\MapManagers\MapServerSession.h" />
+    <ClInclude Include="..\..\Common\MD5.h" />
+    <ClInclude Include="Classes\MinimumSystemRequirements.h" />
+    <ClInclude Include="Classes\MouseController.h" />
+    <ClInclude Include="..\..\common\Mutex.h" />
+    <ClInclude Include="Classes\Natura3D\n3d3DObject.h" />
+    <ClInclude Include="Classes\Natura3D\n3dGroup.h" />
+    <ClInclude Include="Classes\nrm3DGroup.h" />
+    <ClInclude Include="Classes\nrm3DMoveCtrl.h" />
+    <ClInclude Include="Classes\nrm3DObject.h" />
+    <ClInclude Include="Classes\nrm3DScene.h" />
+    <ClInclude Include="Classes\nrm3DSoundManager.h" />
+    <ClInclude Include="Classes\nrmActiveX.h" />
+    <ClInclude Include="Classes\NRManager.h" />
+    <ClInclude Include="Classes\nrmAnim.h" />
+    <ClInclude Include="Classes\nrmAudio.h" />
+    <ClInclude Include="Classes\nrmBrowser.h" />
+    <ClInclude Include="Classes\nrmCamera.h" />
+    <ClInclude Include="Classes\nrmCharacter.h" />
+    <ClInclude Include="Classes\nrmCloud.h" />
+    <ClInclude Include="Classes\ParticlesDynamic\IParticlesDynamic.h" />
+    <ClInclude Include="nrmDrawManager.h" />
+    <ClInclude Include="Classes\nrmEdit.h" />
+    <ClInclude Include="Classes\nrmExtraObjects.h" />
+    <ClInclude Include="Classes\nrmFlash.h" />
+    <ClInclude Include="Classes\nrmImage.h" />
+    <ClInclude Include="Classes\nrmImageFrame.h" />
+    <ClInclude Include="Classes\nrmLight.h" />
+    <ClInclude Include="Classes\nrmLine.h" />
+    <ClInclude Include="Classes\nrmMaterial.h" />
+    <ClInclude Include="Classes\nrmMath3D.h" />
+    <ClInclude Include="Classes\nrmMOIVisibleStub.h" />
+    <ClInclude Include="Classes\nrmMotion.h" />
+    <ClInclude Include="Classes\nrmObject.h" />
+    <ClInclude Include="Classes\nrmPath3D.h" />
+    <ClInclude Include="Classes\nrmPlugin.h" />
+    <ClInclude Include="Classes\nrmPreview.h" />
+    <ClInclude Include="Classes\nrmQuery.h" />
+    <ClInclude Include="Classes\nrmText.h" />
+    <ClInclude Include="Classes\nrmVideo.h" />
+    <ClInclude Include="Classes\nrmViewport.h" />
+    <ClInclude Include="Classes\nrmVisemes.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\ObjectsByNameHandler.h" />
+    <ClInclude Include="Classes\nrmParticles.h" />
+    <ClInclude Include="ObjectsCreator.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\ObjectsHandler.h" />
+    <ClInclude Include="Classes\MapManagers\PrimObjectsLoader.h" />
+    <ClInclude Include="Classes\MapManagers\RealityInfo.h" />
+    <ClInclude Include="Classes\Recognize.h" />
+    <ClInclude Include="..\ResLoader\ResLoader.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="Classes\resource.h" />
+    <ClInclude Include="Classes\ResourceUrlParser.h" />
+    <ClInclude Include="Classes\RMComp.h" />
+    <ClInclude Include="Classes\RMContext.h" />
+    <ClInclude Include="Classes\Natura3D\rmn3dVideo.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\SetSplashSrcQueryIn.h" />
+    <ClInclude Include="Classes\SharingBoardManager.h" />
+    <ClInclude Include="Classes\SharingMouseController.h" />
+    <ClInclude Include="Classes\SnapshotMaker.h" />
+    <ClInclude Include="Classes\SplinePoints.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Classes\TexturesPreloader.h" />
+    <ClInclude Include="Classes\transls.h" />
+    <ClInclude Include="..\..\Common\UrlBuilder.h" />
+    <ClInclude Include="Classes\UserSettings.h" />
+    <ClInclude Include="Classes\VideoCaptureSupport.h" />
+    <ClInclude Include="Classes\WhiteBoardManager.h" />
+    <ClInclude Include="Classes\MapManagers\ZoneId.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\AvatarDescQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\CommonGetObjectsDescQueryIn.h" />
+    <ClInclude Include="..\..\Common\CommonPacketIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\CommonPacketInForMapManager.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\DeleteObjectsByIDQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\DeleteObjectsByNameQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetObjectsDescQueryIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetObjectsDescQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetObjectStatusIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetObjectStatusOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetQueryPackageIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetZonesDescQueryIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetZonesDescQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetZonesObjectsDescQueryIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\GetZonesObjectsDescQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\NatureSettingsIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\ObjectsDescIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\ObjectsDescUpdateOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\RealityDescIn.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\RealityDescQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\DeleteObjectHandler.h" />
+    <ClInclude Include="Classes\MapManagers\Handlers\ObjectStatusHandler.h" />
+    <ClInclude Include="..\..\Common\CommonPacketOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\PreviewChatMessageOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\PreviewEventOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\PreviewSetAudioTimeQueryOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\PreviewStatisticOut.h" />
+    <ClInclude Include="Classes\MapManagers\Protocol\SetPreviewDefaultImageOut.h" />
+    <ClInclude Include="Classes\WorldEditor\activeobjects.h" />
+    <ClInclude Include="Classes\WorldEditor\CommandQueue.h" />
+    <ClInclude Include="Classes\WorldEditor\Commands.h" />
+    <ClInclude Include="Classes\WorldEditor\DataStorage.h" />
+    <ClInclude Include="Classes\WorldEditor\GroupController.h" />
+    <ClInclude Include="Classes\WorldEditor\helpfunctions.h" />
+    <ClInclude Include="Classes\WorldEditor\IWorldEditor.h" />
+    <ClInclude Include="Classes\WorldEditor\PipeClient.h" />
+    <ClInclude Include="Classes\WorldEditor\WorldEditor.h" />
+    <ClInclude Include="Classes\WalkController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Classes\cursor1.cur" />
+    <None Include="nrmMaterial" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

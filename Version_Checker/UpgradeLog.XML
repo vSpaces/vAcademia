@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Version Checker">
+</Property><Property Name="Solution File" Value="D:\Users\Hep\programming\vAcademia\trunk\vuEngine\version\Version Checker.sln">
+</Property><Property Name="Date" Value="18 февраля 2014 г.">
+</Property><Property Name="Time" Value="10:37">
+</Property></Properties><Event ErrorLevel="0" Project="Version Checker" Source="Version Checker.vcproj" Description="Converting project file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\version\Version Checker.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Version Checker" Source="Version Checker.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="Version Checker" Source="Version Checker.vcproj" Description="Done converting to new project file 'D:\Users\Hep\programming\vAcademia\trunk\vuEngine\version\Version Checker.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Version Checker" Source="Version Checker.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Version Checker.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Version Checker.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curllib", "curllib.vcproj", "{E4ACC6BC-F8EC-4D8B-BBB6-4CE8335551C9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E4ACC6BC-F8EC-4D8B-BBB6-4CE8335551C9}.Debug.ActiveCfg = Debug|Win32
+		{E4ACC6BC-F8EC-4D8B-BBB6-4CE8335551C9}.Debug.Build.0 = Debug|Win32
+		{E4ACC6BC-F8EC-4D8B-BBB6-4CE8335551C9}.Release.ActiveCfg = Release|Win32
+		{E4ACC6BC-F8EC-4D8B-BBB6-4CE8335551C9}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

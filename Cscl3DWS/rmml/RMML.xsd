@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by tandy (EMBRACE) -->
+<!-- edited with XML Spy v4.1 U (http://www.xmlspy.com) by Dmitry Bystrov (mmlab) -->
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by alex (mmlab) -->
+<!-- Rich Multimedia Markup Language (RMML) Schema. Version 0.4 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="rmml">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="rmmlComponents"/>
+				<xs:element ref="scene"/>
+				<xs:group ref="rmml3DComponents"/>
+				<xs:element ref="camera"/>
+				<xs:element ref="light"/>
+			</xs:choice>
+			<xs:attribute name="version" type="xs:float" default="1.0"/>
+			<xs:attribute name="ui" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scene">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="compositionType">
+					<xs:attribute name="_final" type="xs:boolean" default="true"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="rmmlElement">
+		<xs:attribute name="_name" type="ID" use="optional"/>
+		<xs:attribute name="name" type="ID" use="optional"/>
+		<xs:attribute name="_class" type="ID" use="optional"/>
+		<xs:attribute name="class" type="ID" use="optional"/>
+		<xs:attribute name="synch" type="synchAttr" use="optional"/>
+		<xs:attribute name="_frozen" type="xs:boolean" use="optional" default="false"/>
+		<xs:attribute name="frozen" type="xs:boolean" use="optional" default="false"/>
+		<xs:attribute name="userEvents" type="eventList" use="optional"/>
+		<xs:attribute name="userProperties" type="propertyList" use="optional"/>
+		<xs:attribute name="final" type="xs:boolean" use="optional" default="true"/>
+		<xs:attribute name="scriptProviders" type="xs:string" use="optional"/>
+		<!-- xs:attribute name="_parent" type="elementRefType" use="prohibited"/ -->
+		<!-- xs:attribute name="synchProperties" type="propertyList" use="optional"/ -->
+	</xs:attributeGroup>
+	<xs:attributeGroup name="rmmlVisible">
+		<xs:attribute name="_x" type="shortExprType"/>
+		<xs:attribute name="x" type="shortExprType"/>
+		<xs:attribute name="_y" type="shortExprType"/>
+		<xs:attribute name="y" type="shortExprType"/>
+		<xs:attribute name="_width" type="ushortExprType"/>
+		<xs:attribute name="width" type="ushortExprType"/>
+		<xs:attribute name="_height" type="ushortExprType"/>
+		<xs:attribute name="height" type="ushortExprType"/>
+		<xs:attribute name="_depth" type="shortExprType"/>
+		<xs:attribute name="depth" type="shortExprType"/>
+		<xs:attribute name="_visible" type="xs:boolean"/>
+		<xs:attribute name="visible" type="xs:boolean"/>
+		<xs:attribute name="opacity" type="xs:float"/>
+		<xs:attribute name="onMouseDown" type="scriptType"/>
+		<xs:attribute name="onRMouseDown" type="scriptType"/>
+		<xs:attribute name="onMouseMove" type="scriptType"/>
+		<xs:attribute name="onMouseUp" type="scriptType"/>
+		<xs:attribute name="onRMouseUp" type="scriptType"/>
+		<xs:attribute name="onMouseWheel" type="scriptType"/>
+	</xs:attributeGroup>
+	<xs:group name="rmmlVisible">
+		<xs:sequence/>
+	</xs:group>
+	<xs:attributeGroup name="rmmlLoadable">
+		<xs:attribute name="src" type="xs:string"/>
+		<xs:attribute name="onLoad" type="scriptType"/>
+		<xs:attribute name="onUnload" type="scriptType"/>
+	</xs:attributeGroup>
+	<xs:group name="rmmlLoadable">
+		<xs:sequence>
+			<xs:element name="load">
+				<xs:complexType>
+					<xs:attribute name="src" type="xs:anyURI"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:attributeGroup name="rmmlContinuous">
+		<xs:attribute name="_playing" type="xs:boolean"/>
+		<xs:attribute name="playing" type="xs:boolean"/>
+		<xs:attribute name="_loop" type="xs:boolean"/>
+		<xs:attribute name="loop" type="xs:boolean"/>
+		<xs:attribute name="looped" type="xs:boolean"/>
+		<xs:attribute name="onEnterFrame" type="scriptType"/>
+		<xs:attribute name="onPlayed" type="scriptType"/>
+		<!-- xs:attribute name="currentFrame" type="xs:int"/>
+		<xs:attribute name="_length" type="xs:int"/>
+		<xs:attribute name="length" type="xs:int"/>
+		<xs:attribute name="totalFrame" type="xs:int"/>
+		<xs:attribute name="currentPos" type="xs:long"/> 
+		<xs:attribute name="_duration" type="xs:long"/>
+		<xs:attribute name="duration" type="xs:long"/> 
+		<xs:attribute name="fps" type="xs:short" use="prohibited"/> -->
+		<xs:attribute name="currentFrame" type="xs:unsignedInt"/>
+		<xs:attribute name="currentPos" type="xs:unsignedInt"/>
+	</xs:attributeGroup>
+	<xs:group name="rmmlContinuous">
+		<xs:sequence>
+			<xs:element name="play">
+				<xs:complexType/>
+			</xs:element>
+			<xs:element name="stop"/>
+			<xs:element name="gotoAndPlay">
+				<xs:complexType>
+					<xs:attribute name="frame" type="xs:unsignedShort"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="gotoAndStop">
+				<xs:complexType>
+					<xs:attribute name="frame" type="xs:unsignedShort"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:attributeGroup name="rmmlButton">
+		<xs:attribute name="enabled" type="xs:boolean"/>
+		<xs:attribute name="useHandCursor" type="xs:boolean" default="true"/>
+		<xs:attribute name="hitArea" type="hitAreaType"/>
+		<xs:attribute name="onPress" type="scriptType"/>
+		<xs:attribute name="onRelease" type="scriptType"/>
+		<xs:attribute name="onReleaseOutside" type="scriptType"/>
+		<xs:attribute name="onRollOver" type="scriptType"/>
+		<xs:attribute name="onRollOut" type="scriptType"/>
+		<xs:attribute name="onKeyDown" type="scriptType"/>
+		<xs:attribute name="onKeyUp" type="scriptType"/>
+		<xs:attribute name="onSetFocus" type="scriptType"/>
+		<xs:attribute name="onKillFocus" type="scriptType"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="rmml3DObject">
+		<xs:attribute name="_pos" type="ml3DPosition"/>
+		<xs:attribute name="position" type="ml3DPosition"/>
+		<xs:attribute name="_scale" type="ml3DScale"/>
+		<xs:attribute name="scale" type="ml3DScale"/>
+		<xs:attribute name="_rotation" type="ml3DRotation"/>
+		<xs:attribute name="rotation" type="ml3DRotation"/>
+		<xs:attribute name="_visible" type="xs:boolean"/>
+		<xs:attribute name="visible" type="xs:boolean"/>
+		<xs:attribute name="path" type="xs:string"/>
+		<xs:attribute name="pathPercent" type="xs:float"/>
+		<xs:attribute name="checkCollisions" type="xs:boolean"/>
+		<xs:attribute name="onMouseDown" type="scriptType"/>
+		<xs:attribute name="onMouseMove" type="scriptType"/>
+		<xs:attribute name="onMouseUp" type="scriptType"/>
+		<xs:attribute name="onMotionSet" type="scriptType"/>
+		<xs:attribute name="onMotionDone" type="scriptType"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="rmmlStyle">
+		<xs:attributeGroup ref="styleFont"/>
+		<xs:attribute name="textAlign" type="xs:string"/>
+		<xs:attribute name="textIndent" type="xs:string"/>
+		<xs:attribute name="textDecoration" type="xs:string"/>
+		<xs:attribute name="color" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="styleFont">
+		<xs:attribute name="font" type="xs:string"/>
+		<xs:attribute name="fontStyle" type="xs:string"/>
+		<xs:attribute name="fontWeight" type="xs:string"/>
+		<xs:attribute name="fontSize" type="xs:string"/>
+		<xs:attribute name="lineHeight" type="xs:string"/>
+		<xs:attribute name="fontFamily" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="htmlTag">
+		<xs:attribute name="class" type="xs:string"/>
+		<xs:attribute name="style" type="xs:string"/>
+		<xs:attribute name="id" type="xs:string"/>
+		<xs:attribute name="unselectable" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:complexType name="htmlText" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="a">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attribute name="href" type="xs:string"/>
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="span">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="div">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="font">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attribute name="face" type="xs:string"/>
+							<xs:attribute name="size" type="xs:unsignedInt"/>
+							<xs:attribute name="color" type="xs:string"/>
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="sub">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="sup">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="p">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="b">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="i">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="htmlText">
+							<xs:attributeGroup ref="htmlTag"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="br">
+				<xs:complexType>
+					<xs:sequence minOccurs="0" maxOccurs="0"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="head">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="title"/>
+				<xs:element name="preview">
+					<xs:complexType>
+						<xs:attribute name="src" type="xs:anyURI"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="compositionType">
+		<xs:sequence>
+			<xs:element ref="head" minOccurs="0"/>
+			<xs:group ref="rmmlComponents" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="_bounds" type="rectType"/>
+		<xs:attributeGroup ref="rmmlElement"/>
+		<xs:attributeGroup ref="rmmlVisible"/>
+		<xs:attributeGroup ref="rmmlButton"/>
+	</xs:complexType>
+	<xs:complexType name="scriptableType">
+		<xs:annotation>
+			<xs:documentation>has only script element</xs:documentation>
+		</xs:annotation>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="script"/>
+			<xs:element ref="plugin"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="include">
+		<xs:annotation>
+			<xs:documentation>including another rmml-script</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="src" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="define">
+		<xs:annotation>
+			<xs:documentation>define constant values for elements property value evaluations</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="optional"/>
+			<xs:attribute name="value" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="image">
+		<xs:annotation>
+			<xs:documentation>image media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="text">
+		<xs:annotation>
+			<xs:documentation>text  media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:complexContent mixed="true">
+				<xs:extension base="htmlText">
+					<xs:choice minOccurs="0" maxOccurs="unbounded">
+						<xs:element ref="script"/>
+					</xs:choice>
+					<xs:attribute name="value" type="xs:string"/>
+					<xs:attribute name="html" type="xs:boolean"/>
+					<xs:attribute name="style" type="elementRefType"/>
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<!--	<xs:element name="html">
+		<xs:annotation>
+			<xs:documentation>IE-html object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:all minOccurs="0" maxOccurs="0">
+						<xs:element name="methods">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="methodsType">
+										<xs:sequence/>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element> -->
+	<xs:complexType name="ActiveXType">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="param" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="_name" type="xs:string"/>
+					<xs:attribute name="value" type="xs:string"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element ref="script" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attributeGroup ref="rmmlElement"/>
+		<xs:attributeGroup ref="rmmlLoadable"/>
+		<xs:attributeGroup ref="rmmlVisible"/>
+	</xs:complexType>
+	<xs:element name="activex">
+		<xs:annotation>
+			<xs:documentation>ActiveX control</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActiveXType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="flash">
+		<xs:annotation>
+			<xs:documentation>Flash ActiveX control</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActiveXType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="browser">
+		<xs:annotation>
+			<xs:documentation>Internet Explorer ActiveX control</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActiveXType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="quicktime">
+		<xs:annotation>
+			<xs:documentation>QuickTime ActiveX control</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActiveXType"/>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="plugin">
+		<xs:annotation>
+			<xs:documentation>Plug-in</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="styles">
+		<xs:annotation>
+			<xs:documentation>html/text  style  object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="p">
+					<xs:complexType>
+						<xs:attributeGroup ref="rmmlStyle"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="b">
+					<xs:complexType>
+						<xs:attributeGroup ref="rmmlStyle"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="i">
+					<xs:complexType>
+						<xs:attributeGroup ref="rmmlStyle"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="custom">
+					<xs:complexType>
+						<xs:attribute name="name" type="xs:string"/>
+						<xs:attributeGroup ref="rmmlStyle"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+			<xs:attribute name="value" type="xs:string"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+			<xs:attributeGroup ref="rmmlStyle"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="input">
+		<xs:annotation>
+			<xs:documentation>input  object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="script"/>
+			</xs:choice>
+			<xs:attribute name="value" type="xs:string"/>
+			<xs:attribute name="style" type="elementRefType"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlVisible"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="animation">
+		<xs:annotation>
+			<xs:documentation>anim  media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlContinuous"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video">
+		<xs:annotation>
+			<xs:documentation>video  media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attribute name="windowed" type="xs:boolean"/>
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlContinuous"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="audio">
+		<xs:annotation>
+			<xs:documentation>audio  media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attribute name="loadOnPlay" type="xs:boolean" default="false"/>
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlContinuous"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sequencer">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlContinuous"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="button">
+		<xs:annotation>
+			<xs:documentation>button  media object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlVisible"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmmlButton"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="idles">
+		<xs:annotation>
+			<xs:documentation>character idle motion set</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="idle"/>
+			</xs:choice>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="idle">
+		<xs:annotation>
+			<xs:documentation>character idle motion</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="motion" type="elementRefType"/>
+			<xs:attribute name="between" type="xs:int"/>
+			<xs:attribute name="freq" type="xs:double"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="shadows">
+		<xs:annotation>
+			<xs:documentation>3d object shadows</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="shadow"/>
+			</xs:choice>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="shadow">
+		<xs:annotation>
+			<xs:documentation>shadow</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="type" type="xs:string"/>
+			<xs:attribute name="color" type="xs:string"/>
+			<xs:attribute name="plane" type="xs:string"/>
+			<xs:attribute name="light" type="elementRefType"/>
+			<xs:attribute name="_visible" type="xs:boolean"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="materials">
+		<xs:annotation>
+			<xs:documentation>3d object materials</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="material"/>
+			</xs:choice>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="material">
+		<xs:annotation>
+			<xs:documentation>material</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="map"/>
+			</xs:choice>
+			<xs:attribute name="diffuse" type="mlColor"/>
+			<xs:attribute name="ambient" type="mlColor"/>
+			<xs:attribute name="specular" type="mlColor"/>
+			<xs:attribute name="emissive" type="mlColor"/>
+			<xs:attribute name="power" type="xs:integer"/>
+			<xs:attribute name="opacity" type="xs:integer"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="map">
+		<xs:annotation>
+			<xs:documentation>material map</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="xml">
+		<xs:annotation>
+			<xs:documentation>xml object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:attribute name="XMLDocument" use="prohibited"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="script">
+		<xs:complexType mixed="true">
+			<xs:attribute name="src" type="xs:string"/>
+			<xs:attribute name="watch" type="idPathType"/>
+			<xs:attribute name="event" type="eventType"/>
+			<xs:attribute name="name" type="xs:ID"/>
+			<xs:attribute name="synch" type="synchAttr"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="scriptType">
+		<xs:annotation>
+			<xs:documentation>script body text type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="ID">
+		<xs:annotation>
+			<xs:documentation>element/event/property name</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="[a-zA-Z_][0-9a-zA-Z_]*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="eventList">
+		<xs:annotation>
+			<xs:documentation>event list</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="\s*([a-zA-Z_][0-9a-zA-Z_]*)?([, \t]+[a-zA-Z_][0-9a-zA-Z_]*)*\s*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="propertyList">
+		<xs:annotation>
+			<xs:documentation>event list</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:pattern value="\s*([a-zA-Z_][0-9a-zA-Z_]*=(([^, \t;]+)|('[^']*'))+)?(\s*[, \t;]\s*[a-zA-Z_][0-9a-zA-Z_]*=(([^, \t;]+)|('[^']*'))+)*\s*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="synchAttr">
+		<xs:annotation>
+			<xs:documentation>synch property type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="eventList"/>
+	</xs:simpleType>
+	<xs:simpleType name="elementRefType">
+		<xs:annotation>
+			<xs:documentation>reference to RMML element</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="hitAreaType">
+		<xs:annotation>
+			<xs:documentation>hit area type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<!-- hitArea value notation:
+		rectangular shape - [x, y, w, h]
+		circular shape - (x ,y ,r )
+		ellipse shape - (x ,y ,w ,h )
+		polyshape - {(x,y), (x,y), ...}
+		reference to mask shape - name of the rmml-element
+		concatenation of shapes - shape1, shape2, ...
+	-->
+	<xs:simpleType name="eventType">
+		<xs:annotation>
+			<xs:documentation>script event type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="idPathType">
+		<xs:annotation>
+			<xs:documentation>script event type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="exprType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="shortExprType">
+		<xs:annotation>
+			<xs:documentation>short expression type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="(-?[\d]+)|eval\(.*\)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ushortExprType">
+		<xs:annotation>
+			<xs:documentation>short expression type</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([\d]+)|eval\(.*\)"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="methodType">
+		<xs:annotation>
+			<xs:documentation>predefined methods</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:complexType name="methodsType">
+		<xs:annotation>
+			<xs:documentation>type of 'methods' element</xs:documentation>
+		</xs:annotation>
+	</xs:complexType>
+	<xs:simpleType name="rectType">
+		<xs:annotation>
+			<xs:documentation>rectangle</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="ml3DPosition">
+		<xs:annotation>
+			<xs:documentation>3D position</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="ml3DScale">
+		<xs:annotation>
+			<xs:documentation>3D scale</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="ml3DRotation">
+		<xs:annotation>
+			<xs:documentation>3D scale</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="mlColor">
+		<xs:annotation>
+			<xs:documentation>color</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:group name="rmmlComponents">
+		<xs:annotation>
+			<xs:documentation>all multimedia components</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="include"/>
+			<xs:element ref="define"/>
+			<xs:element ref="image"/>
+			<xs:element ref="animation"/>
+			<xs:element ref="text"/>
+			<xs:element ref="activex"/>
+			<xs:element ref="browser"/>
+			<xs:element ref="flash"/>
+			<xs:element ref="quicktime"/>
+			<xs:element ref="button"/>
+			<xs:element ref="video"/>
+			<xs:element ref="viewport"/>
+			<xs:element ref="scene3d"/>
+			<xs:element ref="audio"/>
+			<xs:element ref="sequencer"/>
+			<xs:element ref="xml"/>
+			<xs:element ref="styles"/>
+			<xs:element ref="plugin"/>
+			<xs:element ref="script"/>
+			<xs:element name="composition">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:restriction base="compositionType">
+							<xs:sequence>
+								<xs:element ref="head" minOccurs="0" maxOccurs="0"/>
+								<xs:group ref="rmmlComponents" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:restriction>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<!-- xs:element ref="html"/ -->
+			<xs:element ref="resource"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="viewport">
+		<xs:annotation>
+			<xs:documentation>3D viewport</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="hint" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="style" type="xs:string"/>
+						<xs:attribute name="delayBefore" type="xs:int"/>
+						<xs:attribute name="showDelay" type="xs:int"/>
+						<xs:attributeGroup ref="rmmlElement"/>
+						<xs:attributeGroup ref="rmmlLoadable"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:choice minOccurs="0">
+					<xs:element name="include" minOccurs="0"/>
+					<xs:element name="exclude" minOccurs="0"/>
+				</xs:choice>
+				<xs:element ref="script" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="_camera" type="elementRefType"/>
+			<xs:attribute name="camera" type="elementRefType"/>
+			<xs:attribute name="show_hints" type="xs:boolean"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlVisible"/>
+			<xs:attributeGroup ref="rmmlButton"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="camera">
+		<xs:annotation>
+			<xs:documentation>3D camera</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attribute name="fov" type="ushortExprType"/>
+					<xs:attribute name="dest" type="ml3DPosition"/>
+					<xs:attribute name="linkTo" type="xs:string"/>
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+					<xs:attributeGroup ref="rmml3DObject"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="light">
+		<xs:annotation>
+			<xs:documentation>3D light</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="scriptableType">
+					<xs:attributeGroup ref="rmmlElement"/>
+					<xs:attributeGroup ref="rmmlLoadable"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="object">
+		<xs:annotation>
+			<xs:documentation>3D object</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="motion"/>
+				<xs:element ref="script"/>
+				<xs:element name="methods" minOccurs="0" maxOccurs="0">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="0">
+							<xs:element name="doMotion">
+								<xs:complexType>
+									<xs:attribute name="motion"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="setMotion">
+								<xs:complexType>
+									<xs:attribute name="motion"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="plugin"/>
+			</xs:choice>
+			<xs:attribute name="shadow" type="elementRefType"/>
+			<xs:attribute name="motion" type="elementRefType"/>
+			<xs:attribute name="in_motion" type="xs:boolean"/>
+			<xs:attribute name="materials" type="elementRefType"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+			<xs:attributeGroup ref="rmml3DObject"/>
+			<xs:attributeGroup ref="rmmlButton"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="motion">
+		<xs:annotation>
+			<xs:documentation>3D object/character motion</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="script"/>
+			</xs:choice>
+			<xs:attribute name="inverse" type="xs:boolean"/>
+			<xs:attribute name="duration" type="xs:int"/>
+			<xs:attribute name="primary" type="xs:boolean"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="character">
+		<xs:annotation>
+			<xs:documentation>3D character</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="motion"/>
+				<xs:element ref="speech"/>
+				<xs:element ref="path3d"/>
+				<xs:element ref="script"/>
+				<xs:element name="cloud">
+					<xs:complexType>
+						<xs:choice minOccurs="0">
+							<xs:element ref="text" minOccurs="0" maxOccurs="2"/>
+						</xs:choice>
+						<xs:attributeGroup ref="rmmlElement"/>
+						<xs:attributeGroup ref="rmmlLoadable"/>
+						<xs:attributeGroup ref="rmmlVisible"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="visemes">
+					<xs:complexType>
+						<xs:attributeGroup ref="rmmlElement"/>
+						<xs:attributeGroup ref="rmmlLoadable"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="movement">
+					<xs:complexType>
+						<xs:choice minOccurs="0" maxOccurs="unbounded">
+							<xs:element ref="motion"/>
+							<xs:element ref="audio"/>
+						</xs:choice>
+						<xs:attribute name="stepLength" type="xs:double"/>
+						<xs:attribute name="rotSpeed" type="xs:double"/>
+						<xs:attributeGroup ref="rmmlElement"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="idles"/>
+			</xs:choice>
+			<xs:attribute name="movement" type="xs:string"/>
+			<xs:attribute name="visemes" type="elementRefType"/>
+			<xs:attribute name="idles" type="elementRefType"/>
+			<xs:attribute name="shadow" type="elementRefType"/>
+			<xs:attribute name="motion" type="elementRefType"/>
+			<xs:attribute name="in_motion" type="xs:boolean"/>
+			<xs:attribute name="materials" type="elementRefType"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+			<xs:attributeGroup ref="rmml3DObject"/>
+			<xs:attributeGroup ref="rmmlButton"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="speech">
+		<xs:annotation>
+			<xs:documentation>3D character speech (audio)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType mixed="true">
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="script"/>
+			</xs:sequence>
+			<xs:attribute name="actions" type="xs:string"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="path3d">
+		<xs:annotation>
+			<xs:documentation>3D object path</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="cloud">
+		<xs:annotation>
+			<xs:documentation>2D cloud for 3D objects</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="visible" type="xs:boolean" use="optional" default="true"/>
+			<xs:attribute name="content" type="xs:string" use="optional"/>
+			<xs:attribute name="footnote" type="xs:string" use="optional"/>
+			<xs:attribute name="align" type="xs:string" use="optional"/>
+			<xs:attribute name="moveOutOfScreen" type="xs:boolean" use="optional"/>
+			<xs:attribute name="allowOverlap" type="xs:boolean" use="optional"/>
+			<xs:attribute name="sortOnDepth" type="xs:boolean" use="optional"/>
+			<xs:attribute name="position" type="ml3DPosition" use="optional"/>
+			<xs:attribute name="attachedTo" type="xs:string" use="optional"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="group">
+		<xs:annotation>
+			<xs:documentation>3D group</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:group ref="rmml3DComponents"/>
+				<xs:element ref="include"/>
+				<xs:element ref="audio"/>
+				<xs:element ref="sequencer"/>
+				<xs:element ref="script"/>
+				<xs:element ref="resource"/>
+			</xs:choice>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+			<xs:attributeGroup ref="rmml3DObject"/>
+			<xs:attributeGroup ref="rmmlButton"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="scene3d">
+		<xs:annotation>
+			<xs:documentation>3D scene</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="camera"/>
+				<xs:element ref="light"/>
+				<xs:group ref="rmml3DComponents"/>
+				<xs:element ref="include"/>
+				<xs:element ref="audio"/>
+				<xs:element ref="sequencer"/>
+				<xs:element ref="script"/>
+				<xs:element ref="resource"/>
+			</xs:choice>
+			<xs:attributeGroup ref="rmmlElement"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="rmml3DComponents">
+		<xs:annotation>
+			<xs:documentation>all 3D components</xs:documentation>
+		</xs:annotation>
+		<xs:choice>
+			<xs:element ref="object"/>
+			<xs:element ref="character"/>
+			<xs:element ref="group"/>
+			<xs:element ref="motion"/>
+			<xs:element ref="path3d"/>
+			<xs:element ref="shadows"/>
+			<xs:element name="cloud"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="resource">
+		<xs:annotation>
+			<xs:documentation>Resource</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="script"/>
+			</xs:choice>
+			<xs:attribute name="downloading" type="xs:boolean" use="optional"/>
+			<xs:attributeGroup ref="rmmlElement"/>
+			<xs:attributeGroup ref="rmmlLoadable"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

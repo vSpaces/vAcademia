@@ -1,0 +1,10 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MMLab]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MMLab\CSCL]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\MMLab\CSCL\ResMan]
+"CachePath"="C:\\"
+"LocalResources"="C:\\"
+

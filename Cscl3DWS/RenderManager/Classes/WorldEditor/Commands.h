@@ -1,0 +1,51 @@
+
+#pragma once
+
+#define CMD_IDLE				1
+#define CMD_HELLO				2
+#define CMD_DELETE				3
+#define CMD_RENAME				4
+#define CMD_MOVE				5
+#define CMD_ROTATE				6
+#define CMD_SCALE				7
+#define CMD_SELECT				8
+#define CMD_SELECT_SAME			9
+#define CMD_MATERIAL			10
+#define CMD_SELECT_MASK			11
+#define CMD_SHADOW				12
+#define CMD_OBJECT_COPY			13
+#define CMD_OBJECT_CREATE		14
+#define CMD_CLASS				15
+#define CMD_LOCK				16
+#define CMD_PARAMS				17
+#define CMD_CHANGE_COLLISION	18
+#define CMD_GET_MODEL_INFO		19
+#define CMD_SET_GROUP			20
+#define CMD_CHANGE_GROUP		21
+
+#define CMD_DRAGMODE			193
+#define CMD_TELEPORT			194
+#define CMD_REFRESH				195
+#define CMD_FREE_CAMERA			196
+#define CMD_RELINK_WINDOW		197
+#define CMD_RENAME_ANSWER		198
+#define CMD_ROTATE_ANSWER		199
+#define CMD_STAT				200
+#define CMD_FREEZE				201
+
+#define CMD_KEY_CODE			202
+
+#define CMD_CURRENT_CAMERA		203
+
+#define CMD_SHOW_COLLISIONS				204
+#define CMD_SHOW_INVISIBLE_COLLISIONS	205
+#define CMD_SHOW_NEAREST_PATHES			206
+#define CMD_SWITCH_OFF_PATHES			207
+
+#define	CMD_ENABLE_WIREFRAME			210
+
+#define CMD_SELECT_TEXTURE				211
+
+#define CMD_UPDATE_LODS					212
+
+#define CMD_TELEPORT_BY_COORDS			213

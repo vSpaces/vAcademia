@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<window>
+	<!-- Define all bitmaps used in skin -->
+	<include file="mainwindowform.xml"/>
+	<controls>
+		<!-- Main toolbar -->
+		<control name="ContentPanel.mainToolbar" file="toolbar.xml"/>
+		<!-- Time line -->
+		<control name="ContentPanel.timeLine" file="timeline.xml"/>
+	</controls>
+	<properties>
+		<property name="ContentPanel.mainToolbar.BorderStyle" value="None"/>
+		<property name="ContentPanel.timeLine.BorderStyle" value="None"/>
+	</properties>
+</window>

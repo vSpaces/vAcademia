@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>desktopMan</ProjectName>
+    <ProjectGuid>{3B54895F-4C38-4A5B-9A63-0AF78E03FF7F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\WTL80\include;$(includePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Cscl3DWS\ServiceMan;..\Cscl3DWS\;..\Cscl3DWS\oms;..\Cscl3DWS\rmml;..\ComMan;..\Common;.\;..\VASEncoder;..\..\nengine\interfaces;..\logWriter;..\rtl;..\Launcher;..\nmemoryprofiler;%(AdditionalIncludeDirectories);C:\DirectshowSDK\DirectShow\BaseClasses\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DESKTOPMAN_EXPORTS; VAS_ENCODER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>UxTheme.lib;lib\Debug\WebCameraGraber.lib;lib\DialogLayoutD.lib;winmm.lib;VASEncoder.lib;strmiids.lib;lib\freeImage.lib;gdiplus.lib;Vfw32.lib;PSAPI.LIB;rtl.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\desktopman.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\Cscl3DWS\ServiceMan;..\Cscl3DWS\;..\Cscl3DWS\oms;..\Cscl3DWS\rmml;..\ComMan;..\Common;.\;..\VASEncoder;..\..\nengine\interfaces;..\logWriter;..\rtl;..\Launcher;..\nmemoryprofiler;%(AdditionalIncludeDirectories);D:\Program Files\DirectshowSDK\DirectShow\BaseClasses\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DESKTOPMAN_EXPORTS; VAS_ENCODER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>UxTheme.lib;lib\Release\WebCameraGraber.lib;lib\DialogLayout.lib;winmm.lib;VASEncoder.lib;strmiids.lib;lib\freeimage.lib;PSAPI.LIB;rtl.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\desktopman.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>atlmincrt.lib</IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\Mutex.cpp" />
+    <ClCompile Include="src\CaptureWindow.cpp" />
+    <ClCompile Include="..\Common\CommonPacketIn.cpp" />
+    <ClCompile Include="..\Common\DataBuffer2.cpp" />
+    <ClCompile Include="src\DesktopMan.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Draw.cpp" />
+    <ClCompile Include="src\HookMouse.cpp" />
+    <ClCompile Include="src\movie.cpp" />
+    <ClCompile Include="src\selectors\VideoFileSelector.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\view\CPanelButton.cpp" />
+    <ClCompile Include="src\view\DrawWindow.cpp" />
+    <ClCompile Include="src\view\PreviewLayouts.cpp" />
+    <ClCompile Include="src\RectAwarenessWnd.cpp" />
+    <ClCompile Include="src\view\RemoteDesktopWindow.cpp" />
+    <ClCompile Include="src\selectors\ClipboardSelector.cpp" />
+    <ClCompile Include="src\selectors\CursorCapture.cpp" />
+    <ClCompile Include="src\selectors\DesktopFrame.cpp" />
+    <ClCompile Include="src\selectors\DesktopRectSelector.cpp" />
+    <ClCompile Include="src\selectors\DropFileSelector.cpp" />
+    <ClCompile Include="src\ProcessListDlg.cpp" />
+    <ClCompile Include="src\selectors\SafeRect.cpp" />
+    <ClCompile Include="src\selectors\SelectorBase.cpp" />
+    <ClCompile Include="src\selectors\VideoInputSelector.cpp" />
+    <ClCompile Include="src\selectors\WndSelector.cpp" />
+    <ClCompile Include="src\selectors\WndSelectorDialog.cpp" />
+    <ClCompile Include="src\DynamicTextureImpl.cpp" />
+    <ClCompile Include="src\SharingConnection.cpp" />
+    <ClCompile Include="src\SharingMan.cpp" />
+    <ClCompile Include="src\SharingMouseKeyboardHandler.cpp" />
+    <ClCompile Include="src\SharingSession.cpp" />
+    <ClCompile Include="src\SharingSessionBase.cpp" />
+    <ClCompile Include="src\SharingViewSession.cpp" />
+    <ClCompile Include="src\SharingWM_Handler.cpp" />
+    <ClCompile Include="src\TextureLoader.cpp" />
+    <ClCompile Include="src\ConnectionFactory.cpp" />
+    <ClCompile Include="src\DestinationsFactory.cpp" />
+    <ClCompile Include="src\SelectorFactory.cpp" />
+    <ClCompile Include="src\SessionFactory.cpp" />
+    <ClCompile Include="Protocol\DeleteRecord.cpp" />
+    <ClCompile Include="Protocol\FrameIn.cpp" />
+    <ClCompile Include="Protocol\FrameOut.cpp" />
+    <ClCompile Include="Protocol\HideSession.cpp" />
+    <ClCompile Include="Protocol\MissedNameOut.cpp" />
+    <ClCompile Include="Protocol\RecordIn.cpp" />
+    <ClCompile Include="Protocol\RecordOut.cpp" />
+    <ClCompile Include="Protocol\RemoteDesktopIn.cpp" />
+    <ClCompile Include="Protocol\RemoteDesktopOut.cpp" />
+    <ClCompile Include="Protocol\SessionParamsIn.cpp" />
+    <ClCompile Include="Protocol\SessionStartOut.cpp" />
+    <ClCompile Include="Protocol\StartSendFrameOut.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Mutex.h" />
+    <ClInclude Include="include\CoolContextMenu.h" />
+    <ClInclude Include="include\capturewindow.h" />
+    <ClInclude Include="include\DesktopMan.h" />
+    <ClInclude Include="include\DestinationsFactory.h" />
+    <ClInclude Include="include\Errors.h" />
+    <ClInclude Include="include\IDesktopMan.h" />
+    <ClInclude Include="include\movie.h" />
+    <ClInclude Include="include\project.h" />
+    <ClInclude Include="include\RectAwarenessWnd.h" />
+    <ClInclude Include="include\selectors\VideoFileSelector.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="include\SharingWM_Handler.h" />
+    <ClInclude Include="include\stateCodes.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="include\view\BaseLayouts.h" />
+    <ClInclude Include="include\view\CPanelButton.h" />
+    <ClInclude Include="include\view\DialogItemTemplate.h" />
+    <ClInclude Include="include\view\DialogLayout.h" />
+    <ClInclude Include="include\view\DialogTemplate.h" />
+    <ClInclude Include="include\view\DrawWindow.h" />
+    <ClInclude Include="include\view\PreviewLayouts.h" />
+    <ClInclude Include="include\view\RemoteDesktopWindow.h" />
+    <ClInclude Include="include\view\RemoteWindow.h" />
+    <ClInclude Include="include\view\Thread.h" />
+    <ClInclude Include="include\view\ViewStatic.h" />
+    <ClInclude Include="include\selectors\ClipboardSelector.h" />
+    <ClInclude Include="include\selectors\CursorCapture.h" />
+    <ClInclude Include="include\selectors\DesktopFrame.h" />
+    <ClInclude Include="include\selectors\DesktopRectSelector.h" />
+    <ClInclude Include="include\selectors\DropFileSelector.h" />
+    <ClInclude Include="include\selectors\IDesktopSelector.h" />
+    <ClInclude Include="include\ProcessListDlg.h" />
+    <ClInclude Include="include\selectors\SafeRect.h" />
+    <ClInclude Include="include\selectors\ScreenCapture.h" />
+    <ClInclude Include="include\selectors\SelectorBase.h" />
+    <ClInclude Include="include\selectors\VideoInputSelector.h" />
+    <ClInclude Include="include\selectors\WndSelector.h" />
+    <ClInclude Include="include\selectors\WndSelectorDialog.h" />
+    <ClInclude Include="include\ConnectionFactory.h" />
+    <ClInclude Include="include\DynamicTextureImpl.h" />
+    <ClInclude Include="include\SelectorFactory.h" />
+    <ClInclude Include="include\SessionFactory.h" />
+    <ClInclude Include="include\SharingConnection.h" />
+    <ClInclude Include="include\SharingMan.h" />
+    <ClInclude Include="include\SharingMouseKeyboardHandler.h" />
+    <ClInclude Include="include\SharingSession.h" />
+    <ClInclude Include="include\SharingSessionBase.h" />
+    <ClInclude Include="include\SharingViewSession.h" />
+    <ClInclude Include="include\TextureLoader.h" />
+    <ClInclude Include="Protocol\DeleteRecord.h" />
+    <ClInclude Include="Protocol\DesktopPacketOut.h" />
+    <ClInclude Include="Protocol\FrameIn.h" />
+    <ClInclude Include="Protocol\FrameOut.h" />
+    <ClInclude Include="Protocol\HideSession.h" />
+    <ClInclude Include="Protocol\MissedNameOut.h" />
+    <ClInclude Include="Protocol\RecordIn.h" />
+    <ClInclude Include="Protocol\RecordOut.h" />
+    <ClInclude Include="Protocol\RemoteDesktopIn.h" />
+    <ClInclude Include="Protocol\RemoteDesktopOut.h" />
+    <ClInclude Include="Protocol\SessionParamsIn.h" />
+    <ClInclude Include="Protocol\SessionStartOut.h" />
+    <ClInclude Include="Protocol\StartSendFrameOut.h" />
+    <ClInclude Include="include\HookMouse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="desktopman.def" />
+    <None Include="res\backTexture.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\findere.bmp" />
+    <None Include="res\findere.ICO" />
+    <None Include="res\finderf.bmp" />
+    <None Include="res\finderf.ICO" />
+    <None Include="icon1.ico" />
+    <None Include="res\idr_main.ico" />
+    <None Include="res\searchw.cur" />
+    <None Include="res\toolbar.bmp" />
+    <None Include="res\WTLTrayIconWindow.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="desktopMan.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\desktopman.dll.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VASEncoder\VASEncoder.vcxproj">
+      <Project>{33ce6c02-5719-4a1d-85d2-509d44b63322}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="WebCamGrabber\RTSampleDevice.vcxproj">
+      <Project>{3f58ae85-7938-4fb9-8691-a99f32cbe366}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="desktopman.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

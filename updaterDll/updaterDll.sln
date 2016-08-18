@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "updaterDll", "updaterDll.vcproj", "{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}.Debug.ActiveCfg = Debug|Win32
+		{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}.Debug.Build.0 = Debug|Win32
+		{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}.Release.ActiveCfg = Release|Win32
+		{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

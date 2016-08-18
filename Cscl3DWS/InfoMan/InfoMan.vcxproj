@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Semi_Release|Win32">
+      <Configuration>Semi_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>InfoMan</ProjectName>
+    <ProjectGuid>{2C5E5D6E-67FB-4F7C-B64F-57CB9F6472A1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\wtl80\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\oms;..\rmml;..\rm;..\..\ComMan;..\..\Common;.\;..\..\nengine\interfaces\;..\;..\..\Nengine\nengine;..\..\Nengine\include;..\..\logWriter;..\..\DesktopMan\include;..\..\rtl;..\..\Launcher;..\..\nmemoryprofiler;..\..\mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;INFOMAN_EXPORTS;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lib\DialogLayoutd.lib;LogWriter.lib;rtl.lib;shell32.lib;SyncMan.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\oms;..\rmml;..\rm;..\..\ComMan;..\..\Common;.\;..\..\nengine\interfaces\;..\;..\..\Nengine\nengine;..\..\Nengine\include;..\..\logWriter;..\..\DesktopMan\include;..\..\rtl;..\..\Launcher;..\..\nmemoryprofiler;..\..\mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;INFOMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>lib\DialogLayout.lib;LogWriter.lib;rtl.lib;shell32.lib;SyncMan.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>atlmincrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\oms;..\rmml;..\rm;..\..\ComMan;..\..\Common;.\;..\..\nengine\interfaces\;..\;..\..\Nengine\nengine;..\..\Nengine\include;..\..\logWriter; ..\..\DesktopMan\include; ..\..\rtl;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;INFOMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>../../dlls/Semi_Release/InfoMan.dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\CrashHandlerInThread.cpp" />
+    <ClCompile Include="..\..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="baseDialogTab.cpp" />
+    <ClCompile Include="CoordinateObjectTab.cpp" />
+    <ClCompile Include="..\..\Common\DataBuffer.cpp" />
+    <ClCompile Include="InfoMan.cpp" />
+    <ClCompile Include="InfoManager.cpp" />
+    <ClCompile Include="LogTab.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="..\..\Common\Mutex.cpp" />
+    <ClCompile Include="ObjectTab.cpp" />
+    <ClCompile Include="objectTree.cpp" />
+    <ClCompile Include="RecordTab.cpp" />
+    <ClCompile Include="ResourceLoadTab.cpp" />
+    <ClCompile Include="ScriptExecuteTab.cpp" />
+    <ClCompile Include="ScriptTestTab.cpp" />
+    <ClCompile Include="SettingsTab.cpp" />
+    <ClCompile Include="SharingTab.cpp" />
+    <ClCompile Include="SocketTab.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SynchObjectTab.cpp" />
+    <ClCompile Include="TabViewWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\CrashHandlerInThread.h" />
+    <ClInclude Include="..\..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="aboutdlg.h" />
+    <ClInclude Include="baseDialogTab.h" />
+    <ClInclude Include="CoordinateObjectTab.h" />
+    <ClInclude Include="..\..\Common\DataBuffer.h" />
+    <ClInclude Include="InfoMan.h" />
+    <ClInclude Include="InfoManager.h" />
+    <ClInclude Include="LogTab.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="..\..\Common\Mutex.h" />
+    <ClInclude Include="ObjectTab.h" />
+    <ClInclude Include="objectTree.h" />
+    <ClInclude Include="RecordTab.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceLoadTab.h" />
+    <ClInclude Include="ScriptExecuteTab.h" />
+    <ClInclude Include="ScriptTestTab.h" />
+    <ClInclude Include="SettingsTab.h" />
+    <ClInclude Include="SharingTab.h" />
+    <ClInclude Include="SocketTab.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SynchObjectTab.h" />
+    <ClInclude Include="TabViewWnd.h" />
+    <ClInclude Include="view.h" />
+    <ClInclude Include="WTLTabViewCtrl.h" />
+    <ClInclude Include="dialog\DialogItemTemplate.h" />
+    <ClInclude Include="dialog\DialogLayout.h" />
+    <ClInclude Include="dialog\DialogTemplate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\imap.bmp" />
+    <None Include="res\main.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\toolbar.bmp" />
+    <None Include="res\toolbar_old.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="InfoMan.rc">
+      <DeploymentContent>false</DeploymentContent>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="InfoMan.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

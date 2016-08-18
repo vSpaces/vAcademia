@@ -1,0 +1,649 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGVIEW DIALOGEX 0, 0, 336, 250
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "LOG",IDC_STATIC,147,7,77,8,NOT WS_VISIBLE
+    CONTROL         "AutoUpdate",IDC_CHECK_AUTOUPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,142,55,10
+    EDITTEXT        IDC_EDIT_FIND,126,140,146,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_BUTTON_FIND,279,140,50,14
+    GROUPBOX        "Filters",IDC_GROUP_FILTERS,6,155,322,88
+    CONTROL         "Render Manager",IDC_CHECK_RENDER_MAN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,191,69,8
+    CONTROL         "Sound Manager",IDC_CHECK_SOUND_MAN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,178,66,8
+    CONTROL         "Com Manager",IDC_CHECK_COM_MAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,203,60,10
+    CONTROL         "Avatar Editor",IDC_CHECK_AVATAR_EDITOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,216,59,10
+    CONTROL         "Reserved 1",IDC_CHECK_SOME_LOG_TYPE1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,259,164,53,10
+    CONTROL         "Reserved 2",IDC_CHECK_SOME_LOG_TYPE2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,259,180,53,10
+    CONTROL         "Reserved 3",IDC_CHECK_SOME_LOG_TYPE3,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,259,196,53,10
+    CONTROL         "Default Logs",IDC_CHECK_DEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,165,56,10
+    EDITTEXT        IDC_RICHEDIT_LOG,7,7,322,128,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "Info Man",IDC_CHECK_INFO_MAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,228,45,10
+    CONTROL         "MDump",IDC_CHECK_MDUMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,164,39,10
+    CONTROL         "Ntexture",IDC_CHECK_NTEXTURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,178,45,10
+    CONTROL         "OMSPlayer",IDC_CHECK_OMSPLAYER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,191,51,10
+    CONTROL         "Path Refiner",IDC_CHECK_PATH_REFINER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,204,56,10
+    CONTROL         "ResLoader",IDC_CHECK_RESLOADER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,217,50,10
+    CONTROL         "Rmml",IDC_CHECK_RMML,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,229,33,10
+    CONTROL         "ServiceMan",IDC_CHECK_SERVICE_MAN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,186,164,53,10
+    CONTROL         "SyncMan",IDC_CHECK_SYNC_MAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,186,177,45,10
+    CONTROL         "VASEncoder",IDC_CHECK_VASENCODER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,185,190,55,10
+    CONTROL         "Video",IDC_CHECK_VIDEO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,202,33,10
+    CONTROL         "VoipMan",IDC_CHECK_VOIP_MAN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,215,43,10
+    CONTROL         "Nphysics",IDC_CHECK_NPHYSICS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,185,228,44,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LOGVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 187, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
+    CTEXT           "Alpha WTL Sample v1.0\n\n(c) Copyright 2002",IDC_STATIC,
+                    13,57,101,32
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,20,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,88
+END
+
+IDD_OBJECTVIEW DIALOGEX 0, 0, 455, 294
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | 
+    WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_OBJECT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,2,3,131,179
+    EDITTEXT        IDC_EDIT_FIND,5,270,84,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Найти",IDC_BUTTON_FIND,92,270,38,14
+    GROUPBOX        "Поиск",IDC_STATIC_FIND,2,260,131,31,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Фильтры",IDC_STATIC_FILTER,2,203,132,56,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Синхронизируемые объекты",IDC_CHECK_SYNCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,216,113,10
+    PUSHBUTTON      "Обновить дерево",IDC_BUTTON_UPDATE,2,185,130,14
+    CONTROL         "Персонажи",IDC_CHECK_CHARACTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,230,53,10
+    PUSHBUTTON      "Обновить свойства",IDC_PROP_UPDATE_BUTTON,291,270,74,14
+    CONTROL         "Скриптовые классы",IDC_CHECK_CLASSES,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,245,84,10
+    EDITTEXT        IDC_EDIT_PROPERTIES,141,10,308,231,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "Свойства объекта",IDC_STATIC_PROPERTIES,138,0,314,289,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Переставить binstate",IDC_UPDATE_BINSTATE,142,270,84,14
+    PUSHBUTTON      "Open src",IDC_BUTTON_OPEN_SRC,234,270,50,14
+    PUSHBUTTON      "Emulate NWBreaks",IDC_EMULATE_NETWORK_BREAKS,143,246,82,
+                    14
+    PUSHBUTTON      "drop OBJ",IDC_BREAK_OBJECT_SERVER_CONNECTION,229,246,36,
+                    14
+    PUSHBUTTON      "drop RES",IDC_BREAK_RES_SERVER_CONNECTION,267,246,34,14
+    PUSHBUTTON      "drop Voip",IDC_BREAK_VOIP_SERVER_CONNECTION,304,246,36,
+                    14
+    PUSHBUTTON      "drop Service",IDC_BREAK_SERVICE_SERVER_CONNECTION,343,
+                    246,46,14
+    PUSHBUTTON      "Инфа для тикета",IDC_BUTTON_COMPINFO_TO_BUFFER,376,270,
+                    67,14
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 330, 186
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Показывать скрытые 3D-объекты",IDC_SHOW_HIDDEN_3DO,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,133,10
+END
+
+IDD_SCRIPTTESTTAB DIALOGEX 0, 0, 350, 217
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | 
+    WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TREE_TEST,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_CHECKBOXES | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,104,182
+    EDITTEXT        IDC_TEST_RESULT,124,7,209,183,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    PUSHBUTTON      "Start",IDC_BUTTON_START,225,195,46,12
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,283,195,45,12
+    PUSHBUTTON      "SelectAll",IDC_BUTTON_SELECT,8,195,48,12
+    PUSHBUTTON      "DeselectAll",IDC_BUTTON_DESELECT,62,195,48,12
+    PUSHBUTTON      "Получить список тестов",IDC_BUTTON_GETLIST,123,194,90,
+                    14
+END
+
+IDD_SHARINGTAB DIALOGEX 0, 0, 359, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TREE_SHARING_SETTINGS,"SysTreeView32",
+                    TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,88,182
+    EDITTEXT        IDC_SESSION_VIEW,101,7,251,183,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Update Session",IDC_BUTTON1,7,193,59,17
+    PUSHBUTTON      "Update Info",IDC_BUTTON2,288,193,64,17
+    PUSHBUTTON      "Show LastFrame",IDC_BUTTON3,107,193,58,17
+END
+
+IDD_RECORDTAB DIALOGEX 0, 0, 359, 217
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST_RECORD,7,7,138,182,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_RECORD_VIEW,153,6,201,183,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Update Record list",IDC_BUTTON_RL,7,193,67,17
+    PUSHBUTTON      "Update Record info",IDC_BUTTON_RI,278,193,74,17
+    PUSHBUTTON      "Export record",IDC_BUTTON_EX,107,193,58,17
+    PUSHBUTTON      "Import record",IDC_BUTTON_IM,197,193,58,17
+END
+
+IDD_NET_SESSIONS DIALOGEX 0, 0, 359, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SOCKET_SESSION_VIEW,7,7,345,182,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "Start Write Log",IDC_BUTTON_UPDATE_SESSIONS,7,193,68,17
+END
+
+IDD_RESOURCELOAD DIALOGEX 0, 0, 396, 401
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | 
+    WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0xCC
+BEGIN
+    CONTROL         "Включен",IDC_RESOURCE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,16,46,10
+    EDITTEXT        IDC_EDIT_OUTPUT,7,259,382,135,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_OBJECTVIEW, DIALOG
+    BEGIN
+        RIGHTMARGIN, 452
+        BOTTOMMARGIN, 291
+    END
+
+    IDD_SCRIPTTESTTAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_SHARINGTAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_NET_SESSIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_RESOURCELOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 394
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_OLD TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_OLD       BITMAP                  "res\\Toolbar_old.bmp"
+IDB_IMAP                BITMAP                  "res\\imap.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Sample program for Windows Template Library"
+            VALUE "CompanyName", "Microsoft"
+            VALUE "FileDescription", "VA Debugger Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "VA Debugger"
+            VALUE "LegalCopyright", "Copyright Microsoft 2002"
+            VALUE "OriginalFilename", "Alpha.exe"
+            VALUE "ProductName", "VA Debugger Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Alpha"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OBJECT_SYNC_PROP DIALOGEX 0, 0, 210, 99
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: layout dialog bar",IDC_STATIC,126,4,77,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_PROP,7,7,196,85,ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL
+END
+
+IDD_OBJECT_COORDINATE_PROP DIALOGEX 0, 0, 290, 141
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Coordinates",IDC_STATIC,126,4,77,8
+    LTEXT           "X",IDC_STATIC_X,7,10,8,8
+    LTEXT           "Y",IDC_STATIC_Y,7,25,8,8
+    LTEXT           "Z",IDC_STATIC_Z,7,40,8,8
+    EDITTEXT        IDC_EDIT_COORD_X,18,7,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COORD_Y,18,22,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COORD_Z,18,37,40,14,ES_AUTOHSCROLL
+END
+
+IDD_SCRIPT_EXECUTE DIALOGEX 0, 0, 330, 186
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Script Execute",IDC_STATIC,126,4,77,8
+    EDITTEXT        IDC_EDIT_SCRIPT,7,18,316,122,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Execute",IDC_BUTTON_EXECUTE,251,152,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OBJECT_SYNC_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_OBJECT_COORDINATE_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_SCRIPT_EXECUTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

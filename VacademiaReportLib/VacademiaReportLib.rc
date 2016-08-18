@@ -1,0 +1,139 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW DIALOGEX 0, 0, 287, 111
+STYLE DS_SYSMODAL | DS_SETFONT | WS_CAPTION
+CAPTION "Обнаружена ошибка"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0xCC
+BEGIN
+    CONTROL         "Не показывать больше данное окно при повторении ошибки",IDC_CHECK_HIDEWND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,61,273,15
+    PUSHBUTTON      "Да",IDC_BUTTON_YES,86,90,50,14
+    PUSHBUTTON      "Нет",IDC_BUTTON_NO,157,90,50,14
+    LTEXT           "Произошла ошибка в приложении 'Виртуальная академия'. Хотите помочь разработчикам? Нажмите кнопку 'Да'. В этом случае программа произведет сбор необходимой информации по ошибке и отправит ее разработчикам.",IDC_STATIC_1,7,9,273,26
+    LTEXT           "Если вы нажмете кнопку <Нет>, то никакая информация отправлена не будет.",IDC_STATIC_3,7,48,273,12
+    LTEXT           "Никакая конфиденциальная информация не будет передана.",IDC_STATIC_2,7,36,273,8
+    CONTROL         "Автоматически перезапустить приложение виртуальная академия",IDC_CHECK_RESTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,76,243,10
+END
+
+IDD_FORMVIEW_NOTIFY DIALOGEX 0, 0, 291, 97
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Обнаружена ошибка"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    LTEXT           "Произошла ошибка в приложении vAcademia. Сейчас программа произведет сбор необходимой информации по ошибке и отправит ее разработчикам.",IDC_STATIC_1,8,8,264,19
+    LTEXT           "Никакая конфиденциальная информация не будет передана.",IDC_STATIC_2,8,28,211,8
+    PUSHBUTTON      "Ok",IDC_BUTTON_OK,85,76,50,14
+    CONTROL         "",IDC_PROGRESS_1,"msctls_progress32",WS_BORDER,7,56,272,14
+    CONTROL         "Автоматически перезапустить vAcademia",IDC_CHECK_RESTART,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,41,243,10
+    PUSHBUTTON      "Отмена",IDC_BUTTON_CANCEL,155,76,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_FORMVIEW_NOTIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

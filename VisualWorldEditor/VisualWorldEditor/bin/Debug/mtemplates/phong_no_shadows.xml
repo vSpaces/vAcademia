@@ -1,0 +1,9 @@
+<material>
+	<shader>shaders/phong_no_shadows</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%inv_light_position" />
+	<param name="lightColor" type="predefined" value="%light_color" />
+	<param name="lightPower" type="float" value="1" vmin="0" vmax="10" />
+</material>

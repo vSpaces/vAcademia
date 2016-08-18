@@ -1,0 +1,24 @@
+<material>
+	<shader>shaders/fire</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%light_position" />
+	<param name="lightColor" type="predefined" value="%light_color" />
+	<param name="lightPower" type="float" value="1" vmin="0" vmax="10" />
+	<param name="time" type="predefined" value="%time" />
+	<animation level="0" delta="91">
+		<texture src="FLAME8.JPG" />
+		<texture src="FLAME1.JPG" />
+		<texture src="FLAME2.JPG" />
+		<texture src="FLAME3.JPG" />
+		<texture src="FLAME4.JPG" />
+		<texture src="FLAME5.JPG" />
+		<texture src="FLAME6.JPG" />
+		<texture src="FLAME7.JPG" />
+	</animation>
+	<state name="blend" value="true" />
+	<state name="blend_method" value="add" />
+	<state name="two_sided" value="true" />
+	<state name="z_write" value="false" />
+</material>

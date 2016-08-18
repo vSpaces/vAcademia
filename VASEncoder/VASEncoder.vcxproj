@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>VASEncoder</ProjectName>
+    <ProjectGuid>{33CE6C02-5719-4A1D-85D2-509D44B63322}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../common;./;../;./lib;../nengine/ncommon;../nengine/nengine;..\Cscl3DWS\oms;../rtl;..\Launcher;..\nmemoryprofiler;../mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;VASENCODER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>paintlib.lib;FreeImage.lib;zlibwapi.lib;gdiplus.lib;logwriter.lib;rtl.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration); lib/debug;lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>VASEncoder.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../common;./;../;./lib;../nengine/ncommon;../nengine/nengine;..\Cscl3DWS\oms;../rtl;..\Launcher;..\nmemoryprofiler;../mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VASENCODER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>FreeImage.lib;zlibwapi.lib;logwriter.lib;rtl.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration); lib/release;lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>VASEncoder.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CrashHandlerInThread.cpp" />
+    <ClCompile Include="..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="CompressDiffParams.cpp" />
+    <ClCompile Include="ImageCompressor.cpp" />
+    <ClCompile Include="..\nengine\nengine\ITask.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\nengine\ncommon\Thread.cpp" />
+    <ClCompile Include="VASEBitmap.cpp" />
+    <ClCompile Include="VASEBmp.cpp" />
+    <ClCompile Include="VASEEncoder.cpp" />
+    <ClCompile Include="VASEFramesDifPack.cpp" />
+    <ClCompile Include="VASEncoder.cpp" />
+    <ClCompile Include="VASWaveletEncoder.cpp" />
+    <ClCompile Include="fln\flncmmn.cpp" />
+    <ClCompile Include="fln\FLNFrame.cpp" />
+    <ClCompile Include="fln\InputParameters.cpp" />
+    <ClCompile Include="wavelet\QualitySettings.cpp" />
+    <ClCompile Include="wavelet\WaveletCommonRoutines.cpp" />
+    <ClCompile Include="wavelet\WaveletHeader.cpp" />
+    <ClCompile Include="wavelet\WaveletPacker.cpp" />
+    <ClCompile Include="wavelet\WaveletPackRoutines.cpp" />
+    <ClCompile Include="wavelet\WaveletUnpacker.cpp" />
+    <ClCompile Include="wavelet\WaveletUnpackRoutines.cpp" />
+    <ClCompile Include="wavelet\ZLibPackGranularity.cpp" />
+    <ClCompile Include="wavelet\ZLibPackTask.cpp" />
+    <ClCompile Include="wavelet\ZLibWaveletPacker.cpp" />
+    <ClCompile Include="wavelet\ZLibWaveletUnpacker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VASEncoder.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CrashHandlerInThread.h" />
+    <ClInclude Include="..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="CompressDiffParams.h" />
+    <ClInclude Include="ImageCompressor.h" />
+    <ClInclude Include="..\nengine\nengine\ITask.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TextureSaver.h" />
+    <ClInclude Include="..\nengine\ncommon\Thread.h" />
+    <ClInclude Include="VASEBitmap.h" />
+    <ClInclude Include="VASEBmp.h" />
+    <ClInclude Include="VASEEncoder.h" />
+    <ClInclude Include="VASEFramesDifPack.h" />
+    <ClInclude Include="VASWaveletEncoder.h" />
+    <ClInclude Include="fln\flncmmn.h" />
+    <ClInclude Include="fln\FLNFrame.h" />
+    <ClInclude Include="fln\InputParameters.h" />
+    <ClInclude Include="wavelet\QualitySettings.h" />
+    <ClInclude Include="wavelet\WaveletCommonRoutines.h" />
+    <ClInclude Include="wavelet\WaveletHeader.h" />
+    <ClInclude Include="wavelet\WaveletPacker.h" />
+    <ClInclude Include="wavelet\WaveletPackRoutines.h" />
+    <ClInclude Include="wavelet\WaveletUnpacker.h" />
+    <ClInclude Include="wavelet\WaveletUnpackRoutines.h" />
+    <ClInclude Include="wavelet\ZLibPackGranularity.h" />
+    <ClInclude Include="wavelet\ZLibPackTask.h" />
+    <ClInclude Include="wavelet\ZLibWaveletPacker.h" />
+    <ClInclude Include="wavelet\ZLibWaveletUnpacker.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,12 @@
+o-----------------------------------------------------------------------------o
+|                          I N S T A L L A T I O N                            |
+o-----------------------------------------------------------------------------o
+
+  1) Put the 'cal3d.dll' file of the cal3d character animation library into
+     the 3d studio max directory.
+     
+  2) Put the 'cal3d_max_exporter.dle' file into the plugins directory of 3d
+     studio max.
+
+
+o-----------------------------------------------------------------------------o

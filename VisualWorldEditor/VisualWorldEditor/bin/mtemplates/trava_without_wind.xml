@@ -1,0 +1,16 @@
+<material>
+	<shader>shaders/bill_phong</shader>
+	<param name="decalMap" value="0" type="texture" />
+	<param name="lightness" value="%lightness" type="predefined" />
+	<param name="eyePos" value="%camera_position" type="predefined" />
+	<param name="lightPos" value="%inv_light_position" type="predefined" />
+	<param name="lightColor" value="%light_color" type="predefined" />
+	<param name="lightPower" value="1" type="float" vmin="0" vmax="10" />
+	<state name="alphatest" value="true" />
+	<state name="alphafunc" value="greater" />
+	<state name="alphavalue" value="128" />
+<!--	<state name="two_sided" value="true" /> -->
+	<state name="billboard_orient" value="true" />
+	<param name="sizeXY" type="float" value="26.0" vmin="1.0" vmax="2000.0" />
+	<param name="sizeZ" type="float" value="22.0" vmin="1.0" vmax="2000.0" />
+</material>

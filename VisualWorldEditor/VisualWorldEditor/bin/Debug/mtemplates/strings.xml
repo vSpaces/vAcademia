@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<strings>
+	<translate name="two_sided">Двусторонний материал</translate>
+	<translate name="billboard_orient">Билборд ориентация</translate>
+	<translate name="two_sided_transparency">Двустронняя прозрачность</translate>
+	<translate name="blend">Прозрачность</translate>
+	<translate name="color">Примешиваемый цвет</translate>
+	<translate name="anisotropy">Фильтрация текстуры</translate>
+	<translate name="min_filter">Фильтр уменьшения</translate>
+	<translate name="mipmap">Мипмапы</translate>
+	<translate name="mipmap_bias">Сдвиг мипмапа</translate>
+	<translate name="mag_filter">Фильтр увеличения</translate>
+	<translate name="anisotropy_power">Анизотропная фильтрация</translate>
+	<translate name="alphatest">Альфатест</translate>
+	<translate name="alphavalue">Значение</translate>
+	<translate name="alphafunc">Функция сравнения</translate>
+	<translate name="lightPower">Сила света</translate>
+	<translate name="specularIntensivity">Интенсивность отражения</translate>
+	<translate name="specularPower">Сила отражения</translate>
+	<translate name="bigMapStartDist">Начальная дистанция большой карты</translate>
+	<translate name="bigMapEndDist">Конечная дистанция большой карты</translate>
+	<translate name="tileScale">Масштаб мозайки</translate>
+	<translate name="sizeXY">Размер билборда в ширину</translate>
+	<translate name="sizeZ">Размер билборда в высоту</translate>
+	<translate name="roughnessValue">Резкость</translate>
+	<translate name="refAtNormIncidence">Отражающая способность</translate>
+	<translate name="scale">Масштаб</translate>
+	<translate name="heightMap">Карта высот</translate>
+	<translate name="diffuseMap">Диффузная текстура</translate>
+	<translate name="decalMap">Диффузная текстура</translate>
+	<translate name="specularMap">Карта блеска</translate>
+	<translate name="envMap">Текстура окружения</translate>
+	<translate name="normalMap">Карта нормалей</translate>
+	<translate name="screenMap">Экран</translate>
+	<translate name="detailMap">Текстура детализации</translate>
+	<translate name="detailScale">Масштаб текстуры детализации</translate>
+	<translate name="alphaValue">Прозрачность</translate>
+	<translate name="fadeLevel">Миним. уровень прозрачности</translate>
+	<translate name="fadeStartDist">Начало затухания прозрачности (в см)</translate>
+	<translate name="fadeEndDist">Конец затухания прозрачности (в см)</translate>
+	<translate name="offsetX">Смещение тени по X</translate>
+	<translate name="offsetY">Смещение тени по Y</translate>
+	<translate name="offsetZ">Смещение тени по Z</translate>
+</strings>

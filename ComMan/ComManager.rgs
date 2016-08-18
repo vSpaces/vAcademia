@@ -1,0 +1,33 @@
+HKCR
+{
+	ComMan.ComManager.1 = s 'ComManager Class'
+	{
+		CLSID = s '{A05A51A4-8CD4-4B25-94FB-40EBD8F16AFC}'
+	}
+	ComMan.ComManager = s 'ComManager Class'
+	{
+		CLSID = s '{A05A51A4-8CD4-4B25-94FB-40EBD8F16AFC}'
+		CurVer = s 'ComMan.ComManager.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A05A51A4-8CD4-4B25-94FB-40EBD8F16AFC} = s 'ComManager Class'
+		{
+			ProgID = s 'ComMan.ComManager.1'
+			VersionIndependentProgID = s 'ComMan.ComManager'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 101'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{353E120B-04CB-482D-9273-3130DD3B8999}'
+			'Version' = s '1.0'
+		}
+	}
+}

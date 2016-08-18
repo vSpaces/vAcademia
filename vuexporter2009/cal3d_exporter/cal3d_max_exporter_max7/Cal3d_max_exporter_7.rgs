@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{E84F2366-3C6F-4C5F-AA5F-DAEDB3195B22} = s 'Cal3d_max_exporter'
+		'Cal3d_max_exporter.EXE'
+		{
+			val AppID = s {E84F2366-3C6F-4C5F-AA5F-DAEDB3195B22}
+		}
+	}
+}

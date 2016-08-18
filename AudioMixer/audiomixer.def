@@ -1,0 +1,8 @@
+; DesktopMan.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AudioMixer"
+DESCRIPTION  'AudioMixer Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	getIAudioMixer     @1

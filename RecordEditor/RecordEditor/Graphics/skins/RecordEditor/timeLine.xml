@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<window>
+  <!-- Define all bitmaps used in skin -->
+  <bitmaps>
+    <bitmap name="timeline" src="timeline.bmp"/>
+  </bitmaps>
+  <!-- Define all form`s elements to be skinned -->
+  <skin>
+    <level valign="Top">
+      <element align="Left" srcRect="0,97,108,60"    bitmap="timeline"  />
+      <element align="Right" srcRect="208,97,12,60"    bitmap="timeline"  />
+      <element align="Justify" srcRect="108,97,100,60" bitmapTile="true"   bitmap="timeline"  />
+    </level>
+  </skin>
+  <controls>
+      <control name="btnPlay"   srcRect="0,0,220,55" bitmap="timeline"/>
+      <control name="btnRewind"  srcRect="0,55,168,42" bitmap="timeline"/>
+  </controls>
+  <properties>
+    <property name="btnPlay.BorderStyle" value="None"/>
+	<property name="btnRewind.BorderStyle" value="None"/>
+  </properties>
+  <!--<properties>
+    <property name="btnNew.Top" value="6"/>
+    <property name="btnOpen.Top" value="6"/>
+    <property name="btnSave.Top" value="6"/>
+    <property name="btnPublish.Top" value="6"/>
+    <property name="btnAviPublish.Top" value="6"/>
+    <property name="btnPreview.Top" value="6"/>
+    <property name="btnCut.Top" value="6"/>
+    <property name="btnCopy.Top" value="6"/>
+    <property name="btnPaste.Top" value="6"/>
+    <property name="btnRect.Top" value="6"/>
+    <property name="btnCircle.Top" value="6"/>
+    <property name="btnPoly.Top" value="6"/>
+    <property name="btnImage.Top" value="6"/>
+    <property name="btnText.Top" value="6"/>
+    <property name="btnPan.Top" value="6"/>
+    <property name="btnZoomIn.Top" value="6"/>
+    <property name="btnZoomOut.Top" value="6"/>
+    <property name="btnMP.Top" value="6"/>
+    <property name="btnFlash.Top" value="6"/>
+    <property name="btnFlashChart.Top" value="6"/>
+    <property name="ZoomCombo.Top" value="10"/>
+  </properties>-->
+</window>

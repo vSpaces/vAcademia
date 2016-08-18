@@ -1,0 +1,10 @@
+const int SHOW_IDENTIFY_MONITOR = 0x2;
+const int SHOW_COUNT_BEFORE = 0x3;
+const int SHOW_TOUCH_POINTS = 0x4;
+
+const int SHOW_SUCCESS_RECOGNIZE = 0x6;
+const int SHOW_FAIL_RECOGNIZE = 0x7;
+
+
+
+const int CENTER_POSITION = 0x101;

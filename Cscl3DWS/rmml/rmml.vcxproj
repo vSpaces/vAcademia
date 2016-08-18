@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug MT|Win32">
+      <Configuration>Debug MT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugVU2007|Win32">
+      <Configuration>DebugVU2007</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Natura3D_Release_VU2007|Win32">
+      <Configuration>Natura3D_Release_VU2007</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Natura3D_Release|Win32">
+      <Configuration>Natura3D_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Semi_Release|Win32">
+      <Configuration>Semi_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>rmml</ProjectName>
+    <ProjectGuid>{1F0B13C6-1C8F-44C4-9F8F-C48B1AFF0A95}</ProjectGuid>
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">.\rmml___Win32_Debug_MT\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\RenderManager\Classes\WorldEditor;../../Common;..\RenderManager\Classes\MapManagers;..\syncman\;..\serviceman\;..\res\;..\mme\;..\js;..\..\js\src;.\;..\oms;..\oms\dontdelme;../libxml2/include;..\..\libxml2\include;..\..\SyncMan;..\..\nengine\nengine\;..\..\nengine\interfaces\;..\..\voip\voipmanclient\include;..\..\DesktopMan\include;..\..\LogWriter\;..\..\mdump;..\..\nmemoryprofiler;..\..\nengine\ncommon;..\..\Launcher\;..\..\nmemoryprofiler\;..\..\XBOXController;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;JS_THREADSAFE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mlRMML.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;js32.lib;Rpcrt4.lib;zlib32.lib;logWriter.lib;mdump.lib;ncommon.lib;winmm.lib;CrashHandler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../lib;../../mdump;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\res\;..\mme\;..\js\;.\;..\oms\dontdelme;../libxml2/include;../libiconv/include;..\..\libxml2\include;..\..\libiconv\include;..\..\nengine\ncommon\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;JS_THREADSAFE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\rmml___Win32_Debug_MT/rmml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\rmml___Win32_Debug_MT/</AssemblerListingLocation>
+      <ObjectFileName>.\rmml___Win32_Debug_MT/</ObjectFileName>
+      <ProgramDataBaseFileName>.\rmml___Win32_Debug_MT/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;js32mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\rmml___Win32_Debug_MT/rmml.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\rmml___Win32_Debug_MT/rmml.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\rmml___Win32_Debug_MT/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\RenderManager\Classes\WorldEditor;../../Common;..\RenderManager\Classes\MapManagers;..\syncman\;..\serviceman\;..\res\;..\mme\;..\js;..\..\js\src;.\;..\oms;..\oms\dontdelme;../libxml2/include;..\..\libxml2\include;..\..\SyncMan;..\..\nengine\nengine\;..\..\nengine\interfaces\;..\..\voip\voipmanclient\include;..\..\DesktopMan\include;..\..\LogWriter\;..\..\mdump;..\..\nmemoryprofiler;..\..\nengine\ncommon;..\..\Launcher\;..\..\nmemoryprofiler\;..\..\XBOXController;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;JS_THREADSAFE;ENABLE_OBJECT_STAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>mlRMML.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;rtl.lib;js32.lib;Rpcrt4.lib;zlib32.lib;logWriter.lib;mdump.lib;ncommon.lib;winmm.lib;CrashHandler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../lib;../../mdump;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\syncman\;..\res\;..\mme\;..\js\;.\;..\oms;..\oms\dontdelme;../libxml2/include;../libiconv/include;..\..\libxml2\include;..\..\libiconv\include;..\..\SyncMan;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/rmml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;js32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/rmml.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Debug/rmml.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugVU2007|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\res\;..\mme\;..\js\;.\;..\oms\dontdelme;../libxml2/include;../libiconv/include;..\..\libxml2\include;..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/rmml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;js32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/rmml.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Debug/rmml_dbg.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Natura3D_Release_VU2007|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\res\;..\mme\;..\js\;.\;..\oms\dontdelme;../libxml2/include;../libiconv/include;..\..\libxml2\include;..\..\libiconv\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/rmml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;js32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/rmml.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Debug/rmml.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Semi_Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\syncman\;..\res\;..\mme\;..\js\;.\;..\oms;..\oms\dontdelme;../libxml2/include;../libiconv/include;..\..\libxml2\include;..\..\libiconv\include;..\..\SyncMan;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;RMML_EXPORTS;XP_WIN;RMML_BUILD;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/rmml.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>XBoxController.lib;js32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/rmml.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Release/rmml.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/rmml.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0419</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2D\mlRMMLLine.cpp" />
+    <ClCompile Include="any.cpp" />
+    <ClCompile Include="FileNameStorage.cpp" />
+    <ClCompile Include="jsapi_wrappers.cpp">
+    </ClCompile>
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="mlBuildEvalCtxt.cpp">
+    </ClCompile>
+    <ClCompile Include="mlColorJSO.cpp">
+    </ClCompile>
+    <ClCompile Include="mldRMMLDebugger.cpp">
+    </ClCompile>
+    <ClCompile Include="mlErrors.cpp">
+    </ClCompile>
+    <ClCompile Include="mlJSClass.cpp">
+    </ClCompile>
+    <ClCompile Include="mlJSClassProto.cpp">
+    </ClCompile>
+    <ClCompile Include="mlJSONRPCJSO.cpp" />
+    <ClCompile Include="mlLogRecord.cpp" />
+    <ClCompile Include="mlLogSeance.cpp" />
+    <ClCompile Include="mlMapJSS2JSO.cpp">
+    </ClCompile>
+    <ClCompile Include="mlMapWCS2Int.cpp">
+    </ClCompile>
+    <ClCompile Include="mlNextUpdateDTimeList.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRecordManager.cpp" />
+    <ClCompile Include="mlRMML.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="mlRMMLAudio.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLBuilder.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLComposition.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLContinuous.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLElement.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLIterator.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSKey.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSMouse.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSPlAuth.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSPlayer.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSPlCodeEditor.cpp" />
+    <ClCompile Include="mlRMMLJSPlDesktopCallback.cpp" />
+    <ClCompile Include="mlRMMLJSPlMap.cpp" />
+    <ClCompile Include="mlRMMLJSPlModule.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSPlRecordEditor.cpp" />
+    <ClCompile Include="mlRMMLJSPlServer.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLJSPlUrl.cpp" />
+    <ClCompile Include="mlRMMLJSPlVideoCapture.cpp" />
+    <ClCompile Include="mlRMMLJSPlVoice.cpp" />
+    <ClCompile Include="mlRMMLJSPlVoiceCallback.cpp" />
+    <ClCompile Include="mlRMMLJSPSRecorder.cpp" />
+    <ClCompile Include="mlRMMLJSShellFunc.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLLoadable.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLLocation.cpp" />
+    <ClCompile Include="mlRMMLMath3D.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLModule.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLParticles.cpp" />
+    <ClCompile Include="mlRMMLPButton.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLPlugin.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLResource.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLScene.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLScript.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLSequencer.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLVisemes.cpp">
+    </ClCompile>
+    <ClCompile Include="mlRMMLVisible.cpp">
+    </ClCompile>
+    <ClCompile Include="mlSuperUser.cpp" />
+    <ClCompile Include="Xml\mlRMMLXMLXPath.cpp" />
+    <ClCompile Include="mlSceneManager.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="mlScriptPreloader.cpp" />
+    <ClCompile Include="mlScriptTerminationThread.cpp" />
+    <ClCompile Include="mlSoapJSO.cpp" />
+    <ClCompile Include="mlSPParser.cpp">
+    </ClCompile>
+    <ClCompile Include="mlSynch.cpp" />
+    <ClCompile Include="mlSynchData.cpp">
+    </ClCompile>
+    <ClCompile Include="mlSynchLink.cpp" />
+    <ClCompile Include="mlUIDefault.cpp">
+    </ClCompile>
+    <ClCompile Include="mlUtilityThread.cpp" />
+    <ClCompile Include="rmmlsafe.cpp" />
+    <ClCompile Include="ScriptedObjectManager.cpp" />
+    <ClCompile Include="..\..\Launcher\StartUpdater.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Zlibengn.cpp" />
+    <ClCompile Include="2D\mlPointJSO.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRectangleJSO.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLActiveX.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLAnimation.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLBrowser.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLButton.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLFlash.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLImage.cpp">
+    </ClCompile>
+    <ClCompile Include="2d\mlRMMLImageFrame.cpp" />
+    <ClCompile Include="2D\mlRMMLInput.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLQT.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLStyles.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLText.cpp">
+    </ClCompile>
+    <ClCompile Include="2D\mlRMMLVideo.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMML3DObject.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLCamera.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLCharacter.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLCloud.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLGroup.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLHint.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLIdle.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLIdles.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLLight.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMap.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMaterial.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMaterials.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMotion.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMotionAOs.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLMovement.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLObject.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLPath3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLPosition3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLRotation3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLScale3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLScene3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLShadow3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLShadows3D.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLSpeech.cpp">
+    </ClCompile>
+    <ClCompile Include="3D\mlRMMLViewport.cpp">
+    </ClCompile>
+    <ClCompile Include="Xml\mlDict.cpp" />
+    <ClCompile Include="Xml\mlHashTable.cpp" />
+    <ClCompile Include="XML\mlRMMLXML.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLAttr.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLCDATA.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLComment.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLDocument.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLElement.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLNamedNodeMap.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLNode.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLNodeList.cpp">
+    </ClCompile>
+    <ClCompile Include="XML\mlRMMLXMLText.cpp">
+    </ClCompile>
+    <ClCompile Include="gd\gd_HTMLArchive.cpp">
+    </ClCompile>
+    <ClCompile Include="gd\gd_String.cpp">
+    </ClCompile>
+    <ClCompile Include="gd\gd_Strings.cpp">
+    </ClCompile>
+    <ClCompile Include="gd\gd_UTF8String.cpp">
+    </ClCompile>
+    <ClCompile Include="gd\gd_XMLArchive.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2D\mlRMMLLine.h" />
+    <ClInclude Include="any.hpp" />
+    <ClInclude Include="BSSCCode.h" />
+    <ClInclude Include="FileNameStorage.h" />
+    <ClInclude Include="jsapi_wrappers.h" />
+    <ClInclude Include="..\RenderManager\Classes\MapManagers\MapManagerStructures.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="..\oms\mi.h" />
+    <ClInclude Include="mlBuildEvalCtxt.h" />
+    <ClInclude Include="mlColorJSO.h" />
+    <ClInclude Include="mldRMMLDebugger.h" />
+    <ClInclude Include="mlErrors.h" />
+    <ClInclude Include="mlJSClass.h" />
+    <ClInclude Include="mlJSClassProto.h" />
+    <ClInclude Include="mlJSONRPCJSO.h" />
+    <ClInclude Include="mlLogRecord.h" />
+    <ClInclude Include="mlLogSeance.h" />
+    <ClInclude Include="mlMapJSS2JSO.h" />
+    <ClInclude Include="mlMapWCS2Int.h" />
+    <ClInclude Include="mlNextUpdateDTimeList.h" />
+    <ClInclude Include="mlRecordManager.h" />
+    <ClInclude Include="mlRMML.h" />
+    <ClInclude Include="mlRMMLAudio.h" />
+    <ClInclude Include="mlRMMLBuilder.h" />
+    <ClInclude Include="mlRMMLComposition.h" />
+    <ClInclude Include="mlRMMLContinuous.h" />
+    <ClInclude Include="mlRMMLElement.h" />
+    <ClInclude Include="mlRMMLIterator.h" />
+    <ClInclude Include="mlRMMLJSPlayer.h" />
+    <ClInclude Include="mlRMMLJSPlCodeEditor.h" />
+    <ClInclude Include="mlRMMLJSPlDesktop.h" />
+    <ClInclude Include="mlRMMLJSPlRecordEditor.h" />
+    <ClInclude Include="mlRMMLJSPlServer.h" />
+    <ClInclude Include="mlRMMLJSPlUrl.h" />
+    <ClInclude Include="mlRMMLJSPlVideoCapture.h" />
+    <ClInclude Include="mlRMMLJSPlVoice.h" />
+    <ClInclude Include="mlRMMLLoadable.h" />
+    <ClInclude Include="mlRMMLLocation.h" />
+    <ClInclude Include="mlRMMLModule.h" />
+    <ClInclude Include="3D\mlRMMLParticles.h" />
+    <ClInclude Include="mlRMMLPButPLHA.h" />
+    <ClInclude Include="mlRMMLPButton.h" />
+    <ClInclude Include="mlRMMLPlugin.h" />
+    <ClInclude Include="mlRMMLResource.h" />
+    <ClInclude Include="mlRMMLScene.h" />
+    <ClInclude Include="mlRMMLScript.h" />
+    <ClInclude Include="mlRMMLSequencer.h" />
+    <ClInclude Include="mlRMMLVisible.h" />
+    <ClInclude Include="mlSceneManager.h" />
+    <ClInclude Include="mlScriptPreloader.h" />
+    <ClInclude Include="mlScriptTerminationThread.h" />
+    <ClInclude Include="mlSPParser.h" />
+    <ClInclude Include="mlSuperUser.h" />
+    <ClInclude Include="mlSynch.h" />
+    <ClInclude Include="mlSynchData.h" />
+    <ClInclude Include="mlSynchLink.h" />
+    <ClInclude Include="mlSynchState.h" />
+    <ClInclude Include="mlUtilityThread.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="rmml.h" />
+    <ClInclude Include="rmmld.h" />
+    <ClInclude Include="rmmlsafe.h" />
+    <ClInclude Include="ScriptedObjectManager.h" />
+    <ClInclude Include="..\..\Launcher\StartUpdater.h" />
+    <ClInclude Include="..\..\Common\UtilTypes.h" />
+    <ClInclude Include="Zlibengn.h" />
+    <ClInclude Include="2D\mlPointJSO.h" />
+    <ClInclude Include="2D\mlRectangleJSO.h" />
+    <ClInclude Include="2D\mlRMMLActiveX.h" />
+    <ClInclude Include="2D\mlRMMLAnimation.h" />
+    <ClInclude Include="2D\mlRMMLBrowser.h" />
+    <ClInclude Include="2D\mlRMMLButton.h" />
+    <ClInclude Include="2D\mlRMMLFlash.h" />
+    <ClInclude Include="2D\mlRMMLImage.h" />
+    <ClInclude Include="2d\mlRMMLImageFrame.h" />
+    <ClInclude Include="2D\mlRMMLInput.h" />
+    <ClInclude Include="2D\mlRMMLIQT.h" />
+    <ClInclude Include="2D\mlRMMLQT.h" />
+    <ClInclude Include="2D\mlRMMLStyles.h" />
+    <ClInclude Include="2D\mlRMMLText.h" />
+    <ClInclude Include="2D\mlRMMLVideo.h" />
+    <ClInclude Include="3D\mlRMML3DObject.h" />
+    <ClInclude Include="3D\mlRMMLCamera.h" />
+    <ClInclude Include="3D\mlRMMLCharacter.h" />
+    <ClInclude Include="3D\mlRMMLCloud.h" />
+    <ClInclude Include="3D\mlRMMLGroup.h" />
+    <ClInclude Include="3D\mlRMMLHint.h" />
+    <ClInclude Include="3D\mlRMMLIdle.h" />
+    <ClInclude Include="3D\mlRMMLIdles.h" />
+    <ClInclude Include="3D\mlRMMLLight.h" />
+    <ClInclude Include="3D\mlRMMLMap.h" />
+    <ClInclude Include="3D\mlRMMLMaterial.h" />
+    <ClInclude Include="3D\mlRMMLMaterials.h" />
+    <ClInclude Include="3D\mlRMMLMotion.h" />
+    <ClInclude Include="3D\mlRMMLMotionAOs.h" />
+    <ClInclude Include="3D\mlRMMLMovement.h" />
+    <ClInclude Include="3D\mlRMMLObject.h" />
+    <ClInclude Include="3D\mlRMMLPath3D.h" />
+    <ClInclude Include="3D\mlRMMLPosition3D.h" />
+    <ClInclude Include="3D\mlRMMLRotation3D.h" />
+    <ClInclude Include="3D\mlRMMLScale3D.h" />
+    <ClInclude Include="3D\mlRMMLScene3D.h" />
+    <ClInclude Include="3D\mlRMMLShadow3D.h" />
+    <ClInclude Include="3D\mlRMMLShadows3D.h" />
+    <ClInclude Include="3D\mlRMMLSpeech.h" />
+    <ClInclude Include="3D\mlRMMLViewport.h" />
+    <ClInclude Include="3D\mlRMMLVisemes.h" />
+    <ClInclude Include="XML\mlRMMLXML.h" />
+    <ClInclude Include="XML\mlRMMLXMLAttr.h" />
+    <ClInclude Include="XML\mlRMMLXMLCDATA.h" />
+    <ClInclude Include="XML\mlRMMLXMLComment.h" />
+    <ClInclude Include="XML\mlRMMLXMLDocument.h" />
+    <ClInclude Include="XML\mlRMMLXMLElement.h" />
+    <ClInclude Include="XML\mlRMMLXMLNamedNodeMap.h" />
+    <ClInclude Include="XML\mlRMMLXMLNode.h" />
+    <ClInclude Include="XML\mlRMMLXMLNodeList.h" />
+    <ClInclude Include="XML\mlRMMLXMLText.h" />
+    <ClInclude Include="gd\gd_HTMLArchive.h" />
+    <ClInclude Include="gd\gd_listtmpl.h" />
+    <ClInclude Include="gd\gd_String.h" />
+    <ClInclude Include="gd\gd_Strings.h" />
+    <ClInclude Include="gd\gd_UTF8String.h" />
+    <ClInclude Include="gd\gd_XMLArchive.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\audiere\vc10\audiere\audiere.vcxproj">
+      <Project>{e5195361-63cd-4c1b-8dd7-3e579779b1f6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\js\projects\msvc10\js.vcxproj">
+      <Project>{d197323b-f5fc-470e-ba40-a0cb8160a556}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nengine\ncommon\ncommon.vcxproj">
+      <Project>{f0b3e642-1571-478e-8801-b3498c2b82d6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceMan\ServiceMan.vcxproj">
+      <Project>{b615c4f3-2aaf-43cd-82ae-79f8a839b7c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\SyncMan\SyncMan.vcxproj">
+      <Project>{2dc710cb-dd40-4c5e-824e-dc79a8122e86}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

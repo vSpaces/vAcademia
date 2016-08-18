@@ -1,0 +1,13 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+	[
+		object,
+		uuid(B1CFCB03-4961-4eac-8008-35C0AB64AA01),
+		helpstring("ICLMan Interface"),
+		pointer_default(unique)
+	]
+	interface ICLMan : IUnknown
+	{
+	};
+

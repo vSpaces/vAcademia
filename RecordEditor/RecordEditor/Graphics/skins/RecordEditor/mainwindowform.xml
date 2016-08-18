@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<window>
+  <!-- Define all bitmaps used in skin -->
+  <bitmaps>
+    <bitmap name="bmain" src="mainform.bmp"/>
+  </bitmaps>
+  <!-- Define all form`s elements to be skinned -->
+  <skin>
+    <level valign="Top">
+	<element align="Left" srcRect="70,61,8,23"  keycolor="#FFA796" bitmap="bmain"  />
+	<element align="Right" srcRect="131,61,8,23"  keycolor="#FFA796" bitmap="bmain" />
+	<element align="Justify"  srcRect="81,61,48,23"  keycolor="#FFA796"  bitmap="bmain" />
+    </level>
+    <level valign="Bottom">
+	<element align="Left" srcRect="70,99,8,23"  keycolor="#FFA796" bitmap="bmain"  />
+	<element align="Right" srcRect="131,99,8,23"  keycolor="#FFA796" bitmap="bmain" />
+	<element align="Justify"  srcRect="81,99,48,23"  keycolor="#FFA796"  bitmap="bmain" />
+    </level>
+    <level valign="Justify">
+      <element align="Left" valign="Justify" srcRect="70,84,6,30"  bitmap="bmain"/>
+      <element align="Right"  valign="Justify" srcRect="133,84,6,30" bitmap="bmain"/>
+      <element align="Justify"  valign="Justify" color="#4d9bf8"/>
+    </level>
+  </skin>
+  <controls>
+    <control name="StatusPanel">
+    <window>
+      <!-- Define all bitmaps used in skin -->
+      <bitmaps>
+        <bitmap name="bmain" src="mainform.bmp"/>
+      </bitmaps>
+      <!-- Define all form`s elements to be skinned -->
+      <skin>
+        <level valign="Top">
+	      <element align="Left" srcRect="70,99,8,23" bitmap="bmain"  />
+	      <element align="Right" srcRect="131,99,8,23" bitmap="bmain" />
+	      <element align="Justify"  srcRect="81,99,48,23"  bitmap="bmain" />
+        </level>
+      </skin>
+      <controls>
+          <control name="btnResize" srcRect="8,78,48,12" bitmap="bmain" keycolor="#44599B"/>
+          <control name="panel1" srcRect="71,36,7,15" bitmap="bmain"/>
+      </controls>
+    </window>
+    </control>
+    <control name="TitlePanel">
+    <window>
+      <!-- Define all bitmaps used in skin -->
+      <bitmaps>
+        <bitmap name="bmain" src="mainform.bmp"/>
+        <bitmap name="bwindows" src="win_buttons.bmp"/>
+      </bitmaps>
+      <!-- Define all form`s elements to be skinned -->
+      <skin>
+        <level valign="Top">
+	      <element align="Left" srcRect="70,61,8,23" bitmap="bmain"  />
+	      <element align="Right" srcRect="131,61,8,23" bitmap="bmain" />
+	      <element align="Justify"  srcRect="81,61,48,23"  bitmap="bmain" />
+        </level>
+      </skin>
+      <controls>
+          <control name="btnMinimize" srcRect="0,0,88,15" bitmap="bwindows"/>
+          <control name="btnMaximize" srcRect="0,15,88,15" bitmap="bwindows"/>
+          <control name="btnNormal" srcRect="0,30,88,15" bitmap="bwindows"/>
+          <control name="btnClose" srcRect="0,45,88,15" bitmap="bwindows"/>
+      </controls>
+    </window>
+    </control>
+  </controls>
+  <properties>
+      <property name="titleBarHeight" value="23"/>
+      <property name="statusBarHeight" value="23"/>
+      <property name="titleLocation" value="10,5"/>
+      <property name="TitlePanel.btnMinimize.Top" value="2"/>
+      <property name="TitlePanel.btnMaximize.Top" value="2"/>
+      <property name="TitlePanel.btnNormal.Top" value="2"/>
+      <property name="TitlePanel.btnClose.Top" value="2"/>
+  </properties>
+</window>

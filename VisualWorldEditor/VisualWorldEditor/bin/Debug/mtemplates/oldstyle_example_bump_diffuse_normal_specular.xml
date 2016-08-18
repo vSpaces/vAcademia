@@ -1,0 +1,16 @@
+<material>
+	<texture src="NORMALLL.JPG" level="1" />
+	<texture src="SPECULAR.JPG" level="2" />
+	<shader>shaders/bump_world_specular</shader>
+	<param name="diffuseMap" type="texture" value="0" />
+	<param name="normalMap" type="texture" value="1" />
+	<param name="specularMap" type="texture" value="2" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%light_position" />
+	<param name="lightColor" type="predefined" value="%light_color" />
+	<param name="lightPower" type="float" value="1.0" vmin="0" vmax="3" />
+	<param name="specularPower" type="float" value="10" vmin="5" vmax="100" />
+	<param name="specularIntensivity" type="float" value="0.3" vmin="0" vmax="1" />
+	<state name="need_tangents" value="true" />
+</material>

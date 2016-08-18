@@ -1,0 +1,8 @@
+; chem3drnd.def : Declares the module parameters for the DLL.
+
+LIBRARY      "kinect_plugin"
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateKinectObject			@1
+

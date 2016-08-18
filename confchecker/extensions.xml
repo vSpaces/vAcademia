@@ -1,0 +1,4 @@
+<extensions>
+	<extension>ARB_vertex_buffer_object</extension>
+	<extension>SGIS_generate_mipmap</extension>
+</extensions>

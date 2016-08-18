@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>ServiceMan</ProjectName>
+    <ProjectGuid>{B615C4F3-2AAF-43CD-82AE-79F8A839B7C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\Protocol;..\oms;..\rmml;..\..\ComMan;..\..\Common;.\;..\..\voip\voipmanclient\include;..\..\Nengine\interfaces;..\..\Logger\;..\desktopman\include;..\..\desktopman\include;..\..\LogWriter\;..\..\rtl;..\..\Launcher;..\..\nmemoryprofiler;..\..\mdump;..\..\nengine\ncommon\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CSCL;SERVICEMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>netapi32.lib;rtl.lib;psapi.lib;CrashHandler.lib;mdump.lib;logwriter.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\ServiceMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\Protocol;..\oms;..\rmml;..\..\ComMan;..\..\Common;.\;..\..\voip\voipmanclient\include;..\..\Nengine\interfaces;..\..\Logger\;..\desktopman\include;..\..\desktopman\include;..\..\LogWriter\;..\..\rtl;..\..\Launcher;..\..\nmemoryprofiler;..\..\mdump;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CSCL;SERVICEMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>netapi32.lib;rtl.lib;psapi.lib;CrashHandler.lib;mdump.lib;logwriter.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\ServiceMan.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\CommonPacketIn.cpp" />
+    <ClCompile Include="..\..\Common\DataBuffer.cpp" />
+    <ClCompile Include="..\..\common\DataBuffer2.cpp" />
+    <ClCompile Include="..\..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="Protocol\DumpFileOut.cpp" />
+    <ClCompile Include="Protocol\DumpParamsIn.cpp" />
+    <ClCompile Include="..\..\Common\GetMacAddress.cpp" />
+    <ClCompile Include="IpadManager.cpp" />
+    <ClCompile Include="..\..\Common\MD5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Mutex.cpp" />
+    <ClCompile Include="ServiceMan.cpp" />
+    <ClCompile Include="ServiceManager.cpp" />
+    <ClCompile Include="ServiceManagerBase.cpp" />
+    <ClCompile Include="ServiceWorldManager.cpp" />
+    <ClCompile Include="Protocol\SetSessionStateResultIn.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Protocol\TOInfoIn.cpp" />
+    <ClCompile Include="Protocol\ComputerConfigurationIn.cpp" />
+    <ClCompile Include="Protocol\ComputerConfigurationOut.cpp" />
+    <ClCompile Include="Protocol\ComputerStateOut.cpp" />
+    <ClCompile Include="Protocol\ExecMethodIn.cpp" />
+    <ClCompile Include="Protocol\ExecMethodOut.cpp" />
+    <ClCompile Include="Protocol\GetServiceIn.cpp" />
+    <ClCompile Include="Protocol\GetServiceOut.cpp" />
+    <ClCompile Include="Protocol\GetVoipServerForRecordQueryOut.cpp" />
+    <ClCompile Include="Protocol\IPadSessionBaseIn.cpp" />
+    <ClCompile Include="Protocol\IPadSessionBinStateIn.cpp" />
+    <ClCompile Include="Protocol\IPadSessionChangeSlideIn.cpp" />
+    <ClCompile Include="Protocol\IPadSessionStartedIn.cpp" />
+    <ClCompile Include="Protocol\IPadSessionStatusIn.cpp" />
+    <ClCompile Include="Protocol\IPadSessionStopedIn.cpp" />
+    <ClCompile Include="Protocol\LoginIn.cpp" />
+    <ClCompile Include="Protocol\LoginIn2.cpp" />
+    <ClCompile Include="Protocol\LoginQueryOut.cpp" />
+    <ClCompile Include="Protocol\LoginQueryOut2.cpp" />
+    <ClCompile Include="Protocol\LogoutIn.cpp" />
+    <ClCompile Include="Protocol\NotifyMethodIn.cpp" />
+    <ClCompile Include="Protocol\PreviewServerQueryIn.cpp" />
+    <ClCompile Include="Protocol\PreviewServerRequestQueryOut.cpp" />
+    <ClCompile Include="Protocol\PreviewServersQueryIn.cpp" />
+    <ClCompile Include="Protocol\RegisterRecordQueryOut.cpp" />
+    <ClCompile Include="Protocol\RegisterServiceOut.cpp" />
+    <ClCompile Include="Protocol\SendErrorMessageToAdminOut.cpp" />
+    <ClCompile Include="Protocol\SendIPadChangeTokenOut.cpp" />
+    <ClCompile Include="Protocol\SendIPadLogoutOut.cpp" />
+    <ClCompile Include="Protocol\SendIPadObjectFullStateOut.cpp" />
+    <ClCompile Include="Protocol\SendIPadSlideSrcChangedOut.cpp" />
+    <ClCompile Include="Protocol\ServiceLoadingFaliedIn.cpp" />
+    <ClCompile Include="Protocol\SetSessionStateValueOut.cpp" />
+    <ClCompile Include="Protocol\SetSplashSrcQueryOut.cpp" />
+    <ClCompile Include="Protocol\SharingServersQueryIn.cpp" />
+    <ClCompile Include="Protocol\UnregisterRecordQueryOut.cpp" />
+    <ClCompile Include="Protocol\VoipServerForRecordQueryIn.cpp" />
+    <ClCompile Include="Protocol\VoipServerQueryIn.cpp" />
+    <ClCompile Include="Protocol\VoipServerRequestQueryOut.cpp" />
+    <ClCompile Include="Protocol\VoipServersQueryIn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ServiceMan.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="Protocol\LogoutIn.h" />
+    <ClInclude Include="Protocol\SendIPadObjectFullStateOut.h" />
+    <ClInclude Include="Protocol\ServiceLoadingFailedIn.h" />
+    <ClInclude Include="Protocol\SetSessionStateValueOut.h" />
+    <ClInclude Include="..\..\Common\CommonPacketIn.h" />
+    <ClInclude Include="..\..\common\DataBuffer2.h" />
+    <ClInclude Include="Protocol\DumpFileOut.h" />
+    <ClInclude Include="Protocol\DumpParamsIn.h" />
+    <ClInclude Include="..\..\Common\GetMacAddress.h" />
+    <ClInclude Include="IpadManager.h" />
+    <ClInclude Include="..\..\Common\MD5.h" />
+    <ClInclude Include="..\..\Common\Mutex.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="ServiceMan.h" />
+    <ClInclude Include="ServiceManager.h" />
+    <ClInclude Include="ServiceManagerBase.h" />
+    <ClInclude Include="ServiceWorldManager.h" />
+    <ClInclude Include="Protocol\SetSessionStateResultIn.h" />
+    <ClInclude Include="Protocol\SetSplashSrcQueryOut.h" />
+    <ClInclude Include="Protocol\SharingServersQueryIn.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Protocol\TOInfoIn.h" />
+    <ClInclude Include="Protocol\CommonVoipPacketOut.h" />
+    <ClInclude Include="Protocol\ComputerConfigurationIn.h" />
+    <ClInclude Include="Protocol\ComputerConfigurationOut.h" />
+    <ClInclude Include="Protocol\ComputerStateOut.h" />
+    <ClInclude Include="Protocol\ExecMethodIn.h" />
+    <ClInclude Include="Protocol\ExecMethodOut.h" />
+    <ClInclude Include="Protocol\GetServiceIn.h" />
+    <ClInclude Include="Protocol\GetServiceOut.h" />
+    <ClInclude Include="Protocol\GetVoipServerForRecordQueryOut.h" />
+    <ClInclude Include="Protocol\IPadSessionBaseIn.h" />
+    <ClInclude Include="Protocol\IPadSessionBinStateIn.h" />
+    <ClInclude Include="Protocol\IPadSessionChangeSlideIn.h" />
+    <ClInclude Include="Protocol\IPadSessionStartedIn.h" />
+    <ClInclude Include="Protocol\IPadSessionStatusIn.h" />
+    <ClInclude Include="Protocol\IPadSessionStopedIn.h" />
+    <ClInclude Include="Protocol\LoginIn.h" />
+    <ClInclude Include="Protocol\LoginIn2.h" />
+    <ClInclude Include="Protocol\LoginQueryOut.h" />
+    <ClInclude Include="Protocol\LoginQueryOut2.h" />
+    <ClInclude Include="Protocol\NotifyMethodIn.h" />
+    <ClInclude Include="Protocol\PreviewServerQueryIn.h" />
+    <ClInclude Include="Protocol\previewServerRequestQueryOut.h" />
+    <ClInclude Include="Protocol\PreviewServersQueryIn.h" />
+    <ClInclude Include="Protocol\RegisterRecordQueryOut.h" />
+    <ClInclude Include="Protocol\RegisterServiceOut.h" />
+    <ClInclude Include="Protocol\SendErrorMessageToAdminOut.h" />
+    <ClInclude Include="Protocol\SendIPadChangeTokenOut.h" />
+    <ClInclude Include="Protocol\SendIPadLogoutOut.h" />
+    <ClInclude Include="Protocol\SendIPadSlideSrcChangedOut.h" />
+    <ClInclude Include="Protocol\UnregisterRecordQueryOut.h" />
+    <ClInclude Include="Protocol\VoipServerForRecordQueryIn.h" />
+    <ClInclude Include="Protocol\VoipServerQueryIn.h" />
+    <ClInclude Include="Protocol\VoipServerRequestQueryOut.h" />
+    <ClInclude Include="Protocol\VoipServersQueryIn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ComMan\ComMan.vcxproj">
+      <Project>{3060942a-845a-42a0-895c-97524f11b16a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Logger\Logger.vcxproj">
+      <Project>{70a70dfd-6fb5-4300-895e-5fb26de7aed7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

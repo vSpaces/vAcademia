@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGBAR DIALOGEX 0, 0, 299, 405
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | 
+    WS_POPUP | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_DLGMODALFRAME | WS_EX_WINDOWEDGE | WS_EX_CONTROLPARENT | 
+    WS_EX_APPWINDOW
+CAPTION "Настройки сети"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_PROXY_ADDRESS,52,56,123,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_PROXY_PORT,218,56,41,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Использовать имя пользователя и пароль",
+                    IDC_CHECK_USE_PROXY_USER,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,14,79,203,10
+    EDITTEXT        IDC_PROXY_USER,81,96,92,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PROXY_PASS,218,96,67,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDC_BUTTON2,151,387,50,14
+    PUSHBUTTON      "Отмена",IDC_BUTTON1,209,387,50,14
+    RTEXT           "Адрес:",IDC_STATIC,13,58,36,8,WS_DISABLED
+    CONTROL         "SOCKS 5",IDC_RADIO_SOCKS5,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,67,299,52,10
+    CONTROL         "SOCKS 4",IDC_RADIO_SOCKS4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_DISABLED,14,299,45,10
+    RTEXT           "Имя пользователя:",IDC_STATIC_USER,12,98,66,8,
+                    WS_DISABLED
+    RTEXT           "Пароль:",IDC_STATIC_PASS,179,97,36,8,WS_DISABLED
+    RTEXT           "Порт:",IDC_STATIC2,193,58,19,8,WS_DISABLED
+    GROUPBOX        "Настройки прокси-сервера",IDC_STATICSOCKS,6,247,285,129
+    EDITTEXT        IDC_SOCKS_ADDRESS,53,315,120,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_SOCKS_PORT,218,315,41,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    RTEXT           "Адрес:",IDC_STATIC8,15,316,35,8,WS_DISABLED
+    RTEXT           "Порт:",IDC_STATIC39,194,317,19,8,WS_DISABLED
+    CONTROL         "Использовать имя пользователя и пароль",
+                    IDC_CHECK_USE_SOCKS_USER,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,13,335,203,10
+    EDITTEXT        IDC_SOCKS_USER,81,353,91,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_SOCKS_PASS,218,352,67,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Имя пользователя:",IDC_STATIC_USER_SOCKS,13,355,66,8,
+                    WS_DISABLED
+    RTEXT           "Пароль:",IDC_STATIC_PASS_SOCKS,179,353,37,8,WS_DISABLED
+    GROUPBOX        "Настройки прокси-сервера",IDC_STATICPROXY,6,0,287,119
+    EDITTEXT        IDC_HTTPS_ADDRESS,52,176,121,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_HTTPS_PORT,217,176,41,14,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Использовать имя пользователя и пароль",
+                    IDC_CHECK_USE_HTTPS_USER,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,14,198,203,10
+    EDITTEXT        IDC_HTTPS_USER,81,216,92,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_HTTPS_PASS,217,216,67,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "Адрес:",IDC_STATIC5,14,178,35,8,WS_DISABLED
+    RTEXT           "Имя пользователя:",IDC_STATIC_USER_HTTPS,12,217,66,8,
+                    WS_DISABLED
+    RTEXT           "Пароль:",IDC_STATIC_PASS_HTTPS,179,217,36,8,WS_DISABLED
+    RTEXT           "Порт:",IDC_STATIC6,194,178,19,8,WS_DISABLED
+    GROUPBOX        "Настройки прокси-сервера",IDC_STATICHTTPS,6,123,286,115
+    CONTROL         "Без прокси",IDC_RADIO_PROXY_NOT_USE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,12,12,53,10
+    CONTROL         "Использовать системные настройки прокси",
+                    IDC_RADIO_PROXY_AS_SYSTEM,"Button",BS_AUTORADIOBUTTON,12,
+                    23,164,10
+    CONTROL         "Ручная настройка сервиса прокси",IDC_RADIO_PROXY_MANUAL,
+                    "Button",BS_AUTORADIOBUTTON,12,34,131,10
+    CONTROL         "Без прокси",IDC_RADIO_SOCKS_NOT_USE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,257,53,10
+    CONTROL         "Использовать системные настройки прокси",
+                    IDC_RADIO_SOCKS_AS_SYSTEM,"Button",BS_AUTORADIOBUTTON,14,
+                    268,164,10
+    CONTROL         "Ручная настройка сервиса прокси",IDC_RADIO_SOCKS_MANUAL,
+                    "Button",BS_AUTORADIOBUTTON,14,279,131,10
+    CONTROL         "Без прокси",IDC_RADIO_HTTPS_NOT_USE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,134,53,10
+    CONTROL         "Использовать системные настройки прокси",
+                    IDC_RADIO_HTTPS_AS_SYSTEM,"Button",BS_AUTORADIOBUTTON,14,
+                    145,164,10
+    CONTROL         "Ручная настройка сервиса прокси",IDC_RADIO_HTTPS_MANUAL,
+                    "Button",BS_AUTORADIOBUTTON,14,156,131,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOGBAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        TOPMARGIN, 10
+        BOTTOMMARGIN, 401
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "settings.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_RT_MANIFEST1        RT_MANIFEST             "VCSettings.exe.manifest"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

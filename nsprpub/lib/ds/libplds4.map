@@ -1,0 +1,215 @@
+ libplds4
+
+ Timestamp is 4bb1a457 (Tue Mar 30 11:12:23 2010)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000321bH .text                   CODE
+ 0002:00000000 00000104H .CRT$XCA                DATA
+ 0002:00000104 00000104H .CRT$XCZ                DATA
+ 0002:00000208 00000104H .CRT$XIA                DATA
+ 0002:0000030c 00000104H .CRT$XIAA               DATA
+ 0002:00000410 00000104H .CRT$XIZ                DATA
+ 0002:00000520 000003dcH .rdata                  DATA
+ 0002:000008fc 0000016fH .rdata$debug            DATA
+ 0002:00000a70 00000104H .rdata$sxdata           DATA
+ 0002:00000b74 00000104H .rtc$IAA                DATA
+ 0002:00000c78 00000104H .rtc$IZZ                DATA
+ 0002:00000d7c 00000104H .rtc$TAA                DATA
+ 0002:00000e80 00000104H .rtc$TZZ                DATA
+ 0002:00000f88 00000178H .xdata$x                DATA
+ 0002:00001100 0000047aH .edata                  DATA
+ 0003:00000000 00000179H .data                   DATA
+ 0003:00000180 0000038cH .bss                    DATA
+ 0004:00000000 0000003cH .idata$2                DATA
+ 0004:0000003c 00000014H .idata$3                DATA
+ 0004:00000050 0000014cH .idata$4                DATA
+ 0004:0000019c 0000014cH .idata$5                DATA
+ 0004:000002e8 0000045cH .idata$6                DATA
+ 0005:00000000 00000169H .rsrc$01                DATA
+ 0005:00000170 00000426H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000001       ___safe_se_handler_count   00000001     <absolute>
+ 0000:00000000       ___ImageBase               10000000     <linker-defined>
+ 0001:00000100       _PL_InitArenaPool          10001100 f   plarena.obj
+ 0001:000001c0       _PL_ArenaAllocate          100011c0 f   plarena.obj
+ 0001:00000560       _PL_ArenaGrow              10001560 f   plarena.obj
+ 0001:00000620       _PL_ArenaRelease           10001620 f   plarena.obj
+ 0001:00000860       _PL_FreeArenaPool          10001860 f   plarena.obj
+ 0001:00000880       _PL_FinishArenaPool        10001880 f   plarena.obj
+ 0001:000008a0       _PL_CompactArenaPool       100018a0 f   plarena.obj
+ 0001:000008b0       _PL_ArenaFinish            100018b0 f   plarena.obj
+ 0001:000009e0       _PL_NewHashTable           100019e0 f   plhash.obj
+ 0001:00000b40       _PL_HashTableDestroy       10001b40 f   plhash.obj
+ 0001:00000c60       _PL_HashTableRawLookup     10001c60 f   plhash.obj
+ 0001:00000d30       _PL_HashTableRawLookupConst 10001d30 f   plhash.obj
+ 0001:00000dc0       _PL_HashTableRawAdd        10001dc0 f   plhash.obj
+ 0001:00001020       _PL_HashTableAdd           10002020 f   plhash.obj
+ 0001:00001100       _PL_HashTableRawRemove     10002100 f   plhash.obj
+ 0001:00001310       _PL_HashTableRemove        10002310 f   plhash.obj
+ 0001:00001390       _PL_HashTableLookup        10002390 f   plhash.obj
+ 0001:000013f0       _PL_HashTableLookupConst   100023f0 f   plhash.obj
+ 0001:00001450       _PL_HashTableEnumerateEntries 10002450 f   plhash.obj
+ 0001:00001580       _PL_HashTableDump          10002580 f   plhash.obj
+ 0001:000015b0       _PL_HashString             100025b0 f   plhash.obj
+ 0001:00001610       _PL_CompareStrings         10002610 f   plhash.obj
+ 0001:00001640       _PL_CompareValues          10002640 f   plhash.obj
+ 0001:00001660       _libVersionPoint           10002660 f   plvrsion.obj
+ 0001:0000166c       _PR_CeilingLog2            1000266c f   libnspr4:libnspr4.dll
+ 0001:00001672       _PR_Malloc                 10002672 f   libnspr4:libnspr4.dll
+ 0001:00001678       _PR_Assert                 10002678 f   libnspr4:libnspr4.dll
+ 0001:0000167e       _PR_Lock                   1000267e f   libnspr4:libnspr4.dll
+ 0001:00001684       _PR_CallOnce               10002684 f   libnspr4:libnspr4.dll
+ 0001:0000168a       _PR_NewLock                1000268a f   libnspr4:libnspr4.dll
+ 0001:00001690       _PR_Unlock                 10002690 f   libnspr4:libnspr4.dll
+ 0001:00001696       _PR_Free                   10002696 f   libnspr4:libnspr4.dll
+ 0001:0000169c       _PR_DestroyLock            1000269c f   libnspr4:libnspr4.dll
+ 0001:000016a2       _memcpy                    100026a2 f   MSVCRT:MSVCR90.dll
+ 0001:000016a8       _memset                    100026a8 f   MSVCRT:MSVCR90.dll
+ 0001:000016ae       _strcmp                    100026ae f   MSVCRT:MSVCR90.dll
+ 0001:000016b4       _NtCurrentTeb              100026b4 f i MSVCRT:crtdll.obj
+ 0001:0000170a       __CRT_INIT@12              1000270a f   MSVCRT:crtdll.obj
+ 0001:00001a46       __DllMainCRTStartup@12     10002a46 f   MSVCRT:crtdll.obj
+ 0001:00001a69       ___clean_type_info_names   10002a69 f   MSVCRT:tncleanup.obj
+ 0001:00001a75       __onexit                   10002a75 f   MSVCRT:atonexit.obj
+ 0001:00001b1a       _atexit                    10002b1a f   MSVCRT:atonexit.obj
+ 0001:00001b31       __RTC_Initialize           10002b31 f   MSVCRT:_initsect_.obj
+ 0001:00001b57       __RTC_Terminate            10002b57 f   MSVCRT:_initsect_.obj
+ 0001:00001b7e       __encode_pointer           10002b7e f   MSVCRT:MSVCR90.dll
+ 0001:00001b84       __malloc_crt               10002b84 f   MSVCRT:MSVCR90.dll
+ 0001:00001b8a       _free                      10002b8a f   MSVCRT:MSVCR90.dll
+ 0001:00001b90       __encoded_null             10002b90 f   MSVCRT:MSVCR90.dll
+ 0001:00001b96       __decode_pointer           10002b96 f   MSVCRT:MSVCR90.dll
+ 0001:00001ba0       __ValidateImageBase        10002ba0 f   MSVCRT:pesect.obj
+ 0001:00001be0       __FindPESection            10002be0 f   MSVCRT:pesect.obj
+ 0001:00001c30       __IsNonwritableInCurrentImage 10002c30 f   MSVCRT:pesect.obj
+ 0001:00001cee       __initterm                 10002cee f   MSVCRT:MSVCR90.dll
+ 0001:00001cf4       __initterm_e               10002cf4 f   MSVCRT:MSVCR90.dll
+ 0001:00001cfa       __amsg_exit                10002cfa f   MSVCRT:MSVCR90.dll
+ 0001:00001d00       ___CppXcptFilter           10002d00 f   MSVCRT:MSVCR90.dll
+ 0001:00001d06       _DllMain@12                10002d06 f   MSVCRT:dllmain.obj
+ 0001:00001d2c       __SEH_prolog4              10002d2c f   MSVCRT:sehprolg4.obj
+ 0001:00001d71       __SEH_epilog4              10002d71 f   MSVCRT:sehprolg4.obj
+ 0001:00001d85       __except_handler4          10002d85 f   MSVCRT:chandler4gs.obj
+ 0001:00001daa       ___security_init_cookie    10002daa f   MSVCRT:gs_support.obj
+ 0001:00001e40       ___clean_type_info_names_internal 10002e40 f   MSVCRT:MSVCR90.dll
+ 0001:00001e46       __unlock                   10002e46 f   MSVCRT:MSVCR90.dll
+ 0001:00001e4c       ___dllonexit               10002e4c f   MSVCRT:MSVCR90.dll
+ 0001:00001e52       __lock                     10002e52 f   MSVCRT:MSVCR90.dll
+ 0001:00001e58       @__security_check_cookie@4 10002e58 f   MSVCRT:secchk.obj
+ 0001:00001e68       __except_handler4_common   10002e68 f   MSVCRT:MSVCR90.dll
+ 0001:00001e6e       ___report_gsfailure        10002e6e f   MSVCRT:gs_report.obj
+ 0001:00001f74       __crt_debugger_hook        10002f74 f   MSVCRT:MSVCR90.dll
+ 0001:00001f7a       _InterlockedExchange@8     10002f7a f   kernel32:KERNEL32.dll
+ 0001:00001f80       _Sleep@4                   10002f80 f   kernel32:KERNEL32.dll
+ 0001:00001f86       _InterlockedCompareExchange@12 10002f86 f   kernel32:KERNEL32.dll
+ 0001:00001f8c       _DisableThreadLibraryCalls@4 10002f8c f   kernel32:KERNEL32.dll
+ 0001:00001f92       _QueryPerformanceCounter@4 10002f92 f   kernel32:KERNEL32.dll
+ 0001:00001f98       _GetTickCount@0            10002f98 f   kernel32:KERNEL32.dll
+ 0001:00001f9e       _GetCurrentThreadId@0      10002f9e f   kernel32:KERNEL32.dll
+ 0001:00001fa4       _GetCurrentProcessId@0     10002fa4 f   kernel32:KERNEL32.dll
+ 0001:00001faa       _GetSystemTimeAsFileTime@4 10002faa f   kernel32:KERNEL32.dll
+ 0001:00001fb0       _TerminateProcess@8        10002fb0 f   kernel32:KERNEL32.dll
+ 0001:00001fb6       _GetCurrentProcess@0       10002fb6 f   kernel32:KERNEL32.dll
+ 0001:00001fbc       _UnhandledExceptionFilter@4 10002fbc f   kernel32:KERNEL32.dll
+ 0001:00001fc2       _SetUnhandledExceptionFilter@4 10002fc2 f   kernel32:KERNEL32.dll
+ 0001:00001fc8       _IsDebuggerPresent@0       10002fc8 f   kernel32:KERNEL32.dll
+ 0002:00000000       ___xc_a                    10005000     MSVCRT:cinitexe.obj
+ 0002:00000104       ___xc_z                    10005104     MSVCRT:cinitexe.obj
+ 0002:00000208       ___xi_a                    10005208     MSVCRT:cinitexe.obj
+ 0002:00000410       ___xi_z                    10005410     MSVCRT:cinitexe.obj
+ 0002:00000574       ??_C@_0BH@BHBMHFGB@?$CInb?5?$CG?5pool?9?$DOmask?$CJ?5?$DN?$DN?50?$AA@ 10005574     plarena.obj
+ 0002:00000590       ??_C@_0EC@NCCHNBJG@c?3?1Users?1Tandy?1Programming?1mozil@ 10005590     plarena.obj
+ 0002:000005e0       ??_C@_0BC@CMMPMPMG@arenaLock?5?$DN?$DN?5NULL?$AA@ 100055e0     plarena.obj
+ 0002:000005f8       ??_C@_0BJ@NNPDJKNB@?$CIa?$CJ?9?$DOavail?5?$DM?$DN?5?$CIa?$CJ?9?$DOlimit?$AA@ 100055f8     plarena.obj
+ 0002:00000618       ??_C@_0CM@BIBOFJLO@a?9?$DObase?5?$DM?$DN?5a?9?$DOavail?5?$CG?$CG?5a?9?$DOavail?5@ 10005618     plarena.obj
+ 0002:0000064c       ??_C@_09GMIFHALG@?$CKhep?5?$DN?$DN?50?$AA@ 1000564c     plhash.obj
+ 0002:00000658       ??_C@_0EB@BKOPKIGJ@c?3?1Users?1Tandy?1Programming?1mozil@ 10005658     plhash.obj
+ 0002:000006a6       ??_C@_00CNPNBAHC@?$AA@     100056a6     plvrsion.obj
+ 0002:000006a8       ??_C@_0BM@BKFPMPBP@http?3?1?1www?4mozilla?4org?1MPL?1?$AA@ 100056a8     plvrsion.obj
+ 0002:000006d0       ??_C@_0EM@IKPMBEKH@Copyright?5?$CIc?$CJ?51998?5Netscape?5Comm@ 100056d0     plvrsion.obj
+ 0002:0000072c       ??_C@_03HPADHAHE@N?1A?$AA@ 1000572c     plvrsion.obj
+ 0002:00000730       ??_C@_0BB@BOGKMJGN@Portable?5runtime?$AA@ 10005730     plvrsion.obj
+ 0002:00000744       ??_C@_0N@MBGFJCAC@libplds4?4dll?$AA@ 10005744     plvrsion.obj
+ 0002:00000754       ??_C@_0BE@GCCDFCGE@2010?903?930?507?312?321?$AA@ 10005754     plvrsion.obj
+ 0002:0000076c       __pDefaultRawDllMain       1000576c     MSVCRT:crtdll.obj
+ 0002:0000076c       __pRawDllMain              1000576c     MSVCRT:crtdll.obj
+ 0002:00000770       ?ProcessDetach@NativeDll@<CrtImplementationDetails>@@0IB 10005770     MSVCRT:tncleanup.obj
+ 0002:00000774       ?ProcessAttach@NativeDll@<CrtImplementationDetails>@@0IB 10005774     MSVCRT:tncleanup.obj
+ 0002:00000778       ?ThreadAttach@NativeDll@<CrtImplementationDetails>@@0IB 10005778     MSVCRT:tncleanup.obj
+ 0002:0000077c       ?ThreadDetach@NativeDll@<CrtImplementationDetails>@@0IB 1000577c     MSVCRT:tncleanup.obj
+ 0002:00000780       ?ProcessVerifier@NativeDll@<CrtImplementationDetails>@@0IB 10005780     MSVCRT:tncleanup.obj
+ 0002:00000790       __load_config_used         10005790     MSVCRT:loadcfg.obj
+ 0002:00000a70       ___safe_se_handler_table   10005a70     <linker-defined>
+ 0002:00000b74       ___rtc_iaa                 10005b74     MSVCRT:_initsect_.obj
+ 0002:00000c78       ___rtc_izz                 10005c78     MSVCRT:_initsect_.obj
+ 0002:00000d7c       ___rtc_taa                 10005d7c     MSVCRT:_initsect_.obj
+ 0002:00000e80       ___rtc_tzz                 10005e80     MSVCRT:_initsect_.obj
+ 0003:00000018       _prVersionDescription_libplds4 10007018     plvrsion.obj
+ 0003:00000064       ___native_dllmain_reason   10007064     MSVCRT:natstart.obj
+ 0003:00000068       ___native_vcclrit_reason   10007068     MSVCRT:natstart.obj
+ 0003:0000006c       ___security_cookie         1000706c     MSVCRT:gs_cookie.obj
+ 0003:00000070       ___security_cookie_complement 10007070     MSVCRT:gs_cookie.obj
+ 0003:0000019c       ?__type_info_root_node@@3U__type_info_node@@A 1000719c     MSVCRT:tncleanup.obj
+ 0003:000004cc       __adjust_fdiv              100074cc     <common>
+ 0003:000004d8       ___native_startup_state    100074d8     <common>
+ 0003:000004e8       ___native_startup_lock     100074e8     <common>
+ 0003:000004ec       ___onexitend               100074ec     <common>
+ 0003:000004fc       ___onexitbegin             100074fc     <common>
+ 0003:00000500       ___dyn_tls_init_callback   10007500     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_libnspr4 10008000     libnspr4:libnspr4.dll
+ 0004:00000014       __IMPORT_DESCRIPTOR_MSVCR90 10008014     MSVCRT:MSVCR90.dll
+ 0004:00000028       __IMPORT_DESCRIPTOR_KERNEL32 10008028     kernel32:KERNEL32.dll
+ 0004:0000003c       __NULL_IMPORT_DESCRIPTOR   1000803c     libnspr4:libnspr4.dll
+ 0004:0000019c       __imp__IsDebuggerPresent@0 1000819c     kernel32:KERNEL32.dll
+ 0004:000001a0       __imp__SetUnhandledExceptionFilter@4 100081a0     kernel32:KERNEL32.dll
+ 0004:000001a4       __imp__UnhandledExceptionFilter@4 100081a4     kernel32:KERNEL32.dll
+ 0004:000001a8       __imp__GetCurrentProcess@0 100081a8     kernel32:KERNEL32.dll
+ 0004:000001ac       __imp__TerminateProcess@8  100081ac     kernel32:KERNEL32.dll
+ 0004:000001b0       __imp__GetSystemTimeAsFileTime@4 100081b0     kernel32:KERNEL32.dll
+ 0004:000001b4       __imp__GetCurrentProcessId@0 100081b4     kernel32:KERNEL32.dll
+ 0004:000001b8       __imp__GetCurrentThreadId@0 100081b8     kernel32:KERNEL32.dll
+ 0004:000001bc       __imp__GetTickCount@0      100081bc     kernel32:KERNEL32.dll
+ 0004:000001c0       __imp__DisableThreadLibraryCalls@4 100081c0     kernel32:KERNEL32.dll
+ 0004:000001c4       __imp__InterlockedCompareExchange@12 100081c4     kernel32:KERNEL32.dll
+ 0004:000001c8       __imp__Sleep@4             100081c8     kernel32:KERNEL32.dll
+ 0004:000001cc       __imp__InterlockedExchange@8 100081cc     kernel32:KERNEL32.dll
+ 0004:000001d0       __imp__QueryPerformanceCounter@4 100081d0     kernel32:KERNEL32.dll
+ 0004:000001d4       \177KERNEL32_NULL_THUNK_DATA 100081d4     kernel32:KERNEL32.dll
+ 0004:00000208       __imp__free                10008208     MSVCRT:MSVCR90.dll
+ 0004:0000020c       __imp___encoded_null       1000820c     MSVCRT:MSVCR90.dll
+ 0004:00000210       __imp___decode_pointer     10008210     MSVCRT:MSVCR90.dll
+ 0004:00000214       __imp___malloc_crt         10008214     MSVCRT:MSVCR90.dll
+ 0004:00000218       __imp___initterm_e         10008218     MSVCRT:MSVCR90.dll
+ 0004:0000021c       __imp___amsg_exit          1000821c     MSVCRT:MSVCR90.dll
+ 0004:00000220       __imp___adjust_fdiv        10008220     MSVCRT:MSVCR90.dll
+ 0004:00000224       __imp____CppXcptFilter     10008224     MSVCRT:MSVCR90.dll
+ 0004:00000228       __imp____clean_type_info_names_internal 10008228     MSVCRT:MSVCR90.dll
+ 0004:0000022c       __imp___unlock             1000822c     MSVCRT:MSVCR90.dll
+ 0004:00000230       __imp____dllonexit         10008230     MSVCRT:MSVCR90.dll
+ 0004:00000234       __imp___lock               10008234     MSVCRT:MSVCR90.dll
+ 0004:00000238       __imp___onexit             10008238     MSVCRT:MSVCR90.dll
+ 0004:0000023c       __imp___except_handler4_common 1000823c     MSVCRT:MSVCR90.dll
+ 0004:00000240       __imp___crt_debugger_hook  10008240     MSVCRT:MSVCR90.dll
+ 0004:00000244       __imp___encode_pointer     10008244     MSVCRT:MSVCR90.dll
+ 0004:00000248       __imp__strcmp              10008248     MSVCRT:MSVCR90.dll
+ 0004:0000024c       __imp__memset              1000824c     MSVCRT:MSVCR90.dll
+ 0004:00000250       __imp__memcpy              10008250     MSVCRT:MSVCR90.dll
+ 0004:00000254       __imp___initterm           10008254     MSVCRT:MSVCR90.dll
+ 0004:00000258       \177MSVCR90_NULL_THUNK_DATA 10008258     MSVCRT:MSVCR90.dll
+ 0004:00000294       __imp__PR_DestroyLock      10008294     libnspr4:libnspr4.dll
+ 0004:00000298       __imp__PR_Free             10008298     libnspr4:libnspr4.dll
+ 0004:0000029c       __imp__PR_Unlock           1000829c     libnspr4:libnspr4.dll
+ 0004:000002a0       __imp__PR_NewLock          100082a0     libnspr4:libnspr4.dll
+ 0004:000002a4       __imp__PR_CallOnce         100082a4     libnspr4:libnspr4.dll
+ 0004:000002a8       __imp__PR_Lock             100082a8     libnspr4:libnspr4.dll
+ 0004:000002ac       __imp__PR_Assert           100082ac     libnspr4:libnspr4.dll
+ 0004:000002b0       __imp__PR_Malloc           100082b0     libnspr4:libnspr4.dll
+ 0004:000002b4       __imp__PR_CeilingLog2      100082b4     libnspr4:libnspr4.dll
+ 0004:000002b8       \177libnspr4_NULL_THUNK_DATA 100082b8     libnspr4:libnspr4.dll
+
+ entry point at        0001:00001a46
+

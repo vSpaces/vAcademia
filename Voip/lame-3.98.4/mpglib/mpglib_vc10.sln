@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mpglib_vc10", "mpglib_vc10.vcxproj", "{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug GTK|Win32 = Debug GTK|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Debug GTK|Win32.ActiveCfg = Debug GTK|Win32
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Debug GTK|Win32.Build.0 = Debug GTK|Win32
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Debug|Win32.Build.0 = Debug|Win32
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Release|Win32.ActiveCfg = Release|Win32
+		{0AB48E5D-FAA5-402B-84D6-2F5166D90DD4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

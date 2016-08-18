@@ -1,0 +1,3 @@
+#include <string>
+
+wstring GetRootDir();

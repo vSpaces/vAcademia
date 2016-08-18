@@ -1,0 +1,279 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOGFIND DIALOGEX 0, 0, 328, 52
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_CLOSE,4,4,11,10,BS_BITMAP
+    EDITTEXT        IDC_EDITFIND,19,4,119,10,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Find",IDC_FINDNEXT,143,4,50,10
+    CONTROL         "Match case",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,20,54,11
+    GROUPBOX        "Direction",IDC_DIRECTION,199,3,75,34
+    CONTROL         "&Up",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,207,13,53,9
+    CONTROL         "&Down",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,207,24,48,
+                    10
+    LTEXT           "",IDC_STATUS,6,40,90,10
+END
+
+IDD_DIALOGFILTER DIALOGEX 0, 0, 328, 52
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_CLOSE,17,4,11,10,BS_BITMAP
+    PUSHBUTTON      "",IDC_OK,4,4,11,10,BS_BITMAP
+    EDITTEXT        IDC_FILTER1,84,7,200,10,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FILTER2,84,20,200,10,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_FILTER3,84,34,200,10,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    CONTROL         "Filter 1:",IDC_CHECK_FILTER1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,39,7,40,10
+    CONTROL         "Filter 2:",IDC_CHECK_FILTER2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,39,20,40,10
+    CONTROL         "Filter 3:",IDC_CHECK_FILTER3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,39,34,40,10
+END
+
+IDD_DIALOG_SELECT_SENDER DIALOG DISCARDABLE  0, 0, 186, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Sender"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LISTBOX         IDC_LIST1,7,7,112,31,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOGFIND, DIALOG
+    BEGIN
+        RIGHTMARGIN, 320
+    END
+
+    IDD_DIALOGFILTER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 320
+    END
+
+    IDD_DIALOG_SELECT_SENDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BTCLOSE             BITMAP  DISCARDABLE     "img\\btclose.bmp"
+IDB_BTOK                BITMAP  DISCARDABLE     "img\\btok.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 230, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System"
+BEGIN
+    ICON            IDI_TRACER,IDC_MYICON,14,9,20,20
+    LTEXT           "Tracer Version 1.13",IDC_STATIC,49,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,49,20,119,8
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_TRACER MENU DISCARDABLE 
+BEGIN
+    POPUP "&Program"
+    BEGIN
+        MENUITEM "&Select Sender\tCtrl+S",      ID_SELECT_SENDER
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tCtrl+X",               IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "Select &all\tCtr+A",          ID_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_REFRESH
+        MENUITEM "Cl&ear tracer\tF8",           ID_EDIT_CLEARTRACER
+        MENUITEM SEPARATOR
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND
+        MENUITEM "Filte&r\tCtrl+R",             ID_EDIT_FILTER
+    END
+    MENUITEM "Pause",                       IDM_PAUSE
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "Always on &top",              ID_WINDOW_ALWAYSONTOP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TRACER              ICON    DISCARDABLE     "Tracer.ICO"
+IDI_SMALL               ICON    DISCARDABLE     "SMALL.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "A",            ID_SELECTALL,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_COPY,                VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_FILTER,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_SELECT_SENDER,       VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDM_ESCAPE,             VIRTKEY, NOINVERT
+    VK_F5,          ID_REFRESH,             VIRTKEY, NOINVERT
+    VK_F8,          ID_EDIT_CLEARTRACER,    VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RETURN,              VIRTKEY, NOINVERT
+    VK_TAB,         ID_SWITCHMODE1,         VIRTKEY, NOINVERT
+    VK_TAB,         ID_SWITCHMODE,          VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         ID_SWITCHMODE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            IDM_EXIT,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "Tracer"
+    IDS_HELLO               "Hello World!"
+    IDC_TRACER              "TRACER"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,7 @@
+; VASEEncoder.def : Declares the module parameters for the DLL.
+
+LIBRARY      "VASEncoder"
+DESCRIPTION  'VASEncoder Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

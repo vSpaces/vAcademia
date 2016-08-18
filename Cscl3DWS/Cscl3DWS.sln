@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cscl3DWS", "Cscl3DWS.vcproj", "{74DDC65C-6D07-45AF-BB43-F0677203B114}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug N3DRelease = Debug N3DRelease
+		DebugVU2007 = DebugVU2007
+		Natura3D_Release_VU2007 = Natura3D_Release_VU2007
+		Release = Release
+		Semi_Release = Semi_Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Debug.ActiveCfg = Debug|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Debug.Build.0 = Debug|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Debug N3DRelease.ActiveCfg = Debug N3DRelease|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Debug N3DRelease.Build.0 = Debug N3DRelease|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.DebugVU2007.ActiveCfg = DebugVU2007|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.DebugVU2007.Build.0 = DebugVU2007|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Natura3D_Release_VU2007.ActiveCfg = Natura3D_Release_VU2007|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Natura3D_Release_VU2007.Build.0 = Natura3D_Release_VU2007|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Release.ActiveCfg = Release|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Release.Build.0 = Release|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Semi_Release.ActiveCfg = Semi_Release|Win32
+		{74DDC65C-6D07-45AF-BB43-F0677203B114}.Semi_Release.Build.0 = Semi_Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

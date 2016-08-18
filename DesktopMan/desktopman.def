@@ -1,0 +1,11 @@
+; DesktopMan.def : Declares the module parameters for the DLL.
+
+LIBRARY      "DesktopMan"
+DESCRIPTION  'DesktopMan Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	CreateDesktopManager     @1
+	DestroyDesktopManager    @2
+	CreateSharingManager     @3
+	DestroySharingManager    @4

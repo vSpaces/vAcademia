@@ -1,0 +1,32 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+
+	[
+		object,
+		uuid(45FB9D2C-5118-4e3e-B77D-17ACE53ECE39),
+		helpstring("ITextLogEventHandler Interface"),
+		pointer_default(unique)
+	]
+	interface ITextLogCommand : IUnknown
+	{
+		[helpstring("method handleCommand")]
+		HRESULT handleCommand( [in] WORD aCommand, [in] DWORD aData);
+	};
+
+	[
+		object,
+		uuid(36D5C1E5-C6BC-4257-9330-E738FFAFD073),
+		helpstring("ITextLogMan Interface"),
+		pointer_default(unique)
+	]
+	interface ITextLogMan : IUnknown
+	{
+		[helpstring("method setCommandHandler")]
+		HRESULT setCommandHandler( [in] IUnknown* aCommandHandler);
+		[helpstring("method removeCommandHandler")]
+		HRESULT removeCommandHandler();
+		[helpstring("method putEvents")]
+		HRESULT putEvents([in] WORD aEventCount, [in, size_is( aEventCount)] DWORD* aEventIDs, [in, size_is( aEventCount)] BSTR* aEventStrings);
+		[helpstring("method putEvent")] HRESULT putEvent([in] BSTR aEventString, [in] DWORD aEventID);
+	};

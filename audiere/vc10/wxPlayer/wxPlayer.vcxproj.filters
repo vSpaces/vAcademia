@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\examples\wxPlayer\CDDeviceDialog.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\CDDeviceFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\DeviceFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\EditLoopPointsDialog.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\MIDIDeviceDialog.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\MIDIDeviceFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\MIDIStreamFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\NewDeviceDialog.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\SoundEffectFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\StreamFrame.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\TagsDialog.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\examples\wxPlayer\wxPlayer.cpp">
+      <Filter>files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\examples\wxPlayer\CDDeviceDialog.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\CDDeviceFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\Commands.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\DeviceFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\EditLoopPointsDialog.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\MIDIDeviceDialog.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\MIDIDeviceFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\MIDIStreamFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\NewDeviceDialog.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\resource.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\SoundEffectFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\StreamFrame.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\TagsDialog.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\wx.h">
+      <Filter>files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\examples\wxPlayer\wxPlayer.h">
+      <Filter>files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\examples\wxPlayer\wxPlayer.rc">
+      <Filter>files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+<vendors>
+	<vendor majorver="169" minorver="16">nvidia</vendor>
+	<vendor majorver="14" minorver="10" leadver="6,7,8">intel</vendor>
+	<vendor majorver="8" minorver="3" build="7412">ati</vendor>
+</vendors>

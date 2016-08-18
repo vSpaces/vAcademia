@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>SyncMan</ProjectName>
+    <ProjectGuid>{2DC710CB-DD40-4C5E-824E-DC79A8122E86}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../obj/$(ProjectName)/$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(LibraryPath)</LibraryPath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;.\Protocol;..\;..\oms;..\rmml;..\RenderManager\Classes\MapManagers\;..\..\ComMan;..\..\Common;..\..\Cal3D\;..\..\nengine\interfaces\;..\..\UnZip\lib\;..\..\Nengine\nengine;..\..\Nengine\include;..\..\ReManager;..\..\logWriter;..\..\json_spirit2\include;..\..\rtl;..\..\nengine\ncommon\;..\..\Launcher;..\..\nmemoryprofiler;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;SYNCMAN_EXPORTS;CSCL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;zlib32.lib;LogWriter.lib;json_spirit2.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OptimizeReferences>
+      </OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\;.\Protocol;..\;..\oms;..\rmml;..\RenderManager\Classes\MapManagers\;..\..\ComMan;..\..\Common;..\..\Cal3D\;..\..\nengine\interfaces\;..\..\UnZip\lib\;..\..\Nengine\nengine;..\..\Nengine\include;..\..\ReManager;..\..\logWriter;..\..\json_spirit2\include;..\..\rtl;..\..\nengine\ncommon\;..\..\Launcher;..\..\nmemoryprofiler;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;SYNCMAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rtl.lib;zlib32.lib;LogWriter.lib;json_spirit2.lib;CrashHandler.lib;mdump.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../../lib/$(Configuration);../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>../../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\DataBuffer.cpp" />
+    <ClCompile Include="..\..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="..\..\nengine\ncommon\FileFunctions.cpp" />
+    <ClCompile Include="..\RenderManager\Classes\MapManagers\MapObjectStructures.cpp" />
+    <ClCompile Include="MapObjectQueue.cpp" />
+    <ClCompile Include="Protocol\InfoMessageIn.cpp" />
+    <ClCompile Include="Protocol\LocationEnteredIn.cpp" />
+    <ClCompile Include="Protocol\ObjectCreateResultQueryIn.cpp" />
+    <ClCompile Include="ObjectStateQueue.cpp" />
+    <ClCompile Include="PropertyInfo.cpp" />
+    <ClCompile Include="PropertyList.cpp" />
+    <ClCompile Include="PropertyValue.cpp" />
+    <ClCompile Include="Protocol\SetLocationEnteringPermissionForUserQueryOut.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SyncMan.cpp" />
+    <ClCompile Include="SyncManager.cpp" />
+    <ClCompile Include="UpdatePacketInContainer.cpp" />
+    <ClCompile Include="..\..\Common\UrlParser.cpp" />
+    <ClCompile Include="..\..\Nengine\nengine\Zlibengn.cpp" />
+    <ClCompile Include="Protocol\AvatarChangeLocationOut.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacketIn.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacketOut.cpp" />
+    <ClCompile Include="Protocol\CreateSeanceOut.cpp" />
+    <ClCompile Include="Protocol\DeleteObjectIn.cpp" />
+    <ClCompile Include="Protocol\DeleteObjectOut.cpp" />
+    <ClCompile Include="Protocol\DeleteRecordIntoRecycleBinOut.cpp" />
+    <ClCompile Include="Protocol\DeleteRecordOut.cpp" />
+    <ClCompile Include="Protocol\DeleteRecordSegmentOut.cpp" />
+    <ClCompile Include="Protocol\DeleteRecordsOut.cpp" />
+    <ClCompile Include="Protocol\ErrorCreateTempLocationIn.cpp" />
+    <ClCompile Include="Protocol\EventGetUserRightOut.cpp" />
+    <ClCompile Include="Protocol\EventLeavedNotifyIn.cpp" />
+    <ClCompile Include="Protocol\EventNotifyIn.cpp" />
+    <ClCompile Include="Protocol\EventsInfoIntoLocationIn.cpp" />
+    <ClCompile Include="Protocol\EventUserBanUpdateIn.cpp" />
+    <ClCompile Include="Protocol\EventUserBanUpdateOut.cpp" />
+    <ClCompile Include="Protocol\EventUserDefaultRightsOut.cpp" />
+    <ClCompile Include="Protocol\EventUserRightsInfoIn.cpp" />
+    <ClCompile Include="Protocol\EventUserRightsUpdateOut.cpp" />
+    <ClCompile Include="Protocol\EventUserRightUpdateIn.cpp" />
+    <ClCompile Include="Protocol\GetObjectStatusOut.cpp" />
+    <ClCompile Include="Protocol\GetSeancesOut.cpp" />
+    <ClCompile Include="Protocol\GettingEventRecordsIn.cpp" />
+    <ClCompile Include="Protocol\GettingLogRecordsIn.cpp" />
+    <ClCompile Include="GetUserListIn.cpp" />
+    <ClCompile Include="Protocol\GetUserListOut.cpp" />
+    <ClCompile Include="Protocol\LeavedSeanceIn.cpp" />
+    <ClCompile Include="Protocol\ListenZonesOut.cpp" />
+    <ClCompile Include="Protocol\LogSeanceCreatedIn.cpp" />
+    <ClCompile Include="Protocol\PlayerClosedIn.cpp" />
+    <ClCompile Include="Protocol\PlayOut.cpp" />
+    <ClCompile Include="Protocol\PrecisedURLIn.cpp" />
+    <ClCompile Include="Protocol\PreciseURLOut.cpp" />
+    <ClCompile Include="Protocol\PrepareToPlayIn.cpp" />
+    <ClCompile Include="Protocol\QueryEventRecordsOut.cpp" />
+    <ClCompile Include="Protocol\QueryFullSeanceInfoOut.cpp" />
+    <ClCompile Include="Protocol\QueryLatentedObjectsOut.cpp" />
+    <ClCompile Include="Protocol\QueryLogRecordsOut.cpp" />
+    <ClCompile Include="Protocol\QueryObjectOut.cpp" />
+    <ClCompile Include="Protocol\ReceiveBadSyncDataIn.cpp" />
+    <ClCompile Include="Protocol\ReceivedObjectStatusIn.cpp" />
+    <ClCompile Include="Protocol\ReceivedPrecisedURLIn.cpp" />
+    <ClCompile Include="Protocol\ReceivedSeanceInfoIn.cpp" />
+    <ClCompile Include="Protocol\ReceivedSeancesIn.cpp" />
+    <ClCompile Include="Protocol\RecordDisconnectedIn.cpp" />
+    <ClCompile Include="Protocol\RecordStartedIn.cpp" />
+    <ClCompile Include="Protocol\RecordStopedIn.cpp" />
+    <ClCompile Include="Protocol\RestoreSyncronizationOut.cpp" />
+    <ClCompile Include="Protocol\SaveOut.cpp" />
+    <ClCompile Include="Protocol\SeanceLoadedIn.cpp" />
+    <ClCompile Include="Protocol\SeancesInfoIn.cpp" />
+    <ClCompile Include="Protocol\SeekOut.cpp" />
+    <ClCompile Include="Protocol\SendObjectOut.cpp" />
+    <ClCompile Include="Protocol\ServerErrorIn.cpp" />
+    <ClCompile Include="Protocol\SetPilotLoginOut.cpp" />
+    <ClCompile Include="Protocol\StartRecordOut.cpp" />
+    <ClCompile Include="Protocol\StopOut.cpp" />
+    <ClCompile Include="Protocol\StopRecordOut.cpp" />
+    <ClCompile Include="Protocol\SyncMessageIn.cpp" />
+    <ClCompile Include="Protocol\SyncMessageOut.cpp" />
+    <ClCompile Include="Protocol\UpdatePacketIn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Protocol\UpdatePacketOut.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Protocol\RecordEditorCopyIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorCopyOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorCutIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorCutOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorDeleteOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorDelteIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorOpenIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorOpenOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorPasteIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorPasteOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorPauseIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorPlayIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorRedoIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorRewindIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorSaveAsIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorSaveAsOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorSaveIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorSeekIn.cpp" />
+    <ClCompile Include="Protocol\RecordEditorSeekOut.cpp" />
+    <ClCompile Include="Protocol\RecordEditorUndoIn.cpp" />
+    <ClCompile Include="Protocol\UpdateRecordInfoOut.cpp" />
+    <ClCompile Include="Protocol\UpdatePlayingTimeIn.cpp" />
+    <ClCompile Include="Protocol\SeancePausedIn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="..\..\nengine\ncommon\FileFunctions.h" />
+    <ClInclude Include="..\RenderManager\Classes\MapManagers\MapObjectStructures.h" />
+    <ClInclude Include="Protocol\GettingEventRecordsIn.h" />
+    <ClInclude Include="Protocol\InfoMessageIn.h" />
+    <ClInclude Include="Protocol\LocationEnteredIn.h" />
+    <ClInclude Include="Protocol\QueryEventRecordsOut.h" />
+    <ClInclude Include="..\..\Common\CriticalSectionGuard.h" />
+    <ClInclude Include="..\..\Common\DataBuffer.h" />
+    <ClInclude Include="MapObjectQueue.h" />
+    <ClInclude Include="..\rmml\mlSynchState.h" />
+    <ClInclude Include="ObjectStateQueue.h" />
+    <ClInclude Include="..\oms\oms_context.h" />
+    <ClInclude Include="PropertyInfo.h" />
+    <ClInclude Include="PropertyList.h" />
+    <ClInclude Include="PropertyValue.h" />
+    <ClInclude Include="Protocol\SetLocationEnteringPermissionForUserQueryOut.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\rmml\rmml.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SyncMan.h" />
+    <ClInclude Include="SyncManager.h" />
+    <ClInclude Include="SyncProtocol.h" />
+    <ClInclude Include="UpdatePacketInContainer.h" />
+    <ClInclude Include="..\..\Common\UrlParser.h" />
+    <ClInclude Include="..\..\Common\UtilTypes.h" />
+    <ClInclude Include="..\..\Nengine\nengine\Zlibengn.h" />
+    <ClInclude Include="Protocol\AvatarChangeLocationOut.h" />
+    <ClInclude Include="..\..\Common\CommonPacketIn.h" />
+    <ClInclude Include="..\..\Common\CommonPacketOut.h" />
+    <ClInclude Include="Protocol\CommonRecordIn.h" />
+    <ClInclude Include="Protocol\CreateSeanceOut.h" />
+    <ClInclude Include="Protocol\DeleteObjectIn.h" />
+    <ClInclude Include="Protocol\DeleteObjectOut.h" />
+    <ClInclude Include="Protocol\DeleteRecordIntoRecycleBinOut.h" />
+    <ClInclude Include="Protocol\DeleteRecordOut.h" />
+    <ClInclude Include="Protocol\DeleteRecordSegmentOut.h" />
+    <ClInclude Include="Protocol\ErrorCreateTempLocationIn.h" />
+    <ClInclude Include="Protocol\EventGetUserRightOut.h" />
+    <ClInclude Include="Protocol\EventsInfoIntoLocationIn.h" />
+    <ClInclude Include="Protocol\EventUserBanUpdateIn.h" />
+    <ClInclude Include="Protocol\EventUserBanUpdateOut.h" />
+    <ClInclude Include="Protocol\EventUserDefaultRightsOut.h" />
+    <ClInclude Include="Protocol\EventUserRightsInfoIn.h" />
+    <ClInclude Include="Protocol\EventUserRightsUpdateOut.h" />
+    <ClInclude Include="Protocol\EventUserRightUpdateIn.h" />
+    <ClInclude Include="Protocol\GetObjectStatusOut.h" />
+    <ClInclude Include="Protocol\GetSeancesOut.h" />
+    <ClInclude Include="Protocol\GettingLogRecordsIn.h" />
+    <ClInclude Include="GetUserListIn.h" />
+    <ClInclude Include="Protocol\GetUserListOut.h" />
+    <ClInclude Include="Protocol\LeavedSeanceIn.h" />
+    <ClInclude Include="Protocol\ListenZonesOut.h" />
+    <ClInclude Include="Protocol\LogSeanceCreatedIn.h" />
+    <ClInclude Include="Protocol\PlayerClosedIn.h" />
+    <ClInclude Include="Protocol\PlayOut.h" />
+    <ClInclude Include="Protocol\PrecisedURLIn.h" />
+    <ClInclude Include="Protocol\PreciseURLOut.h" />
+    <ClInclude Include="Protocol\QueryFullSeanceInfoOut.h" />
+    <ClInclude Include="Protocol\QueryLatentedObjectsOut.h" />
+    <ClInclude Include="Protocol\QueryLogRecordsOut.h" />
+    <ClInclude Include="Protocol\QueryObjectOut.h" />
+    <ClInclude Include="Protocol\ReceiveBadSyncDataIn.h" />
+    <ClInclude Include="Protocol\ReceivedObjectStatusIn.h" />
+    <ClInclude Include="Protocol\ReceivedPrecisedURLIn.h" />
+    <ClInclude Include="Protocol\ReceivedRecordInfoIn.h" />
+    <ClInclude Include="Protocol\ReceivedSeancesIn.h" />
+    <ClInclude Include="Protocol\ReceiveSyncDataIn.h" />
+    <ClInclude Include="Protocol\RecordDisconnectedIn.h" />
+    <ClInclude Include="Protocol\RecordStartedIn.h" />
+    <ClInclude Include="Protocol\RecordStopedIn.h" />
+    <ClInclude Include="Protocol\SaveOut.h" />
+    <ClInclude Include="Protocol\SeancesInfoIn.h" />
+    <ClInclude Include="Protocol\SeekOut.h" />
+    <ClInclude Include="Protocol\SendObjectOut.h" />
+    <ClInclude Include="Protocol\SetPilotLoginOut.h" />
+    <ClInclude Include="Protocol\StartRecordOut.h" />
+    <ClInclude Include="Protocol\StopOut.h" />
+    <ClInclude Include="Protocol\StopRecordOut.h" />
+    <ClInclude Include="Protocol\SyncMessageIn.h" />
+    <ClInclude Include="Protocol\SyncMessageOut.h" />
+    <ClInclude Include="Protocol\UpdatePacketIn.h" />
+    <ClInclude Include="Protocol\UpdatePacketOut.h" />
+    <ClInclude Include="Protocol\UpdateRecordInfoOut.h" />
+    <ClInclude Include="Protocol\RecordEditorCopyIn.h" />
+    <ClInclude Include="Protocol\RecordEditorCopyOut.h" />
+    <ClInclude Include="Protocol\RecordEditorCutIn.h" />
+    <ClInclude Include="Protocol\RecordEditorCutOut.h" />
+    <ClInclude Include="Protocol\RecordEditorDeleteIn.h" />
+    <ClInclude Include="Protocol\RecordEditorDeleteOut.h" />
+    <ClInclude Include="Protocol\RecordEditorOpenIn.h" />
+    <ClInclude Include="Protocol\RecordEditorOpenOut.h" />
+    <ClInclude Include="Protocol\RecordEditorPasteIn.h" />
+    <ClInclude Include="Protocol\RecordEditorPasteOut.h" />
+    <ClInclude Include="Protocol\RecordEditorPauseIn.h" />
+    <ClInclude Include="Protocol\RecordEditorPlayIn.h" />
+    <ClInclude Include="Protocol\RecordEditorRedoIn.h" />
+    <ClInclude Include="Protocol\RecordEditorRewindIn.h" />
+    <ClInclude Include="Protocol\RecordEditorSaveAsIn.h" />
+    <ClInclude Include="Protocol\RecordEditorSaveAsOut.h" />
+    <ClInclude Include="Protocol\RecordEditorSaveIn.h" />
+    <ClInclude Include="Protocol\RecordEditorSeekIn.h" />
+    <ClInclude Include="Protocol\RecordEditorSeekOut.h" />
+    <ClInclude Include="Protocol\RecordEditorUndoIn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ComMan\ComMan.vcxproj">
+      <Project>{3060942a-845a-42a0-895c-97524f11b16a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\json_spirit2\json_spirit2.vcxproj">
+      <Project>{b84f7231-16ce-41d8-8c08-7b523ff4225b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>updaterDll</ProjectName>
+    <ProjectGuid>{FE9AA165-B26F-4D00-8044-5BCB2FBC7ECA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../innoUpdater\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../innoUpdater\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\common\;..\comman\;..\cscl3dws\oms\;..\mdump;.\..\cscl3dws\res;..\nengine\interfaces;..\nengine\nengine;..\cscl3dws\rmml;..\cscl3dws\;..\bigFileMan\;..\rtl;..\nmemoryprofiler;..\Cscl3DWS\RenderManager\Classes;..\LogWriter;..\nengine\ncommon;..\nengine\include;..\nengine\nmath;..\Launcher;..\PlayerLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Comman.lib;Psapi.lib;Kernel32.lib;tinyxml.lib;Ws2_32.lib;Rpcrt4.lib;libcurl.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)updater.dll</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);../nengine/libs;../Comman/curl/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>updaterDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)updaterDll.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\common\;..\comman;..\cscl3dws\oms\;..\mdump;.\..\cscl3dws\res;..\nengine\interfaces;..\nengine\nengine;..\cscl3dws\ServiceMan;..\cscl3dws\rmml;..\cscl3dws\;..\bigFileMan\;..\rtl;..\nmemoryprofiler;..\nengine\ncommon;..\nengine\nmath;..\Cscl3DWS\RenderManager\Classes;..\LogWriter;..\Launcher;..\PlayerLib;..\nengine\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;UPDATERDLL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl.lib;Comman.lib;Psapi.lib;Kernel32.lib;tinyxml.lib;Ws2_32.lib;Rpcrt4.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)updater.dll</OutputFile>
+      <AdditionalLibraryDirectories>../lib/$(Configuration);../nengine/libs;..\Comman\curl;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>updaterDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <ImportLibrary>../lib/$(Configuration)/$(ProjectName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CrashHandlerInThread.cpp" />
+    <ClCompile Include="..\Common\Filesys.cpp" />
+    <ClCompile Include="..\Common\Mutex.cpp" />
+    <ClCompile Include="..\Common\SimpleThreadStarter.cpp" />
+    <ClCompile Include="..\nengine\ncommon\FileFunctions.cpp" />
+    <ClCompile Include="..\nengine\ncommon\PlatformDependent.cpp" />
+    <ClCompile Include="..\nengine\ncommon\Thread.cpp" />
+    <ClCompile Include="..\PlayerLib\CommandLineParams.cpp" />
+    <ClCompile Include="CheckSum.cpp" />
+    <ClCompile Include="ClientDownloader.cpp" />
+    <ClCompile Include="copyFiles.cpp" />
+    <ClCompile Include="crmMemResourceFile.cpp" />
+    <ClCompile Include="..\nengine\ncommon\IniFile.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\nengine\ncommon\StringFunctions.cpp" />
+    <ClCompile Include="SumChecker.cpp" />
+    <ClCompile Include="updaterDll.cpp" />
+    <ClCompile Include="updaterFiles.cpp" />
+    <ClCompile Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.cpp" />
+    <ClCompile Include="..\nengine\ncommon\XMLPropertiesList.cpp" />
+    <ClCompile Include="gd\gd_String.cpp" />
+    <ClCompile Include="gd\gd_Strings.cpp" />
+    <ClCompile Include="gd\gd_UTF8String.cpp" />
+    <ClCompile Include="gd\gd_XMLArchive.cpp" />
+    <ClCompile Include="..\mdump\CrashHandler.cpp" />
+    <ClCompile Include="..\mdump\DumpParamsGetter.cpp" />
+    <ClCompile Include="..\mdump\func.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\mdump\GetWinVer.cpp" />
+    <ClCompile Include="..\mdump\mdump.cpp" />
+    <ClCompile Include="..\mdump\MiniVersion.cpp" />
+    <ClCompile Include="..\mdump\XZip.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\LogWriter\LogValue.cpp" />
+    <ClCompile Include="..\LogWriter\LogWriter.cpp" />
+    <ClCompile Include="..\LogWriter\LogWriterLastMsgAsync.cpp" />
+    <ClCompile Include="..\rtl\ComString.cpp" />
+    <ClCompile Include="..\rtl\rtl.cpp" />
+    <ClCompile Include="..\rtl\rtlConvert.cpp" />
+    <ClCompile Include="..\rtl\rtlMemory.cpp" />
+    <ClCompile Include="..\rtl\rtlStrings.cpp" />
+    <ClCompile Include="..\rtl\WComString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="updaterDll.def" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CrashHandlerInThread.h" />
+    <ClInclude Include="..\Common\Filesys.h" />
+    <ClInclude Include="..\Common\Mutex.h" />
+    <ClInclude Include="..\Common\SimpleThreadStarter.h" />
+    <ClInclude Include="..\mdump\CrashHandler.h" />
+    <ClInclude Include="..\nengine\ncommon\FileFunctions.h" />
+    <ClInclude Include="..\nengine\ncommon\PlatformDependent.h" />
+    <ClInclude Include="..\nengine\ncommon\Thread.h" />
+    <ClInclude Include="..\PlayerLib\CommandLineParams.h" />
+    <ClInclude Include="CheckSum.h" />
+    <ClInclude Include="ClientDownloader.h" />
+    <ClInclude Include="crmMemResourceFile.h" />
+    <ClInclude Include="..\nengine\ncommon\IniFile.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\nengine\ncommon\StringFunctions.h" />
+    <ClInclude Include="SumChecker.h" />
+    <ClInclude Include="updaterDll.h" />
+    <ClInclude Include="updaterFiles.h" />
+    <ClInclude Include="..\Cscl3DWS\RenderManager\Classes\UserSettings.h" />
+    <ClInclude Include="..\nengine\ncommon\XMLPropertiesList.h" />
+    <ClInclude Include="gd\gd_listtmpl.h" />
+    <ClInclude Include="gd\gd_String.h" />
+    <ClInclude Include="gd\gd_Strings.h" />
+    <ClInclude Include="gd\gd_UTF8String.h" />
+    <ClInclude Include="gd\gd_XMLArchive.h" />
+    <ClInclude Include="..\mdump\DumpParamsGetter.h" />
+    <ClInclude Include="..\mdump\func.h" />
+    <ClInclude Include="..\mdump\GetWinVer.h" />
+    <ClInclude Include="..\mdump\mdump.h" />
+    <ClInclude Include="..\mdump\MiniVersion.h" />
+    <ClInclude Include="..\mdump\resource.h" />
+    <ClInclude Include="..\mdump\XZip.h" />
+    <ClInclude Include="..\LogWriter\ILogger.h" />
+    <ClInclude Include="..\LogWriter\ILogWriter.h" />
+    <ClInclude Include="..\LogWriter\LogValue.h" />
+    <ClInclude Include="..\LogWriter\LogWriter.h" />
+    <ClInclude Include="..\LogWriter\LogWriterLastMsgAsync.h" />
+    <ClInclude Include="..\rtl\ComString.h" />
+    <ClInclude Include="..\rtl\rtl.h" />
+    <ClInclude Include="..\rtl\rtlConvert.h" />
+    <ClInclude Include="..\rtl\rtlErrors.h" />
+    <ClInclude Include="..\rtl\rtlHelpers.h" />
+    <ClInclude Include="..\rtl\rtlMemory.h" />
+    <ClInclude Include="..\rtl\rtlStrings.h" />
+    <ClInclude Include="..\rtl\WComString.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComMan\ComMan.vcxproj">
+      <Project>{3060942a-845a-42a0-895c-97524f11b16a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\Cscl3DWS\ServiceMan\ServiceMan.vcxproj">
+      <Project>{b615c4f3-2aaf-43cd-82ae-79f8a839b7c2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

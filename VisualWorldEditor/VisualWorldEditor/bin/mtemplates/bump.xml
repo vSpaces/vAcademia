@@ -1,0 +1,14 @@
+<material>
+	<texture src="NMMAP.JPG" level="1" />
+	<state name="anisotropy" value="4" />
+	<shader>shaders/bump</shader>
+	<param name="decalMap" type="texture" value="0" />
+	<param name="normalMap" type="texture" value="1" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%camera_position" />
+	<param name="lightPos" type="predefined" value="%inv_light_position" />
+	<param name="lightColor" type="predefined" value="%light_color" />
+	<param name="lightPower" type="float" value="1.0" vmin="0.0" vmax="3.0" />
+	<param name="specularPower" type="float" value="10" vmin="5" vmax="100" />
+	<param name="specularIntensivity" type="float" value="0.3" vmin="0.0" vmax="1.0" />
+</material>

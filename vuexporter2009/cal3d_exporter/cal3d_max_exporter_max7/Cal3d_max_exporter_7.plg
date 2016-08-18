@@ -1,0 +1,227 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cal3d_max_exporter_max7 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP187.tmp" with contents
+[
+/nologo /D "_DEBUG" /tlb "Debug/cal3d_max_exporter_max7.tlb" /h "cal3d_max_exporter_max7_i.h" /iid "cal3d_max_exporter_max7_i.c" /Oicf /win32 "C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\cal3d_max_exporter_max7.idl"]
+Creating command line "midl.exe @C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP187.tmp"
+Creating command line "rc.exe /l 0x807 /fo"Debug/cal3d_max_exporter_max7.res" /d "_DEBUG" /d "_AFXDLL" "C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\cal3d_max_exporter_max7.rc"" 
+Creating temporary file "C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP188.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I "..\cal3d_max_exporter_max7" /I "..\..\cal3d_dx8\src\\" /I "common\\" /I "..\src" /I "..\src\win32" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include\CS" /I "..\..\engine" /I "..\..\include" /I "..\..\gd" /I "c:\dx8.sdk\include\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "MAX7" /FR"Debug/" /Fp"Debug/Cal3d_max_exporter_7.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /w34701 /wd4244 /wd4018 /c 
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\3DObjectConfig.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\AnimationExportSheet.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\AnimationTimePage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\autoexport\autoexport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\autoexport\AutoExportSettings.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BaseInterface.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BaseLight.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BaseMaterial.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BaseMesh.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BaseNode.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\BoneAssignmentPage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\BoneCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\cal3d_max_exporter_max7.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\ExportConfig.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\Exporter.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\ExporterTown.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\Cal3D_DX8\src\FaceDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\FileEx.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\Filesys.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\FlaresDlg.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\gd\gd_String.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\gd\gd_Strings.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\gd\gd_UTF8String.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\gd\gd_XMLArchive.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\LevelOfDetailPage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\Lodder.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\MaterialCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\MaterialExportSheet.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\MaterialLibraryCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\MaterialMapsPage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\MaterialSelectionPage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxAnimationExport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxAnimationExportDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxFlare.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxInterface.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxLight.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMaterial.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMaterialExport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMaterialExportDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMesh.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMeshExport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxMeshExportDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxNode.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxNullView.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxSkeletonExport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MaxSkeletonExportDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\MeshCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\MeshExportSheet.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MMLabVirtualsExport.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\MMLabVirtualsExportDesc.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\MRU.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\Quadric.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\autoexport\RegKeyFilesDialogs.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\resexistsdlg.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\SceneLightsDlg.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\SkeletonCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\SkeletonExportSheet.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\SkeletonFilePage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\SkeletonHierarchyPage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\SubmeshCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\VertexCandidate.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\WeightVertex.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\WeightVertexManager.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\Zlibengn.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP188.tmp" 
+Creating temporary file "C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP189.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I "..\cal3d_max_exporter_max7" /I "..\..\cal3d_dx8\src\\" /I "common\\" /I "..\src" /I "..\src\win32" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include\CS" /I "..\..\engine" /I "..\..\include" /I "..\..\gd" /I "c:\dx8.sdk\include\\" /I "..\..\cal3d_max_exporter_max7" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "MAX7" /FR"Debug/" /Fp"Debug/Cal3d_max_exporter_7.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /w34701 /wd4244 /wd4018 /c 
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\mtrlpropspage.cpp"
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\src\win32\SpringSystemPage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP189.tmp" 
+Creating temporary file "C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP18A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /I "..\cal3d_max_exporter_max7" /I "..\..\cal3d_dx8\src\\" /I "common\\" /I "..\src" /I "..\src\win32" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include" /I "C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\include\CS" /I "..\..\engine" /I "..\..\include" /I "..\..\gd" /I "c:\dx8.sdk\include\\" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "MAX7" /FR"Debug/" /Fp"Debug/Cal3d_max_exporter_7.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /w34701 /wd4244 /wd4018 /c 
+"C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP18A.tmp" 
+Creating temporary file "C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP18B.tmp" with contents
+[
+core.lib geom.lib gfx.lib mesh.lib maxutil.lib maxscrpt.lib paramblk2.lib cal3d_dx8_dbg.lib bmm.lib zlibdll.lib TootleSoftwareOnlyDLL.lib FreeImage.lib FreeImagePlus.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/cal3d_max_exporter7.pdb" /debug /machine:I386 /nodefaultlib:"libc.lib" /def:".\cal3d_max_exporter_max7.def" /out:"C:\Program Files\Autodesk\3ds Max 2009\plugins\cal3d_max_exporter7.dle" /implib:"Debug/cal3d_max_exporter7.lib" /pdbtype:sept /libpath:"..\..\lib\\" /libpath:"C:\Program Files\Autodesk\3ds Max 2009 SDK\maxsdk\lib\\" 
+".\Debug\3DObjectConfig.obj"
+".\Debug\AnimationExportSheet.obj"
+".\Debug\AnimationTimePage.obj"
+".\Debug\autoexport.obj"
+".\Debug\AutoExportSettings.obj"
+".\Debug\BaseInterface.obj"
+".\Debug\BaseLight.obj"
+".\Debug\BaseMaterial.obj"
+".\Debug\BaseMesh.obj"
+".\Debug\BaseNode.obj"
+".\Debug\BoneAssignmentPage.obj"
+".\Debug\BoneCandidate.obj"
+".\Debug\cal3d_max_exporter_max7.obj"
+".\Debug\ExportConfig.obj"
+".\Debug\Exporter.obj"
+".\Debug\ExporterTown.obj"
+".\Debug\FaceDesc.obj"
+".\Debug\FileEx.obj"
+".\Debug\Filesys.obj"
+".\Debug\FlaresDlg.obj"
+".\Debug\gd_String.obj"
+".\Debug\gd_Strings.obj"
+".\Debug\gd_UTF8String.obj"
+".\Debug\gd_XMLArchive.obj"
+".\Debug\LevelOfDetailPage.obj"
+".\Debug\Lodder.obj"
+".\Debug\MaterialCandidate.obj"
+".\Debug\MaterialExportSheet.obj"
+".\Debug\MaterialLibraryCandidate.obj"
+".\Debug\MaterialMapsPage.obj"
+".\Debug\MaterialSelectionPage.obj"
+".\Debug\MaxAnimationExport.obj"
+".\Debug\MaxAnimationExportDesc.obj"
+".\Debug\MaxFlare.obj"
+".\Debug\MaxInterface.obj"
+".\Debug\MaxLight.obj"
+".\Debug\MaxMaterial.obj"
+".\Debug\MaxMaterialExport.obj"
+".\Debug\MaxMaterialExportDesc.obj"
+".\Debug\MaxMesh.obj"
+".\Debug\MaxMeshExport.obj"
+".\Debug\MaxMeshExportDesc.obj"
+".\Debug\MaxNode.obj"
+".\Debug\MaxNullView.obj"
+".\Debug\MaxSkeletonExport.obj"
+".\Debug\MaxSkeletonExportDesc.obj"
+".\Debug\MeshCandidate.obj"
+".\Debug\MeshExportSheet.obj"
+".\Debug\MMLabVirtualsExport.obj"
+".\Debug\MMLabVirtualsExportDesc.obj"
+".\Debug\MRU.obj"
+".\Debug\mtrlpropspage.obj"
+".\Debug\Quadric.obj"
+".\Debug\RegKeyFilesDialogs.obj"
+".\Debug\resexistsdlg.obj"
+".\Debug\SceneLightsDlg.obj"
+".\Debug\SkeletonCandidate.obj"
+".\Debug\SkeletonExportSheet.obj"
+".\Debug\SkeletonFilePage.obj"
+".\Debug\SkeletonHierarchyPage.obj"
+".\Debug\SpringSystemPage.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SubmeshCandidate.obj"
+".\Debug\VertexCandidate.obj"
+".\Debug\WeightVertex.obj"
+".\Debug\WeightVertexManager.obj"
+".\Debug\Zlibengn.obj"
+".\Debug\cal3d_max_exporter_max7.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\Ango\LOCALS~1\Temp\RSP18B.tmp"
+<h3>Output Window</h3>
+Creating Type Library...
+Microsoft (R) MIDL Compiler Version 5.01.0164  
+Copyright (c) Microsoft Corp 1991-1997. All rights reserved.
+Processing C:\Documents and Settings\Ango\work\max2009exporter\vuexporter\cal3d_exporter\cal3d_max_exporter_max7\cal3d_max_exporter_max7.idl
+cal3d_max_exporter_max7.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oaidl.idl
+oaidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\objidl.idl
+objidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\unknwn.idl
+unknwn.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\wtypes.idl
+wtypes.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\ocidl.idl
+ocidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\oleidl.idl
+oleidl.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\servprov.idl
+servprov.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\urlmon.idl
+urlmon.idl
+Processing C:\Program Files\Microsoft Visual Studio\VC98\INCLUDE\msxml.idl
+msxml.idl
+Compiling resources...
+Compiling...
+Command line warning D4002 : ignoring unknown option '/we4706'
+Command line warning D4002 : ignoring unknown option '/we4390'
+Command line warning D4002 : ignoring unknown option '/we4557'
+Command line warning D4002 : ignoring unknown option '/we4546'
+Command line warning D4002 : ignoring unknown option '/we4545'
+Command line warning D4002 : ignoring unknown option '/we4295'
+Command line warning D4002 : ignoring unknown option '/we4310'
+Command line warning D4002 : ignoring unknown option '/we4130'
+Command line warning D4002 : ignoring unknown option '/we4611'
+Command line warning D4002 : ignoring unknown option '/we4213'
+Command line warning D4002 : ignoring unknown option '/we4121'
+Command line warning D4002 : ignoring unknown option '/w34701'
+Command line warning D4002 : ignoring unknown option '/wd4244'
+Command line warning D4002 : ignoring unknown option '/wd4018'
+StdAfx.cpp
+c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\strbasic.h(49) : error C4235: nonstandard extension used : '__wchar_t' keyword not supported in this product
+c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\custcont.h(39) : error C2485: 'deprecated' : unrecognized extended attribute
+c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(206) : error C2535: '__thiscall Util::AutoPtr<OtherType>::Util::AutoPtr<OtherType>(class Util::AutoPtr<OtherType> &)' : member function already defined or declared
+        c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(194) : see declaration of 'AutoPtr<Type>::AutoPtr<Type>'
+        c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(336) : see reference to class template instantiation 'Util::AutoPtr<Type>' being compiled
+c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(238) : error C2535: 'class Util::AutoPtr<OtherType> &__thiscall Util::AutoPtr<OtherType>::operator =(class Util::AutoPtr<OtherType> &)' : member function already defined or declared
+        c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(217) : see declaration of '='
+        c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(336) : see reference to class template instantiation 'Util::AutoPtr<Type>' being compiled
+c:\program files\autodesk\3ds max 2009 sdk\maxsdk\include\autoptr.h(339) : fatal error C1506: unrecoverable block scoping error
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+cal3d_max_exporter7.dle - 5 error(s), 14 warning(s)
+</pre>
+</body>
+</html>

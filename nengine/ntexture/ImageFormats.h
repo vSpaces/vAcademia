@@ -1,0 +1,9 @@
+
+#pragma once
+
+#define IMAGE_FORMAT_JPEG			0
+#define IMAGE_FORMAT_PNG			1
+#define IMAGE_FORMAT_GIF			2
+#define IMAGE_FORMAT_BMP			3
+#define IMAGE_FORMAT_NEC			4
+#define IMAGE_FORMAT_NEC_NO_MIPMAPS	5

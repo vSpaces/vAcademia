@@ -1,0 +1,36 @@
+<material>
+	<shader>shaders/water_small</shader>
+	<param name="waterMap" type="texture" value="0" />
+	<param name="envMap" type="texture" value="3" />
+	<param name="normMap" type="texture" value="1" />
+	<param name="normMap2" type="texture" value="2" />
+	<param name="noiseMap" type="texture" value="4" />
+	<animation level="1" delta="250">
+		<texture src="WATNORM8.PNG" />
+		<texture src="WATNORM1.PNG" />
+		<texture src="WATNORM2.PNG" />
+		<texture src="WATNORM3.PNG" />
+		<texture src="WATNORM4.PNG" />
+		<texture src="WATNORM5.PNG" />
+		<texture src="WATNORM6.PNG" />
+		<texture src="WATNORM7.PNG" />
+	</animation>
+	<animation level="2" delta="250">
+		<texture src="WATNORM1.PNG" />
+		<texture src="WATNORM2.PNG" />
+		<texture src="WATNORM3.PNG" />
+		<texture src="WATNORM4.PNG" />
+		<texture src="WATNORM5.PNG" />
+		<texture src="WATNORM6.PNG" />
+		<texture src="WATNORM7.PNG" />
+		<texture src="WATNORM8.PNG" />
+	</animation>
+	<texture3d src="NOISE.DDS_mipmap" level="4" />
+	<cubemap src="DAYSKY4.JPG" level="3" />
+	<param name="lightness" type="predefined" value="%lightness" />
+	<param name="eyePos" type="predefined" value="%inv_camera_position" />
+	<param name="lightPos" type="predefined" value="%light_position" />
+	<param name="time" type="predefined" value="%time" />
+	<state name="color" value="255;255;255" />
+	<state name="blend" value="true" />
+</material>
